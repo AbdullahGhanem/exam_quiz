@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Question extends Model
+{
+    protected $fillable = [
+        'subject_id',
+        'lecture',
+        'question',
+        'option_a',
+        'option_b',
+        'option_c',
+        'option_d',
+        'correct_answer',
+        'description',
+    ];
+
+    public function subject()
+    {
+        return $this->belongsTo(Subject::class);
+    }
+}

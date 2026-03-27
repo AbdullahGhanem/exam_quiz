@@ -1,0 +1,402 @@
+[
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "What does NLP stand for in the context of Artificial Intelligence?",
+    "option_a": "Neural Language Programming",
+    "option_b": "Natural Language Processing",
+    "option_c": "Network Linguistic Parsing",
+    "option_d": "Natural Lexicon Production",
+    "correct_answer": "B",
+    "description": "<strong>Natural Language Processing (NLP)</strong> is a field in AI devoted to creating computers that use <em>natural language</em> as input and output."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "NLP sits at the intersection of which fields?",
+    "option_a": "AI, ML, Deep Learning, and Linguistics",
+    "option_b": "AI, Robotics, Statistics, and Linguistics",
+    "option_c": "ML, Deep Learning, Computer Vision, and Linguistics",
+    "option_d": "AI, ML, Data Science, and Psychology",
+    "correct_answer": "A",
+    "description": "According to the Venn diagram representation, <strong>NLP</strong> sits at the intersection of <em>Artificial Intelligence, Machine Learning, Deep Learning, and Linguistics</em>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "Which NLP component is responsible for mapping input to a useful representation?",
+    "option_a": "NLG (Natural Language Generation)",
+    "option_b": "NLU (Natural Language Understanding)",
+    "option_c": "NLT (Natural Language Translation)",
+    "option_d": "NLC (Natural Language Compilation)",
+    "correct_answer": "B",
+    "description": "<strong>NLU (Natural Language Understanding)</strong> maps the input to a useful internal representation. It is considered <em>much harder</em> than NLG."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "Which of the following is true about NLU and NLG?",
+    "option_a": "NLG is much harder than NLU",
+    "option_b": "NLU and NLG are equally difficult",
+    "option_c": "NLU is much harder than NLG",
+    "option_d": "NLU and NLG are not related to NLP",
+    "correct_answer": "C",
+    "description": "<strong>NLU</strong> (understanding language) is considered <em>much harder</em> than <strong>NLG</strong> (generating language), because understanding requires deep analysis of meaning."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "Which type of analysis is NOT required for NLU?",
+    "option_a": "Morphological analysis",
+    "option_b": "Syntactic analysis",
+    "option_c": "Deep planning",
+    "option_d": "Discourse analysis",
+    "correct_answer": "C",
+    "description": "<strong>Deep planning</strong> (deciding what to say) is a component of <em>NLG</em>, not NLU. NLU requires morphological, syntactic, semantic, and discourse analysis."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "In the levels of linguistic knowledge, which level comes directly after morphology?",
+    "option_a": "Phonology",
+    "option_b": "Syntax",
+    "option_c": "Lexemes",
+    "option_d": "Semantics",
+    "correct_answer": "C",
+    "description": "The linguistic levels from shallow to deep are: speech/text → phonetics/orthography → phonology → morphology → <strong>lexemes</strong> → syntax → semantics → pragmatics → discourse."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "Who proposed the Turing Test and in what year?",
+    "option_a": "Joseph Weizenbaum in 1966",
+    "option_b": "Alan Turing in 1950",
+    "option_c": "Noam Chomsky in 1957",
+    "option_d": "John McCarthy in 1956",
+    "correct_answer": "B",
+    "description": "The <strong>Turing Test</strong> was proposed by <em>Alan Turing in 1950</em>. It tests a machine's capability to perform human-like conversation indistinguishable from a real human."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "What was ELIZA and how did it work?",
+    "option_a": "A machine translator using neural networks",
+    "option_b": "A simulated psychotherapist using pattern-matching and canned responses",
+    "option_c": "A speech recognition system using deep learning",
+    "option_d": "A question-answering system using knowledge graphs",
+    "correct_answer": "B",
+    "description": "<strong>ELIZA</strong> (1966, by Joseph Weizenbaum) was a simulated psychotherapist with <em>no real understanding</em>. It used simple <code>pattern-matching → canned responses</code>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "Which of the following is a supervised NLP application?",
+    "option_a": "Topic Modeling",
+    "option_b": "Keyword Extraction",
+    "option_c": "Sentiment Analysis",
+    "option_d": "Trend Detection",
+    "correct_answer": "C",
+    "description": "<strong>Sentiment Analysis</strong> is a supervised NLP application along with Spam Detection, Intent Classification, and Multi-Label Text Classification. <em>Topic Modeling and Keyword Extraction</em> are unsupervised."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "Which of the following is an unsupervised NLP application?",
+    "option_a": "Spam Detection",
+    "option_b": "Intent Classification",
+    "option_c": "Multi-Label Text Classification",
+    "option_d": "Topic Modeling",
+    "correct_answer": "D",
+    "description": "<strong>Topic Modeling</strong> is an unsupervised NLP application, along with Keyword Extraction and Trend/Outlier Detection. Supervised apps include <em>Spam Detection and Intent Classification</em>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "What does Question Answering (QA) provide that traditional Information Retrieval (IR) does not?",
+    "option_a": "QA returns web pages, IR returns documents",
+    "option_b": "QA directly provides answers, IR provides documents",
+    "option_c": "QA uses unsupervised methods, IR uses supervised methods",
+    "option_d": "QA works only with structured data, IR works with unstructured data",
+    "correct_answer": "B",
+    "description": "Unlike traditional <strong>Information Retrieval</strong> which provides documents, <strong>Question Answering</strong> <em>directly provides answers</em> to the user's query. IBM Watson on Jeopardy! is a famous example."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "Machine Translation is described as one of the oldest what?",
+    "option_a": "Numerical computing applications",
+    "option_b": "Non-numerical computer science applications",
+    "option_c": "Statistical modeling applications",
+    "option_d": "AI research projects",
+    "correct_answer": "B",
+    "description": "<strong>Machine Translation</strong> is described as one of the oldest <em>non-numerical computer science applications</em>, involving automatic translation of texts between languages."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "Which IBM system competed in the TV show Jeopardy! as a Question Answering system?",
+    "option_a": "IBM Deep Blue",
+    "option_b": "IBM Watson",
+    "option_c": "IBM ELIZA",
+    "option_d": "IBM Cortana",
+    "correct_answer": "B",
+    "description": "<strong>IBM Watson</strong> competed in <em>Jeopardy!</em> as a demonstration of Question Answering technology, directly providing answers rather than returning documents."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "What type of data does Text Analytics extract information from?",
+    "option_a": "Structured databases only",
+    "option_b": "Unstructured data such as weblogs, reviews, and forums",
+    "option_c": "Numerical spreadsheets",
+    "option_d": "Binary encoded files",
+    "correct_answer": "B",
+    "description": "<strong>Text Analytics</strong> extracts information from <em>unstructured data</em> sources such as weblogs, microblogs, discussion forums, and user reviews, performing tasks like sentiment analysis and topic identification."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "Which of the following is NOT listed as a reason why we need NLP?",
+    "option_a": "Interact with computing devices using human languages",
+    "option_b": "Build intelligent robots",
+    "option_c": "Replace all human translators permanently",
+    "option_d": "Access large amounts of knowledge stored in human languages",
+    "correct_answer": "C",
+    "description": "The reasons for NLP include interacting with devices using human languages, building intelligent robots, voice-controlled operation, and accessing knowledge. <strong>Replacing all human translators</strong> is <em>not</em> a stated goal."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "Which of the following is an example of a conversational agent?",
+    "option_a": "IBM Deep Blue",
+    "option_b": "Google Translate",
+    "option_c": "Amazon Alexa",
+    "option_d": "TF-IDF",
+    "correct_answer": "C",
+    "description": "<strong>Conversational agents</strong> include Siri, Cortana, <em>Alexa</em>, Google Assistant, and chatbots. They are a major NLP application area for interacting with users through natural language."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "Sentiment Analysis deals with which of the following?",
+    "option_a": "Translating text from one language to another",
+    "option_b": "Categorization of opinions in textual documents",
+    "option_c": "Extracting named entities from text",
+    "option_d": "Generating grammatically correct sentences",
+    "correct_answer": "B",
+    "description": "<strong>Sentiment Analysis</strong> evaluates if words reflect positive or negative sentiment and deals with the <em>categorization of opinions</em> in textual documents. It can be supervised or unsupervised."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "Which of the following is a supervised Text Mining application?",
+    "option_a": "Text clustering",
+    "option_b": "Trend analysis",
+    "option_c": "Insurance fraud modeling",
+    "option_d": "Keyword extraction",
+    "correct_answer": "C",
+    "description": "Supervised Text Mining applications include churning propensity models, hospital admission prediction, <strong>insurance fraud modeling</strong>, sentiment categorization, and stylometry. <em>Text clustering and trend analysis</em> are unsupervised."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "In the Turing Test, a machine passes if:",
+    "option_a": "It can translate any language perfectly",
+    "option_b": "The judge cannot distinguish it from a human in conversation",
+    "option_c": "It scores above 90% on a language test",
+    "option_d": "It can write poetry indistinguishable from human poetry",
+    "correct_answer": "B",
+    "description": "In the <strong>Turing Test</strong>, a judge talks to both a human and a machine. If the judge <em>cannot tell which is which</em>, the machine is said to pass the test."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 1: NLP Intro",
+    "question": "What is the deepest level in the hierarchy of linguistic knowledge?",
+    "option_a": "Semantics",
+    "option_b": "Pragmatics",
+    "option_c": "Discourse",
+    "option_d": "Syntax",
+    "correct_answer": "C",
+    "description": "The levels from shallow to deep are: speech/text → phonetics/orthography → phonology → morphology → lexemes → syntax → semantics → pragmatics → <strong>discourse</strong>, which is the <em>deepest level</em>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "What is tokenization in NLP?",
+    "option_a": "Assigning part-of-speech tags to words",
+    "option_b": "Splitting text into smaller units called tokens",
+    "option_c": "Identifying named entities in text",
+    "option_d": "Determining the syntactic structure of a sentence",
+    "correct_answer": "B",
+    "description": "<strong>Tokenization</strong> is the process of splitting a phrase, sentence, paragraph, or document into <em>smaller units called tokens</em> such as individual words, numbers, or punctuation marks."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "What does Python's text.split() method split text by default?",
+    "option_a": "Punctuation marks",
+    "option_b": "Sentences",
+    "option_c": "Whitespace (spaces)",
+    "option_d": "Individual characters",
+    "correct_answer": "C",
+    "description": "Python's <code>text.split()</code> method splits text at <strong>whitespace (spaces)</strong> by default. You can specify a custom delimiter, e.g., <code>text.split('. ')</code> splits at period+space."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "How does NLTK's word_tokenize differ from Python's split()?",
+    "option_a": "split() handles punctuation separately, word_tokenize does not",
+    "option_b": "word_tokenize handles punctuation as separate tokens, split() does not",
+    "option_c": "They produce identical results",
+    "option_d": "split() is more advanced than word_tokenize",
+    "correct_answer": "B",
+    "description": "NLTK's <code>word_tokenize</code> handles punctuation <em>as separate tokens</em> (e.g., <code>\"SpaceX's\"</code> becomes <code>[\"SpaceX\", \"'s\"]</code>), while <strong>split()</strong> is basic and only splits by the specified delimiter."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "What does NLTK's sent_tokenize() do?",
+    "option_a": "Splits text into individual words",
+    "option_b": "Splits text into individual characters",
+    "option_c": "Splits text into sentences",
+    "option_d": "Splits text into paragraphs",
+    "correct_answer": "C",
+    "description": "NLTK's <code>sent_tokenize(text)</code> splits the input text into <strong>sentences</strong>, unlike <code>word_tokenize</code> which splits into individual words and punctuation tokens."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "What is POS tagging?",
+    "option_a": "Identifying named entities in a sentence",
+    "option_b": "Assigning a part-of-speech or lexical class marker to each word",
+    "option_c": "Splitting text into tokens",
+    "option_d": "Determining the overall sentiment of a sentence",
+    "correct_answer": "B",
+    "description": "<strong>POS (Part-of-Speech) tagging</strong> is the process of assigning a <em>POS or lexical class marker</em> to each word in a sentence, such as Noun, Verb, Adjective, Determiner, etc."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "In the POS tagging example 'the lead paint is unsafe', what is the tag for 'unsafe'?",
+    "option_a": "Noun (N)",
+    "option_b": "Verb (V)",
+    "option_c": "Adjective (Adj)",
+    "option_d": "Determiner (Det)",
+    "correct_answer": "C",
+    "description": "In the example <code>\"the/Det lead/N paint/N is/V unsafe/Adj\"</code>, the word <strong>unsafe</strong> is tagged as <em>Adj (Adjective)</em>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "What is Named Entity Recognition (NER)?",
+    "option_a": "The process of translating named entities between languages",
+    "option_b": "The process of identifying and classifying named entities into predefined categories",
+    "option_c": "The process of generating new entity names",
+    "option_d": "The process of removing entity names from text for privacy",
+    "correct_answer": "B",
+    "description": "<strong>NER</strong> (also called entity identification or entity extraction) automatically <em>identifies named entities</em> and classifies them into predefined categories such as people, organizations, locations, times, and quantities."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "In the NER example '[ORG U.N.] official [PER Ekeus] heads for [LOC Baghdad]', what category is 'Ekeus'?",
+    "option_a": "Organization (ORG)",
+    "option_b": "Location (LOC)",
+    "option_c": "Person (PER)",
+    "option_d": "Time (TIME)",
+    "correct_answer": "C",
+    "description": "In the NER example, <strong>Ekeus</strong> is classified as <code>[PER]</code> meaning <em>Person</em>. U.N. is an Organization and Baghdad is a Location."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "Which of the following is NOT a typical NER category?",
+    "option_a": "Person names",
+    "option_b": "Organization names",
+    "option_c": "Verb phrases",
+    "option_d": "Monetary values",
+    "correct_answer": "C",
+    "description": "NER categories include people, organizations, locations, times, quantities, monetary values, and percentages. <strong>Verb phrases</strong> are <em>not</em> a NER category; they relate to POS tagging and parsing."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "What is parsing in NLP?",
+    "option_a": "Assigning sentiment scores to sentences",
+    "option_b": "Determining the syntactic structure of a text based on an underlying grammar",
+    "option_c": "Converting speech to text",
+    "option_d": "Translating text between languages",
+    "correct_answer": "B",
+    "description": "<strong>Parsing</strong> is the process of determining the <em>syntactic structure</em> of a text by analyzing its constituent words based on an underlying grammar."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "According to grammar rules, a sentence is composed of:",
+    "option_a": "A verb phrase and an adjective phrase",
+    "option_b": "A noun phrase and a verb phrase",
+    "option_c": "A determiner and a noun",
+    "option_d": "A subject and an object only",
+    "correct_answer": "B",
+    "description": "According to the grammar rules, <code>sentence → noun_phrase, verb_phrase</code>. A <strong>sentence</strong> is composed of a <em>noun phrase</em> followed by a <em>verb phrase</em>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "In the parse tree for 'Tom ate an apple', what is 'Tom' classified as?",
+    "option_a": "Determiner",
+    "option_b": "Common noun",
+    "option_c": "Proper noun",
+    "option_d": "Verb",
+    "correct_answer": "C",
+    "description": "In the parse tree, <strong>Tom</strong> is classified as a <code>proper_noun</code> within the <em>noun_phrase</em>: <code>noun_phrase(proper_noun(\"Tom\"))</code>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "In the parsing architecture, what does the lexical analyzer do?",
+    "option_a": "It determines the meaning of sentences",
+    "option_b": "It takes input characters and decodes them into higher-level tokens",
+    "option_c": "It translates tokens into another language",
+    "option_d": "It assigns sentiment scores to tokens",
+    "correct_answer": "B",
+    "description": "The <strong>lexical analyzer</strong> takes a stream of input characters and <em>decodes them into higher-level tokens</em> that a parser can understand."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "In the parsing architecture, what does the parser consume?",
+    "option_a": "Raw input characters directly",
+    "option_b": "The output of the lexical analyzer (tokens)",
+    "option_c": "Semantic representations",
+    "option_d": "POS tags only",
+    "correct_answer": "B",
+    "description": "The <strong>parser</strong> consumes the <em>output of the lexical analyzer</em> and operates by analyzing the sequence of tokens returned from it."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "Which component in the parsing architecture is shared between the lexical analyzer and the parser?",
+    "option_a": "Grammar rules",
+    "option_b": "Symbol Table",
+    "option_c": "Token buffer",
+    "option_d": "Syntax tree",
+    "correct_answer": "B",
+    "description": "Both the lexical analyzer and the parser interact with the <strong>Symbol Table</strong>. The architecture flow is: <code>Input → Lexical analyzer → tokens → Parser → output</code>, with both components accessing the <em>Symbol Table</em>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "Which of the following is a major challenge in NLP?",
+    "option_a": "Data redundancy",
+    "option_b": "Ambiguity",
+    "option_c": "Data normalization",
+    "option_d": "Feature scaling",
+    "correct_answer": "B",
+    "description": "<strong>Ambiguity</strong> (words/sentences having multiple meanings) is a major NLP challenge, along with <em>Sparsity</em> (rare words appearing infrequently in data)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "What does 'sparsity' refer to as an NLP challenge?",
+    "option_a": "Too many words having the same meaning",
+    "option_b": "Rare words appearing infrequently in data",
+    "option_c": "Sentences being too long to process",
+    "option_d": "Languages having too many grammar rules",
+    "correct_answer": "B",
+    "description": "<strong>Sparsity</strong> in NLP refers to <em>rare words appearing infrequently</em> in the data, making it difficult for models to learn meaningful representations for those words."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "Which of the following is NOT listed as a core NLP task?",
+    "option_a": "Word tokenization",
+    "option_b": "POS tagging",
+    "option_c": "Sentiment classification",
+    "option_d": "Named Entity Recognition",
+    "correct_answer": "C",
+    "description": "The core NLP tasks listed are: word tokenization, sentence boundary detection, POS tagging, Named Entity Recognition, parsing, and semantic analysis. <strong>Sentiment classification</strong> is an <em>application</em>, not a core NLP task."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "In the grammar rule 'noun_phrase → determiner, noun', which of the following is a valid noun phrase?",
+    "option_a": "ate quickly",
+    "option_b": "an apple",
+    "option_c": "Tom ate",
+    "option_d": "is unsafe",
+    "correct_answer": "B",
+    "description": "According to the rule <code>noun_phrase → determiner, noun</code>, <strong>\"an apple\"</strong> is a valid noun phrase where <em>\"an\"</em> is the determiner and <em>\"apple\"</em> is the noun."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
+    "question": "What would NLTK's word_tokenize produce for the input \"SpaceX's rocket launched.\"?",
+    "option_a": "[\"SpaceX's\", \"rocket\", \"launched.\"]",
+    "option_b": "[\"SpaceX's rocket launched.\"]",
+    "option_c": "[\"SpaceX\", \"'s\", \"rocket\", \"launched\", \".\"]",
+    "option_d": "[\"SpaceX\", \"rocket\", \"launched\"]",
+    "correct_answer": "C",
+    "description": "NLTK's <code>word_tokenize</code> handles punctuation and contractions as <em>separate tokens</em>. So <strong>\"SpaceX's\"</strong> becomes <code>[\"SpaceX\", \"'s\"]</code> and the period becomes a separate token."
+  }
+]

@@ -1,0 +1,1602 @@
+[
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "What is the primary goal of Natural Language Processing (NLP)?",
+        "option_a": "Designing computer hardware",
+        "option_b": "Creating computers that use natural language as input\/output",
+        "option_c": "Enhancing database storage",
+        "option_d": "Developing graphical user interfaces",
+        "correct_answer": "B",
+        "description": "<strong>NLP<\/strong> focuses on enabling computers to <em>understand, interpret, and generate<\/em> human (natural) language. It bridges the gap between human communication and machine processing, not hardware or GUI design."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "Which of the following is considered much harder in NLP?",
+        "option_a": "Natural Language Understanding (NLU)",
+        "option_b": "Natural Language Generation (NLG)",
+        "option_c": "Speech synthesis",
+        "option_d": "Tokenization",
+        "correct_answer": "A",
+        "description": "<strong>Natural Language Understanding (NLU)<\/strong> is harder because it requires the machine to <em>comprehend meaning, context, and ambiguity<\/em> in human language. Generation follows structured rules, but understanding must resolve vagueness and implied meaning."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "What is the Morphological level of analysis in NLP?",
+        "option_a": "Analysis of sentence structure",
+        "option_b": "Analysis of meaning",
+        "option_c": "Analysis of word structure and forms",
+        "option_d": "Analysis of speech sounds",
+        "correct_answer": "C",
+        "description": "<strong>Morphological analysis<\/strong> examines the internal structure of words, including prefixes, suffixes, and root forms. For example, the word <em>\"unhappiness\"<\/em> is broken into <code>un-<\/code>, <code>happy<\/code>, and <code>-ness<\/code>."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "The Turing Test was proposed by Alan Turing in which year?",
+        "option_a": "1940",
+        "option_b": "1950",
+        "option_c": "1960",
+        "option_d": "1970",
+        "correct_answer": "B",
+        "description": "Alan Turing proposed the <strong>Turing Test<\/strong> in his landmark <em>1950<\/em> paper \"Computing Machinery and Intelligence,\" where he introduced the idea of testing whether a machine can exhibit intelligent behavior indistinguishable from a human."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "What does the Turing Test evaluate?",
+        "option_a": "A machine’s processing speed",
+        "option_b": "A machine’s memory capacity",
+        "option_c": "A machine’s capability to perform human-like conversation",
+        "option_d": "A machine’s translation accuracy",
+        "correct_answer": "C",
+        "description": "The <strong>Turing Test<\/strong> evaluates whether a machine can <em>converse<\/em> so naturally that a human judge cannot distinguish it from a real person. It is a test of conversational intelligence, not speed or memory."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "ELIZA is an early conversational program created in 1966. What role did it simulate?",
+        "option_a": "A psychotherapist",
+        "option_b": "A financial advisor",
+        "option_c": "A translation expert",
+        "option_d": "A mathematician",
+        "correct_answer": "A",
+        "description": "<strong>ELIZA<\/strong>, created by Joseph Weizenbaum, simulated a <em>Rogerian psychotherapist<\/em> by rephrasing the user's own statements as questions. It was one of the first programs to attempt natural language conversation."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "How did ELIZA primarily generate responses?",
+        "option_a": "Deep learning",
+        "option_b": "Simple pattern-matching to user input",
+        "option_c": "Syntax tree generation",
+        "option_d": "Neural networks",
+        "correct_answer": "B",
+        "description": "ELIZA used <strong>simple pattern-matching<\/strong> and substitution rules to transform user input into responses. It had <em>no real understanding<\/em> of language — it relied on keyword detection and scripted templates."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "Which of the following is a supervised text mining application?",
+        "option_a": "Text clustering",
+        "option_b": "Trend analysis",
+        "option_c": "Sentiment categorization",
+        "option_d": "Outlier detection",
+        "correct_answer": "C",
+        "description": "<strong>Sentiment categorization<\/strong> is a <em>supervised<\/em> task because it requires labeled training data (e.g., positive\/negative reviews) to learn classification patterns. Clustering and outlier detection are typically unsupervised."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "Which of the following is an unsupervised text mining application?",
+        "option_a": "Spam detection",
+        "option_b": "Text clustering",
+        "option_c": "Intent classification",
+        "option_d": "Insurance fraud modeling",
+        "correct_answer": "B",
+        "description": "<strong>Text clustering<\/strong> is <em>unsupervised<\/em> because it groups similar documents together without needing pre-labeled data. The algorithm discovers natural groupings based on text similarity."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "What does Sentiment Analysis primarily evaluate?",
+        "option_a": "If a text is grammatically correct",
+        "option_b": "If a series of words reflect a positive or negative sentiment",
+        "option_c": "The language of the text",
+        "option_d": "The length of the sentence",
+        "correct_answer": "B",
+        "description": "<strong>Sentiment Analysis<\/strong> determines the <em>emotional tone<\/em> behind a piece of text — whether it expresses a positive, negative, or neutral opinion. It is widely used in analyzing customer reviews and social media."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "Which system famously competed in Jeopardy! To answer questions?",
+        "option_a": "ELIZA",
+        "option_b": "Siri",
+        "option_c": "IBM Watson",
+        "option_d": "Cortana",
+        "correct_answer": "C",
+        "description": "<strong>IBM Watson<\/strong> competed on Jeopardy! in 2011 and defeated two champion players. It used advanced NLP techniques including <em>question parsing, information retrieval, and confidence scoring<\/em> to answer natural language questions."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "Text analytics involves extracting semantic information from:",
+        "option_a": "Unstructured data like weblogs and reviews",
+        "option_b": "Structured relational databases",
+        "option_c": "Binary executable files",
+        "option_d": "Image files",
+        "correct_answer": "A",
+        "description": "<strong>Text analytics<\/strong> works with <em>unstructured data<\/em> such as weblogs, reviews, emails, and social media posts. Its purpose is to extract meaningful patterns and semantic information from free-form text."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "What does Named Entity Recognition (NER) identify?",
+        "option_a": "Verbs and adjectives",
+        "option_b": "Mentions of people, organizations, locations",
+        "option_c": "The overall sentiment of a text",
+        "option_d": "Syntax errors",
+        "correct_answer": "B",
+        "description": "<strong>Named Entity Recognition (NER)<\/strong> identifies and classifies <em>proper nouns<\/em> in text into categories like <strong>person<\/strong>, <strong>organization<\/strong>, <strong>location<\/strong>, date, and more. It is a key step in information extraction."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "What is the deepest level of linguistic knowledge?",
+        "option_a": "Phonology",
+        "option_b": "Morphology",
+        "option_c": "Pragmatics\/Discourse",
+        "option_d": "Orthography",
+        "correct_answer": "C",
+        "description": "<strong>Pragmatics\/Discourse<\/strong> is the deepest level because it deals with <em>meaning in context<\/em>, including speaker intent, implied meaning, and how sentences relate to each other across a conversation or document."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "Machine Translation (MT) refers to:",
+        "option_a": "Translating code from C++ to Java",
+        "option_b": "Automatic translation of texts between human languages",
+        "option_c": "Converting text to speech",
+        "option_d": "Summarizing long documents",
+        "correct_answer": "B",
+        "description": "<strong>Machine Translation<\/strong> is the automatic translation of text from one <em>human language<\/em> to another (e.g., English to Arabic). It does not refer to programming language conversion or text-to-speech."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "Which of the following is a prominent NLP application area?",
+        "option_a": "Compiler design",
+        "option_b": "Conversational agents",
+        "option_c": "Operating system development",
+        "option_d": "Network routing",
+        "correct_answer": "B",
+        "description": "<strong>Conversational agents<\/strong> (chatbots and virtual assistants) are a major NLP application. They use techniques like <em>intent recognition, dialogue management, and response generation<\/em> to interact with users in natural language."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "Why is NLP useful in accessing information?",
+        "option_a": "It replaces human analysts",
+        "option_b": "It allows quick access to large amounts of knowledge stored in human languages",
+        "option_c": "It compresses file sizes",
+        "option_d": "It encrypts data",
+        "correct_answer": "B",
+        "description": "Most human knowledge is stored in <em>natural language<\/em> (books, websites, documents). <strong>NLP<\/strong> enables machines to process and retrieve this information quickly, making vast amounts of text-based knowledge accessible."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "What is the role of Natural Language Generation (NLG)?",
+        "option_a": "Mapping natural language into useful representation",
+        "option_b": "Producing output in natural language from internal representation",
+        "option_c": "Correcting spelling mistakes",
+        "option_d": "Parsing sentences",
+        "correct_answer": "B",
+        "description": "<strong>Natural Language Generation (NLG)<\/strong> converts structured data or internal representations into <em>human-readable text<\/em>. It is the opposite of NLU — while NLU interprets language, NLG <em>produces<\/em> it."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "Which application is considered part of Text Analytics?",
+        "option_a": "Ray tracing",
+        "option_b": "Concept identification",
+        "option_c": "3D rendering",
+        "option_d": "Z-buffering",
+        "correct_answer": "B",
+        "description": "<strong>Concept identification<\/strong> is a text analytics task that extracts key <em>concepts and topics<\/em> from unstructured text. The other options (ray tracing, 3D rendering, Z-buffering) are all computer graphics techniques."
+    },
+    {
+        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
+        "question": "In the context of NLP, what does “canned responses” mean?",
+        "option_a": "Responses generated by AI",
+        "option_b": "Pre-recorded or pre-written responses triggered by specific inputs",
+        "option_c": "Responses that are grammatically incorrect",
+        "option_d": "Responses that require human intervention",
+        "correct_answer": "B",
+        "description": "<strong>Canned responses<\/strong> are <em>pre-written, fixed replies<\/em> that are triggered when specific keywords or patterns are detected in user input. Early systems like ELIZA relied heavily on this approach rather than true language understanding."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "What is Tokenization?",
+        "option_a": "Translating sentences",
+        "option_b": "Splitting a text into smaller units like words",
+        "option_c": "Combining words into sentences",
+        "option_d": "Correcting grammatical errors",
+        "correct_answer": "B",
+        "description": "<strong>Tokenization<\/strong> is the first step in most NLP pipelines. It breaks raw text into <em>smaller units called tokens<\/em> (usually words or subwords). For example, <code>\"Hello world\"<\/code> becomes <code>[\"Hello\", \"world\"]<\/code>."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "What are the smaller units created by tokenization called?",
+        "option_a": "Syllables",
+        "option_b": "Tokens",
+        "option_c": "Nodes",
+        "option_d": "Vectors",
+        "correct_answer": "B",
+        "description": "The individual units produced by tokenization are called <strong>tokens<\/strong>. A token can be a word, subword, or even a character depending on the tokenization strategy used."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "Which Python function can be used for basic tokenization?",
+        "option_a": "join()",
+        "option_b": "split()",
+        "option_c": "merge()",
+        "option_d": "bind()",
+        "correct_answer": "B",
+        "description": "Python's built-in <code>str.split()<\/code> method can perform basic tokenization by splitting a string on whitespace. For example, <code>\"Hello world\".split()<\/code> returns <code>[\"Hello\", \"world\"]<\/code>. More advanced tokenization requires libraries like <strong>NLTK<\/strong>."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "What does POS tagging do?",
+        "option_a": "Assigns a lexical class marker (like noun, verb) to each word",
+        "option_b": "Identifies the sentence boundary",
+        "option_c": "Translates the word",
+        "option_d": "Finds synonyms",
+        "correct_answer": "A",
+        "description": "<strong>Part-of-Speech (POS) tagging<\/strong> assigns grammatical labels such as <em>noun, verb, adjective, adverb<\/em> to each word in a sentence. For example, in \"The cat sat,\" <code>The<\/code>=determiner, <code>cat<\/code>=noun, <code>sat<\/code>=verb."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "What does NER stand for?",
+        "option_a": "Native Entity Recognition",
+        "option_b": "Named Entity Recognition",
+        "option_c": "Natural Entity Resolution",
+        "option_d": "Neural Entity Routing",
+        "correct_answer": "B",
+        "description": "<strong>NER<\/strong> stands for <strong>Named Entity Recognition<\/strong>. It is the task of locating and classifying named entities in text into predefined categories such as <em>person, organization, location, date<\/em>, and more."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "Which of the following is an example of a Named Entity?",
+        "option_a": "“Running”",
+        "option_b": "“Quickly”",
+        "option_c": "“Baghdad”",
+        "option_d": "“Beautiful”",
+        "correct_answer": "C",
+        "description": "<strong>Baghdad<\/strong> is a named entity because it is a <em>proper noun referring to a specific location<\/em>. Named entities are real-world objects like people, places, and organizations — not common verbs, adverbs, or adjectives."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "What is Parsing in NLP?",
+        "option_a": "Checking spelling",
+        "option_b": "Determining the syntactic structure of a text",
+        "option_c": "Generating speech",
+        "option_d": "Encrypting text",
+        "correct_answer": "B",
+        "description": "<strong>Parsing<\/strong> analyzes a sentence to determine its <em>syntactic (grammatical) structure<\/em>, typically producing a parse tree. It identifies how words relate to each other according to grammar rules."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "What does a Lexical Analyzer do in parsing?",
+        "option_a": "Produces the final parse tree",
+        "option_b": "Decodes a stream of input characters into higher-level tokens",
+        "option_c": "Reports logical errors",
+        "option_d": "Translates the text",
+        "correct_answer": "B",
+        "description": "The <strong>Lexical Analyzer<\/strong> (also called a <em>lexer or scanner<\/em>) reads raw input characters and groups them into meaningful <strong>tokens<\/strong>. It is the first phase of parsing, feeding tokens to the parser for structural analysis."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "What does the Parser consume?",
+        "option_a": "Raw text",
+        "option_b": "The output of the lexical analyzer (tokens)",
+        "option_c": "Speech audio",
+        "option_d": "Images",
+        "correct_answer": "B",
+        "description": "The <strong>Parser<\/strong> takes the <em>tokens produced by the lexical analyzer<\/em> as input and organizes them into a structured representation (parse tree) based on grammar rules. It does not work directly on raw text."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "Which is a type of parser?",
+        "option_a": "Recursive descent parser",
+        "option_b": "Sequential parser",
+        "option_c": "Binary parser",
+        "option_d": "Linear parser",
+        "correct_answer": "A",
+        "description": "A <strong>Recursive Descent Parser<\/strong> is a top-down parser that uses a set of <em>recursive procedures<\/em> to process input, with each procedure corresponding to a grammar rule. It is one of the most common and intuitive parsing techniques."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "Which of the following is a reason why NLP is hard?",
+        "option_a": "Ambiguity",
+        "option_b": "Static vocabulary",
+        "option_c": "Small data sizes",
+        "option_d": "Fixed sentence lengths",
+        "correct_answer": "A",
+        "description": "<strong>Ambiguity<\/strong> is one of the biggest challenges in NLP. Words and sentences can have <em>multiple valid interpretations<\/em>. For example, \"I saw her duck\" could mean you saw her animal or saw her lower her head."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "What does “Ambiguity” mean in NLP?",
+        "option_a": "Words are too long",
+        "option_b": "Words or sentences can have multiple meanings",
+        "option_c": "Text is unreadable",
+        "option_d": "Lack of punctuation",
+        "correct_answer": "B",
+        "description": "<strong>Ambiguity<\/strong> occurs when a word, phrase, or sentence can be interpreted in <em>more than one way<\/em>. Types include <em>lexical ambiguity<\/em> (word has multiple meanings) and <em>syntactic ambiguity<\/em> (sentence structure allows multiple parses)."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "A parse tree is created with the help of a:",
+        "option_a": "Tokenizer",
+        "option_b": "Parser",
+        "option_c": "Lexical analyzer",
+        "option_d": "Generator",
+        "correct_answer": "B",
+        "description": "A <strong>parse tree<\/strong> (or syntax tree) is produced by the <strong>Parser<\/strong>. It visually represents the <em>grammatical structure<\/em> of a sentence, showing how words and phrases are organized according to grammar rules."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "What is Semantic analysis responsible for?",
+        "option_a": "Finding boundaries of sentences",
+        "option_b": "Deriving the meaning of a sentence",
+        "option_c": "Splitting text",
+        "option_d": "Tagging nouns",
+        "correct_answer": "B",
+        "description": "<strong>Semantic analysis<\/strong> goes beyond syntax to determine the actual <em>meaning<\/em> of a sentence. While parsing tells you the structure, semantic analysis interprets <em>what the sentence means<\/em> in context."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "Deep Parsing vs Shallow Parsing is a distinction in:",
+        "option_a": "Tokenization",
+        "option_b": "Parsing Methods",
+        "option_c": "Speech Synthesis",
+        "option_d": "Morphology",
+        "correct_answer": "B",
+        "description": "<strong>Deep parsing<\/strong> produces a full syntactic tree, while <strong>shallow parsing<\/strong> (chunking) only identifies major phrase groups without full detail. Both are types of <em>parsing methods<\/em> that differ in depth of analysis."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "Which of these is an NLP sub-task?",
+        "option_a": "Z-Buffering",
+        "option_b": "Rasterizing",
+        "option_c": "Sentence boundary detection",
+        "option_d": "Ray casting",
+        "correct_answer": "C",
+        "description": "<strong>Sentence boundary detection<\/strong> is an NLP sub-task that identifies where one sentence ends and another begins. It is essential for downstream tasks like parsing and translation. The other options are <em>computer graphics<\/em> techniques."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "What does NLTK stand for (as seen in the Python examples)?",
+        "option_a": "Natural Language Toolkit",
+        "option_b": "Neural Language Tool",
+        "option_c": "Native Linguistic Toolkit",
+        "option_d": "Natural Logic Toolkit",
+        "correct_answer": "A",
+        "description": "<strong>NLTK<\/strong> stands for <strong>Natural Language Toolkit<\/strong>. It is one of the most popular Python libraries for working with human language data, providing tools for tokenization, parsing, classification, and more."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "In the parsing rule “noun_phrase -> determiner, noun”, what does this represent?",
+        "option_a": "A grammar rule",
+        "option_b": "A tokenization rule",
+        "option_c": "A semantic meaning",
+        "option_d": "A morphological rule",
+        "correct_answer": "A",
+        "description": "The rule <code>noun_phrase -> determiner, noun<\/code> is a <strong>grammar (production) rule<\/strong> in a context-free grammar. It states that a noun phrase can consist of a <em>determiner followed by a noun<\/em>, e.g., \"the cat.\""
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "Which tool is used to create a symbol table in NLP?",
+        "option_a": "Tokenizer",
+        "option_b": "Lexical Analyzer",
+        "option_c": "Parser",
+        "option_d": "POS Tagger",
+        "correct_answer": "C",
+        "description": "The <strong>Parser<\/strong> creates and manages a <em>symbol table<\/em> that stores information about identifiers and their attributes encountered during parsing. This table helps track the grammatical elements and their relationships."
+    },
+    {
+        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
+        "question": "Sparsity is one of the reasons NLP is hard. What does it refer to?",
+        "option_a": "Text is too dense",
+        "option_b": "Rare words or phrases that appear infrequently",
+        "option_c": "Too many grammar rules",
+        "option_d": "Lack of computing power",
+        "correct_answer": "B",
+        "description": "<strong>Sparsity<\/strong> in NLP refers to the problem that many words and phrases <em>appear very rarely<\/em> in training data. This makes it difficult for models to learn reliable patterns for infrequent terms, leading to poor performance on rare vocabulary."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "What is Computer Graphics?",
+        "option_a": "Writing software code",
+        "option_b": "Creation, manipulation, and rendering of visual content using computers",
+        "option_c": "Repairing computer hardware",
+        "option_d": "Designing network topologies",
+        "correct_answer": "B",
+        "description": "<strong>Computer Graphics<\/strong> is the field concerned with the <em>creation, manipulation, and rendering<\/em> of visual content using computers. It encompasses everything from 2D images to 3D models and animations."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "Which type of graphics is made up of tiny dots called pixels?",
+        "option_a": "Vector Graphics",
+        "option_b": "Raster Graphics (Bitmap)",
+        "option_c": "3D Graphics",
+        "option_d": "Calligraphic Graphics",
+        "correct_answer": "B",
+        "description": "<strong>Raster Graphics<\/strong> (also called <strong>Bitmap<\/strong>) represent images as a grid of tiny dots called <em>pixels<\/em>. Each pixel stores color information, and together they form the complete image."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "Vector Graphics are created using:",
+        "option_a": "Pixels",
+        "option_b": "Mathematical equations",
+        "option_c": "Raster scans",
+        "option_d": "Photographs",
+        "correct_answer": "B",
+        "description": "<strong>Vector Graphics<\/strong> use <em>mathematical equations<\/em> to define shapes such as lines, curves, and polygons. This allows them to be scaled to any size without losing quality."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "Which type of graphic is ideal for detailed and colorful images like photographs?",
+        "option_a": "Vector",
+        "option_b": "Raster",
+        "option_c": "Interactive",
+        "option_d": "Line-drawing",
+        "correct_answer": "B",
+        "description": "<strong>Raster graphics<\/strong> are ideal for photographs because each pixel can store a unique color value, enabling the representation of <em>complex color variations and fine details<\/em> found in real-world images."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "Which type of graphic is ideal for scalable designs like logos?",
+        "option_a": "Raster",
+        "option_b": "Bitmap",
+        "option_c": "Vector",
+        "option_d": "Pixel",
+        "correct_answer": "C",
+        "description": "<strong>Vector graphics<\/strong> are ideal for logos because they are defined by mathematical equations, meaning they can be <em>scaled to any size<\/em> without losing sharpness or quality."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "What does “Real-Time Graphics” mean?",
+        "option_a": "Graphics rendered hours before display",
+        "option_b": "Graphics rendered instantly as the user interacts",
+        "option_c": "Graphics that represent 3D objects",
+        "option_d": "Graphics used for printed media",
+        "correct_answer": "B",
+        "description": "<strong>Real-Time Graphics<\/strong> are rendered <em>instantly<\/em> in response to user interaction, such as in video games and simulations. The system must generate frames fast enough to appear smooth and responsive."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "In computer graphics animation, what concept is used to generate frames?",
+        "option_a": "Tokenization",
+        "option_b": "Interpolation",
+        "option_c": "Compiling",
+        "option_d": "Parsing",
+        "correct_answer": "B",
+        "description": "<strong>Interpolation<\/strong> is used in animation to automatically generate <em>intermediate frames<\/em> between keyframes. This creates smooth transitions without manually drawing every single frame."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "What does the term “pixel” stand for?",
+        "option_a": "Picture element",
+        "option_b": "Pixel array",
+        "option_c": "Point execution",
+        "option_d": "Polygon element",
+        "correct_answer": "A",
+        "description": "The term <strong>pixel<\/strong> is short for <em>picture element<\/em>. It is the smallest addressable unit on a display screen, and each pixel represents a single point of color in a raster image."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "Pixels consist of which subpixels to create diverse colors?",
+        "option_a": "CMYK",
+        "option_b": "RGB (Red, Green, Blue)",
+        "option_c": "HSL",
+        "option_d": "YCbCr",
+        "correct_answer": "B",
+        "description": "Each pixel is composed of <strong>RGB<\/strong> (<em>Red, Green, Blue<\/em>) subpixels. By varying the intensity of these three primary colors of light, a pixel can produce a wide range of visible colors."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "What signifies the resolution of an image?",
+        "option_a": "The physical size of the monitor",
+        "option_b": "The number of pixels horizontally and vertically",
+        "option_c": "The color depth",
+        "option_d": "The mathematical equations used",
+        "correct_answer": "B",
+        "description": "<strong>Resolution<\/strong> refers to the <em>number of pixels<\/em> arranged horizontally and vertically in an image (e.g., 1920x1080). Higher resolution means more pixels and therefore more detail."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "An image with a larger number of pixels will be:",
+        "option_a": "Less detailed",
+        "option_b": "More accurate and detailed",
+        "option_c": "Smaller in file size",
+        "option_d": "Blurry",
+        "correct_answer": "B",
+        "description": "More pixels means each unit of the image carries finer detail. A <em>higher pixel count<\/em> produces a <strong>more accurate and detailed<\/strong> image because there are more data points representing the visual content."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "What does “Rendering” mean in computer graphics?",
+        "option_a": "Deleting images",
+        "option_b": "Visualizing the data (showing the generated graphics)",
+        "option_c": "Creating audio",
+        "option_d": "Writing text",
+        "correct_answer": "B",
+        "description": "<strong>Rendering<\/strong> is the process of <em>generating a visual image<\/em> from a model or scene description. It converts the internal data representation into the final image that is displayed on screen."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "What is 3D rendering?",
+        "option_a": "Generating a 2D image from a digital 3D scene",
+        "option_b": "Creating a physical 3D object",
+        "option_c": "Printing on a 3D printer",
+        "option_d": "Converting raster to vector",
+        "correct_answer": "A",
+        "description": "<strong>3D rendering<\/strong> is the process of converting a <em>digital 3D scene<\/em> (with models, lights, and cameras) into a <strong>2D image<\/strong>. This is how 3D games and movies produce the images you see on a flat screen."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "Which rendering technique calculates the computer graphics surface?",
+        "option_a": "Scanline",
+        "option_b": "Ray Tracing",
+        "option_c": "Z-Buffer",
+        "option_d": "Texture Mapping",
+        "correct_answer": "A",
+        "description": "<strong>Scanline rendering<\/strong> works by calculating visibility and shading <em>one row of pixels at a time<\/em>. It processes the scene surface line by line, making it an efficient technique for rendering polygonal surfaces."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "What is the Z-Buffer used for?",
+        "option_a": "Creating shadows",
+        "option_b": "Depth calculation and storage",
+        "option_c": "Adding colors",
+        "option_d": "Drawing lines",
+        "correct_answer": "B",
+        "description": "The <strong>Z-Buffer<\/strong> (depth buffer) stores the <em>depth value<\/em> of each pixel, allowing the renderer to determine which objects are in front of others. This ensures correct visibility by keeping only the closest surface at each pixel."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "Which rendering technique manipulates light and dark levels?",
+        "option_a": "Z-Buffer",
+        "option_b": "Shading and lighting",
+        "option_c": "Texture Mapping",
+        "option_d": "Rasterization",
+        "correct_answer": "B",
+        "description": "<strong>Shading and lighting<\/strong> techniques calculate how light interacts with surfaces to determine <em>brightness and color variations<\/em>. They manipulate light and dark levels to give objects a realistic 3D appearance."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "What does Texture\/Bump Mapping display?",
+        "option_a": "3D shapes",
+        "option_b": "Color, material, and object details",
+        "option_c": "Shadows",
+        "option_d": "Mathematical paths",
+        "correct_answer": "B",
+        "description": "<strong>Texture Mapping<\/strong> applies 2D images onto 3D surfaces to show <em>color and material details<\/em>, while <strong>Bump Mapping<\/strong> simulates surface irregularities. Together they add realistic detail without increasing geometric complexity."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "Which technique is useful for creating natural lighting effects?",
+        "option_a": "Ray Tracing",
+        "option_b": "Scanline",
+        "option_c": "Pixel sorting",
+        "option_d": "Interpolation",
+        "correct_answer": "A",
+        "description": "<strong>Ray Tracing<\/strong> simulates the physical behavior of light by <em>tracing rays<\/em> from the camera through each pixel into the scene. This produces highly realistic lighting effects including reflections, refractions, and soft shadows."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "In vector graphics, larger files require:",
+        "option_a": "Larger bitmaps",
+        "option_b": "More mathematical statements\/commands",
+        "option_c": "More pixels",
+        "option_d": "Higher resolution monitors",
+        "correct_answer": "B",
+        "description": "Since <strong>vector graphics<\/strong> are defined by <em>mathematical equations and commands<\/em>, more complex images require more statements to describe their shapes. File size grows with the number of objects, not with resolution."
+    },
+    {
+        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
+        "question": "Animation types include key-framing, morphing, and:",
+        "option_a": "Tween animations",
+        "option_b": "Z-buffering",
+        "option_c": "Rasterizing",
+        "option_d": "Tokenizing",
+        "correct_answer": "A",
+        "description": "<strong>Tween animations<\/strong> (short for <em>in-between<\/em>) automatically generate intermediate frames between two keyframes. Along with <strong>key-framing<\/strong> and <strong>morphing<\/strong>, tweening is a core animation technique in computer graphics."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "What is the primary output device in a traditional graphical system?",
+        "option_a": "Keyboard",
+        "option_b": "Video monitor",
+        "option_c": "Mouse",
+        "option_d": "Printer",
+        "correct_answer": "B",
+        "description": "The <strong>video monitor<\/strong> is the primary <em>output device<\/em> in a traditional graphical system. It displays the visual output generated by the graphics system for the user to see."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "What is the main element of an older video monitor?",
+        "option_a": "LCD",
+        "option_b": "Cathode Ray Tube (CRT)",
+        "option_c": "LED",
+        "option_d": "Plasma",
+        "correct_answer": "B",
+        "description": "The <strong>Cathode Ray Tube (CRT)<\/strong> was the core component of older video monitors. It uses an <em>electron beam<\/em> directed at a phosphor-coated screen to produce images, and was the dominant display technology for decades."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "In a CRT, what emits a beam of electrons?",
+        "option_a": "Phosphor screen",
+        "option_b": "Electron gun",
+        "option_c": "Deflection system",
+        "option_d": "Connector pins",
+        "correct_answer": "B",
+        "description": "The <strong>electron gun<\/strong> is the CRT component that <em>emits a focused beam of electrons<\/em>. These electrons are then directed toward the phosphor-coated screen to create visible light spots."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "What directs the electron beam towards specified positions on the screen?",
+        "option_a": "Focusing and deflection systems",
+        "option_b": "Base",
+        "option_c": "Control grid",
+        "option_d": "Phosphor",
+        "correct_answer": "A",
+        "description": "The <strong>focusing and deflection systems<\/strong> work together to <em>aim the electron beam<\/em> at precise positions on the screen. The focusing system narrows the beam, while the deflection system steers it horizontally and vertically."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "What is the CRT screen coated with?",
+        "option_a": "Silicon",
+        "option_b": "Phosphor",
+        "option_c": "Carbon",
+        "option_d": "Copper",
+        "correct_answer": "B",
+        "description": "The inside face of a CRT screen is coated with <strong>phosphor<\/strong>, a material that <em>emits light when struck by electrons<\/em>. Different phosphor compounds produce different colors and persistence levels."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "What happens when the electron beam hits the phosphor-coated screen?",
+        "option_a": "It absorbs light",
+        "option_b": "It emits a small spot of light",
+        "option_c": "It changes color permanently",
+        "option_d": "It creates a sound",
+        "correct_answer": "B",
+        "description": "When the electron beam strikes the <strong>phosphor<\/strong> coating, the phosphor becomes excited and <em>emits a small spot of visible light<\/em>. This process is called <em>phosphorescence<\/em>, and the light fades quickly, requiring constant refreshing."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "In a Raster Scan system, how is the electron beam swept across the screen?",
+        "option_a": "Randomly",
+        "option_b": "Only where lines are drawn",
+        "option_c": "One row at a time from top to bottom",
+        "option_d": "Diagonally",
+        "correct_answer": "C",
+        "description": "In a <strong>Raster Scan<\/strong> system, the electron beam sweeps across the screen <em>one horizontal row at a time, from top to bottom<\/em>. This systematic scanning pattern covers the entire screen to form a complete image."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "Where is the picture definition (intensity values) stored in a raster scan system?",
+        "option_a": "Flash memory",
+        "option_b": "Refresh Buffer or Frame Buffer",
+        "option_c": "Hard Drive",
+        "option_d": "ROM",
+        "correct_answer": "B",
+        "description": "The <strong>Refresh Buffer<\/strong> (also called the <strong>Frame Buffer<\/strong>) is a memory area that stores the <em>intensity value for every pixel<\/em> on the screen. The display controller reads this buffer repeatedly to refresh the image."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "In a raster scan, what is “Horizontal retrace”?",
+        "option_a": "The beam returning to the left side of the screen to begin the next scan line",
+        "option_b": "The beam returning to the top of the screen",
+        "option_c": "The beam drawing a horizontal line",
+        "option_d": "The beam turning off permanently",
+        "correct_answer": "A",
+        "description": "<strong>Horizontal retrace<\/strong> is the process where the electron beam <em>returns from the right side back to the left side<\/em> of the screen after completing one scan line, positioning itself to begin the next line. The beam is blanked during this movement."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "What is another name for a Random Scan display?",
+        "option_a": "Raster display",
+        "option_b": "Vector display (or stroke-writing display)",
+        "option_c": "Pixel display",
+        "option_d": "Bitmap display",
+        "correct_answer": "B",
+        "description": "A <strong>Random Scan display<\/strong> is also known as a <strong>Vector display<\/strong> or <em>stroke-writing display<\/em>. It draws images by directing the beam along the paths of lines and curves rather than scanning the entire screen row by row."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "How does a Random Scan system direct the electron beam?",
+        "option_a": "Left to right, top to bottom",
+        "option_b": "Only to the part of the screen where the picture is to be drawn",
+        "option_c": "In a circular motion",
+        "option_d": "Bottom to top",
+        "correct_answer": "B",
+        "description": "A <strong>Random Scan<\/strong> system directs the electron beam <em>only to the areas where the picture is to be drawn<\/em>. Unlike raster scan, it does not sweep the entire screen, making it efficient for line-drawing applications."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "Where are the line-drawing commands stored in a Random Scan system?",
+        "option_a": "Refresh display file",
+        "option_b": "Frame Buffer",
+        "option_c": "Z-Buffer",
+        "option_d": "Raster Buffer",
+        "correct_answer": "A",
+        "description": "In a Random Scan system, drawing instructions are stored in a <strong>Refresh Display File<\/strong> (also called a <em>display list<\/em>). This file contains the sequence of line-drawing commands that the system executes repeatedly to refresh the image."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "How many times per second do random-scan displays typically redraw the picture?",
+        "option_a": "10 to 20 times",
+        "option_b": "30 to 60 times",
+        "option_c": "100 to 120 times",
+        "option_d": "1 to 5 times",
+        "correct_answer": "B",
+        "description": "Random-scan displays typically redraw the image <strong>30 to 60 times per second<\/strong>. This refresh rate is fast enough to avoid visible <em>flickering<\/em> and provide a stable image to the viewer."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "Drawing maps is an application of Computer Graphics known as:",
+        "option_a": "Cartography",
+        "option_b": "Typography",
+        "option_c": "Medical Imaging",
+        "option_d": "Architecture",
+        "correct_answer": "A",
+        "description": "<strong>Cartography<\/strong> is the science and art of <em>map-making<\/em>. Computer graphics has revolutionized cartography by enabling the creation of detailed, interactive, and dynamically updated digital maps."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "Which CG application replaces blueprints and hand drawings for buildings?",
+        "option_a": "Typography",
+        "option_b": "Architecture",
+        "option_c": "Entertainment",
+        "option_d": "Medical Imaging",
+        "correct_answer": "B",
+        "description": "Computer graphics in <strong>Architecture<\/strong> has replaced traditional <em>blueprints and hand drawings<\/em> with digital tools like CAD software. Architects can now create precise 2D plans and 3D visualizations of buildings."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "Flight simulators are an example of which CG application?",
+        "option_a": "Training",
+        "option_b": "Cartography",
+        "option_c": "Typography",
+        "option_d": "Business presentation",
+        "correct_answer": "A",
+        "description": "Flight simulators are a key example of CG used for <strong>Training<\/strong>. They provide <em>realistic, risk-free environments<\/em> where pilots can practice flying without the dangers and costs of real aircraft."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "MRIs and CAT scans are examples of which CG application?",
+        "option_a": "Medical imaging",
+        "option_b": "Art",
+        "option_c": "Entertainment",
+        "option_d": "Architecture",
+        "correct_answer": "A",
+        "description": "<strong>Medical imaging<\/strong> uses computer graphics to <em>visualize the internal structures<\/em> of the human body. Technologies like <strong>MRI<\/strong> and <strong>CAT scans<\/strong> generate detailed images that help doctors diagnose and treat conditions."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "What does Typography in CG refer to?",
+        "option_a": "Flight simulation",
+        "option_b": "The use of character images in publishing",
+        "option_c": "Replacing physical models",
+        "option_d": "Weather maps",
+        "correct_answer": "B",
+        "description": "<strong>Typography<\/strong> in computer graphics refers to the <em>use of character images and fonts in publishing<\/em>. CG enables precise control over typefaces, layouts, and text rendering for both print and digital media."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "Using CG to replace physical modeling and enactments is called:",
+        "option_a": "Cartography",
+        "option_b": "Simulation and modeling",
+        "option_c": "Satellite Imaging",
+        "option_d": "Photo Enhancement",
+        "correct_answer": "B",
+        "description": "<strong>Simulation and modeling<\/strong> uses computer graphics to create <em>virtual representations<\/em> of real-world objects and processes. This replaces the need for expensive physical models and real-world enactments."
+    },
+    {
+        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
+        "question": "Graphical User Interfaces (GUIs) use CG to:",
+        "option_a": "Draw maps",
+        "option_b": "Allow the user to interact with a computer using a mouse-oriented paradigm",
+        "option_c": "Examine internal body parts",
+        "option_d": "Predict weather",
+        "correct_answer": "B",
+        "description": "<strong>GUIs<\/strong> use computer graphics to provide a <em>visual, mouse-oriented interface<\/em> for interacting with computers. Icons, windows, menus, and buttons are all graphical elements that make computing more intuitive than command-line interfaces."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "What does mobile application development refer to?",
+        "option_a": "Creating software for desktop computers",
+        "option_b": "Creating software applications that run on mobile devices",
+        "option_c": "Building computer hardware",
+        "option_d": "Designing web servers",
+        "correct_answer": "B",
+        "description": "<strong>Mobile application development<\/strong> refers to the process of creating software applications that run on <em>mobile devices<\/em> such as smartphones and tablets, rather than desktop computers or servers."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "Which of the following is a difference between Mobile and Desktop development?",
+        "option_a": "Mobile has larger screens",
+        "option_b": "Mobile has more constrained memory, CPU, and battery life",
+        "option_c": "Desktop focuses strictly on touch interfaces",
+        "option_d": "Mobile has greater hardware capacity",
+        "correct_answer": "B",
+        "description": "Mobile devices have <strong>more constrained resources<\/strong> compared to desktops, including limited <em>memory<\/em>, <em>CPU power<\/em>, and <em>battery life<\/em>, which developers must account for when building mobile apps."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "Native Apps are developed for:",
+        "option_a": "Multiple platforms simultaneously using web tech",
+        "option_b": "A specific platform (e.g., Android, iOS)",
+        "option_c": "Web browsers only",
+        "option_d": "Desktop computers only",
+        "correct_answer": "B",
+        "description": "<strong>Native apps<\/strong> are built specifically for <em>one platform<\/em> (e.g., Android or iOS) using platform-specific tools and languages, which allows them to fully leverage device capabilities."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "What is a key advantage of Native Apps?",
+        "option_a": "Single codebase for all platforms",
+        "option_b": "Better performance and richer user experience",
+        "option_c": "Platform independence",
+        "option_d": "No need for programming",
+        "correct_answer": "B",
+        "description": "Because native apps are built for a specific platform, they offer <strong>better performance<\/strong> and a <strong>richer user experience<\/strong> by directly accessing device hardware and platform-specific UI components."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "What is a disadvantage of Native Apps?",
+        "option_a": "Poor performance",
+        "option_b": "No access to device hardware",
+        "option_c": "Requires multiple codebases for different platforms",
+        "option_d": "Cannot be published on App Stores",
+        "correct_answer": "C",
+        "description": "A major drawback of native development is that it <strong>requires separate codebases<\/strong> for each platform (e.g., one for Android, one for iOS), increasing development time and cost."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "Hybrid Apps are developed using:",
+        "option_a": "Swift and Kotlin",
+        "option_b": "Web technologies (HTML, CSS, JavaScript)",
+        "option_c": "C and C++",
+        "option_d": "Assembly language",
+        "correct_answer": "B",
+        "description": "<strong>Hybrid apps<\/strong> are built using <em>web technologies<\/em> like <code>HTML<\/code>, <code>CSS<\/code>, and <code>JavaScript<\/code>, then wrapped in a native container to run on multiple platforms."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "Which of the following is an advantage of Hybrid Apps?",
+        "option_a": "Better performance than Native Apps",
+        "option_b": "Single codebase for multiple platforms",
+        "option_c": "Full access to all new OS features instantly",
+        "option_d": "No internet connection needed ever",
+        "correct_answer": "B",
+        "description": "The main advantage of hybrid apps is maintaining a <strong>single codebase<\/strong> that works across multiple platforms, reducing development effort and cost compared to building separate native apps."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "Which programming languages are primarily used for Native Android Development?",
+        "option_a": "Swift, Objective-C",
+        "option_b": "Java, Kotlin",
+        "option_c": "JavaScript, HTML",
+        "option_d": "C#, .NET",
+        "correct_answer": "B",
+        "description": "Native Android apps are primarily developed using <code>Java<\/code> and <code>Kotlin<\/code>. Kotlin is now Google's preferred language, but Java remains widely used in existing Android projects."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "Which programming languages are used for Native iOS Development?",
+        "option_a": "Java, Kotlin",
+        "option_b": "Swift, Objective-C",
+        "option_c": "Dart, Flutter",
+        "option_d": "Python, Ruby",
+        "correct_answer": "B",
+        "description": "Native iOS development uses <code>Swift<\/code> (Apple's modern language) and <code>Objective-C<\/code> (the original iOS language). Swift is now the preferred choice for new iOS projects."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "Which framework is used for Cross-Platform Development using Dart?",
+        "option_a": "React Native",
+        "option_b": "Xamarin",
+        "option_c": "Flutter",
+        "option_d": "Ionic",
+        "correct_answer": "C",
+        "description": "<strong>Flutter<\/strong>, developed by Google, uses the <code>Dart<\/code> programming language to build cross-platform apps for Android, iOS, web, and desktop from a single codebase."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "In Mobile Application Architecture, the Presentation Layer is responsible for:",
+        "option_a": "Database storage",
+        "option_b": "Server communication",
+        "option_c": "Designing the user interface and UX",
+        "option_d": "Processing business logic",
+        "correct_answer": "C",
+        "description": "The <strong>Presentation Layer<\/strong> handles <em>designing the user interface (UI)<\/em> and <em>user experience (UX)<\/em>. It is what the user sees and interacts with directly."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "Which layer manages the storage and retrieval of app data?",
+        "option_a": "Presentation Layer",
+        "option_b": "Business Logic Layer",
+        "option_c": "Data Access Layer",
+        "option_d": "Network Layer",
+        "correct_answer": "C",
+        "description": "The <strong>Data Access Layer<\/strong> is responsible for managing how data is <em>stored<\/em>, <em>retrieved<\/em>, and <em>persisted<\/em>, whether from local databases, files, or remote servers."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "In the Mobile App Development Process, what is done during the Design phase?",
+        "option_a": "Writing code",
+        "option_b": "Creating wireframes and mockups",
+        "option_c": "Publishing on the App Store",
+        "option_d": "Database migration",
+        "correct_answer": "B",
+        "description": "During the <strong>Design phase<\/strong>, developers and designers create <em>wireframes<\/em> and <em>mockups<\/em> to visually plan the app's layout, navigation, and user interface before writing code."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "What is “Device fragmentation” testing?",
+        "option_a": "Breaking the device to test durability",
+        "option_b": "Testing the app on multiple devices, simulators, and emulators",
+        "option_c": "Testing only on the latest iPhone",
+        "option_d": "Checking internet speed",
+        "correct_answer": "B",
+        "description": "<strong>Device fragmentation testing<\/strong> means testing the app on <em>multiple devices, simulators, and emulators<\/em> to ensure it works correctly across different screen sizes, hardware, and OS versions."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "According to global statistics (2021), which Mobile OS has the highest market share?",
+        "option_a": "iOS",
+        "option_b": "Android",
+        "option_c": "Windows Phone",
+        "option_d": "KaiOS",
+        "correct_answer": "B",
+        "description": "<strong>Android<\/strong> holds the highest global mobile OS market share, dominating with over 70% worldwide due to its open-source nature and adoption by many device manufacturers."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "Which OS is developed by Google and is open-source?",
+        "option_a": "iOS",
+        "option_b": "Windows",
+        "option_c": "Android",
+        "option_d": "Symbian",
+        "correct_answer": "C",
+        "description": "<strong>Android<\/strong> is developed by <em>Google<\/em> and released as an <em>open-source<\/em> operating system, allowing manufacturers to customize and distribute it freely on their devices."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "What is an API Level in Android?",
+        "option_a": "The battery percentage",
+        "option_b": "An integer value identifying the framework API revision offered by a version of Android",
+        "option_c": "The size of the screen",
+        "option_d": "The speed of the processor",
+        "correct_answer": "B",
+        "description": "An <strong>API Level<\/strong> is an <em>integer value<\/em> that uniquely identifies the framework API revision offered by a specific version of the Android platform. Higher API levels correspond to newer Android versions."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "In the Android Architecture, what does the Linux Kernel handle?",
+        "option_a": "User interface design",
+        "option_b": "Device drivers, power, and memory management",
+        "option_c": "Compiling Java code",
+        "option_d": "Web browsing",
+        "correct_answer": "B",
+        "description": "The <strong>Linux Kernel<\/strong> is the foundation of Android architecture, handling low-level tasks such as <em>device drivers<\/em>, <em>power management<\/em>, and <em>memory management<\/em>."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "What does the Dalvik Virtual Machine (DVM) do in the Android Runtime?",
+        "option_a": "Renders 3D graphics",
+        "option_b": "Responsible for running the Android application",
+        "option_c": "Manages phone calls",
+        "option_d": "Connects to Wi-Fi",
+        "correct_answer": "B",
+        "description": "The <strong>Dalvik Virtual Machine (DVM)<\/strong> is responsible for <em>running Android applications<\/em>. It executes <code>.dex<\/code> (Dalvik Executable) files optimized for mobile devices with limited memory and CPU."
+    },
+    {
+        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
+        "question": "Which layer provides higher-level services to applications in the form of Java classes?",
+        "option_a": "Linux Kernel",
+        "option_b": "Application Framework",
+        "option_c": "Native Libraries",
+        "option_d": "Hardware",
+        "correct_answer": "B",
+        "description": "The <strong>Application Framework<\/strong> layer provides higher-level services as <em>Java classes<\/em>, including Activity Manager, Content Providers, and other APIs that developers use to build apps."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "Who originally released the Java programming language in 1995?",
+        "option_a": "Microsoft",
+        "option_b": "Google",
+        "option_c": "Sun Microsystems",
+        "option_d": "Apple",
+        "correct_answer": "C",
+        "description": "<strong>Sun Microsystems<\/strong> originally released Java in 1995. It was later acquired by <em>Oracle Corporation<\/em> in 2010, which now maintains and develops Java."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "Java follows the “WORA” principle. What does it stand for?",
+        "option_a": "Write Once, Read Always",
+        "option_b": "Write Once, Run Anywhere",
+        "option_c": "Work On Random Apps",
+        "option_d": "Windows, OS X, Raspbian, Android",
+        "correct_answer": "B",
+        "description": "<strong>WORA<\/strong> stands for <em>Write Once, Run Anywhere<\/em>. This means Java code compiled into bytecode can run on any platform that has a <code>JVM<\/code>, without recompilation."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "Which edition of Java is used for developing mobile applications (historically)?",
+        "option_a": "J2SE",
+        "option_b": "J2EE",
+        "option_c": "Java ME (J2ME)",
+        "option_d": "Java FX",
+        "correct_answer": "C",
+        "description": "<strong>Java ME (J2ME)<\/strong> — the <em>Micro Edition<\/em> — was historically designed for developing applications on mobile and embedded devices with limited resources."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "What does JDK stand for?",
+        "option_a": "Java Development Kit",
+        "option_b": "Java Design Kit",
+        "option_c": "Java Deployment Kit",
+        "option_d": "Java Data Kit",
+        "correct_answer": "A",
+        "description": "<strong>JDK<\/strong> stands for <em>Java Development Kit<\/em>. It includes the tools needed to develop Java programs, such as the compiler (<code>javac<\/code>), the JRE, and other development utilities."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "What does the Java Runtime Environment (JRE) contain?",
+        "option_a": "Compilers and debuggers only",
+        "option_b": "JVM and Java Packages\/Classes libraries",
+        "option_c": "Source code of Java",
+        "option_d": "HTML files",
+        "correct_answer": "B",
+        "description": "The <strong>JRE<\/strong> contains the <code>JVM<\/code> and the <em>Java class libraries<\/em> (packages). It provides everything needed to <em>run<\/em> Java applications but not to develop them."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "What is the role of the Java Virtual Machine (JVM)?",
+        "option_a": "To write Java code",
+        "option_b": "To compile Java code to bytecode",
+        "option_c": "To translate and run Java bytecode on the underlying platform",
+        "option_d": "To edit images",
+        "correct_answer": "C",
+        "description": "The <strong>JVM<\/strong> translates and runs Java <em>bytecode<\/em> on the underlying platform. It acts as an abstraction layer, enabling Java's <em>platform independence<\/em>."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "Which command is used to compile a Java file (e.g., Party.java)?",
+        "option_a": "java",
+        "option_b": "javac",
+        "option_c": "jvm",
+        "option_d": "compile",
+        "correct_answer": "B",
+        "description": "The <code>javac<\/code> command (Java Compiler) is used to compile a <code>.java<\/code> source file into <em>bytecode<\/em>, producing a <code>.class<\/code> file."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "After compilation, a Java source file (.java) is converted into:",
+        "option_a": "An executable file (.exe)",
+        "option_b": "A text file (.txt)",
+        "option_c": "Bytecode (.class file)",
+        "option_d": "Machine code (.bin)",
+        "correct_answer": "C",
+        "description": "The Java compiler converts source code into <strong>bytecode<\/strong> stored in a <code>.class<\/code> file. This bytecode is platform-independent and executed by the <em>JVM<\/em>."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "Which of the following is the correct syntax for the main method in Java?",
+        "option_a": "public void main(String args)",
+        "option_b": "public static void main(String[] args)",
+        "option_c": "static public main(void)",
+        "option_d": "void main()",
+        "correct_answer": "B",
+        "description": "The correct signature is <code>public static void main(String[] args)<\/code>. It must be <strong>public<\/strong> (accessible), <strong>static<\/strong> (no object needed), and <strong>void<\/strong> (returns nothing)."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "Java class names should conventionally begin with:",
+        "option_a": "A lower case letter",
+        "option_b": "An Upper Case letter",
+        "option_c": "A number",
+        "option_d": "An underscore",
+        "correct_answer": "B",
+        "description": "By Java naming conventions, class names should begin with an <strong>upper case letter<\/strong> and use <em>CamelCase<\/em> (e.g., <code>MyClass<\/code>, <code>StudentRecord<\/code>)."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "Java is case sensitive.",
+        "option_a": "True",
+        "option_b": "False",
+        "option_c": "Only for variable names",
+        "option_d": "Only for class names",
+        "correct_answer": "A",
+        "description": "This is <strong>True<\/strong>. Java is <em>case sensitive<\/em>, meaning <code>myVariable<\/code> and <code>MyVariable<\/code> are treated as completely different identifiers."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "Which of the following is a legal Java identifier?",
+        "option_a": "123abc",
+        "option_b": "-salary",
+        "option_c": "_value",
+        "option_d": "class",
+        "correct_answer": "C",
+        "description": "Java identifiers can start with a <strong>letter<\/strong>, <strong>underscore (_)<\/strong>, or <strong>dollar sign ($)<\/strong>. They cannot start with a digit or be a reserved keyword. So <code>_value<\/code> is valid, while <code>123abc<\/code>, <code>-salary<\/code>, and <code>class<\/code> are not."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "Which of the following is a primitive data type in Java?",
+        "option_a": "String",
+        "option_b": "Scanner",
+        "option_c": "int",
+        "option_d": "Array",
+        "correct_answer": "C",
+        "description": "<code>int<\/code> is a <strong>primitive data type<\/strong> in Java. The eight primitives are: <code>byte<\/code>, <code>short<\/code>, <code>int<\/code>, <code>long<\/code>, <code>float<\/code>, <code>double<\/code>, <code>char<\/code>, and <code>boolean<\/code>."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "What is the size of the ‘int’ data type in Java?",
+        "option_a": "8 bits",
+        "option_b": "16 bits",
+        "option_c": "32 bits",
+        "option_d": "64 bits",
+        "correct_answer": "C",
+        "description": "The <code>int<\/code> data type in Java is <strong>32 bits<\/strong> (4 bytes) and can store values from -2,147,483,648 to 2,147,483,647."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "Which data type is used to represent a true\/false condition?",
+        "option_a": "char",
+        "option_b": "boolean",
+        "option_c": "double",
+        "option_d": "short",
+        "correct_answer": "B",
+        "description": "The <code>boolean<\/code> data type stores only two possible values: <strong>true<\/strong> or <strong>false<\/strong>. It is used for conditional logic and flags."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "Which keyword is used to declare a constant variable in Java?",
+        "option_a": "const",
+        "option_b": "final",
+        "option_c": "static",
+        "option_d": "immutable",
+        "correct_answer": "B",
+        "description": "The <code>final<\/code> keyword makes a variable a <strong>constant<\/strong>, meaning its value <em>cannot be changed<\/em> once assigned. Convention is to use ALL_CAPS for naming constants."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "What is the result of implicit casting (Type Widening)?",
+        "option_a": "Converting a smaller type to a larger type size automatically",
+        "option_b": "Converting a larger type to a smaller type size manually",
+        "option_c": "Converting a String to an int",
+        "option_d": "Converting a boolean to an int",
+        "correct_answer": "A",
+        "description": "<strong>Implicit casting<\/strong> (type widening) automatically converts a <em>smaller<\/em> data type to a <em>larger<\/em> one (e.g., <code>int<\/code> to <code>long<\/code>) without data loss or explicit syntax."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "Which operator is used for finding the remainder of a division (Modulus)?",
+        "option_a": "\/",
+        "option_b": "%",
+        "option_c": "*",
+        "option_d": "\/\/",
+        "correct_answer": "B",
+        "description": "The <code>%<\/code> (modulus) operator returns the <strong>remainder<\/strong> of a division. For example, <code>10 % 3<\/code> equals <em>1<\/em> because 10 divided by 3 leaves a remainder of 1."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "What does the post-increment operator (var++) do?",
+        "option_a": "Increments the value then evaluates",
+        "option_b": "Evaluates to the original value, then increments by 1",
+        "option_c": "Decrements the value",
+        "option_d": "Multiplies the value by 2",
+        "correct_answer": "B",
+        "description": "The <strong>post-increment<\/strong> operator <code>var++<\/code> first <em>evaluates to the original value<\/em> of the variable, then increments it by 1. This differs from pre-increment (<code>++var<\/code>) which increments first."
+    },
+    {
+        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
+        "question": "Which of the following is NOT a characteristic of Java?",
+        "option_a": "Object-Oriented",
+        "option_b": "Platform Independent",
+        "option_c": "Low-level programming language",
+        "option_d": "Secure",
+        "correct_answer": "C",
+        "description": "Java is <em>not<\/em> a <strong>low-level programming language<\/strong>. It is a <em>high-level<\/em>, object-oriented language that abstracts away hardware details through the JVM."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "What do conditional statements allow a program to do?",
+        "option_a": "Run the program infinitely",
+        "option_b": "Decide whether to execute a particular statement",
+        "option_c": "Define a variable",
+        "option_d": "Import a package",
+        "correct_answer": "B",
+        "description": "<strong>Conditional statements<\/strong> allow a program to <em>decide whether to execute<\/em> a particular block of code based on whether a condition is true or false, enabling branching logic."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "Which of the following is a Java conditional statement?",
+        "option_a": "for loop",
+        "option_b": "while loop",
+        "option_c": "if statement",
+        "option_d": "break",
+        "correct_answer": "C",
+        "description": "The <code>if<\/code> statement is the most basic <strong>conditional statement<\/strong> in Java. Other conditional constructs include <code>if-else<\/code>, <code>else if<\/code>, and <code>switch<\/code>."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "In an `if` statement, the condition must evaluate to:",
+        "option_a": "An integer",
+        "option_b": "A string",
+        "option_c": "A boolean expression (true or false)",
+        "option_d": "A character",
+        "correct_answer": "C",
+        "description": "An <code>if<\/code> statement's condition must evaluate to a <strong>boolean expression<\/strong> — either <code>true<\/code> or <code>false<\/code>. Unlike some languages, Java does <em>not<\/em> allow non-boolean types as conditions."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "What happens if the condition in an `if` statement evaluates to false?",
+        "option_a": "The program crashes",
+        "option_b": "The statement inside the `if` block is executed",
+        "option_c": "The statement inside the `if` block is skipped",
+        "option_d": "The program restarts",
+        "correct_answer": "C",
+        "description": "When the <code>if<\/code> condition is <strong>false<\/strong>, the statement inside the if block is <em>skipped entirely<\/em>. Execution continues with the next statement after the block (or the <code>else<\/code> block if present)."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "Which relational operator in Java means “not equal to”?",
+        "option_a": "==",
+        "option_b": "!=",
+        "option_c": "<>",
+        "option_d": "=!",
+        "correct_answer": "B",
+        "description": "The <code>!=<\/code> operator checks if two values are <strong>not equal<\/strong>. It returns <code>true<\/code> when the operands have different values and <code>false<\/code> when they are equal."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "Which operator represents Logical AND?",
+        "option_a": "||",
+        "option_b": "!",
+        "option_c": "&&",
+        "option_d": "&",
+        "correct_answer": "C",
+        "description": "The <code>&&<\/code> operator represents <strong>Logical AND<\/strong> in Java. It is a <em>short-circuit<\/em> operator, meaning if the left operand is false, the right operand is not evaluated."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "The expression `a && b` is true ONLY if:",
+        "option_a": "a is true and b is false",
+        "option_b": "a is false and b is true",
+        "option_c": "Both a and b are true",
+        "option_d": "Either a or b is true",
+        "correct_answer": "C",
+        "description": "The <strong>Logical AND<\/strong> (<code>&&<\/code>) expression is <code>true<\/code> only when <em>both<\/em> operands <code>a<\/code> and <code>b<\/code> are true. If either is false, the entire expression is false."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "Which operator represents Logical OR?",
+        "option_a": "&&",
+        "option_b": "||",
+        "option_c": "!",
+        "option_d": "|",
+        "correct_answer": "B",
+        "description": "The <code>||<\/code> operator represents <strong>Logical OR<\/strong> in Java. It returns <code>true<\/code> if <em>at least one<\/em> of the operands is true."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "The expression `a || b` is false ONLY if:",
+        "option_a": "Both a and b are false",
+        "option_b": "a is true and b is false",
+        "option_c": "a is false and b is true",
+        "option_d": "Both a and b are true",
+        "correct_answer": "A",
+        "description": "The <strong>Logical OR<\/strong> (<code>||<\/code>) expression is <code>false<\/code> only when <em>both<\/em> operands <code>a<\/code> and <code>b<\/code> are false. If either is true, the result is true."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "What does the Logical NOT (`!`) operator do?",
+        "option_a": "Reverses the boolean state of its operand",
+        "option_b": "Adds two numbers",
+        "option_c": "Compares two strings",
+        "option_d": "Exits the program",
+        "correct_answer": "A",
+        "description": "The <strong>Logical NOT<\/strong> (<code>!<\/code>) operator <em>reverses<\/em> the boolean state of its operand. If the operand is <code>true<\/code>, it becomes <code>false<\/code>, and vice versa."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "What is the purpose of the `else` clause in an `if-else` statement?",
+        "option_a": "To repeat the `if` block",
+        "option_b": "To execute a statement when the `if` condition is false",
+        "option_c": "To declare a new variable",
+        "option_d": "To catch exceptions",
+        "correct_answer": "B",
+        "description": "The <code>else<\/code> clause provides an <strong>alternative path<\/strong> of execution. When the <code>if<\/code> condition evaluates to <em>false<\/em>, the code inside the <code>else<\/code> block runs instead."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "Can `if` statements be nested inside other `if` statements?",
+        "option_a": "Yes",
+        "option_b": "No",
+        "option_c": "Only once",
+        "option_d": "Only in `switch` blocks",
+        "correct_answer": "A",
+        "description": "<strong>Yes<\/strong>, <code>if<\/code> statements can be <em>nested<\/em> inside other <code>if<\/code> statements. This allows for checking multiple conditions in a hierarchical manner."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "What does the `switch` statement evaluate?",
+        "option_a": "A boolean condition",
+        "option_b": "An expression whose result is matched to a `case` value",
+        "option_c": "A floating-point number",
+        "option_d": "A string length",
+        "correct_answer": "B",
+        "description": "The <code>switch<\/code> statement evaluates an <strong>expression<\/strong> and matches its result against defined <em>case values<\/em>. When a match is found, the corresponding block of code executes."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "What type of values can the `switch` expression evaluate?",
+        "option_a": "Integral types (byte, short, int, long) or char",
+        "option_b": "Boolean only",
+        "option_c": "Float and double only",
+        "option_d": "Objects only",
+        "correct_answer": "A",
+        "description": "The <code>switch<\/code> expression can evaluate <strong>integral types<\/strong> (<code>byte<\/code>, <code>short<\/code>, <code>int<\/code>, <code>long<\/code>) or <code>char<\/code>. Modern Java also supports <code>String<\/code> and <code>enum<\/code> types."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "What keyword is typically used at the end of each `case` block?",
+        "option_a": "continue",
+        "option_b": "stop",
+        "option_c": "break",
+        "option_d": "exit",
+        "correct_answer": "C",
+        "description": "The <code>break<\/code> keyword is used at the end of each case to <strong>exit the switch statement<\/strong>. Without it, execution falls through to the next case."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "What happens if a `break` statement is omitted in a `switch` case?",
+        "option_a": "Compile error",
+        "option_b": "Flow of control continues into the next case (fall-through)",
+        "option_c": "The program terminates",
+        "option_d": "The `default` case is executed immediately",
+        "correct_answer": "B",
+        "description": "Without a <code>break<\/code>, the program exhibits <strong>fall-through<\/strong> behavior — execution <em>continues into the next case block<\/em> regardless of whether its value matches, until a break or the end of the switch is reached."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "The `default` case in a `switch` statement is executed when:",
+        "option_a": "A match is found",
+        "option_b": "No other case value matches",
+        "option_c": "The `break` statement is encountered",
+        "option_d": "At the beginning of the switch",
+        "correct_answer": "B",
+        "description": "The <code>default<\/code> case acts as a <strong>catch-all<\/strong> and executes when <em>no other case value matches<\/em> the switch expression. It is similar to the <code>else<\/code> in an if-else chain."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "Is the `default` case mandatory in a `switch` statement?",
+        "option_a": "Yes",
+        "option_b": "No",
+        "option_c": "Only if there are more than 2 cases",
+        "option_d": "Only when using integers",
+        "correct_answer": "B",
+        "description": "<strong>No<\/strong>, the <code>default<\/code> case is <em>optional<\/em> in a switch statement. However, it is considered good practice to include one to handle unexpected values."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "Which operator has higher precedence?",
+        "option_a": "Logical OR (||)",
+        "option_b": "Logical AND (&&)",
+        "option_c": "Logical NOT (!)",
+        "option_d": "Assignment (=)",
+        "correct_answer": "C",
+        "description": "The <strong>Logical NOT<\/strong> (<code>!<\/code>) operator has the highest precedence among logical operators. The precedence order is: <code>!<\/code> (NOT) > <code>&&<\/code> (AND) > <code>||<\/code> (OR)."
+    },
+    {
+        "lecture": "Lecture 7: Conditional Statements in Java (AI.pdf)",
+        "question": "What is a short-circuited operator?",
+        "option_a": "It crashes the program on errors",
+        "option_b": "It stops evaluating if the left operand determines the result",
+        "option_c": "It skips the compilation phase",
+        "option_d": "It connects two hardware devices",
+        "correct_answer": "B",
+        "description": "A <strong>short-circuit operator<\/strong> (<code>&&<\/code> or <code>||<\/code>) <em>stops evaluating<\/em> as soon as the left operand determines the final result. For example, in <code>false && x<\/code>, <code>x<\/code> is never evaluated."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "Which class can be used to take console input from the user in Java?",
+        "option_a": "Scanner",
+        "option_b": "String",
+        "option_c": "System",
+        "option_d": "Math",
+        "correct_answer": "A",
+        "description": "The <code>Scanner<\/code> class (from <code>java.util<\/code> package) is used to read <strong>console input<\/strong> from the user. It provides methods for reading various data types like integers, doubles, and strings."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "To create a Scanner object for taking input from the keyboard, you write: `Scanner s = new Scanner(...)`?",
+        "option_a": "System.out",
+        "option_b": "System.in",
+        "option_c": "System.read",
+        "option_d": "Keyboard.in",
+        "correct_answer": "B",
+        "description": "You pass <code>System.in<\/code> to the Scanner constructor to read from the <strong>standard input stream<\/strong> (keyboard). <code>System.in<\/code> represents the default input device."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "Which Scanner method is used to read an integer input?",
+        "option_a": "nextString()",
+        "option_b": "nextDouble()",
+        "option_c": "nextInt()",
+        "option_d": "readInt()",
+        "correct_answer": "C",
+        "description": "The <code>nextInt()<\/code> method reads the next token from the input as an <strong>integer<\/strong>. Other methods include <code>nextDouble()<\/code>, <code>nextLine()<\/code>, and <code>next()<\/code> for different data types."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "Which class provides methods to show graphical dialog boxes for input\/output?",
+        "option_a": "JOptionPane",
+        "option_b": "JFrame",
+        "option_c": "Scanner",
+        "option_d": "DialogBox",
+        "correct_answer": "A",
+        "description": "<code>JOptionPane<\/code> (from <code>javax.swing<\/code>) provides static methods to display <strong>graphical dialog boxes<\/strong> for input and output, offering a GUI alternative to console-based I\/O."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "Which method displays an input dialog box?",
+        "option_a": "JOptionPane.showMessageDialog()",
+        "option_b": "JOptionPane.showInputDialog()",
+        "option_c": "JOptionPane.printMessage()",
+        "option_d": "JOptionPane.display()",
+        "correct_answer": "B",
+        "description": "<code>JOptionPane.showInputDialog()<\/code> displays a dialog box with a <strong>text field<\/strong> where the user can type input. It returns the input as a <code>String<\/code>."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "Which method displays a message dialog box (output)?",
+        "option_a": "JOptionPane.showMessageDialog()",
+        "option_b": "JOptionPane.showInputDialog()",
+        "option_c": "JOptionPane.out()",
+        "option_d": "JOptionPane.getText()",
+        "correct_answer": "A",
+        "description": "<code>JOptionPane.showMessageDialog()<\/code> displays a <strong>message dialog<\/strong> box to show output to the user. It takes a parent component and the message string as parameters."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "A syntax error means:",
+        "option_a": "The program runs but produces wrong results",
+        "option_b": "The code does not follow the correct sequence\/rules of the programming language",
+        "option_c": "The program crashes due to lack of memory",
+        "option_d": "The user entered bad input",
+        "correct_answer": "B",
+        "description": "A <strong>syntax error<\/strong> occurs when the code does not follow the correct <em>rules and structure<\/em> of the programming language. The compiler detects these errors and prevents compilation."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "When do runtime errors occur?",
+        "option_a": "While writing the code",
+        "option_b": "During the compilation step",
+        "option_c": "While the program is running, after successful compilation",
+        "option_d": "Before the JVM starts",
+        "correct_answer": "C",
+        "description": "<strong>Runtime errors<\/strong> occur <em>while the program is running<\/em>, after successful compilation. Examples include division by zero, null pointer access, and array index out of bounds."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "What is a Logical Error (bug)?",
+        "option_a": "The program fails to compile",
+        "option_b": "The program crashes immediately",
+        "option_c": "The program runs without crashing but misbehaves or produces incorrect logic",
+        "option_d": "The IDE fails to open",
+        "correct_answer": "C",
+        "description": "A <strong>logical error<\/strong> means the program compiles and runs without crashing, but produces <em>incorrect results<\/em> or <em>misbehaves<\/em>. The code logic does not match the intended behavior."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "Which type of error is typically the hardest to detect?",
+        "option_a": "Syntax Error",
+        "option_b": "Runtime Error",
+        "option_c": "Logical Error",
+        "option_d": "Compiler Error",
+        "correct_answer": "C",
+        "description": "<strong>Logical errors<\/strong> are the hardest to detect because the program runs without any error messages. The developer must carefully trace the logic to find where the <em>incorrect behavior<\/em> originates."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "Which IDE is prominently shown in the lecture for writing Java code?",
+        "option_a": "NetBeans",
+        "option_b": "IntelliJ IDEA",
+        "option_c": "Eclipse",
+        "option_d": "Visual Studio Code",
+        "correct_answer": "C",
+        "description": "<strong>Eclipse<\/strong> is a popular open-source <em>Integrated Development Environment (IDE)<\/em> for Java development, providing features like code completion, debugging, and project management."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "In the statement `System.out.println(“Hello”);`, what does `println` do?",
+        "option_a": "Reads a line of text",
+        "option_b": "Prints text and moves the cursor to a new line",
+        "option_c": "Deletes text",
+        "option_d": "Compiles the code",
+        "correct_answer": "B",
+        "description": "<code>println<\/code> stands for <strong>print line<\/strong> — it prints the specified text to the console and <em>moves the cursor to a new line<\/em>. Compare with <code>print()<\/code> which does not add a newline."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "In Java, how do you write a single-line comment?",
+        "option_a": "\/* comment *\/",
+        "option_b": "<!—comment",
+        "option_c": "\/\/ comment",
+        "option_d": "# comment",
+        "correct_answer": "C",
+        "description": "Single-line comments in Java start with <code>\/\/<\/code>. Everything after <code>\/\/<\/code> on that line is <strong>ignored by the compiler<\/strong> and serves as documentation for developers."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "In Java, how do you write a block (multi-line) comment?",
+        "option_a": "\/\/ comment \/\/",
+        "option_b": "\/* comment *\/",
+        "option_c": "<!—comment",
+        "option_d": "‘’’ comment ‘’’",
+        "correct_answer": "B",
+        "description": "Block comments in Java are enclosed between <code>\/*<\/code> and <code>*\/<\/code>. Everything between these markers is <strong>ignored by the compiler<\/strong>, and the comment can span multiple lines."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "What is the role of the compiler (javac)?",
+        "option_a": "Runs the application",
+        "option_b": "Translates source code (.java) into bytecode (.class)",
+        "option_c": "Translates bytecode into C++",
+        "option_d": "Scans for viruses",
+        "correct_answer": "B",
+        "description": "The <code>javac<\/code> compiler <strong>translates<\/strong> Java source code (<code>.java<\/code> files) into platform-independent <em>bytecode<\/em> (<code>.class<\/code> files) that can be executed by the JVM."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "If compile errors occur, what happens?",
+        "option_a": "The program runs but skips the errors",
+        "option_b": "Bytecode is generated with errors",
+        "option_c": "Bytecode is not generated until errors are fixed",
+        "option_d": "The JVM crashes",
+        "correct_answer": "C",
+        "description": "If compile errors occur, the <strong>bytecode is not generated<\/strong>. The developer must <em>fix all errors<\/em> in the source code before the compiler can successfully produce a <code>.class<\/code> file."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "The `JOptionPane` methods return input as what data type by default?",
+        "option_a": "int",
+        "option_b": "double",
+        "option_c": "String",
+        "option_d": "char",
+        "correct_answer": "C",
+        "description": "<code>JOptionPane.showInputDialog()<\/code> always returns input as a <strong>String<\/strong> by default. To use it as a number, you must <em>parse<\/em> it using methods like <code>Integer.parseInt()<\/code>."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "What command is used to run a compiled Java program from the command prompt?",
+        "option_a": "javac ClassName",
+        "option_b": "java ClassName",
+        "option_c": "run ClassName",
+        "option_d": "execute ClassName",
+        "correct_answer": "B",
+        "description": "The <code>java ClassName<\/code> command launches the <strong>JVM<\/strong> to execute the compiled bytecode. Note that you use the class name <em>without<\/em> the <code>.class<\/code> extension."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "What marks the end of a statement in Java?",
+        "option_a": "Colon (",
+        "option_b": "Period (.)",
+        "option_c": "Semicolon (;)",
+        "option_d": "Comma (,)",
+        "correct_answer": "C",
+        "description": "A <strong>semicolon<\/strong> (<code>;<\/code>) marks the end of a statement in Java. Forgetting it is a common <em>syntax error<\/em> that the compiler will catch."
+    },
+    {
+        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
+        "question": "What marks the end of a statement in Java?",
+        "option_a": "Colon (",
+        "option_b": "Period (.)",
+        "option_c": "Semicolon (;)",
+        "option_d": "Comma (,)",
+        "correct_answer": "C",
+        "description": "A <strong>semicolon<\/strong> (<code>;<\/code>) marks the end of a statement in Java. Forgetting it is a common <em>syntax error<\/em> that the compiler will catch."
+    }
+]
