@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\QuizController;
+use App\Http\Controllers\StudyGuideController;
 use App\Http\Controllers\SubjectController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,3 +17,6 @@ Route::put('/subjects/{subject}', [SubjectController::class, 'update'])->name('s
 Route::delete('/subjects/{subject}', [SubjectController::class, 'destroy'])->name('subjects.destroy');
 Route::get('/subjects/assign', [SubjectController::class, 'assign'])->name('subjects.assign');
 Route::post('/subjects/assign', [SubjectController::class, 'assignUpdate'])->name('subjects.assign.update');
+
+Route::get('/study', [StudyGuideController::class, 'index'])->name('study.index');
+Route::get('/study/{lecture}', [StudyGuideController::class, 'show'])->name('study.show');
