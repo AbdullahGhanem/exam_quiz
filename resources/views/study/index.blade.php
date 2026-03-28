@@ -10,105 +10,65 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
                 </svg>
             </div>
-            <h1 class="text-3xl font-extrabold text-white mb-2">دليل مراجعة NLP</h1>
-            <p class="text-indigo-200 text-sm">مراجعة تفاعلية بالعربي لفهم المحاضرات بسرعة</p>
+            <h1 class="text-3xl font-extrabold text-white mb-2">دليل المراجعة التفاعلي</h1>
+            <p class="text-indigo-200 text-sm">اختر المادة وابدأ المراجعة بالعربي</p>
         </div>
     </div>
 
-    {{-- Lecture Cards --}}
+    {{-- Subject Cards --}}
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {{-- Lecture 1 --}}
-        <a href="{{ route('study.show', 1) }}" class="group">
+        {{-- NLP Subject --}}
+        <a href="{{ route('study.subject', 'nlp') }}" class="group">
             <div class="card rounded-2xl border-2 border-slate-200 hover:border-indigo-400 shadow-sm hover:shadow-lg hover:shadow-indigo-100 transition-all p-6 h-full">
-                <div class="flex items-center gap-3 mb-4">
-                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-indigo-700 flex items-center justify-center text-white text-xl font-extrabold shadow-md shadow-indigo-200">
-                        1
-                    </div>
-                    <div>
-                        <h2 class="font-bold text-slate-800 text-lg">المحاضرة الأولى</h2>
-                        <p class="text-xs text-slate-400">مقدمة في معالجة اللغات الطبيعية</p>
-                    </div>
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center mb-4 shadow-md shadow-indigo-200 group-hover:shadow-lg group-hover:shadow-indigo-300 transition-shadow">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/>
+                    </svg>
                 </div>
-
-                <div class="space-y-2 mb-5">
-                    <p class="text-sm text-slate-600 leading-relaxed">تعريف NLP، مكونات الفهم والتوليد، المستويات اللغوية، اختبار تورينغ، ELIZA، والتطبيقات الحديثة.</p>
-                </div>
-
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                    <span class="text-xs bg-indigo-50 text-indigo-600 px-2 py-1 rounded-md font-medium">NLU & NLG</span>
-                    <span class="text-xs bg-violet-50 text-violet-600 px-2 py-1 rounded-md font-medium">Turing Test</span>
-                    <span class="text-xs bg-fuchsia-50 text-fuchsia-600 px-2 py-1 rounded-md font-medium">ELIZA</span>
-                    <span class="text-xs bg-emerald-50 text-emerald-600 px-2 py-1 rounded-md font-medium">Sentiment</span>
-                    <span class="text-xs bg-amber-50 text-amber-600 px-2 py-1 rounded-md font-medium">Text Mining</span>
-                </div>
-
+                <h2 class="font-bold text-slate-800 text-xl mb-1">معالجة اللغات الطبيعية</h2>
+                <p class="text-sm text-slate-400 mb-3">Introduction to NLP</p>
+                <p class="text-sm text-slate-600 mb-4">مقدمة NLP، الفهم والتوليد، المستويات اللغوية، اختبار تورينغ، التقطيع، التحليل النحوي</p>
                 <div class="flex items-center justify-between">
-                    <span class="text-xs text-slate-400">6 أقسام تفاعلية</span>
-                    <span class="text-indigo-600 text-sm font-semibold group-hover:translate-x-1 transition-transform">ابدأ المراجعة &larr;</span>
-                </div>
-
-                <div class="mt-3" id="progress-bar-1">
-                    <div class="w-full bg-slate-100 rounded-full h-1.5">
-                        <div class="bg-indigo-500 h-1.5 rounded-full transition-all" id="progress-1" style="width: 0%"></div>
-                    </div>
+                    <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-lg font-medium">محاضرتين</span>
+                    <span class="text-indigo-600 text-sm font-semibold group-hover:translate-x-1 transition-transform">ابدأ &larr;</span>
                 </div>
             </div>
         </a>
 
-        {{-- Lecture 2 --}}
-        <a href="{{ route('study.show', 2) }}" class="group">
-            <div class="card rounded-2xl border-2 border-slate-200 hover:border-violet-400 shadow-sm hover:shadow-lg hover:shadow-violet-100 transition-all p-6 h-full">
-                <div class="flex items-center gap-3 mb-4">
-                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500 to-violet-700 flex items-center justify-center text-white text-xl font-extrabold shadow-md shadow-violet-200">
-                        2
-                    </div>
-                    <div>
-                        <h2 class="font-bold text-slate-800 text-lg">المحاضرة الثانية</h2>
-                        <p class="text-xs text-slate-400">مهام NLP والتحليل اللغوي</p>
-                    </div>
+        {{-- Mobile Subject --}}
+        <a href="{{ route('study.subject', 'mobile') }}" class="group">
+            <div class="card rounded-2xl border-2 border-slate-200 hover:border-teal-400 shadow-sm hover:shadow-lg hover:shadow-teal-100 transition-all p-6 h-full">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center mb-4 shadow-md shadow-teal-200 group-hover:shadow-lg group-hover:shadow-teal-300 transition-shadow">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/>
+                    </svg>
                 </div>
-
-                <div class="space-y-2 mb-5">
-                    <p class="text-sm text-slate-600 leading-relaxed">التقطيع، تصنيف أجزاء الكلام، التعرف على الكيانات، التحليل النحوي، أشجار التحليل، والتحديات.</p>
-                </div>
-
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                    <span class="text-xs bg-violet-50 text-violet-600 px-2 py-1 rounded-md font-medium">Tokenization</span>
-                    <span class="text-xs bg-emerald-50 text-emerald-600 px-2 py-1 rounded-md font-medium">POS Tagging</span>
-                    <span class="text-xs bg-amber-50 text-amber-600 px-2 py-1 rounded-md font-medium">NER</span>
-                    <span class="text-xs bg-indigo-50 text-indigo-600 px-2 py-1 rounded-md font-medium">Parsing</span>
-                    <span class="text-xs bg-red-50 text-red-600 px-2 py-1 rounded-md font-medium">Ambiguity</span>
-                </div>
-
+                <h2 class="font-bold text-slate-800 text-xl mb-1">تطوير تطبيقات الموبايل</h2>
+                <p class="text-sm text-slate-400 mb-3">Mobile Applications Development</p>
+                <p class="text-sm text-slate-600 mb-4">مقدمة Mobile Dev، أساسيات Java، أخذ المدخلات، الجمل الشرطية If-Else</p>
                 <div class="flex items-center justify-between">
-                    <span class="text-xs text-slate-400">7 أقسام تفاعلية</span>
-                    <span class="text-violet-600 text-sm font-semibold group-hover:translate-x-1 transition-transform">ابدأ المراجعة &larr;</span>
+                    <span class="text-xs bg-teal-50 text-teal-600 px-2.5 py-1 rounded-lg font-medium">4 محاضرات</span>
+                    <span class="text-teal-600 text-sm font-semibold group-hover:translate-x-1 transition-transform">ابدأ &larr;</span>
                 </div>
-
-                <div class="mt-3" id="progress-bar-2">
-                    <div class="w-full bg-slate-100 rounded-full h-1.5">
-                        <div class="bg-violet-500 h-1.5 rounded-full transition-all" id="progress-2" style="width: 0%"></div>
-                    </div>
+            </div>
+        </a>
+        {{-- Computer Graphics Subject --}}
+        <a href="{{ route('study.subject', 'graphics') }}" class="group">
+            <div class="card rounded-2xl border-2 border-slate-200 hover:border-orange-400 shadow-sm hover:shadow-lg hover:shadow-orange-100 transition-all p-6 h-full">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center mb-4 shadow-md shadow-orange-200 group-hover:shadow-lg group-hover:shadow-orange-300 transition-shadow">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/>
+                    </svg>
+                </div>
+                <h2 class="font-bold text-slate-800 text-xl mb-1">أساسيات الرسم بالحاسب</h2>
+                <p class="text-sm text-slate-400 mb-3">Fundamental of Computer Graphics</p>
+                <p class="text-sm text-slate-600 mb-4">أنواع الرسوميات، Raster vs Vector، البكسل، الرندرة، CRT، Raster vs Random Scan، التطبيقات</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-lg font-medium">محاضرتين</span>
+                    <span class="text-orange-600 text-sm font-semibold group-hover:translate-x-1 transition-transform">ابدأ &larr;</span>
                 </div>
             </div>
         </a>
     </div>
 </div>
-
-<script>
-// Load progress from localStorage
-document.addEventListener('DOMContentLoaded', function() {
-    try {
-        var progress = JSON.parse(localStorage.getItem('study_progress') || '{}');
-        [1, 2].forEach(function(lec) {
-            var sections = progress['lec' + lec] || [];
-            var total = lec === 1 ? 6 : 7;
-            var done = sections.filter(function(v) { return v === 1; }).length;
-            var pct = total > 0 ? Math.round((done / total) * 100) : 0;
-            var bar = document.getElementById('progress-' + lec);
-            if (bar) bar.style.width = pct + '%';
-        });
-    } catch(e) {}
-});
-</script>
 @endsection

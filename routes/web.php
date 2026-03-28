@@ -19,4 +19,5 @@ Route::get('/subjects/assign', [SubjectController::class, 'assign'])->name('subj
 Route::post('/subjects/assign', [SubjectController::class, 'assignUpdate'])->name('subjects.assign.update');
 
 Route::get('/study', [StudyGuideController::class, 'index'])->name('study.index');
-Route::get('/study/{lecture}', [StudyGuideController::class, 'show'])->name('study.show');
+Route::get('/study/{subject}', [StudyGuideController::class, 'subject'])->name('study.subject');
+Route::get('/study/{subject}/{lecture}', [StudyGuideController::class, 'show'])->name('study.show');
