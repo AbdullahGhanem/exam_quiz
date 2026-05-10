@@ -1,0 +1,402 @@
+[
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "Who developed the Android operating system?",
+    "option_a": "Apple",
+    "option_b": "Microsoft",
+    "option_c": "Google",
+    "option_d": "Oracle",
+    "correct_answer": "C",
+    "description": "<strong>Android</strong> is an open-source mobile OS developed by <em>Google</em>. The first Android device was launched in 2008."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "Android is based on which kernel?",
+    "option_a": "Windows NT kernel",
+    "option_b": "Linux kernel",
+    "option_c": "Mach kernel",
+    "option_d": "BSD kernel",
+    "correct_answer": "B",
+    "description": "Android is built on top of the <strong>Linux kernel</strong>, which sits at the bottom of the architecture and handles device drivers, memory management, and power management."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "Which language is primarily used to write Android applications?",
+    "option_a": "Swift or Objective-C",
+    "option_b": "Java or Kotlin",
+    "option_c": "C++ only",
+    "option_d": "Python only",
+    "correct_answer": "B",
+    "description": "Android applications are usually written in <strong>Java</strong> or <strong>Kotlin</strong>. Other languages like C#, Python, and Dart can also be used via frameworks."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "What language is used for Android UI/UX layouts?",
+    "option_a": "HTML",
+    "option_b": "JSON",
+    "option_c": "XML (eXtensible Markup Language)",
+    "option_d": "YAML",
+    "correct_answer": "C",
+    "description": "Android UI is defined using <strong>XML (eXtensible Markup Language)</strong> in the <code>res/layout/</code> folder."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "What is API Level in Android?",
+    "option_a": "The number of installed apps",
+    "option_b": "An integer that uniquely identifies the framework API revision",
+    "option_c": "The processor speed of the device",
+    "option_d": "The amount of available RAM",
+    "correct_answer": "B",
+    "description": "<strong>API Level</strong> is an integer value that uniquely identifies the framework API revision offered by a version of the Android platform. For example, Android 13 = API 33."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "Which Android version has the codename 'Tiramisu'?",
+    "option_a": "Android 11",
+    "option_b": "Android 12",
+    "option_c": "Android 13",
+    "option_d": "Android 14",
+    "correct_answer": "C",
+    "description": "<strong>Android 13</strong> has the codename <em>Tiramisu</em> with API level 33."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "How many layers are there in the Android architecture?",
+    "option_a": "3",
+    "option_b": "4",
+    "option_c": "5",
+    "option_d": "6",
+    "correct_answer": "C",
+    "description": "Android architecture has <strong>5 layers</strong>: Linux Kernel, Native Libraries, Android Runtime, Application Framework, and Applications."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "Which layer of the Android architecture is responsible for device drivers and power management?",
+    "option_a": "Application Framework",
+    "option_b": "Native Libraries",
+    "option_c": "Linux Kernel",
+    "option_d": "Android Runtime",
+    "correct_answer": "C",
+    "description": "The <strong>Linux Kernel</strong> is the heart of the architecture and is responsible for <em>device drivers</em>, power management, memory management, and hardware access (camera, keypad, display)."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "What is the role of DVM (Dalvik Virtual Machine)?",
+    "option_a": "To compile Java code into bytecode",
+    "option_b": "To run Android applications, optimized for mobile devices",
+    "option_c": "To manage the file system",
+    "option_d": "To render UI elements",
+    "correct_answer": "B",
+    "description": "<strong>DVM (Dalvik Virtual Machine)</strong> is responsible for running Android applications. It is similar to JVM but <em>optimized for mobile devices</em> — consumes less memory and provides fast performance."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "Which native library is responsible for database support in Android?",
+    "option_a": "WebKit",
+    "option_b": "FreeType",
+    "option_c": "SQLite",
+    "option_d": "SSL",
+    "correct_answer": "C",
+    "description": "<strong>SQLite</strong> is the native library used for <em>database</em> support in Android. WebKit is for browser, FreeType for fonts, and SSL for internet security."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "Which Application Framework component allows apps to display alerts to the user?",
+    "option_a": "Activity Manager",
+    "option_b": "Notifications Manager",
+    "option_c": "Resource Manager",
+    "option_d": "Content Providers",
+    "correct_answer": "B",
+    "description": "<strong>Notifications Manager</strong> allows applications to display alerts and notifications to the user."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "Which build system does Android Studio use?",
+    "option_a": "Maven",
+    "option_b": "Ant",
+    "option_c": "Gradle",
+    "option_d": "Make",
+    "correct_answer": "C",
+    "description": "Android Studio uses <strong>Gradle</strong> as its build system."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "Which file describes all the components of an Android app?",
+    "option_a": "build.gradle",
+    "option_b": "AndroidManifest.xml",
+    "option_c": "MainActivity.java",
+    "option_d": "strings.xml",
+    "correct_answer": "B",
+    "description": "<strong>AndroidManifest.xml</strong> (in the <code>manifests/</code> folder) describes all the components of your Android application."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "Which res/ subfolder contains the launcher icons for the app?",
+    "option_a": "drawable",
+    "option_b": "layout",
+    "option_c": "mipmap",
+    "option_d": "values",
+    "correct_answer": "C",
+    "description": "<strong>mipmap/</strong> contains the launcher icons. <code>drawable</code> is for general images, <code>layout</code> for UI files, and <code>values</code> for strings/colors."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "How many times must you tap 'Build number' to enable Developer Options?",
+    "option_a": "3 times",
+    "option_b": "5 times",
+    "option_c": "7 times",
+    "option_d": "10 times",
+    "correct_answer": "C",
+    "description": "On an Android device, you tap <strong>Build number seven (7) times</strong> in Settings > About phone to unlock Developer Options, then enable USB Debugging."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "How many main components are there in an Android application?",
+    "option_a": "2",
+    "option_b": "3",
+    "option_c": "4",
+    "option_d": "5",
+    "correct_answer": "C",
+    "description": "There are <strong>4 main components</strong>: Activities, Services, Broadcast Receivers, and Content Providers."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "Which Android component handles background processing?",
+    "option_a": "Activities",
+    "option_b": "Services",
+    "option_c": "Broadcast Receivers",
+    "option_d": "Content Providers",
+    "correct_answer": "B",
+    "description": "<strong>Services</strong> handle background processing associated with an application — they don't have a UI."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "Which component handles communication between the Android OS and applications?",
+    "option_a": "Activities",
+    "option_b": "Services",
+    "option_c": "Broadcast Receivers",
+    "option_d": "Fragments",
+    "correct_answer": "C",
+    "description": "<strong>Broadcast Receivers</strong> handle communication between the Android OS and applications (e.g., battery low, incoming SMS)."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "What does a Fragment represent in Android?",
+    "option_a": "A complete application",
+    "option_b": "A behavior or portion of UI within an Activity",
+    "option_c": "A database table",
+    "option_d": "A background service",
+    "correct_answer": "B",
+    "description": "<strong>Fragments</strong> represent a behavior or portion of user interface in an Activity. They allow modular UI design."
+  },
+  {
+    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
+    "question": "Which year was the first Android device launched?",
+    "option_a": "2005",
+    "option_b": "2007",
+    "option_c": "2008",
+    "option_d": "2010",
+    "correct_answer": "C",
+    "description": "The first Android device was launched in <strong>2008</strong>."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "What is an Activity in Android?",
+    "option_a": "A background process",
+    "option_b": "A single screen in Android containing all UI components",
+    "option_c": "A type of database",
+    "option_d": "A network request",
+    "correct_answer": "B",
+    "description": "An <strong>Activity</strong> is the <em>single screen</em> in Android. It contains all UI components in a single screen."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "How many lifecycle methods control an Android Activity?",
+    "option_a": "5",
+    "option_b": "6",
+    "option_c": "7",
+    "option_d": "8",
+    "correct_answer": "C",
+    "description": "Android Activity Lifecycle is controlled by <strong>7 methods</strong>: onCreate, onStart, onResume, onPause, onStop, onRestart, onDestroy."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "Which method is called on the initial creation of the Activity?",
+    "option_a": "onStart()",
+    "option_b": "onResume()",
+    "option_c": "onCreate()",
+    "option_d": "onRestart()",
+    "correct_answer": "C",
+    "description": "<strong>onCreate()</strong> is called on initial creation of the Activity. It is responsible for constructing views, binding data, and managing/restoring state from its bundle."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "Which method fires when the Activity is ready to receive user input?",
+    "option_a": "onCreate()",
+    "option_b": "onStart()",
+    "option_c": "onResume()",
+    "option_d": "onPause()",
+    "correct_answer": "C",
+    "description": "<strong>onResume()</strong> fires when the activity has been created, started, and is ready to receive user input. The activity will start interacting with the user after this method completes."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "Which method is called when the Activity is visible but not interactive (e.g., a popup is shown)?",
+    "option_a": "onStop()",
+    "option_b": "onPause()",
+    "option_c": "onDestroy()",
+    "option_d": "onRestart()",
+    "correct_answer": "B",
+    "description": "<strong>onPause()</strong> is triggered whenever the activity is <em>visible but not interactive</em> — for example when a popup appears or when transitioning to another activity."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "Which method is called when the Activity is no longer visible?",
+    "option_a": "onPause()",
+    "option_b": "onStop()",
+    "option_c": "onDestroy()",
+    "option_d": "onRestart()",
+    "correct_answer": "B",
+    "description": "<strong>onStop()</strong> is called when the activity is <em>not visible</em> on the screen anymore."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "Which method is invoked after the Activity has been stopped, right before starting up again?",
+    "option_a": "onResume()",
+    "option_b": "onCreate()",
+    "option_c": "onRestart()",
+    "option_d": "onStart()",
+    "correct_answer": "C",
+    "description": "<strong>onRestart()</strong> is invoked after the activity has been stopped, right before starting up again. After this, onStart() is called."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "Which method is called before the Activity is destroyed?",
+    "option_a": "onPause()",
+    "option_b": "onStop()",
+    "option_c": "onDestroy()",
+    "option_d": "onFinish()",
+    "correct_answer": "C",
+    "description": "<strong>onDestroy()</strong> is called before the activity is destroyed — usually as a result of <code>finish()</code> or pressing the Back button. Called at most once per activity."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "What is the correct sequence when an app is first created?",
+    "option_a": "onStart → onCreate → onResume",
+    "option_b": "onCreate → onStart → onResume",
+    "option_c": "onCreate → onResume → onStart",
+    "option_d": "onResume → onStart → onCreate",
+    "correct_answer": "B",
+    "description": "When an app is first created, the sequence is: <strong>onCreate → onStart → onResume</strong>."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "What is the correct sequence when the app is closed (Back button pressed)?",
+    "option_a": "onStop → onPause → onDestroy",
+    "option_b": "onPause → onStop → onDestroy",
+    "option_c": "onDestroy → onStop → onPause",
+    "option_d": "onPause → onDestroy → onStop",
+    "correct_answer": "B",
+    "description": "When the app is closed or Back is pressed: <strong>onPause → onStop → onDestroy</strong>."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "When a popup appears partially obscuring the screen, which method is called?",
+    "option_a": "onStop()",
+    "option_b": "onPause() only",
+    "option_c": "onDestroy()",
+    "option_d": "Both onPause() and onStop()",
+    "correct_answer": "B",
+    "description": "When the screen is <em>partially obscured</em> by a popup, only <strong>onPause()</strong> is called — NOT onStop, because the activity is still visible. When the popup closes, onResume() is called."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "When the screen sleeps and the app goes to the background, which methods are called in order?",
+    "option_a": "onPause → onStop",
+    "option_b": "onStop → onPause",
+    "option_c": "onPause → onDestroy",
+    "option_d": "onStop → onDestroy",
+    "correct_answer": "A",
+    "description": "When sending the app to background or screen sleeps, the sequence is <strong>onPause → onStop</strong>. When it wakes up: onRestart → onStart → onResume."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "When the screen wakes up after sleeping, which method is called FIRST?",
+    "option_a": "onCreate()",
+    "option_b": "onResume()",
+    "option_c": "onStart()",
+    "option_d": "onRestart()",
+    "correct_answer": "D",
+    "description": "When the screen wakes up after the app was sent to background, the sequence is: <strong>onRestart → onStart → onResume</strong>. So onRestart() is called first."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "Which lifecycle methods are called AT MOST ONCE per application run?",
+    "option_a": "onCreate and onDestroy",
+    "option_b": "onStart and onResume",
+    "option_c": "onPause and onStop",
+    "option_d": "onRestart and onResume",
+    "correct_answer": "A",
+    "description": "<strong>onCreate</strong> and <strong>onDestroy</strong> are called at most once each time the application is run. The others (onPause, onStop, onRestart, onStart, onResume) may be called many times during the lifecycle."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "Which methods can be called MANY times during the lifecycle?",
+    "option_a": "onCreate and onDestroy",
+    "option_b": "onPause, onStop, onRestart, onStart, onResume",
+    "option_c": "Only onResume",
+    "option_d": "Only onCreate",
+    "correct_answer": "B",
+    "description": "<strong>onPause, onStop, onRestart, onStart, and onResume</strong> may be called many times during the lifecycle as the user navigates in and out of the activity."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "When the app is killed in the background to free resources, which method is the LAST to be called?",
+    "option_a": "onPause()",
+    "option_b": "onStop()",
+    "option_c": "onDestroy()",
+    "option_d": "onRestart()",
+    "correct_answer": "B",
+    "description": "When the app is killed in the background to free resources, <strong>onStop()</strong> is the last to be called before termination. The app remains in history; selecting it from history starts again from <code>onCreate()</code>."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "When MainActivity calls NextActivity, what is the order of method calls?",
+    "option_a": "MainActivity.onPause → NextActivity.onCreate → NextActivity.onStart → NextActivity.onResume → MainActivity.onStop",
+    "option_b": "MainActivity.onStop → NextActivity.onCreate → NextActivity.onResume",
+    "option_c": "NextActivity.onCreate → MainActivity.onPause → MainActivity.onStop",
+    "option_d": "MainActivity.onDestroy → NextActivity.onCreate",
+    "correct_answer": "A",
+    "description": "When MainActivity calls NextActivity: <strong>Main.onPause → Next.onCreate → Next.onStart → Next.onResume → Main.onStop</strong>. The new activity must be at least started before the old one can stop."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "After onPause(), what are the possible next methods?",
+    "option_a": "onCreate() or onStart()",
+    "option_b": "onStop() or onResume()",
+    "option_c": "onDestroy() only",
+    "option_d": "onRestart() only",
+    "correct_answer": "B",
+    "description": "After <strong>onPause()</strong>, the next method is either <strong>onStop()</strong> (if the activity becomes invisible) or <strong>onResume()</strong> (if it becomes interactive again, e.g., popup closed)."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "Which lifecycle methods have 'Kill After = Yes' (the system can kill the app after them)?",
+    "option_a": "onCreate, onStart, onResume",
+    "option_b": "onPause, onStop, onDestroy",
+    "option_c": "onRestart and onStart only",
+    "option_d": "All seven methods",
+    "correct_answer": "B",
+    "description": "<strong>onPause, onStop, and onDestroy</strong> have 'Kill After = Yes' — meaning the system can terminate the app process after these methods if memory is needed."
+  },
+  {
+    "lecture": "Lecture 10: Android Activity Lifecycle (L9.pdf)",
+    "question": "What triggers onDestroy() most commonly?",
+    "option_a": "App receiving a notification",
+    "option_b": "Explicit call to finish() or pressing the Back button",
+    "option_c": "Phone call ringing",
+    "option_d": "Screen rotation",
+    "correct_answer": "B",
+    "description": "<strong>onDestroy()</strong> is usually the result of an explicit call to <code>finish()</code> from within the activity, or when the <em>Back button</em> is pressed."
+  }
+]

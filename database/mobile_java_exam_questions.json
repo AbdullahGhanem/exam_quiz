@@ -1,0 +1,202 @@
+[
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "What is the purpose of the following code snippet? Scanner scanner = new Scanner(System.in); int age = scanner.nextInt();",
+    "option_a": "To read a double value from the user",
+    "option_b": "To read a boolean value from the user",
+    "option_c": "To read a string from the user",
+    "option_d": "To read an integer value from the user",
+    "correct_answer": "D",
+    "description": "<code>scanner.nextInt()</code> reads the next token from input and parses it as an <strong>int</strong>. For other types you'd use <code>nextDouble()</code>, <code>nextBoolean()</code>, or <code>next()</code>/<code>nextLine()</code> for strings."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "What type of error does this code generate? public static void main(String[] args) { int x; System.out.println(x); }",
+    "option_a": "No error; x is used correctly",
+    "option_b": "Syntax error: variable x might not have been initialized",
+    "option_c": "Logical error",
+    "option_d": "Runtime error",
+    "correct_answer": "B",
+    "description": "Java <strong>local variables</strong> have no default value. The compiler refuses to use them until definitely assigned, producing the error: <em>variable x might not have been initialized</em>."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "What is printed by the following code? for (int i = 0; i < 3; i++) { for (int j = 0; j < 2; j++) { System.out.print(i + \" \" + j + \" \"); } System.out.println(); }",
+    "option_a": "Infinite loop",
+    "option_b": "0 0 0 1 1 0 1 1 2 0 2 1",
+    "option_c": "Prints a square",
+    "option_d": "Nested loop output with 3 rows and 2 columns",
+    "correct_answer": "B",
+    "description": "Outer loop i=0..2, inner j=0..1. Each inner iteration prints <code>i j </code>. After the inner loop a newline is printed. Combined linearly the values are: <strong>0 0  0 1  1 0  1 1  2 0  2 1</strong>."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "What error will this code produce? public class Main { public static void main(String[] args) { System.out.println(\"Hello World\"); } }",
+    "option_a": "Runtime error",
+    "option_b": "Syntax error: unclosed string literal",
+    "option_c": "Logical error",
+    "option_d": "No error; it compiles and runs fine",
+    "correct_answer": "D",
+    "description": "This is a perfectly valid Java program. It compiles and prints <strong>Hello World</strong>."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "Which of these is the correct way to declare a constant in Java?",
+    "option_a": "static int MY_CONSTANT = 10;",
+    "option_b": "const int MY_CONSTANT = 10;",
+    "option_c": "immutable int MY_CONSTANT = 10;",
+    "option_d": "final int MY_CONSTANT = 10;",
+    "correct_answer": "D",
+    "description": "Java uses the <strong>final</strong> keyword to declare constants. <code>const</code> is reserved but unused, and <code>immutable</code> isn't a Java keyword."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "What does this code output if the user inputs \"5 3 0\"? Scanner sc = new Scanner(System.in); int sum = 0, num; while ((num = sc.nextInt()) != 0) { sum += num; } System.out.println(sum);",
+    "option_a": "5",
+    "option_b": "8",
+    "option_c": "Compilation error",
+    "option_d": "0",
+    "correct_answer": "B",
+    "description": "Reads 5 → sum=5. Reads 3 → sum=8. Reads 0 → loop exits (since <code>0 != 0</code> is false). Final output: <strong>8</strong>."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "Given the following code, how many times will \"Java\" be printed? for (int i = 0; i < 10; i++) { if (i % 2 == 0) { System.out.println(\"Java\"); } }",
+    "option_a": "5",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "10",
+    "correct_answer": "A",
+    "description": "<strong>i % 2 == 0</strong> is true for the even values 0, 2, 4, 6, 8 — that's <strong>5 times</strong> out of 10 iterations."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "How can you create an infinite for loop in Java?",
+    "option_a": "for (i = 0; i < 0; i++)",
+    "option_b": "for (int i = 0; i >= 0; i++)",
+    "option_c": "for (int i = 1; i <= 1; i--)",
+    "option_d": "for (;;)",
+    "correct_answer": "D",
+    "description": "<code>for (;;)</code> is the canonical infinite loop — no init, no condition (treated as true), no update. Note: option B is also infinite-ish until int overflow, but the <em>standard idiom</em> is <code>for (;;)</code>."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "Which of the following code is used to create a Scanner object for reading user input in Java?",
+    "option_a": "Scanner input = new Scanner(System.stream);",
+    "option_b": "Scanner input = new Scanner(System.input);",
+    "option_c": "Scanner input = new Scanner(System.in);",
+    "option_d": "Scanner input = new Scanner(System.console);",
+    "correct_answer": "C",
+    "description": "The standard input stream in Java is <code>System.in</code>. The Scanner class wraps it to parse primitives and strings."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "What will be the output of this code snippet? int x = 10; int y = x++; System.out.println(x + \", \" + y);",
+    "option_a": "10, 10",
+    "option_b": "11, 10",
+    "option_c": "10, 11",
+    "option_d": "11, 11",
+    "correct_answer": "B",
+    "description": "<strong>Post-increment</strong> (<code>x++</code>) returns the <em>old</em> value before incrementing. So <code>y = 10</code>, then <code>x</code> becomes <code>11</code>. Output: <strong>11, 10</strong>."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "Java's platform independence is due to the JVM?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "Only on Windows",
+    "option_d": "Only on Linux",
+    "correct_answer": "A",
+    "description": "<strong>True</strong>. Java compiles to bytecode, which the <em>JVM</em> on each platform executes — this is the foundation of <strong>WORA (Write Once, Run Anywhere)</strong>."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "What is the output of the following code? int a = 5, b = 10; if (a < b && a++ < b) { a += 2; } System.out.println(a);",
+    "option_a": "8",
+    "option_b": "6",
+    "option_c": "7",
+    "option_d": "5",
+    "correct_answer": "A",
+    "description": "<code>a&lt;b</code> is true (5&lt;10). Then <code>a++ &lt; b</code> evaluates: 5&lt;10 true and <strong>a becomes 6</strong> (post-increment side effect). Block runs: <code>a += 2</code> → a = <strong>8</strong>."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "What type of language is Java?",
+    "option_a": "Compiled",
+    "option_b": "Interpreted",
+    "option_c": "Both Compiled and Interpreted",
+    "option_d": "Only Interpreted",
+    "correct_answer": "C",
+    "description": "Java is <strong>both</strong>: source code is <em>compiled</em> to bytecode by <code>javac</code>, and the bytecode is <em>interpreted</em> (or JIT-compiled) by the JVM at runtime."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "Which of the following best describes the JRE?",
+    "option_a": "A package of tools for developing Java applications",
+    "option_b": "The virtual machine that runs bytecode",
+    "option_c": "A program that compiles Java source code into bytecode",
+    "option_d": "The environment for running Java applications",
+    "correct_answer": "D",
+    "description": "<strong>JRE (Java Runtime Environment)</strong> is the environment for <em>running</em> Java apps (JVM + libraries). The <strong>JDK</strong> is for development, and the <strong>JVM</strong> is just the virtual machine inside the JRE."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "Given the following code, what is printed? int a = 5, b = 8, c = 12; if (a > b || b < c && a < c) { System.out.println(\"Condition met\"); } else { System.out.println(\"Condition not met\"); }",
+    "option_a": "Condition not met",
+    "option_b": "None of the above",
+    "option_c": "Condition met",
+    "option_d": "Compilation error",
+    "correct_answer": "C",
+    "description": "<strong>&amp;&amp; binds tighter than ||</strong>, so the expression is: <code>a&gt;b || (b&lt;c &amp;&amp; a&lt;c)</code> → <code>false || (true &amp;&amp; true)</code> → <strong>true</strong>. Prints <em>Condition met</em>."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "What is the output of the following code snippet? float f = 12.5F; double d = f; System.out.println(d);",
+    "option_a": "12.5F",
+    "option_b": "12.5",
+    "option_c": "12",
+    "option_d": "Compilation error",
+    "correct_answer": "B",
+    "description": "Widening conversion from <code>float</code> to <code>double</code> is implicit and safe. <code>println(double)</code> prints <strong>12.5</strong> without the <code>F</code> suffix."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "Which component is responsible for executing Java bytecode?",
+    "option_a": "Java Compiler",
+    "option_b": "JRE",
+    "option_c": "JDK",
+    "option_d": "JVM",
+    "correct_answer": "D",
+    "description": "The <strong>JVM (Java Virtual Machine)</strong> is the component that loads and executes <em>bytecode</em>. JRE is the bundle that includes the JVM + libraries; JDK adds dev tools."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "Which of the following statements is true about the switch statement?",
+    "option_a": "switch must include a default case",
+    "option_b": "All cases must have a break",
+    "option_c": "switch can evaluate any data type",
+    "option_d": "switch can only evaluate int, char, String, or enum",
+    "correct_answer": "D",
+    "description": "Java's <code>switch</code> accepts <strong>byte, short, int, char, String, and enum</strong> (not floats, doubles, or booleans). <code>default</code> is optional and <code>break</code> isn't required (omitting causes fall-through)."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "What will this code output? int x = 4, y = 5; if (x > y || ++x == y) { y++; } System.out.println(x + \", \" + y);",
+    "option_a": "4, 5",
+    "option_b": "5, 6",
+    "option_c": "5, 5",
+    "option_d": "4, 6",
+    "correct_answer": "B",
+    "description": "<code>x&gt;y</code> false (4&gt;5). Then <code>++x==y</code> evaluates: <strong>pre-increment</strong> makes x=5, then 5==5 is true. Block runs → y becomes 6. Output: <strong>5, 6</strong>."
+  },
+  {
+    "lecture": "Lecture 6: Java Practice Exam (Bank)",
+    "question": "What will be printed if x = 3 and y = 4 in the following code? if (x < y) { if (y > 2) { System.out.println(\"A\"); } else { System.out.println(\"B\"); } } else { System.out.println(\"C\"); }",
+    "option_a": "B",
+    "option_b": "None of the above",
+    "option_c": "A",
+    "option_d": "C",
+    "correct_answer": "C",
+    "description": "<code>x&lt;y</code> (3&lt;4) is true → enter outer block. <code>y&gt;2</code> (4&gt;2) is true → prints <strong>A</strong>. (Note: option C in this question is the letter \"A\", which is the correct printed value.)"
+  }
+]

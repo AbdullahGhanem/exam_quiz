@@ -6,7 +6,7 @@ class StudyGuideController extends Controller
 {
     private array $subjects = [
         'nlp' => ['lectures' => ['1', '2']],
-        'mobile' => ['lectures' => ['1', '2', '3', '4']],
+        'mobile' => ['lectures' => ['1', '2', '3', '4', '5', '6', '7']],
         'graphics' => ['lectures' => ['1', '2']],
     ];
 

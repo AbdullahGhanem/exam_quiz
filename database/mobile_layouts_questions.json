@@ -1,0 +1,202 @@
+[
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "Which Android layout is the default in modern Android Studio templates?",
+    "option_a": "LinearLayout",
+    "option_b": "FrameLayout",
+    "option_c": "ConstraintLayout",
+    "option_d": "TableLayout",
+    "correct_answer": "C",
+    "description": "<strong>ConstraintLayout</strong> is the default in Android Studio. It positions views using <em>constraints</em> relative to other views or the parent."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "Which orientation values are valid for LinearLayout?",
+    "option_a": "left and right",
+    "option_b": "vertical and horizontal",
+    "option_c": "top and bottom",
+    "option_d": "row and column",
+    "correct_answer": "B",
+    "description": "<code>android:orientation</code> in LinearLayout accepts only <strong>vertical</strong> or <strong>horizontal</strong>."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "What does layout_width=\"match_parent\" mean?",
+    "option_a": "The view shrinks to fit its content",
+    "option_b": "The view fills the parent's width",
+    "option_c": "The view takes a fixed size in dp",
+    "option_d": "The view becomes invisible",
+    "correct_answer": "B",
+    "description": "<strong>match_parent</strong> tells the view to take up <em>all the available width (or height)</em> of its parent container."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "What does layout_width=\"wrap_content\" mean?",
+    "option_a": "The view fills the parent",
+    "option_b": "The view takes only the space its content needs",
+    "option_c": "The view becomes hidden",
+    "option_d": "The view scrolls horizontally",
+    "correct_answer": "B",
+    "description": "<strong>wrap_content</strong> sizes the view <em>just large enough to contain its content</em>, no extra space."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "What is the purpose of layout_weight in LinearLayout?",
+    "option_a": "To set the view's font weight",
+    "option_b": "To distribute remaining space proportionally between children",
+    "option_c": "To define z-order",
+    "option_d": "To set a margin",
+    "correct_answer": "B",
+    "description": "<strong>layout_weight</strong> distributes the <em>remaining space</em> between LinearLayout children proportionally. A child with weight 2 gets twice the leftover space of one with weight 1."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "When using layout_weight horizontally, what should layout_width usually be set to?",
+    "option_a": "match_parent",
+    "option_b": "wrap_content",
+    "option_c": "0dp",
+    "option_d": "fill_parent",
+    "correct_answer": "C",
+    "description": "Set <strong>layout_width=\"0dp\"</strong> when using horizontal weights — this lets the LinearLayout distribute width purely by weight without considering content size."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "Which layout stacks all its children on top of each other (in z-order)?",
+    "option_a": "LinearLayout",
+    "option_b": "FrameLayout",
+    "option_c": "TableLayout",
+    "option_d": "ConstraintLayout",
+    "correct_answer": "B",
+    "description": "<strong>FrameLayout</strong> stacks children in <em>z-order</em> — useful for overlays or single-image containers."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "Which element is used to define a row inside a TableLayout?",
+    "option_a": "TableColumn",
+    "option_b": "Row",
+    "option_c": "TableRow",
+    "option_d": "TableCell",
+    "correct_answer": "C",
+    "description": "<strong>TableRow</strong> represents a single row in a TableLayout. Each child of a TableRow becomes a cell in that row."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "Which TableLayout attribute makes a column stretch to fill available space?",
+    "option_a": "collapseColumns",
+    "option_b": "stretchColumns",
+    "option_c": "shrinkColumns",
+    "option_d": "expandColumns",
+    "correct_answer": "B",
+    "description": "<code>android:stretchColumns</code> makes the specified column(s) <strong>stretch</strong> to take up any leftover horizontal space."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "Which attribute hides (collapses) a column in TableLayout?",
+    "option_a": "stretchColumns",
+    "option_b": "collapseColumns",
+    "option_c": "hideColumns",
+    "option_d": "shrinkColumns",
+    "correct_answer": "B",
+    "description": "<code>android:collapseColumns</code> <strong>hides</strong> the specified column(s) — the column becomes invisible and takes no space."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "In TableLayout, what does layout_span do for a child view?",
+    "option_a": "Sets the row index",
+    "option_b": "Specifies how many columns the cell spans (like HTML colspan)",
+    "option_c": "Adds margin",
+    "option_d": "Hides the cell",
+    "correct_answer": "B",
+    "description": "<strong>layout_span</strong> defines the number of columns a cell should occupy — equivalent to <code>colspan</code> in HTML tables."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "Which attribute on a TableRow child specifies the starting column index?",
+    "option_a": "layout_index",
+    "option_b": "layout_position",
+    "option_c": "layout_column",
+    "option_d": "layout_row",
+    "correct_answer": "C",
+    "description": "<strong>layout_column</strong> tells the cell which column to start in — useful for skipping columns or aligning cells."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "Which attribute of ImageView sets the image source compatible with AppCompat?",
+    "option_a": "android:src",
+    "option_b": "app:srcCompat",
+    "option_c": "android:image",
+    "option_d": "android:drawable",
+    "correct_answer": "B",
+    "description": "<code>app:srcCompat</code> is the AppCompat-friendly attribute for setting an ImageView's source — supports vector drawables on older Android versions."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "Where are layout XML files stored in an Android project?",
+    "option_a": "app/src/main/java/",
+    "option_b": "app/src/main/res/layout/",
+    "option_c": "app/manifests/",
+    "option_d": "app/build/",
+    "correct_answer": "B",
+    "description": "All layout XML files live in <code>res/layout/</code> (e.g. <code>activity_main.xml</code>)."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "Which file must declare every Activity in an Android app?",
+    "option_a": "build.gradle",
+    "option_b": "strings.xml",
+    "option_c": "AndroidManifest.xml",
+    "option_d": "MainActivity.java",
+    "correct_answer": "C",
+    "description": "Every Activity must be declared in <strong>AndroidManifest.xml</strong> inside <code>&lt;application&gt;</code>. Otherwise the system can't find or launch it."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "Which intent-filter combination marks an Activity as the app's launcher entry point?",
+    "option_a": "action.VIEW + category.DEFAULT",
+    "option_b": "action.MAIN + category.LAUNCHER",
+    "option_c": "action.SEND + category.HOME",
+    "option_d": "action.RUN + category.START",
+    "correct_answer": "B",
+    "description": "An Activity becomes the launcher entry point when its intent-filter contains <strong>action.MAIN</strong> + <strong>category.LAUNCHER</strong>. This makes it appear in the app drawer."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "What does android:exported=\"true\" mean on an Activity?",
+    "option_a": "The Activity is published to the Play Store",
+    "option_b": "Other apps can launch this Activity",
+    "option_c": "The Activity is exported as a library",
+    "option_d": "The Activity runs in the background",
+    "correct_answer": "B",
+    "description": "<strong>exported=\"true\"</strong> allows other apps (or the system launcher) to start this Activity. Required since Android 12 for any Activity with an intent-filter."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "When you create a new Empty Activity in Android Studio, what does it generate?",
+    "option_a": "Only a Java/Kotlin class",
+    "option_b": "Only an XML layout",
+    "option_c": "A Java/Kotlin class + XML layout + manifest entry",
+    "option_d": "A new Gradle module",
+    "correct_answer": "C",
+    "description": "Creating an Empty Activity generates: a <strong>Java/Kotlin class</strong>, an <strong>XML layout</strong> (e.g. activity_xxx.xml), and registers the activity in <strong>AndroidManifest.xml</strong>."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "Which View is used to display non-editable text on the screen?",
+    "option_a": "EditText",
+    "option_b": "TextView",
+    "option_c": "Button",
+    "option_d": "ImageView",
+    "correct_answer": "B",
+    "description": "<strong>TextView</strong> displays read-only text. <strong>EditText</strong> is the editable input field for user typing."
+  },
+  {
+    "lecture": "Lecture 11: Android Layouts (Video 5)",
+    "question": "Which View is used to accept text input from the user (e.g., username/password)?",
+    "option_a": "TextView",
+    "option_b": "EditText",
+    "option_c": "Label",
+    "option_d": "InputView",
+    "correct_answer": "B",
+    "description": "<strong>EditText</strong> is the input field for user-typed text. Common attributes: <code>hint</code>, <code>inputType</code>, <code>id</code>."
+  }
+]

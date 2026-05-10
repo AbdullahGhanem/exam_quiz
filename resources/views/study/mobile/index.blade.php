@@ -12,7 +12,7 @@
     <div class="card rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden mb-8">
         <div class="bg-gradient-to-r from-teal-600 to-cyan-600 px-8 py-6 text-center">
             <h1 class="text-2xl font-extrabold text-white mb-1">تطوير تطبيقات الموبايل</h1>
-            <p class="text-teal-200 text-sm">Mobile Applications Development — 4 محاضرات</p>
+            <p class="text-teal-200 text-sm">Mobile Applications Development — 7 محاضرات</p>
         </div>
     </div>
 
@@ -94,6 +94,66 @@
                     <span class="text-xs bg-amber-50 text-amber-600 px-2 py-1 rounded-md font-medium">switch</span>
                 </div>
                 <span class="text-violet-600 text-sm font-semibold group-hover:translate-x-1 transition-transform">ابدأ المراجعة &larr;</span>
+            </div>
+        </a>
+
+        {{-- Lecture 5 --}}
+        <a href="{{ route('study.show', ['subject' => 'mobile', 'lecture' => 5]) }}" class="group">
+            <div class="card rounded-2xl border-2 border-slate-200 hover:border-emerald-400 shadow-sm hover:shadow-lg hover:shadow-emerald-100 transition-all p-6 h-full">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-green-700 flex items-center justify-center text-white text-xl font-extrabold shadow-md shadow-emerald-200">5</div>
+                    <div>
+                        <h2 class="font-bold text-slate-800 text-lg">المحاضرة الخامسة</h2>
+                        <p class="text-xs text-slate-400">Android & Android Studio</p>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-600 mb-4">معمارية Android، الإصدارات و API Level، Android Studio، هيكلة المشروع، مكونات التطبيق</p>
+                <div class="flex flex-wrap gap-1.5 mb-3">
+                    <span class="text-xs bg-emerald-50 text-emerald-600 px-2 py-1 rounded-md font-medium">Architecture</span>
+                    <span class="text-xs bg-green-50 text-green-600 px-2 py-1 rounded-md font-medium">DVM</span>
+                    <span class="text-xs bg-teal-50 text-teal-600 px-2 py-1 rounded-md font-medium">Components</span>
+                </div>
+                <span class="text-emerald-600 text-sm font-semibold group-hover:translate-x-1 transition-transform">ابدأ المراجعة &larr;</span>
+            </div>
+        </a>
+
+        {{-- Lecture 6 --}}
+        <a href="{{ route('study.show', ['subject' => 'mobile', 'lecture' => 6]) }}" class="group">
+            <div class="card rounded-2xl border-2 border-slate-200 hover:border-rose-400 shadow-sm hover:shadow-lg hover:shadow-rose-100 transition-all p-6 h-full">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-rose-500 to-pink-700 flex items-center justify-center text-white text-xl font-extrabold shadow-md shadow-rose-200">6</div>
+                    <div>
+                        <h2 class="font-bold text-slate-800 text-lg">المحاضرة السادسة</h2>
+                        <p class="text-xs text-slate-400">Activity Lifecycle</p>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-600 mb-4">دورة حياة الـ Activity، الـ 7 methods، السيناريوهات العملية، الفرق بين Pause و Stop</p>
+                <div class="flex flex-wrap gap-1.5 mb-3">
+                    <span class="text-xs bg-rose-50 text-rose-600 px-2 py-1 rounded-md font-medium">Lifecycle</span>
+                    <span class="text-xs bg-pink-50 text-pink-600 px-2 py-1 rounded-md font-medium">onCreate/onDestroy</span>
+                    <span class="text-xs bg-fuchsia-50 text-fuchsia-600 px-2 py-1 rounded-md font-medium">7 Methods</span>
+                </div>
+                <span class="text-rose-600 text-sm font-semibold group-hover:translate-x-1 transition-transform">ابدأ المراجعة &larr;</span>
+            </div>
+        </a>
+
+        {{-- Lecture 7 --}}
+        <a href="{{ route('study.show', ['subject' => 'mobile', 'lecture' => 7]) }}" class="group">
+            <div class="card rounded-2xl border-2 border-slate-200 hover:border-amber-400 shadow-sm hover:shadow-lg hover:shadow-amber-100 transition-all p-6 h-full">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-orange-700 flex items-center justify-center text-white text-xl font-extrabold shadow-md shadow-amber-200">7</div>
+                    <div>
+                        <h2 class="font-bold text-slate-800 text-lg">المحاضرة السابعة</h2>
+                        <p class="text-xs text-slate-400">Android Layouts</p>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-600 mb-4">ConstraintLayout, LinearLayout, TableLayout، الـ Views، layout_weight، AndroidManifest</p>
+                <div class="flex flex-wrap gap-1.5 mb-3">
+                    <span class="text-xs bg-amber-50 text-amber-600 px-2 py-1 rounded-md font-medium">Layouts</span>
+                    <span class="text-xs bg-orange-50 text-orange-600 px-2 py-1 rounded-md font-medium">XML UI</span>
+                    <span class="text-xs bg-yellow-50 text-yellow-600 px-2 py-1 rounded-md font-medium">Manifest</span>
+                </div>
+                <span class="text-amber-600 text-sm font-semibold group-hover:translate-x-1 transition-transform">ابدأ المراجعة &larr;</span>
             </div>
         </a>
     </div>

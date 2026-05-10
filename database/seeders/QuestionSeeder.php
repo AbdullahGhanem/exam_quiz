@@ -12,6 +12,9 @@ class QuestionSeeder extends Seeder
         $files = [
             'questions.json',
             'abdullah_nlp_questions.json',
+            'mobile_new_questions.json',
+            'mobile_java_exam_questions.json',
+            'mobile_layouts_questions.json',
         ];
 
         foreach ($files as $file) {
