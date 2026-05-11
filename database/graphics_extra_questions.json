@@ -1,0 +1,694 @@
+[
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "What is modelling in computer graphics?",
+    "option_a": "The process of rendering a final 2D image",
+    "option_b": "The mathematical description of shapes and their appearance",
+    "option_c": "Capturing real-world objects with a camera",
+    "option_d": "Animating characters frame by frame",
+    "correct_answer": "B",
+    "description": "<strong>Modelling</strong> is the <em>mathematical description of shapes and their appearance</em> — defining objects in a way that computers can store and manipulate."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "How is a coffee mug typically represented in 3D modelling?",
+    "option_a": "As a single 2D image",
+    "option_b": "As a set of ordered 3D points connected by an interpolation rule, plus a reflection model",
+    "option_c": "As a list of pixel colors",
+    "option_d": "As a video stream",
+    "correct_answer": "B",
+    "description": "A 3D model of a mug is described as a <strong>set of ordered 3D points</strong>, connected by an <strong>interpolation rule</strong>, combined with a <strong>reflection model</strong> to simulate light interaction."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "What is rendering in computer graphics?",
+    "option_a": "Converting 3D shapes into wireframe sketches only",
+    "option_b": "The process of generating shaded images from a 3D computer model",
+    "option_c": "Saving a file to disk",
+    "option_d": "Designing a UI for an app",
+    "correct_answer": "B",
+    "description": "<strong>Rendering</strong> = generating <em>shaded images</em> from a 3D computer model. It involves applying lighting, shading, and textures to produce the final image."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "Where does the term 'rendering' originate from?",
+    "option_a": "From engineering",
+    "option_b": "From the world of art — adding shading to drawings to make them look 3D",
+    "option_c": "From mathematics",
+    "option_d": "From medicine",
+    "correct_answer": "B",
+    "description": "The term comes from the <strong>world of art</strong>, where 'rendering' refers to the technique of <em>adding shading to drawings</em> to make them look three-dimensional."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "What does animation add to a model that modelling and rendering do not?",
+    "option_a": "Color",
+    "option_b": "Texture",
+    "option_c": "The dimension of time (movement)",
+    "option_d": "Sound",
+    "correct_answer": "C",
+    "description": "While modelling and rendering focus on <em>still</em> images, <strong>animation</strong> adds the <strong>dimension of time</strong> — bringing images to life through movement."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "How does animation create the illusion of movement?",
+    "option_a": "By rendering one detailed image",
+    "option_b": "By generating a sequence of frames where positions change slightly between each frame",
+    "option_c": "By using audio tracks",
+    "option_d": "By changing the screen resolution rapidly",
+    "correct_answer": "B",
+    "description": "Animation works by rendering <strong>multiple frames</strong> where the position of objects changes <em>slightly</em> between each frame. Played in sequence, this creates the perception of motion."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "What is the role of user interaction in computer graphics?",
+    "option_a": "To render images faster",
+    "option_b": "To bridge the gap between humans and computers via input devices like mouse and keyboard",
+    "option_c": "To compress image files",
+    "option_d": "To replace 3D modelling",
+    "correct_answer": "B",
+    "description": "<strong>User interaction</strong> bridges the gap between humans and computers, managing how users <em>control and interact</em> with digital environments via input devices like mouse and keyboard."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "In a CAD application, which input device is commonly used to rotate, zoom, and manipulate 3D models?",
+    "option_a": "Microphone",
+    "option_b": "Mouse",
+    "option_c": "Speakers",
+    "option_d": "Printer",
+    "correct_answer": "B",
+    "description": "In <strong>CAD software</strong>, designers use the <strong>mouse</strong> to rotate, zoom, and manipulate 3D models on the screen."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "What is data visualization in computer graphics?",
+    "option_a": "Encrypting data files",
+    "option_b": "Transforming complex data into visual formats (graphs, charts) to make it easier to understand",
+    "option_c": "Compressing images",
+    "option_d": "Backing up data to the cloud",
+    "correct_answer": "B",
+    "description": "<strong>Visualization</strong> = transforming <em>complex data into visual formats</em> (graphs, charts, etc.) to help users understand it more easily."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "Are image processing and computer graphics the same thing?",
+    "option_a": "Yes, they are identical",
+    "option_b": "They are different but closely related fields",
+    "option_c": "Image processing is a subset of computer graphics",
+    "option_d": "Computer graphics is a subset of image processing",
+    "correct_answer": "B",
+    "description": "Graphics and image processing are <strong>different but closely related</strong>. Image processing manipulates 2D images (filtering, resizing, enhancing); CG generates images from models."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "Which of these is a typical task of image processing?",
+    "option_a": "Building 3D models",
+    "option_b": "Removing noise from a photograph using software like Photoshop",
+    "option_c": "Designing a graphics pipeline",
+    "option_d": "Writing a render shader",
+    "correct_answer": "B",
+    "description": "Image processing tasks include <strong>filtering, resizing, and enhancing</strong> 2D images. A common example is removing <em>noise</em> from a photograph using Photoshop."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "What technology does 3D scanning use to capture real-world objects?",
+    "option_a": "Sound waves",
+    "option_b": "Range-finding technology",
+    "option_c": "Magnetic resonance",
+    "option_d": "Solar panels",
+    "correct_answer": "B",
+    "description": "3D scanning uses specialized hardware that employs <strong>range-finding technology</strong> to scan real-world 3D objects and create accurate 3D models from the data."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "Which application is the most common example of computer graphics use?",
+    "option_a": "Email clients",
+    "option_b": "Video games",
+    "option_c": "Spreadsheets",
+    "option_d": "Text editors",
+    "correct_answer": "B",
+    "description": "<strong>Video games</strong> are the most common example of computer graphics — they rely heavily on creating immersive 3D environments, characters, and realistic animations."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "What does CGI stand for in the movie industry?",
+    "option_a": "Computer Graphics Interface",
+    "option_b": "Computer-Generated Imagery",
+    "option_c": "Cinema Graphics Industry",
+    "option_d": "Color Grading Image",
+    "correct_answer": "B",
+    "description": "<strong>CGI</strong> stands for <em>Computer-Generated Imagery</em> — used extensively in modern films to create visual effects (VFX)."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "What does CAD stand for?",
+    "option_a": "Computer Animation Design",
+    "option_b": "Computer-Aided Design",
+    "option_c": "Color Adjusted Display",
+    "option_d": "Camera Angle Direction",
+    "correct_answer": "B",
+    "description": "<strong>CAD</strong> = Computer-Aided Design — used in fields like architecture, engineering, and manufacturing to create detailed 3D models <em>before</em> physical production."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "Which medical imaging techniques rely on computer graphics?",
+    "option_a": "X-Ray and Ultrasound only",
+    "option_b": "CT (Computed Tomography) and MRI (Magnetic Resonance Imaging)",
+    "option_c": "Stethoscope readings",
+    "option_d": "Blood pressure monitors",
+    "correct_answer": "B",
+    "description": "Medical imaging relies on CG for techniques like <strong>CT (Computed Tomography)</strong> and <strong>MRI (Magnetic Resonance Imaging)</strong> — non-invasive ways to create detailed images of the human body."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "Which is a common training application that uses 3D graphics simulations?",
+    "option_a": "Word processing",
+    "option_b": "Flight simulators for pilots",
+    "option_c": "Email auto-responders",
+    "option_d": "Photo editing apps",
+    "correct_answer": "B",
+    "description": "<strong>Flight simulators</strong> use 3D graphics to recreate the experience of flying an airplane, providing a safe training environment for pilots."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "What is information visualization useful for?",
+    "option_a": "Compressing video",
+    "option_b": "Representing abstract data using graphics like charts and graphs in industries like finance and education",
+    "option_c": "Generating 3D models from scans",
+    "option_d": "Writing software code",
+    "correct_answer": "B",
+    "description": "<strong>Information visualization</strong> uses graphics to represent <em>abstract data</em> in ways easier to understand — charts, graphs, and other visual tools used in finance, education, and research."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "Which of the following is NOT one of the major areas of computer graphics covered?",
+    "option_a": "Modelling",
+    "option_b": "Rendering",
+    "option_c": "Animation",
+    "option_d": "Database Management",
+    "correct_answer": "D",
+    "description": "Database management is <strong>not</strong> a major area of CG. The areas covered are: Modelling, Rendering, Animation, User Interaction, Visualization, Image Processing, and 3D Scanning."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "Which 3D software was mentioned as an example for creating textured/shaded images?",
+    "option_a": "Photoshop",
+    "option_b": "Blender 3D",
+    "option_c": "Microsoft Word",
+    "option_d": "AutoCAD",
+    "correct_answer": "B",
+    "description": "The lecture mentions <strong>Blender 3D</strong> as the tool used to create the shown 3D modelled image with textures, shading, shadows, and environment maps."
+  },
+  {
+    "lecture": "Graphics Lec 3: Major Areas & Applications (Lec.3.pdf)",
+    "question": "What is a real-world example of 3D scanning use?",
+    "option_a": "Capturing the exact dimensions of a sculpture for digital reproduction",
+    "option_b": "Watching a movie",
+    "option_c": "Sending an email",
+    "option_d": "Browsing the web",
+    "correct_answer": "A",
+    "description": "A <strong>3D scanner</strong> can capture the exact dimensions of a sculpture, allowing it to be <em>reproduced or digitally manipulated</em>."
+  },
+
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "What does API stand for?",
+    "option_a": "Application Programming Interface",
+    "option_b": "Automated Process Indicator",
+    "option_c": "Advanced Pixel Image",
+    "option_d": "Animated Picture Interpreter",
+    "correct_answer": "A",
+    "description": "<strong>API</strong> = Application Programming Interface — a set of functions that allows programs to perform operations like drawing images and 3D surfaces."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "What does a Graphics API do?",
+    "option_a": "Stores files on disk",
+    "option_b": "Provides functions for software to communicate with hardware to create and display visual content",
+    "option_c": "Plays audio",
+    "option_d": "Encrypts network traffic",
+    "correct_answer": "B",
+    "description": "A <strong>Graphics API</strong> provides a way for <em>software to communicate with hardware</em>, focused specifically on creating and displaying visual content."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "Every graphics program requires which two key types of APIs?",
+    "option_a": "Network API and File API",
+    "option_b": "Graphics API and User-Interface API",
+    "option_c": "Sound API and Video API",
+    "option_d": "Database API and Memory API",
+    "correct_answer": "B",
+    "description": "Every graphics program needs <strong>two APIs</strong>: a <strong>Graphics API</strong> (handles visual output) and a <strong>User-Interface API</strong> (manages user input)."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "Which is an example of the Integrated Approach to graphics APIs?",
+    "option_a": "Direct3D",
+    "option_b": "OpenGL",
+    "option_c": "Java's built-in graphics and UI APIs",
+    "option_d": "Vulkan",
+    "correct_answer": "C",
+    "description": "<strong>Java</strong> has built-in graphics and user-interface APIs — an example of the <em>Integrated Approach</em>. This ensures portability across systems."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "Which approach uses libraries like Direct3D and OpenGL?",
+    "option_a": "Integrated approach",
+    "option_b": "Library-based approach",
+    "option_c": "Cloud-based approach",
+    "option_d": "Hybrid approach",
+    "correct_answer": "B",
+    "description": "<strong>Direct3D</strong> and <strong>OpenGL</strong> are examples of the <em>Library-Based Approach</em>, where drawing commands are part of a software library."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "Which company developed Direct3D?",
+    "option_a": "Apple",
+    "option_b": "Microsoft (part of DirectX)",
+    "option_c": "Google",
+    "option_d": "Oracle",
+    "correct_answer": "B",
+    "description": "<strong>Direct3D</strong> belongs to the <strong>DirectX suite by Microsoft</strong>, focused on rendering 3D graphics."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "Which game was mentioned as using Direct3D for its 3D environments?",
+    "option_a": "Halo",
+    "option_b": "Mario",
+    "option_c": "Tetris",
+    "option_d": "Pong",
+    "correct_answer": "A",
+    "description": "<strong>Halo</strong> was given as the popular example of a game using <strong>Direct3D</strong> to render its 3D environments."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "What is a key feature of OpenGL?",
+    "option_a": "It only works on Windows",
+    "option_b": "It is cross-platform and used for both 2D and 3D graphics",
+    "option_c": "It only works for 2D graphics",
+    "option_d": "It is closed-source and proprietary",
+    "correct_answer": "B",
+    "description": "<strong>OpenGL</strong> is a <em>cross-platform</em> graphics API widely used for developing both <strong>2D and 3D</strong> graphics — popular in CAD and scientific visualization."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "Which application was mentioned as using OpenGL?",
+    "option_a": "Microsoft Word",
+    "option_b": "Google Earth",
+    "option_c": "Spotify",
+    "option_d": "Notepad",
+    "correct_answer": "B",
+    "description": "<strong>Google Earth</strong> uses <strong>OpenGL</strong> to render detailed maps and 3D landscapes."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "What is a Graphics Pipeline?",
+    "option_a": "A physical cable connecting a GPU to a monitor",
+    "option_b": "A series of steps that take input (like 3D model geometry) and turn it into pixels on the screen",
+    "option_c": "A storage system for images",
+    "option_d": "An audio processing technique",
+    "correct_answer": "B",
+    "description": "A <strong>Graphics Pipeline</strong> is a <em>series of steps</em> that take input (like 3D model geometry) and turn it into pixels on the screen — the process computers follow to create 3D images."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "What is the FIRST stage of the graphics pipeline?",
+    "option_a": "Output Merging",
+    "option_b": "Vertex Processing",
+    "option_c": "Rasterization",
+    "option_d": "Fragment Processing",
+    "correct_answer": "B",
+    "description": "The <strong>first stage</strong> is <strong>Vertex Processing</strong> — calculating the positions of 3D points (vertices) that form the basic structure of 3D objects."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "What happens during the Clipping & Culling stage?",
+    "option_a": "Pixels are colored",
+    "option_b": "Objects outside the camera view are discarded (culled), and partially-out-of-view parts are trimmed (clipped)",
+    "option_c": "3D models are exported to disk",
+    "option_d": "User input is processed",
+    "correct_answer": "B",
+    "description": "<strong>Clipping & Culling</strong> decides which parts of the scene are within the camera's view. Objects outside are <em>culled</em>; partially-visible objects are <em>clipped</em>."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "What is rasterization?",
+    "option_a": "Compressing image files",
+    "option_b": "Converting 3D models into pixels (or fragments)",
+    "option_c": "Loading textures from disk",
+    "option_d": "Defining scene lighting",
+    "correct_answer": "B",
+    "description": "<strong>Rasterization</strong> is where <em>3D models are converted into pixels</em> (or fragments) — these pixels represent the final image."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "What does Fragment Processing do?",
+    "option_a": "Assigns each pixel its final color and texture, applies lighting and shading",
+    "option_b": "Saves the image to disk",
+    "option_c": "Sends data over the network",
+    "option_d": "Compiles shader code",
+    "correct_answer": "A",
+    "description": "<strong>Fragment Processing</strong> assigns each pixel its <em>final color and texture</em>, then applies lighting and shading to make the image more realistic."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "What does Output Merging do (the final stage)?",
+    "option_a": "Loads new 3D models",
+    "option_b": "Determines which pixels are visible — front objects displayed, hidden ones removed",
+    "option_c": "Plays audio",
+    "option_d": "Writes log files",
+    "correct_answer": "B",
+    "description": "<strong>Output Merging</strong> takes colored fragments and determines <em>which pixels are visible</em>. Front objects are displayed; objects behind are hidden (e.g., a car behind a building disappears)."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "Which basic shape is most often used to construct 3D models in graphics pipelines?",
+    "option_a": "Squares",
+    "option_b": "Circles",
+    "option_c": "Triangles",
+    "option_d": "Hexagons",
+    "correct_answer": "C",
+    "description": "<strong>Triangles</strong> are used very often in CG because they are simple shapes that computers can easily process. Most 3D models are made of <em>thousands or millions</em> of small triangles."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "What is the role of Z-Buffering in the graphics pipeline?",
+    "option_a": "To determine the audio frequency",
+    "option_b": "To manage the depth of objects so the correct objects appear in front",
+    "option_c": "To compress files",
+    "option_d": "To optimize lighting calculations",
+    "correct_answer": "B",
+    "description": "<strong>Z-Buffer</strong> manages the <em>depth of objects</em>. Objects closer to the camera are drawn in front of those farther away, ensuring correct visual ordering in complex 3D scenes."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "What is Level of Detail (LOD) optimization?",
+    "option_a": "Compressing all images to lower quality",
+    "option_b": "Rendering far-away objects with fewer triangles, and closer objects with more detail",
+    "option_c": "Rendering everything at maximum detail always",
+    "option_d": "Storing models in a database",
+    "correct_answer": "B",
+    "description": "<strong>LOD optimization</strong> means objects far from the camera are rendered with <em>fewer triangles</em> (less detail needed). As objects get closer, more triangles are used to improve detail."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "How many main stages does the graphics pipeline have (as covered)?",
+    "option_a": "3",
+    "option_b": "4",
+    "option_c": "5",
+    "option_d": "7",
+    "correct_answer": "C",
+    "description": "The pipeline has <strong>5 stages</strong>: 1) Vertex Processing, 2) Clipping & Culling, 3) Rasterization, 4) Fragment Processing, 5) Output Merging."
+  },
+  {
+    "lecture": "Graphics Lec 4: APIs & Pipelines (Lec.4.pdf)",
+    "question": "Where do most modern graphics pipelines live?",
+    "option_a": "Only in software, never in hardware",
+    "option_b": "Built into the hardware (GPU), optimized to draw 3D shapes efficiently",
+    "option_c": "On a remote server only",
+    "option_d": "Inside the operating system kernel only",
+    "correct_answer": "B",
+    "description": "Most computers today have a <strong>built-in 3D graphics pipeline in their hardware</strong>. These pipelines are optimized to process 3D triangles efficiently."
+  },
+
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What is a set in mathematics and computer graphics?",
+    "option_a": "An ordered list of integers only",
+    "option_b": "A collection of distinct objects",
+    "option_c": "A mathematical equation",
+    "option_d": "A type of variable in C++",
+    "correct_answer": "B",
+    "description": "A <strong>set</strong> is a <em>collection of distinct objects</em>. In CG, sets group data elements like points, vectors, or colors."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What does the symbol ∈ mean in set theory?",
+    "option_a": "Equals",
+    "option_b": "Is a member of (membership)",
+    "option_c": "Subset",
+    "option_d": "Union",
+    "correct_answer": "B",
+    "description": "<code>a ∈ S</code> means the element <strong>a is a member of (belongs to)</strong> the set S."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What does ℝ represent?",
+    "option_a": "The set of integers",
+    "option_b": "The set of all real numbers",
+    "option_c": "The set of all 2D points",
+    "option_d": "The empty set",
+    "correct_answer": "B",
+    "description": "<strong>ℝ</strong> is the set of all <em>real numbers</em>."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What does ℝ² represent?",
+    "option_a": "The square of a real number",
+    "option_b": "The set of all ordered pairs in 2D space",
+    "option_c": "The set of all complex numbers",
+    "option_d": "The set of all 3D points",
+    "correct_answer": "B",
+    "description": "<strong>ℝ²</strong> is the set of all <em>ordered pairs in 2D space</em> — i.e., all (x, y) coordinates."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What does ℝ³ represent?",
+    "option_a": "Three real numbers added together",
+    "option_b": "The set of all points in 3D space",
+    "option_c": "The cube of a real number",
+    "option_d": "The set of triangles",
+    "correct_answer": "B",
+    "description": "<strong>ℝ³</strong> = the set of all <em>points in 3D space</em>, i.e., all (x, y, z) coordinates."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What does ℤ represent?",
+    "option_a": "The set of integers",
+    "option_b": "The set of zero only",
+    "option_c": "The set of negative numbers",
+    "option_d": "The set of irrational numbers",
+    "correct_answer": "A",
+    "description": "<strong>ℤ</strong> = the set of <em>integers</em> (whole numbers, positive and negative, including zero)."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What is the Cartesian Product of two sets A × B?",
+    "option_a": "The intersection of A and B",
+    "option_b": "A set of ordered pairs from set A and set B",
+    "option_c": "The sum of all elements in A and B",
+    "option_d": "The difference of A and B",
+    "correct_answer": "B",
+    "description": "The <strong>Cartesian Product A × B</strong> is the set of <em>ordered pairs</em> (a, b) where a ∈ A and b ∈ B."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "Which CG technique is a direct application of the Cartesian Product?",
+    "option_a": "Audio processing",
+    "option_b": "Texture mapping (each point on a 3D model is mapped to a color/texture value)",
+    "option_c": "File compression",
+    "option_d": "Network rendering",
+    "correct_answer": "B",
+    "description": "<strong>Texture mapping</strong> is a great example: each point on a 3D model is mapped to a unique color or texture value via a Cartesian Product of points × colors."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What does the notation f: A → B mean?",
+    "option_a": "A is greater than B",
+    "option_b": "A function f maps elements of set A to elements of set B",
+    "option_c": "A and B are unrelated",
+    "option_d": "Set A is a subset of B",
+    "correct_answer": "B",
+    "description": "<code>f: A → B</code> means there is a <strong>function f that maps elements of set A (the domain) to elements of set B (the codomain)</strong>."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What is the domain of a function?",
+    "option_a": "The set of all possible output values",
+    "option_b": "The set of all possible input values",
+    "option_c": "The slope of the function",
+    "option_d": "The Y-intercept",
+    "correct_answer": "B",
+    "description": "The <strong>domain</strong> of a function is the set of all possible <em>input</em> values."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What is the range of a function?",
+    "option_a": "The set of all possible output values",
+    "option_b": "The set of all possible input values",
+    "option_c": "The function's name",
+    "option_d": "Always equal to ℝ",
+    "correct_answer": "A",
+    "description": "The <strong>range</strong> is the set of all possible <em>output</em> values produced by the function."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "In a CG mapping that converts 3D coordinates (x, y, z) to 2D screen coordinates (u, v), what is the domain?",
+    "option_a": "The 2D screen points",
+    "option_b": "The 3D points",
+    "option_c": "Both 2D and 3D points",
+    "option_d": "Only the z-coordinate",
+    "correct_answer": "B",
+    "description": "When mapping 3D to 2D, the <strong>domain = 3D points</strong> (the input), and the <strong>range = 2D screen points</strong> (the output)."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What is an inverse mapping f⁻¹?",
+    "option_a": "A function that doubles the input",
+    "option_b": "A function that undoes the original — if f(a)=b then f⁻¹(b)=a",
+    "option_c": "The negative of f",
+    "option_d": "A function that always returns zero",
+    "correct_answer": "B",
+    "description": "An <strong>inverse mapping f⁻¹</strong> undoes the original function. If <code>f(a) = b</code>, then <code>f⁻¹(b) = a</code>."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "When does an inverse mapping exist for a function?",
+    "option_a": "Always — every function has an inverse",
+    "option_b": "Only if the function is bijective (both injective and surjective)",
+    "option_c": "Only if the function is linear",
+    "option_d": "Only if the function operates on integers",
+    "correct_answer": "B",
+    "description": "An inverse mapping <strong>only exists if the function is bijective</strong> — meaning each element of B is mapped by exactly one element of A (injective + surjective)."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "If f(x) = x³, what is f⁻¹(x)?",
+    "option_a": "x²",
+    "option_b": "∛x (cube root of x)",
+    "option_c": "1/x",
+    "option_d": "−x",
+    "correct_answer": "B",
+    "description": "Since cubing is bijective on ℝ, the inverse of <code>f(x) = x³</code> is <strong>f⁻¹(x) = ∛x</strong> (the cube root)."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What is an injective (one-to-one) function?",
+    "option_a": "Every element in the domain maps to the same target value",
+    "option_b": "No two elements in the domain map to the same element in the target",
+    "option_c": "Every output value is reached by some input",
+    "option_d": "The function is its own inverse",
+    "correct_answer": "B",
+    "description": "<strong>Injective (one-to-one)</strong>: <em>no two elements in the domain</em> map to the same element in the target. Each input has a unique output."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What is a surjective (onto) function?",
+    "option_a": "A function whose graph is a straight line",
+    "option_b": "Every element in the target has at least one element in the domain mapping to it",
+    "option_c": "A function that returns the input unchanged",
+    "option_d": "A function with no inverse",
+    "correct_answer": "B",
+    "description": "<strong>Surjective (onto)</strong>: <em>every element in the target has at least one element in the domain mapping to it</em>. The function 'covers' the entire target set."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "Is f(x) = x² (with x ∈ ℝ) surjective onto ℝ?",
+    "option_a": "Yes",
+    "option_b": "No, because no real number squared gives a negative result",
+    "option_c": "Yes, because x² is always positive",
+    "option_d": "Only for x ≥ 0",
+    "correct_answer": "B",
+    "description": "<strong>No</strong>: <code>x²</code> never produces a negative number, so negative reals in the target are never reached. Hence x² is <em>not surjective</em> onto ℝ."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What is a bijective function?",
+    "option_a": "A function that is injective only",
+    "option_b": "A function that is both injective AND surjective",
+    "option_c": "A function with two inputs",
+    "option_d": "A function returning only zero",
+    "correct_answer": "B",
+    "description": "A function is <strong>bijective</strong> if it is <em>both injective and surjective</em>. Bijective functions have inverses, which makes them especially useful."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What is an interval in set theory?",
+    "option_a": "A jump in the function's value",
+    "option_b": "A set containing all numbers between two endpoints",
+    "option_c": "The set of integers between two reals",
+    "option_d": "Always a finite set",
+    "correct_answer": "B",
+    "description": "An <strong>interval</strong> is a set containing <em>all numbers between two endpoints</em>."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What does the open interval (0, 1) mean?",
+    "option_a": "All numbers between 0 and 1, including 0 and 1",
+    "option_b": "All numbers between 0 and 1, but does NOT include 0 or 1",
+    "option_c": "Only the numbers 0 and 1",
+    "option_d": "All integers from 0 to 1",
+    "correct_answer": "B",
+    "description": "The <strong>open interval (0, 1)</strong> contains all numbers between 0 and 1, but <em>does NOT include</em> the endpoints 0 or 1."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What does the closed interval [0, 1] mean?",
+    "option_a": "All numbers between 0 and 1, excluding both endpoints",
+    "option_b": "All numbers between 0 and 1, including both 0 and 1",
+    "option_c": "Only the integer 0 and 1",
+    "option_d": "Numbers greater than 1",
+    "correct_answer": "B",
+    "description": "The <strong>closed interval [0, 1]</strong> includes <em>both endpoints</em>: 0, 1, and every real number between them."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What is the union of {1, 2} ∪ {2, 3}?",
+    "option_a": "{1, 2, 2, 3}",
+    "option_b": "{2}",
+    "option_c": "{1, 2, 3}",
+    "option_d": "{1, 3}",
+    "correct_answer": "C",
+    "description": "<strong>Union</strong> contains all elements from both sets (no duplicates): <code>{1, 2} ∪ {2, 3} = {1, 2, 3}</code>."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What is the intersection of {1, 2} ∩ {2, 3}?",
+    "option_a": "{1, 2, 3}",
+    "option_b": "{2}",
+    "option_c": "{1, 3}",
+    "option_d": "{}",
+    "correct_answer": "B",
+    "description": "<strong>Intersection</strong> contains elements common to both sets: <code>{1, 2} ∩ {2, 3} = {2}</code>."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "What is {1, 2} − {2, 3}?",
+    "option_a": "{1, 2, 3}",
+    "option_b": "{1}",
+    "option_c": "{2}",
+    "option_d": "{}",
+    "correct_answer": "B",
+    "description": "<strong>Difference</strong> contains elements in one set but not the other: <code>{1, 2} − {2, 3} = {1}</code>."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "Is f(x) = 2x for x ∈ ℤ injective?",
+    "option_a": "No, multiple inputs map to the same output",
+    "option_b": "Yes — each x produces a unique value 2x",
+    "option_c": "It depends on the value of x",
+    "option_d": "Only for negative x",
+    "correct_answer": "B",
+    "description": "<strong>Yes, f(x) = 2x is injective</strong> — each integer x produces a <em>unique</em> value 2x; no two different inputs share an output."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "If f(x, y) = (2x, 3y), what does this transformation do geometrically?",
+    "option_a": "Rotates the point by 90 degrees",
+    "option_b": "Stretches the point by factor 2 in x-direction and factor 3 in y-direction",
+    "option_c": "Reflects the point across the origin",
+    "option_d": "Translates the point by (2, 3)",
+    "correct_answer": "B",
+    "description": "<code>f(x, y) = (2x, 3y)</code> <strong>stretches</strong> the point by factor <strong>2</strong> in the x-direction and factor <strong>3</strong> in the y-direction — a non-uniform scaling."
+  },
+  {
+    "lecture": "Graphics Lec 5: Sets and Mapping (Lec.5.pdf)",
+    "question": "Why are sets and mappings important in computer graphics?",
+    "option_a": "They are only used for storing files",
+    "option_b": "They help structure, organize, and transform data efficiently",
+    "option_c": "They are not actually used in CG",
+    "option_d": "They only matter for 2D, never 3D",
+    "correct_answer": "B",
+    "description": "Sets and mappings help <strong>structure, organize, and transform data efficiently</strong>. They're fundamental in many algorithms and processes in CG, including transformations and texture mapping."
+  }
+]

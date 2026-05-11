@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 class StudyGuideController extends Controller
 {
     private array $subjects = [
-        'nlp' => ['lectures' => ['1', '2']],
-        'mobile' => ['lectures' => ['1', '2', '3', '4', '5', '6', '7']],
-        'graphics' => ['lectures' => ['1', '2']],
+        'nlp' => ['lectures' => ['1', '2', '3', '4', '5', '6', '7']],
+        'mobile' => ['lectures' => ['1', '2', '3', '4', '5', '6', '7', '8', '9']],
+        'graphics' => ['lectures' => ['1', '2', '3', '4', '5']],
     ];
 
     public function index()

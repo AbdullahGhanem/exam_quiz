@@ -1,0 +1,352 @@
+[
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What does the while loop do?",
+    "option_a": "Executes statements once",
+    "option_b": "Executes statements while a particular condition is true",
+    "option_c": "Skips statements that match a condition",
+    "option_d": "Executes statements only once if the condition is false",
+    "correct_answer": "B",
+    "description": "A <code>while</code> loop continually executes its body <strong>as long as</strong> its condition evaluates to <code>true</code>. As soon as the condition becomes <code>false</code>, the loop exits."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "Which of these are essential elements of any loop?",
+    "option_a": "Class, object, method",
+    "option_b": "Control variable, initial value, increment/decrement, continuation condition",
+    "option_c": "Try, catch, finally",
+    "option_d": "Public, private, protected",
+    "correct_answer": "B",
+    "description": "Every loop needs four pieces: a <strong>control variable</strong> (counter), an <strong>initial value</strong>, an <strong>increment/decrement</strong> step, and a <strong>continuation condition</strong> that determines when to stop."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What is printed by this code? int count = 0; while (count < 3) { System.out.print(count + \" \"); count++; }",
+    "option_a": "0 1 2 3",
+    "option_b": "1 2 3",
+    "option_c": "0 1 2",
+    "option_d": "Infinite loop",
+    "correct_answer": "C",
+    "description": "Iteration prints <code>0</code>, then <code>1</code>, then <code>2</code>. When <code>count</code> becomes <code>3</code> the condition <code>count &lt; 3</code> is <code>false</code> and the loop exits. Output: <strong>0 1 2</strong>."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What happens if you forget to increment the loop counter inside a while loop?",
+    "option_a": "The loop runs exactly once",
+    "option_b": "The loop never executes",
+    "option_c": "It causes an infinite loop",
+    "option_d": "It throws a compile-time error",
+    "correct_answer": "C",
+    "description": "Without an increment, the condition stays true forever and the loop never exits — this is an <strong>infinite loop</strong>. Java doesn't catch this at compile time."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What is a sentinel (or flag) value?",
+    "option_a": "A reserved Java keyword",
+    "option_b": "A specific input value used to signal the end of a loop",
+    "option_c": "A constant declared with the final keyword",
+    "option_d": "A loop counter starting from zero",
+    "correct_answer": "B",
+    "description": "A <strong>sentinel value</strong> (a.k.a. flag value) is a special input chosen to tell the loop to stop — for example, <code>0</code> meaning \"end of input\" when summing user-entered numbers."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "Why is it dangerous to use floating-point values for equality checking in a loop control?",
+    "option_a": "Because floating-point math is faster than integer math",
+    "option_b": "Because floating-point values are stored as approximations",
+    "option_c": "Because Java doesn't allow doubles in loops",
+    "option_d": "Because floats are slower than ints",
+    "correct_answer": "B",
+    "description": "Floating-point values are <strong>approximations</strong> in binary, so a comparison like <code>x == 0.1</code> can be unexpectedly <code>false</code>. Always use a tolerance check (<code>Math.abs(x - 0.1) &lt; 1e-9</code>) or use integers."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What does the break statement do inside a loop?",
+    "option_a": "Skips the current iteration and continues with the next",
+    "option_b": "Restarts the loop from the beginning",
+    "option_c": "Terminates the loop immediately and transfers control to the statement after it",
+    "option_d": "Pauses the loop until user input is received",
+    "correct_answer": "C",
+    "description": "<code>break</code> <strong>terminates the loop entirely</strong> as soon as it's encountered, transferring control to the first statement after the loop."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What does the continue statement do inside a loop?",
+    "option_a": "Exits the loop completely",
+    "option_b": "Jumps to the beginning of the loop for the next iteration, skipping remaining statements in the current iteration",
+    "option_c": "Pauses execution",
+    "option_d": "Throws an exception",
+    "correct_answer": "B",
+    "description": "<code>continue</code> <strong>skips the rest of the current iteration</strong> and jumps to the loop's next iteration. Unlike <code>break</code>, the loop itself keeps running."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What does this loop print? for (int i = 1; i <= 5; i++) { if (i == 3) continue; System.out.print(i + \" \"); }",
+    "option_a": "1 2 3 4 5",
+    "option_b": "1 2 4 5",
+    "option_c": "1 2",
+    "option_d": "3",
+    "correct_answer": "B",
+    "description": "When <code>i == 3</code>, <code>continue</code> skips the print statement and goes to the next iteration. Output: <strong>1 2 4 5</strong>."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What does this loop print? for (int i = 1; i <= 5; i++) { if (i == 3) break; System.out.print(i + \" \"); }",
+    "option_a": "1 2 3 4 5",
+    "option_b": "1 2 4 5",
+    "option_c": "1 2",
+    "option_d": "1 2 3",
+    "correct_answer": "C",
+    "description": "When <code>i == 3</code>, <code>break</code> exits the loop entirely <em>before</em> printing. Output: <strong>1 2</strong>."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What is the key difference between while and do-while?",
+    "option_a": "do-while is faster than while",
+    "option_b": "do-while evaluates its condition at the bottom, so the body always executes at least once",
+    "option_c": "do-while can only run a fixed number of times",
+    "option_d": "do-while doesn't need a condition",
+    "correct_answer": "B",
+    "description": "In <code>do-while</code> the condition is checked <strong>after</strong> the body, guaranteeing the body runs <strong>at least once</strong> even if the condition is initially false. In <code>while</code> the condition is checked first and the body might not run at all."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What is the syntax of a do-while loop?",
+    "option_a": "do (condition) { statements }",
+    "option_b": "do { statements } while (condition);",
+    "option_c": "do { statements } until (condition);",
+    "option_d": "while (condition) do { statements }",
+    "correct_answer": "B",
+    "description": "Correct syntax: <code>do { Statement(s); } while (condition);</code> — note the semicolon at the end after the closing parenthesis."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What is the syntax of a for loop?",
+    "option_a": "for (initialization; termination; increment) { statements }",
+    "option_b": "for (variable in collection) { statements }",
+    "option_c": "for { statements } until (condition)",
+    "option_d": "for (condition) { statements }",
+    "correct_answer": "A",
+    "description": "Java's <code>for</code> syntax: <code>for (initialization; termination; increment/decrement) { statement(s) }</code>."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "When is the increment expression of a for loop executed?",
+    "option_a": "Before the loop starts, once",
+    "option_b": "Before each iteration",
+    "option_c": "After each iteration of the loop",
+    "option_d": "Only when the loop terminates",
+    "correct_answer": "C",
+    "description": "The increment/decrement expression runs <strong>after every iteration</strong> of the loop body, just before the termination check is re-evaluated."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "When is the initialization expression of a for loop executed?",
+    "option_a": "Once, when the loop begins",
+    "option_b": "Before every iteration",
+    "option_c": "After the loop ends",
+    "option_d": "Never; it's optional",
+    "correct_answer": "A",
+    "description": "The initialization expression runs <strong>exactly once</strong> at the start of the loop. It's a great place to declare and initialize a loop counter."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "Is this a valid for loop? for (;;) { System.out.println(\"hi\"); }",
+    "option_a": "No, all three parts are required",
+    "option_b": "Yes, and it creates an infinite loop unless break is used",
+    "option_c": "No, it's a syntax error",
+    "option_d": "Yes, but it runs exactly once",
+    "correct_answer": "B",
+    "description": "All three parts are optional. <code>for (;;)</code> with no condition means <strong>always true</strong>, creating an infinite loop. You must use <code>break</code> (or return/throw) to exit."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What are nested loops?",
+    "option_a": "Two loops that run in parallel threads",
+    "option_b": "A loop placed inside another loop",
+    "option_c": "Loops that cannot be exited with break",
+    "option_d": "Loops that share the same counter variable",
+    "correct_answer": "B",
+    "description": "<strong>Nested loops</strong> are loops <em>inside</em> other loops. Each time the outer loop iterates, the inner loop runs its full cycle from the start."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What does this nested loop print? for (int i = 1; i <= 3; i++) { for (int j = 1; j <= 2; j++) { System.out.print(i + \"\" + j + \" \"); } }",
+    "option_a": "11 12 21 22 31 32",
+    "option_b": "1 2 3 1 2 3",
+    "option_c": "11 22 33",
+    "option_d": "12 21 31",
+    "correct_answer": "A",
+    "description": "Outer <code>i</code> goes 1, 2, 3. For each <code>i</code>, inner <code>j</code> goes 1, 2. So pairs are: 11, 12, 21, 22, 31, 32 → <strong>11 12 21 22 31 32</strong>."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "Which task is a classic example of nested loops?",
+    "option_a": "Reading user input",
+    "option_b": "Printing a multiplication table",
+    "option_c": "Connecting to a database",
+    "option_d": "Catching exceptions",
+    "correct_answer": "B",
+    "description": "A <strong>multiplication table</strong> is the classic nested-loop exercise: outer loop iterates rows (one factor), inner loop iterates columns (the other factor)."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What is a method in Java?",
+    "option_a": "A type of variable",
+    "option_b": "A class with no instance",
+    "option_c": "A collection of statements grouped together to perform an operation",
+    "option_d": "A keyword for inheritance",
+    "correct_answer": "C",
+    "description": "A <strong>method</strong> is a <em>collection of statements grouped together to perform an operation</em>. Methods enable reuse, hide implementation details, and reduce complexity."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "Which of these is NOT a benefit of using methods?",
+    "option_a": "Write once, reuse anywhere",
+    "option_b": "Hide the implementation (information hiding)",
+    "option_c": "Reduce complexity",
+    "option_d": "Make the program run faster automatically",
+    "correct_answer": "D",
+    "description": "Methods don't automatically make programs faster — they're about <strong>structure</strong>: reuse, information hiding, and complexity reduction. Performance benefits, if any, are indirect."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "In the method declaration `public int max(int num1, int num2)`, what is `int` (the second word)?",
+    "option_a": "The method name",
+    "option_b": "The access modifier",
+    "option_c": "The return type",
+    "option_d": "A parameter type",
+    "correct_answer": "C",
+    "description": "Order in the header: <strong>modifier</strong> (<code>public</code>) → <strong>return type</strong> (<code>int</code>) → <strong>name</strong> (<code>max</code>) → <strong>parameters</strong> (<code>int num1, int num2</code>)."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "Which access modifier makes a method visible only inside the class where it's defined?",
+    "option_a": "public",
+    "option_b": "private",
+    "option_c": "protected",
+    "option_d": "void",
+    "correct_answer": "B",
+    "description": "<code>private</code> restricts visibility to the <strong>class only</strong>. <code>public</code> = visible to the world; <code>protected</code> = package + subclasses; <code>void</code> is a return type, not an access modifier."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "Which access modifier makes a method visible to its package and all subclasses?",
+    "option_a": "public",
+    "option_b": "private",
+    "option_c": "protected",
+    "option_d": "static",
+    "correct_answer": "C",
+    "description": "<code>protected</code> = visible to the <strong>same package</strong> and to <strong>all subclasses</strong> (even outside the package)."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What does it mean if a method's return type is `void`?",
+    "option_a": "The method returns null",
+    "option_b": "The method does not return any value",
+    "option_c": "The method takes no parameters",
+    "option_d": "The method cannot be called",
+    "correct_answer": "B",
+    "description": "<code>void</code> means the method <strong>does not return any value</strong>. It's used for methods whose purpose is a side-effect (printing, modifying state) rather than producing a value."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "How are parameters passed to a Java method (per the lecture)?",
+    "option_a": "By reference",
+    "option_b": "By value",
+    "option_c": "By pointer",
+    "option_d": "By address",
+    "correct_answer": "B",
+    "description": "Java parameters are passed <strong>by value</strong> — the method receives a copy of the value, so reassigning a parameter inside the method does NOT change the caller's variable."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "If a method returns a value, how should it typically be called?",
+    "option_a": "As a stand-alone statement",
+    "option_b": "Its result should be assigned, used in an expression, or printed",
+    "option_c": "It cannot be called from main()",
+    "option_d": "It must be called twice in a row",
+    "correct_answer": "B",
+    "description": "When a method returns a value, you usually <strong>capture or use that value</strong>: <code>int larger = max(3, 4);</code> or <code>System.out.println(max(3, 4));</code>. Otherwise the returned value is wasted."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "How is a method that returns void called?",
+    "option_a": "It must be assigned to a variable",
+    "option_b": "It must appear inside an expression",
+    "option_c": "The call must be a stand-alone statement",
+    "option_d": "It cannot be called",
+    "correct_answer": "C",
+    "description": "A <code>void</code> method has no return value, so the call is just a <strong>statement</strong>: <code>System.out.println(\"Hi\");</code>. You can't assign it to a variable."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What is variable scope in Java?",
+    "option_a": "The data type of a variable",
+    "option_b": "The region of code in which a variable is accessible",
+    "option_c": "The number of bytes a variable uses",
+    "option_d": "Whether a variable is mutable or final",
+    "correct_answer": "B",
+    "description": "<strong>Scope</strong> defines the region of code where a variable is <em>visible and accessible</em>. In Java, variables are accessible only inside the region where they're declared."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "A variable declared directly inside a method is said to have which scope?",
+    "option_a": "Method scope",
+    "option_b": "Block scope",
+    "option_c": "Global scope",
+    "option_d": "Class scope",
+    "correct_answer": "A",
+    "description": "<strong>Method scope:</strong> a variable declared directly inside a method is available anywhere in that method <em>after</em> the line where it's declared."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "A variable declared inside a pair of curly braces { } (e.g., inside an if block) has which scope?",
+    "option_a": "Method scope",
+    "option_b": "Block scope",
+    "option_c": "Global scope",
+    "option_d": "Universal scope",
+    "correct_answer": "B",
+    "description": "<strong>Block scope:</strong> variables declared inside <code>{ }</code> (an <code>if</code>, <code>for</code>, etc.) are only accessible by code <em>inside those braces</em>."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "A variable declared outside all methods (but inside the class) has which scope?",
+    "option_a": "Method scope",
+    "option_b": "Block scope",
+    "option_c": "Global scope (class field)",
+    "option_d": "Local scope",
+    "correct_answer": "C",
+    "description": "Variables declared <strong>outside all methods</strong> (directly inside the class) have <strong>global scope</strong> — they're class fields accessible from any method of the class."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "Will this code compile? void foo() { if (true) { int y = 10; } System.out.println(y); }",
+    "option_a": "Yes, it prints 10",
+    "option_b": "No, y is out of scope outside the if block",
+    "option_c": "Yes, but it prints 0",
+    "option_d": "Yes, but it throws a runtime exception",
+    "correct_answer": "B",
+    "description": "<code>y</code> has <strong>block scope</strong> — it's declared inside the <code>if</code>'s braces and is undefined outside them. The compiler reports: <em>cannot find symbol y</em>."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "What is the output of: int sum = 0; for (int i = 1; i <= 4; i++) { sum += i; } System.out.println(sum);",
+    "option_a": "10",
+    "option_b": "4",
+    "option_c": "0",
+    "option_d": "24",
+    "correct_answer": "A",
+    "description": "Sum of 1+2+3+4 = <strong>10</strong>. The loop adds each <code>i</code> to <code>sum</code> while <code>i &lt;= 4</code>."
+  },
+  {
+    "lecture": "Lecture 5: Loops & Methods (05-Development Software for Mobile.pdf)",
+    "question": "How many times does this do-while body execute? int n = 100; do { System.out.println(n); n++; } while (n < 0);",
+    "option_a": "0 times",
+    "option_b": "1 time",
+    "option_c": "100 times",
+    "option_d": "Infinite",
+    "correct_answer": "B",
+    "description": "Even though the condition <code>n &lt; 0</code> is false from the start, <code>do-while</code> always runs the body <strong>at least once</strong>. So it prints <code>100</code>, then exits."
+  }
+]

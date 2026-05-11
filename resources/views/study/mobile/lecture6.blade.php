@@ -5,36 +5,36 @@
 
     {{-- Header --}}
     <div class="mb-8">
-        <a href="{{ route('study.subject', 'mobile') }}" class="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-rose-600 transition-colors mb-4">
+        <a href="{{ route('study.subject', 'mobile') }}" class="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-emerald-600 transition-colors mb-4">
             <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
             </svg>
             العودة للمحاضرات
         </a>
         <div class="card rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden">
-            <div class="bg-gradient-to-r from-rose-600 to-pink-600 px-8 py-8 text-center">
+            <div class="bg-gradient-to-r from-emerald-600 to-green-600 px-8 py-8 text-center">
                 <div class="w-16 h-16 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center mx-auto mb-4">
                     <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/>
                     </svg>
                 </div>
-                <h1 class="text-2xl md:text-3xl font-extrabold text-white mb-2">المحاضرة السادسة: Activity Lifecycle</h1>
-                <p class="text-rose-200 text-sm">دورة حياة الـ Activity في Android</p>
+                <h1 class="text-2xl md:text-3xl font-extrabold text-white mb-2">المحاضرة السادسة: Android & Android Studio</h1>
+                <p class="text-emerald-200 text-sm">Software Development for Mobile Devices</p>
             </div>
         </div>
     </div>
 
     {{-- ============================================================ --}}
-    {{-- Section 1: ما هي الـ Activity --}}
+    {{-- Section 1: ما هو Android؟ --}}
     {{-- ============================================================ --}}
     <div class="mb-6">
-        <div class="card rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden border-t-4 border-t-rose-500">
+        <div class="card rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden border-t-4 border-t-emerald-500">
             <button onclick="toggleSection('sec1')" class="w-full flex items-center justify-between px-6 py-5 hover:bg-slate-50/50 transition-colors">
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl bg-rose-100 flex items-center justify-center text-rose-600">
-                        <span class="text-xl">🪟</span>
+                    <div class="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600">
+                        <span class="text-xl">🤖</span>
                     </div>
-                    <h2 class="text-lg font-bold text-slate-800">ما هي الـ Activity؟</h2>
+                    <h2 class="text-lg font-bold text-slate-800">ما هو Android؟</h2>
                 </div>
                 <div class="flex items-center gap-2">
                     <button onclick="event.stopPropagation(); markDone('sec1', this)" class="done-btn text-xs px-2.5 py-1 rounded-lg border border-slate-200 text-slate-400 hover:bg-emerald-50 hover:text-emerald-600 hover:border-emerald-200 transition-colors">تم</button>
@@ -46,17 +46,36 @@
 
             <div class="study-section px-6 pb-6" id="sec1" style="max-height: 2000px;">
                 <div class="space-y-5">
-                    <div class="bg-rose-50/70 rounded-xl p-5 border border-rose-100">
+                    <div class="bg-emerald-50/70 rounded-xl p-5 border border-emerald-100">
                         <p class="text-slate-700 leading-relaxed text-base">
-                            <span class="term">Activity</span> هي <strong>الشاشة الواحدة</strong> (single screen) في Android.
-                            تحتوي على كل عناصر الـ <span class="term-en">UI</span> في شاشة واحدة.
+                            <span class="term">Android</span> هو نظام تشغيل <span class="term">مفتوح المصدر</span> <span class="term-en">(Open-Source Mobile OS)</span> طوّرته <span class="term">Google</span>،
+                            وأول جهاز Android طُرح في عام <strong>2008</strong>. النظام مبني على <span class="term">Linux Kernel</span>.
                         </p>
                     </div>
 
-                    <div class="bg-white rounded-xl border border-slate-200 p-5">
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            دورة حياة الـ Activity (<span class="term-en">Activity Lifecycle</span>) يتحكم فيها
-                            <strong class="text-rose-600">7 methods</strong> يستدعيها نظام Android بناءً على <strong>تفاعل المستخدم</strong> مع الـ Activity.
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-white rounded-xl border border-slate-200 p-5">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="text-xl">💻</span>
+                                <h3 class="font-bold text-emerald-700">لغات البرمجة</h3>
+                            </div>
+                            <p class="text-sm text-slate-600">تطبيقات Android تُكتب عادةً بلغة <span class="term-en font-semibold">Java</span> أو <span class="term-en font-semibold">Kotlin</span> (وأحياناً C#، Python، Dart).</p>
+                        </div>
+                        <div class="bg-white rounded-xl border border-slate-200 p-5">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="text-xl">🎨</span>
+                                <h3 class="font-bold text-green-700">UI / UX</h3>
+                            </div>
+                            <p class="text-sm text-slate-600">واجهات المستخدم تُبنى بلغة <span class="term-en font-semibold">XML</span> (eXtensible Markup Language).</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-cyan-50 border border-cyan-200 rounded-xl p-4">
+                        <p class="text-sm text-cyan-800 leading-relaxed">
+                            <strong>توسعات Android:</strong> Google طوّرت أيضاً
+                            <span class="term-en font-semibold">Android TV</span> للتلفزيونات،
+                            <span class="term-en font-semibold">Android Auto</span> للسيارات،
+                            و <span class="term-en font-semibold">Wear OS</span> للساعات الذكية.
                         </p>
                     </div>
                 </div>
@@ -65,16 +84,16 @@
     </div>
 
     {{-- ============================================================ --}}
-    {{-- Section 2: الـ 7 Methods --}}
+    {{-- Section 2: Android Versions & API Level --}}
     {{-- ============================================================ --}}
     <div class="mb-6">
-        <div class="card rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden border-t-4 border-t-pink-500">
+        <div class="card rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden border-t-4 border-t-blue-500">
             <button onclick="toggleSection('sec2')" class="w-full flex items-center justify-between px-6 py-5 hover:bg-slate-50/50 transition-colors">
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl bg-pink-100 flex items-center justify-center text-pink-600">
-                        <span class="text-xl">🔄</span>
+                    <div class="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center text-blue-600">
+                        <span class="text-xl">🍰</span>
                     </div>
-                    <h2 class="text-lg font-bold text-slate-800">الـ 7 Methods الأساسية</h2>
+                    <h2 class="text-lg font-bold text-slate-800">إصدارات Android و API Level</h2>
                 </div>
                 <div class="flex items-center gap-2">
                     <button onclick="event.stopPropagation(); markDone('sec2', this)" class="done-btn text-xs px-2.5 py-1 rounded-lg border border-slate-200 text-slate-400 hover:bg-emerald-50 hover:text-emerald-600 hover:border-emerald-200 transition-colors">تم</button>
@@ -84,91 +103,49 @@
                 </div>
             </button>
 
-            <div class="study-section px-6 pb-6" id="sec2" style="max-height: 6000px;">
-                <div class="space-y-4">
-
-                    {{-- onCreate --}}
-                    <div class="bg-emerald-50 rounded-xl p-5 border-r-4 border-emerald-400">
-                        <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
-                            <h3 class="font-bold text-emerald-700 font-mono" dir="ltr">onCreate()</h3>
-                            <div class="flex gap-2 text-xs">
-                                <span class="bg-red-100 text-red-700 px-2 py-0.5 rounded font-semibold">Kill After: No</span>
-                                <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded font-semibold">Next: onStart()</span>
-                            </div>
-                        </div>
-                        <p class="text-sm text-slate-700">يُستدعى عند <strong>الإنشاء الابتدائي</strong> للـ Activity. مسؤول عن: بناء الـ Views، ربط البيانات بالـ controls، وإدارة/استرجاع state من الـ bundle.</p>
+            <div class="study-section px-6 pb-6" id="sec2" style="max-height: 2000px;">
+                <div class="space-y-5">
+                    <div class="bg-blue-50/70 rounded-xl p-5 border border-blue-100">
+                        <p class="text-slate-700 leading-relaxed">
+                            كل إصدار من Android له <span class="term">اسم رمزي</span> (غالباً اسم حلوى) و<span class="term">رقم API Level</span>.
+                            <span class="term">API Level</span> هو رقم صحيح يحدّد مراجعة الـ framework API التي يقدّمها الإصدار.
+                        </p>
                     </div>
 
-                    {{-- onStart --}}
-                    <div class="bg-teal-50 rounded-xl p-5 border-r-4 border-teal-400">
-                        <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
-                            <h3 class="font-bold text-teal-700 font-mono" dir="ltr">onStart()</h3>
-                            <div class="flex gap-2 text-xs">
-                                <span class="bg-red-100 text-red-700 px-2 py-0.5 rounded font-semibold">Kill After: No</span>
-                                <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded font-semibold">Next: onResume()</span>
-                            </div>
-                        </div>
-                        <p class="text-sm text-slate-700">يُستدعى <strong>مباشرة قبل ظهور</strong> الـ Activity على الشاشة.</p>
+                    <div class="bg-white rounded-xl border border-slate-200 p-5 overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b-2 border-blue-200">
+                                    <th class="text-start py-2 px-3 text-blue-700 font-bold">الإصدار</th>
+                                    <th class="text-start py-2 px-3 text-blue-700 font-bold">الاسم الرمزي</th>
+                                    <th class="text-start py-2 px-3 text-blue-700 font-bold">API</th>
+                                    <th class="text-start py-2 px-3 text-blue-700 font-bold">السنة</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-slate-600">
+                                <tr class="border-b border-slate-100"><td class="py-2 px-3">1.5</td><td class="py-2 px-3">Cupcake</td><td class="py-2 px-3 font-mono">3</td><td class="py-2 px-3">2009</td></tr>
+                                <tr class="border-b border-slate-100"><td class="py-2 px-3">4.4</td><td class="py-2 px-3">KitKat</td><td class="py-2 px-3 font-mono">19</td><td class="py-2 px-3">2013</td></tr>
+                                <tr class="border-b border-slate-100"><td class="py-2 px-3">5.0</td><td class="py-2 px-3">Lollipop</td><td class="py-2 px-3 font-mono">21</td><td class="py-2 px-3">2014</td></tr>
+                                <tr class="border-b border-slate-100"><td class="py-2 px-3">6.0</td><td class="py-2 px-3">Marshmallow</td><td class="py-2 px-3 font-mono">23</td><td class="py-2 px-3">2015</td></tr>
+                                <tr class="border-b border-slate-100"><td class="py-2 px-3">8.0</td><td class="py-2 px-3">Oreo</td><td class="py-2 px-3 font-mono">26</td><td class="py-2 px-3">2017</td></tr>
+                                <tr class="border-b border-slate-100"><td class="py-2 px-3">9.0</td><td class="py-2 px-3">Pie</td><td class="py-2 px-3 font-mono">28</td><td class="py-2 px-3">2018</td></tr>
+                                <tr class="border-b border-slate-100"><td class="py-2 px-3">11</td><td class="py-2 px-3">R</td><td class="py-2 px-3 font-mono">30</td><td class="py-2 px-3">2020</td></tr>
+                                <tr class="border-b border-slate-100"><td class="py-2 px-3">13</td><td class="py-2 px-3">Tiramisu</td><td class="py-2 px-3 font-mono">33</td><td class="py-2 px-3">2022</td></tr>
+                                <tr class="border-b border-slate-100"><td class="py-2 px-3">14</td><td class="py-2 px-3">Upside Down Cake</td><td class="py-2 px-3 font-mono">34</td><td class="py-2 px-3">2023</td></tr>
+                                <tr><td class="py-2 px-3 font-bold">15</td><td class="py-2 px-3 font-bold">Vanilla Ice Cream</td><td class="py-2 px-3 font-mono font-bold">35</td><td class="py-2 px-3 font-bold">2024</td></tr>
+                            </tbody>
+                        </table>
                     </div>
 
-                    {{-- onResume --}}
-                    <div class="bg-cyan-50 rounded-xl p-5 border-r-4 border-cyan-400">
-                        <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
-                            <h3 class="font-bold text-cyan-700 font-mono" dir="ltr">onResume()</h3>
-                            <div class="flex gap-2 text-xs">
-                                <span class="bg-red-100 text-red-700 px-2 py-0.5 rounded font-semibold">Kill After: No</span>
-                                <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded font-semibold">Next: onPause()</span>
-                            </div>
-                        </div>
-                        <p class="text-sm text-slate-700">يُستدعى لمّا تكون الـ Activity جاهزة لاستقبال <strong>إدخال المستخدم</strong>. بعد هذا الـ method تبدأ الـ Activity بالتفاعل مع المستخدم.</p>
-                    </div>
-
-                    {{-- onPause --}}
-                    <div class="bg-amber-50 rounded-xl p-5 border-r-4 border-amber-400">
-                        <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
-                            <h3 class="font-bold text-amber-700 font-mono" dir="ltr">onPause()</h3>
-                            <div class="flex gap-2 text-xs">
-                                <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded font-semibold">Kill After: Yes</span>
-                                <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded font-semibold">Next: onStop() أو onResume()</span>
-                            </div>
-                        </div>
-                        <p class="text-sm text-slate-700">يُستدعى لمّا تكون الـ Activity <strong>ظاهرة لكن غير تفاعلية</strong> (visible but not interactive). مثل: ظهور popup، أو عند الانتقال لـ Activity أخرى.</p>
-                    </div>
-
-                    {{-- onStop --}}
-                    <div class="bg-orange-50 rounded-xl p-5 border-r-4 border-orange-400">
-                        <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
-                            <h3 class="font-bold text-orange-700 font-mono" dir="ltr">onStop()</h3>
-                            <div class="flex gap-2 text-xs">
-                                <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded font-semibold">Kill After: Yes</span>
-                                <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded font-semibold">Next: onRestart() أو onDestroy()</span>
-                            </div>
-                        </div>
-                        <p class="text-sm text-slate-700">يُستدعى لمّا تكون الـ Activity <strong>غير ظاهرة</strong> على الشاشة.</p>
-                    </div>
-
-                    {{-- onRestart --}}
-                    <div class="bg-violet-50 rounded-xl p-5 border-r-4 border-violet-400">
-                        <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
-                            <h3 class="font-bold text-violet-700 font-mono" dir="ltr">onRestart()</h3>
-                            <div class="flex gap-2 text-xs">
-                                <span class="bg-red-100 text-red-700 px-2 py-0.5 rounded font-semibold">Kill After: No</span>
-                                <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded font-semibold">Next: onStart()</span>
-                            </div>
-                        </div>
-                        <p class="text-sm text-slate-700">يُستدعى بعد ما الـ Activity تكون <strong>متوقفة (stopped)</strong> ويتم إعادة تشغيلها (مثل: العودة بعد مكالمة هاتفية، أو إعادة التطبيق للواجهة).</p>
-                    </div>
-
-                    {{-- onDestroy --}}
-                    <div class="bg-red-50 rounded-xl p-5 border-r-4 border-red-400">
-                        <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
-                            <h3 class="font-bold text-red-700 font-mono" dir="ltr">onDestroy()</h3>
-                            <div class="flex gap-2 text-xs">
-                                <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded font-semibold">Kill After: Yes</span>
-                                <span class="bg-slate-200 text-slate-700 px-2 py-0.5 rounded font-semibold">Next: N/A</span>
-                            </div>
-                        </div>
-                        <p class="text-sm text-slate-700">يُستدعى <strong>قبل تدمير الـ Activity</strong>. عادةً نتيجة استدعاء <code class="bg-red-100 px-1.5 rounded font-mono text-xs" dir="ltr">finish()</code> أو ضغط زر الـ <strong>Back</strong>. يُستدعى <strong>مرة واحدة على الأكثر</strong>.</p>
+                    <div class="bg-white rounded-xl border border-slate-200 p-5">
+                        <h3 class="font-bold text-slate-800 mb-3">الـ Framework API يتكوّن من:</h3>
+                        <ul class="space-y-2 text-sm text-slate-600">
+                            <li class="flex items-start gap-2"><span class="text-blue-500 mt-1">▸</span> مجموعة أساسية من <strong>الحزم والكلاسات</strong> (packages & classes)</li>
+                            <li class="flex items-start gap-2"><span class="text-blue-500 mt-1">▸</span> عناصر XML للـ <strong>Manifest file</strong></li>
+                            <li class="flex items-start gap-2"><span class="text-blue-500 mt-1">▸</span> عناصر XML لإعلان والوصول للـ <strong>Resources</strong></li>
+                            <li class="flex items-start gap-2"><span class="text-blue-500 mt-1">▸</span> مجموعة من <strong>Intents</strong></li>
+                            <li class="flex items-start gap-2"><span class="text-blue-500 mt-1">▸</span> مجموعة من <strong>Permissions</strong> يطلبها التطبيق</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -176,16 +153,16 @@
     </div>
 
     {{-- ============================================================ --}}
-    {{-- Section 3: Lifecycle Diagram --}}
+    {{-- Section 3: Android Architecture --}}
     {{-- ============================================================ --}}
     <div class="mb-6">
-        <div class="card rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden border-t-4 border-t-fuchsia-500">
+        <div class="card rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden border-t-4 border-t-cyan-500">
             <button onclick="toggleSection('sec3')" class="w-full flex items-center justify-between px-6 py-5 hover:bg-slate-50/50 transition-colors">
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl bg-fuchsia-100 flex items-center justify-center text-fuchsia-600">
-                        <span class="text-xl">📊</span>
+                    <div class="w-10 h-10 rounded-xl bg-cyan-100 flex items-center justify-center text-cyan-600">
+                        <span class="text-xl">🏛️</span>
                     </div>
-                    <h2 class="text-lg font-bold text-slate-800">مخطط دورة الحياة</h2>
+                    <h2 class="text-lg font-bold text-slate-800">معمارية Android (Architecture)</h2>
                 </div>
                 <div class="flex items-center gap-2">
                     <button onclick="event.stopPropagation(); markDone('sec3', this)" class="done-btn text-xs px-2.5 py-1 rounded-lg border border-slate-200 text-slate-400 hover:bg-emerald-50 hover:text-emerald-600 hover:border-emerald-200 transition-colors">تم</button>
@@ -196,34 +173,73 @@
             </button>
 
             <div class="study-section px-6 pb-6" id="sec3" style="max-height: 3000px;">
-                <div class="space-y-4">
-                    <div class="bg-fuchsia-50/70 rounded-xl p-5 border border-fuchsia-100">
-                        <p class="text-slate-700 leading-relaxed text-sm">
-                            تدفق الـ methods من إطلاق التطبيق حتى إغلاقه:
+                <div class="space-y-5">
+                    <div class="bg-cyan-50/70 rounded-xl p-5 border border-cyan-100">
+                        <p class="text-slate-700 leading-relaxed">
+                            معمارية Android تتكوّن من <strong>5 طبقات</strong> (من الأسفل للأعلى):
                         </p>
                     </div>
 
-                    <div class="bg-white rounded-xl border border-slate-200 p-5" dir="ltr">
-                        <div class="flex flex-col items-center gap-2 text-sm font-mono">
-                            <div class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg font-bold">Activity launched</div>
-                            <div class="text-slate-400">↓</div>
-                            <div class="bg-emerald-100 text-emerald-700 px-4 py-2 rounded-lg">onCreate()</div>
-                            <div class="text-slate-400">↓</div>
-                            <div class="bg-teal-100 text-teal-700 px-4 py-2 rounded-lg">onStart()</div>
-                            <div class="text-slate-400">↓</div>
-                            <div class="bg-cyan-100 text-cyan-700 px-4 py-2 rounded-lg">onResume()</div>
-                            <div class="text-slate-400">↓</div>
-                            <div class="bg-green-200 text-green-800 px-4 py-2 rounded-lg font-bold">Activity Running</div>
-                            <div class="text-slate-400">↓</div>
-                            <div class="bg-amber-100 text-amber-700 px-4 py-2 rounded-lg">onPause()</div>
-                            <div class="text-slate-400">↓</div>
-                            <div class="bg-orange-100 text-orange-700 px-4 py-2 rounded-lg">onStop()</div>
-                            <div class="text-slate-400 text-xs">↓ (إذا رجع المستخدم) → onRestart() → onStart()</div>
-                            <div class="text-slate-400">↓</div>
-                            <div class="bg-red-100 text-red-700 px-4 py-2 rounded-lg">onDestroy()</div>
-                            <div class="text-slate-400">↓</div>
-                            <div class="bg-slate-200 text-slate-700 px-4 py-2 rounded-lg font-bold">Activity Shut Down</div>
+                    {{-- Layer 1: Linux Kernel --}}
+                    <div class="bg-red-50 rounded-xl p-5 border-r-4 border-red-400">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="w-7 h-7 rounded-full bg-red-500 text-white flex items-center justify-center text-sm font-bold">1</span>
+                            <h3 class="font-bold text-red-700">Linux Kernel</h3>
                         </div>
+                        <p class="text-sm text-slate-700 mb-2">قلب المعمارية ويوجد في <strong>أسفل</strong> الترتيب.</p>
+                        <p class="text-xs text-slate-600">مسؤول عن: <span class="term-en">Device Drivers</span>، Power Management، Memory Management، Device Management، الوصول للموارد (Camera, Keypad, Display).</p>
+                    </div>
+
+                    {{-- Layer 2: Native Libraries --}}
+                    <div class="bg-emerald-50 rounded-xl p-5 border-r-4 border-emerald-400">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="w-7 h-7 rounded-full bg-emerald-500 text-white flex items-center justify-center text-sm font-bold">2</span>
+                            <h3 class="font-bold text-emerald-700">Native Libraries</h3>
+                        </div>
+                        <p class="text-sm text-slate-700 mb-3">مكتبات مبنية خصيصاً لنظام Android:</p>
+                        <ul class="text-xs text-slate-600 space-y-1.5">
+                            <li>• <strong>WebKit</strong> — دعم المتصفح</li>
+                            <li>• <strong>SQLite</strong> — قواعد البيانات</li>
+                            <li>• <strong>FreeType</strong> — دعم الخطوط</li>
+                            <li>• <strong>Media</strong> — تشغيل وتسجيل الصوت والفيديو</li>
+                            <li>• <strong>SSL (Secure Sockets Layer)</strong> — أمان الإنترنت</li>
+                        </ul>
+                    </div>
+
+                    {{-- Layer 3: Android Runtime --}}
+                    <div class="bg-amber-50 rounded-xl p-5 border-r-4 border-amber-400">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="w-7 h-7 rounded-full bg-amber-500 text-white flex items-center justify-center text-sm font-bold">3</span>
+                            <h3 class="font-bold text-amber-700">Android Runtime</h3>
+                        </div>
+                        <p class="text-sm text-slate-700 mb-2">يحتوي على Core Libraries و <span class="term">DVM (Dalvik Virtual Machine)</span>.</p>
+                        <p class="text-xs text-slate-600 mb-2">DVM مسؤول عن <strong>تشغيل تطبيقات Android</strong>. شبيه بـ JVM لكن <strong>محسّن للأجهزة المحمولة</strong>: يستهلك ذاكرة أقل ويوفّر أداء سريع.</p>
+                        <p class="text-xs text-slate-600">DVM يستخدم خصائص Linux الأساسية مثل <strong>Memory Management</strong> و <strong>Multi-threading</strong>.</p>
+                    </div>
+
+                    {{-- Layer 4: Application Framework --}}
+                    <div class="bg-blue-50 rounded-xl p-5 border-r-4 border-blue-400">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="w-7 h-7 rounded-full bg-blue-500 text-white flex items-center justify-center text-sm font-bold">4</span>
+                            <h3 class="font-bold text-blue-700">Application Framework</h3>
+                        </div>
+                        <p class="text-sm text-slate-700 mb-3">يقدّم خدمات عالية المستوى للتطبيقات على شكل Java classes:</p>
+                        <ul class="text-xs text-slate-600 space-y-1.5">
+                            <li>• <strong>Content Providers</strong> — مشاركة البيانات بين التطبيقات</li>
+                            <li>• <strong>Notifications Manager</strong> — عرض التنبيهات والإشعارات</li>
+                            <li>• <strong>Activity Manager</strong> — التحكم في دورة حياة التطبيق و activity stack</li>
+                            <li>• <strong>View System</strong> — مجموعة Views لبناء واجهات المستخدم</li>
+                            <li>• <strong>Resource Manager</strong> — الوصول للموارد غير البرمجية (strings, colors, layouts)</li>
+                        </ul>
+                    </div>
+
+                    {{-- Layer 5: Applications --}}
+                    <div class="bg-violet-50 rounded-xl p-5 border-r-4 border-violet-400">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="w-7 h-7 rounded-full bg-violet-500 text-white flex items-center justify-center text-sm font-bold">5</span>
+                            <h3 class="font-bold text-violet-700">Applications</h3>
+                        </div>
+                        <p class="text-sm text-slate-700">الطبقة العليا — التطبيقات تُثبّت على هذه الطبقة فقط (Contacts, Browser, Games, ...).</p>
                     </div>
                 </div>
             </div>
@@ -231,16 +247,16 @@
     </div>
 
     {{-- ============================================================ --}}
-    {{-- Section 4: Cases / Scenarios --}}
+    {{-- Section 4: Android Studio --}}
     {{-- ============================================================ --}}
     <div class="mb-6">
-        <div class="card rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden border-t-4 border-t-purple-500">
+        <div class="card rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden border-t-4 border-t-teal-500">
             <button onclick="toggleSection('sec4')" class="w-full flex items-center justify-between px-6 py-5 hover:bg-slate-50/50 transition-colors">
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center text-purple-600">
-                        <span class="text-xl">🎬</span>
+                    <div class="w-10 h-10 rounded-xl bg-teal-100 flex items-center justify-center text-teal-600">
+                        <span class="text-xl">🛠️</span>
                     </div>
-                    <h2 class="text-lg font-bold text-slate-800">سيناريوهات عملية (Cases)</h2>
+                    <h2 class="text-lg font-bold text-slate-800">Android Studio — التثبيت وأول مشروع</h2>
                 </div>
                 <div class="flex items-center gap-2">
                     <button onclick="event.stopPropagation(); markDone('sec4', this)" class="done-btn text-xs px-2.5 py-1 rounded-lg border border-slate-200 text-slate-400 hover:bg-emerald-50 hover:text-emerald-600 hover:border-emerald-200 transition-colors">تم</button>
@@ -250,75 +266,37 @@
                 </div>
             </button>
 
-            <div class="study-section px-6 pb-6" id="sec4" style="max-height: 5000px;">
-                <div class="space-y-4">
-
-                    {{-- Case 1 --}}
-                    <div class="bg-white rounded-xl border-2 border-emerald-200 p-5">
-                        <h3 class="font-bold text-emerald-700 mb-3 flex items-center gap-2"><span class="w-7 h-7 rounded-full bg-emerald-500 text-white flex items-center justify-center text-sm">1</span> أول إنشاء للتطبيق</h3>
-                        <div class="bg-slate-50 rounded-lg p-3 text-sm font-mono text-slate-700" dir="ltr">
-                            onCreate → onStart → onResume
-                        </div>
+            <div class="study-section px-6 pb-6" id="sec4" style="max-height: 2500px;">
+                <div class="space-y-5">
+                    <div class="bg-teal-50/70 rounded-xl p-5 border border-teal-100">
+                        <p class="text-slate-700 leading-relaxed">
+                            <span class="term">Android Studio</span> هو الـ IDE الرسمي لتطوير تطبيقات Android. يمكن تنزيله من
+                            <a href="https://developer.android.com/studio" class="text-teal-600 underline" dir="ltr" target="_blank">developer.android.com/studio</a>
+                        </p>
                     </div>
 
-                    {{-- Case 2 --}}
-                    <div class="bg-white rounded-xl border-2 border-amber-200 p-5">
-                        <h3 class="font-bold text-amber-700 mb-3 flex items-center gap-2"><span class="w-7 h-7 rounded-full bg-amber-500 text-white flex items-center justify-center text-sm">2</span> الشاشة تنام / إرسال التطبيق للخلفية</h3>
-                        <div class="bg-slate-50 rounded-lg p-3 text-sm font-mono text-slate-700 mb-2" dir="ltr">
-                            onPause → onStop
+                    <div class="bg-white rounded-xl border border-slate-200 p-5">
+                        <h3 class="font-bold text-slate-800 mb-3">المكونات التي تُثبّت:</h3>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <div class="bg-teal-50 rounded-lg p-2.5 text-teal-700 font-semibold text-center">Android Studio</div>
+                            <div class="bg-teal-50 rounded-lg p-2.5 text-teal-700 font-semibold text-center">Android SDK</div>
+                            <div class="bg-teal-50 rounded-lg p-2.5 text-teal-700 font-semibold text-center">Android Virtual Device</div>
+                            <div class="bg-teal-50 rounded-lg p-2.5 text-teal-700 font-semibold text-center">Performance (Intel HAXM)</div>
                         </div>
-                        <p class="text-xs text-slate-600 mb-2">ولمّا الشاشة ترجع تشتغل:</p>
-                        <div class="bg-slate-50 rounded-lg p-3 text-sm font-mono text-slate-700" dir="ltr">
-                            onRestart → onStart → onResume
-                        </div>
+                        <p class="text-xs text-slate-500 mt-3">المساحة المطلوبة: <strong>3.8 GB</strong>. Android Studio يبحث عن JDK وموقع SDK.</p>
                     </div>
 
-                    {{-- Case 3 --}}
-                    <div class="bg-white rounded-xl border-2 border-cyan-200 p-5">
-                        <h3 class="font-bold text-cyan-700 mb-3 flex items-center gap-2"><span class="w-7 h-7 rounded-full bg-cyan-500 text-white flex items-center justify-center text-sm">3</span> الشاشة محجوبة جزئياً (popup)</h3>
-                        <div class="bg-slate-50 rounded-lg p-3 text-sm font-mono text-slate-700 mb-2" dir="ltr">
-                            onPause
-                        </div>
-                        <p class="text-xs text-slate-600 mb-2">ولمّا يتم إغلاق الـ popup:</p>
-                        <div class="bg-slate-50 rounded-lg p-3 text-sm font-mono text-slate-700" dir="ltr">
-                            onResume
-                        </div>
-                        <div class="bg-amber-50 border border-amber-200 rounded-lg p-3 mt-3 text-xs text-amber-800">
-                            ⚠️ لاحظ: <strong>onStop ما يُستدعى</strong> لأن الـ Activity ما زالت ظاهرة جزئياً.
-                        </div>
-                    </div>
-
-                    {{-- Case 4 --}}
-                    <div class="bg-white rounded-xl border-2 border-red-200 p-5">
-                        <h3 class="font-bold text-red-700 mb-3 flex items-center gap-2"><span class="w-7 h-7 rounded-full bg-red-500 text-white flex items-center justify-center text-sm">4</span> إغلاق التطبيق / ضغط زر Back</h3>
-                        <div class="bg-slate-50 rounded-lg p-3 text-sm font-mono text-slate-700" dir="ltr">
-                            onPause → onStop → onDestroy
-                        </div>
-                    </div>
-
-                    {{-- Case 5 --}}
-                    <div class="bg-white rounded-xl border-2 border-violet-200 p-5">
-                        <h3 class="font-bold text-violet-700 mb-3 flex items-center gap-2"><span class="w-7 h-7 rounded-full bg-violet-500 text-white flex items-center justify-center text-sm">5</span> فتح Next Activity من Main Activity</h3>
-                        <div class="bg-slate-50 rounded-lg p-3 text-sm font-mono text-slate-700 space-y-1" dir="ltr">
-                            <div class="text-slate-500">// Main calls Next</div>
-                            <div>MainActivity: onPause</div>
-                            <div class="text-emerald-600">NextActivity: onCreate</div>
-                            <div class="text-emerald-600">NextActivity: onStart</div>
-                            <div class="text-emerald-600">NextActivity: onResume</div>
-                            <div>MainActivity: onStop</div>
-                        </div>
-                    </div>
-
-                    {{-- Case 6 --}}
-                    <div class="bg-white rounded-xl border-2 border-fuchsia-200 p-5">
-                        <h3 class="font-bold text-fuchsia-700 mb-3 flex items-center gap-2"><span class="w-7 h-7 rounded-full bg-fuchsia-500 text-white flex items-center justify-center text-sm">6</span> الرجوع لـ Main Activity (Back)</h3>
-                        <div class="bg-slate-50 rounded-lg p-3 text-sm font-mono text-slate-700 space-y-1" dir="ltr">
-                            <div>NextActivity: onPause</div>
-                            <div class="text-emerald-600">MainActivity: onRestart</div>
-                            <div class="text-emerald-600">MainActivity: onStart</div>
-                            <div class="text-emerald-600">MainActivity: onResume</div>
-                            <div>NextActivity: onStop</div>
-                            <div>NextActivity: onDestroy</div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-5">
+                        <h3 class="font-bold text-slate-800 mb-3">خطوات إنشاء أول مشروع (HelloWorld):</h3>
+                        <ol class="space-y-2 text-sm text-slate-600 list-decimal pr-5">
+                            <li>من شاشة الترحيب → <strong>Start a new Android Studio project</strong></li>
+                            <li>اختر template: <strong>Basic Activity</strong> (مش الافتراضي)</li>
+                            <li>أعطِ اسم للتطبيق واختر اللغة <strong>Java</strong></li>
+                            <li>اضغط <strong>Finish</strong></li>
+                        </ol>
+                        <div class="bg-amber-50 border border-amber-200 rounded-lg p-3 mt-4 text-xs text-amber-800">
+                            بعد الإنشاء: Android Studio ينشئ مجلد المشروع داخل <code class="bg-amber-100 px-1 rounded">AndroidStudioProjects</code>،
+                            ويبني المشروع باستخدام <strong>Gradle</strong> كـ build system.
                         </div>
                     </div>
                 </div>
@@ -327,16 +305,16 @@
     </div>
 
     {{-- ============================================================ --}}
-    {{-- Section 5: Important Notes --}}
+    {{-- Section 5: Project Structure --}}
     {{-- ============================================================ --}}
     <div class="mb-6">
-        <div class="card rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden border-t-4 border-t-amber-500">
+        <div class="card rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden border-t-4 border-t-indigo-500">
             <button onclick="toggleSection('sec5')" class="w-full flex items-center justify-between px-6 py-5 hover:bg-slate-50/50 transition-colors">
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center text-amber-600">
-                        <span class="text-xl">💡</span>
+                    <div class="w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center text-indigo-600">
+                        <span class="text-xl">📁</span>
                     </div>
-                    <h2 class="text-lg font-bold text-slate-800">ملاحظات مهمة</h2>
+                    <h2 class="text-lg font-bold text-slate-800">هيكلة المشروع (Project Structure)</h2>
                 </div>
                 <div class="flex items-center gap-2">
                     <button onclick="event.stopPropagation(); markDone('sec5', this)" class="done-btn text-xs px-2.5 py-1 rounded-lg border border-slate-200 text-slate-400 hover:bg-emerald-50 hover:text-emerald-600 hover:border-emerald-200 transition-colors">تم</button>
@@ -346,32 +324,164 @@
                 </div>
             </button>
 
-            <div class="study-section px-6 pb-6" id="sec5" style="max-height: 2000px;">
-                <div class="space-y-4">
-                    <div class="bg-amber-50 border border-amber-200 rounded-xl p-5">
-                        <h3 class="font-bold text-amber-700 mb-2 text-sm">⚠️ عند قتل التطبيق في الخلفية</h3>
-                        <p class="text-sm text-slate-700 leading-relaxed">
-                            لمّا التطبيق يُقتل في الخلفية (لتحرير موارد لتطبيق آخر في المقدمة)،
-                            <strong>onStop يكون آخر method</strong> يُستدعى قبل إنهاء التطبيق،
-                            لكن يبقى التطبيق في الـ history. لمّا المستخدم يختاره من الـ history، الشاشة تبدأ من جديد من
-                            <code class="bg-amber-100 px-1.5 rounded font-mono text-xs" dir="ltr">onCreate()</code>.
+            <div class="study-section px-6 pb-6" id="sec5" style="max-height: 3000px;">
+                <div class="space-y-5">
+                    <div class="bg-indigo-50/70 rounded-xl p-5 border border-indigo-100">
+                        <p class="text-slate-700 leading-relaxed">
+                            في عرض <code class="bg-white px-2 py-0.5 rounded font-mono text-xs">Project &gt; Android</code>،
+                            مشروع Android يحتوي على <strong>3 أو 4 مجلدات أساسية</strong>:
+                            <span class="font-mono text-xs">manifests, java, java (generated), res</span>
                         </p>
                     </div>
 
-                    <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
-                        <h3 class="font-bold text-emerald-700 mb-2 text-sm">✅ تكرار الاستدعاءات</h3>
-                        <ul class="text-sm text-slate-700 space-y-2">
-                            <li><strong class="text-emerald-700">onCreate و onDestroy:</strong> يُستدعى كل واحد منهم <strong>مرة واحدة فقط على الأكثر</strong> في كل تشغيل للتطبيق.</li>
-                            <li><strong class="text-emerald-700">onPause, onStop, onRestart, onStart, onResume:</strong> ممكن يُستدعوا <strong>عدة مرات</strong> خلال دورة الحياة.</li>
-                        </ul>
+                    {{-- manifests --}}
+                    <div class="bg-white rounded-xl border-r-4 border-indigo-400 border border-slate-200 p-5">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xl">📋</span>
+                            <h3 class="font-bold text-indigo-700">1. manifests</h3>
+                        </div>
+                        <p class="text-sm text-slate-600">يحتوي على ملف <code class="bg-slate-100 px-1.5 rounded font-mono text-xs">AndroidManifest.xml</code> الذي يصف <strong>كل مكونات تطبيق Android</strong>.</p>
                     </div>
 
-                    <div class="bg-rose-50 border border-rose-200 rounded-xl p-5">
-                        <h3 class="font-bold text-rose-700 mb-2 text-sm">🔑 الفرق المهم: Pause vs Stop</h3>
-                        <ul class="text-sm text-slate-700 space-y-2">
-                            <li><strong>onPause:</strong> الـ Activity <strong>ظاهرة لكن غير تفاعلية</strong> (popup مثلاً)</li>
-                            <li><strong>onStop:</strong> الـ Activity <strong>غير ظاهرة بالكامل</strong></li>
-                        </ul>
+                    {{-- java --}}
+                    <div class="bg-white rounded-xl border-r-4 border-blue-400 border border-slate-200 p-5">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xl">☕</span>
+                            <h3 class="font-bold text-blue-700">2. java</h3>
+                        </div>
+                        <p class="text-sm text-slate-600">يحتوي على ملفات <strong>Java source code</strong> الخاصة بالتطبيق.</p>
+                    </div>
+
+                    {{-- res --}}
+                    <div class="bg-white rounded-xl border-r-4 border-emerald-400 border border-slate-200 p-5">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xl">🎨</span>
+                            <h3 class="font-bold text-emerald-700">3. res (Resources)</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-3">كل الموارد: صور، layout files، نصوص، أيقونات، styling.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs">
+                            <div class="bg-emerald-50 p-2.5 rounded-lg"><strong>drawable/</strong> — صور التطبيق</div>
+                            <div class="bg-emerald-50 p-2.5 rounded-lg"><strong>layout/</strong> — ملفات UI للـ activities</div>
+                            <div class="bg-emerald-50 p-2.5 rounded-lg"><strong>menu/</strong> — XML للقوائم</div>
+                            <div class="bg-emerald-50 p-2.5 rounded-lg"><strong>mipmap/</strong> — أيقونات launcher</div>
+                            <div class="bg-emerald-50 p-2.5 rounded-lg col-span-2"><strong>values/</strong> — strings, colors</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- ============================================================ --}}
+    {{-- Section 6: Run on Emulator / Real Device --}}
+    {{-- ============================================================ --}}
+    <div class="mb-6">
+        <div class="card rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden border-t-4 border-t-orange-500">
+            <button onclick="toggleSection('sec6')" class="w-full flex items-center justify-between px-6 py-5 hover:bg-slate-50/50 transition-colors">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-orange-100 flex items-center justify-center text-orange-600">
+                        <span class="text-xl">▶️</span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-800">تشغيل التطبيق (Emulator / Real Device)</h2>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button onclick="event.stopPropagation(); markDone('sec6', this)" class="done-btn text-xs px-2.5 py-1 rounded-lg border border-slate-200 text-slate-400 hover:bg-emerald-50 hover:text-emerald-600 hover:border-emerald-200 transition-colors">تم</button>
+                    <svg class="chevron w-5 h-5 text-slate-400" id="chevron-sec6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                    </svg>
+                </div>
+            </button>
+
+            <div class="study-section px-6 pb-6" id="sec6" style="max-height: 2500px;">
+                <div class="space-y-5">
+                    {{-- Emulator --}}
+                    <div class="bg-white rounded-xl border border-slate-200 p-5">
+                        <h3 class="font-bold text-orange-700 mb-3">📱 على الـ Emulator (الجهاز الافتراضي)</h3>
+                        <ol class="space-y-2 text-sm text-slate-600 list-decimal pr-5">
+                            <li>اختر <code class="bg-slate-100 px-1.5 rounded text-xs">Run &gt; Run 'app'</code> أو اضغط أيقونة Run</li>
+                            <li>من <strong>Available Devices</strong> اختر الجهاز الافتراضي اللي عملته</li>
+                            <li>الـ emulator يقلع ويثبت التطبيق وينفّذه</li>
+                        </ol>
+                        <div class="bg-amber-50 border border-amber-200 rounded-lg p-3 mt-3 text-xs text-amber-800">
+                            <strong>نصيحة:</strong> ابدأ الـ emulator مع بداية الجلسة وما تقفله إلا بعد ما تخلص.
+                        </div>
+                    </div>
+
+                    {{-- Real Device --}}
+                    <div class="bg-white rounded-xl border border-slate-200 p-5">
+                        <h3 class="font-bold text-red-700 mb-3">🔌 على جهاز حقيقي</h3>
+                        <p class="text-sm text-slate-600 mb-3"><strong>المتطلبات:</strong> جهاز Android، كابل USB، (وعلى Windows: USB driver مناسب).</p>
+
+                        <div class="bg-red-50 rounded-lg p-4 border border-red-200">
+                            <h4 class="font-bold text-red-700 text-sm mb-2">تفعيل USB Debugging:</h4>
+                            <ol class="space-y-1.5 text-xs text-slate-700 list-decimal pr-5">
+                                <li>افتح <strong>Settings &gt; About phone</strong></li>
+                                <li>اضغط على <strong>Build number</strong> سبع مرات</li>
+                                <li>ارجع للإعدادات → <strong>Developer Options</strong> ظهرت</li>
+                                <li>فعّل <strong>USB Debugging</strong></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- ============================================================ --}}
+    {{-- Section 7: Application Components --}}
+    {{-- ============================================================ --}}
+    <div class="mb-6">
+        <div class="card rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden border-t-4 border-t-purple-500">
+            <button onclick="toggleSection('sec7')" class="w-full flex items-center justify-between px-6 py-5 hover:bg-slate-50/50 transition-colors">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center text-purple-600">
+                        <span class="text-xl">🧩</span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-800">مكونات التطبيق (Application Components)</h2>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button onclick="event.stopPropagation(); markDone('sec7', this)" class="done-btn text-xs px-2.5 py-1 rounded-lg border border-slate-200 text-slate-400 hover:bg-emerald-50 hover:text-emerald-600 hover:border-emerald-200 transition-colors">تم</button>
+                    <svg class="chevron w-5 h-5 text-slate-400" id="chevron-sec7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                    </svg>
+                </div>
+            </button>
+
+            <div class="study-section px-6 pb-6" id="sec7" style="max-height: 3500px;">
+                <div class="space-y-5">
+                    <div class="bg-purple-50/70 rounded-xl p-5 border border-purple-100">
+                        <p class="text-slate-700 leading-relaxed"><strong>4 مكونات رئيسية</strong> داخل تطبيق Android:</p>
+                    </div>
+
+                    {{-- 4 Main Components --}}
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-purple-50 rounded-xl p-5 border border-purple-200">
+                            <div class="flex items-center gap-2 mb-2"><span class="text-xl">🪟</span><h3 class="font-bold text-purple-700">Activities</h3></div>
+                            <p class="text-sm text-slate-600">تتحكم بالـ <strong>UI</strong> وتدير تفاعل المستخدم مع شاشة الموبايل.</p>
+                        </div>
+                        <div class="bg-fuchsia-50 rounded-xl p-5 border border-fuchsia-200">
+                            <div class="flex items-center gap-2 mb-2"><span class="text-xl">⚙️</span><h3 class="font-bold text-fuchsia-700">Services</h3></div>
+                            <p class="text-sm text-slate-600">تتعامل مع <strong>المعالجة في الخلفية</strong> (background processing).</p>
+                        </div>
+                        <div class="bg-pink-50 rounded-xl p-5 border border-pink-200">
+                            <div class="flex items-center gap-2 mb-2"><span class="text-xl">📡</span><h3 class="font-bold text-pink-700">Broadcast Receivers</h3></div>
+                            <p class="text-sm text-slate-600">تتولى <strong>التواصل بين Android OS والتطبيقات</strong>.</p>
+                        </div>
+                        <div class="bg-rose-50 rounded-xl p-5 border border-rose-200">
+                            <div class="flex items-center gap-2 mb-2"><span class="text-xl">🗄️</span><h3 class="font-bold text-rose-700">Content Providers</h3></div>
+                            <p class="text-sm text-slate-600">تتعامل مع إدارة <strong>البيانات وقواعد البيانات</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-100 rounded-xl p-4">
+                        <h3 class="font-bold text-slate-700 mb-3 text-sm">مكونات إضافية للربط والبناء:</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="bg-white rounded-lg p-3 border border-slate-200"><strong class="text-purple-700">Fragments</strong> — يمثّل سلوكاً أو جزءاً من واجهة المستخدم داخل Activity</div>
+                            <div class="bg-white rounded-lg p-3 border border-slate-200"><strong class="text-purple-700">Views</strong> — عناصر UI مرسومة على الشاشة (صور، نصوص، أزرار...)</div>
+                            <div class="bg-white rounded-lg p-3 border border-slate-200"><strong class="text-purple-700">Layouts</strong> — هرميات Views تتحكم بشكل وترتيب الشاشة</div>
+                            <div class="bg-white rounded-lg p-3 border border-slate-200"><strong class="text-purple-700">Resources</strong> — عناصر خارجية: strings، constants، صور</div>
+                            <div class="bg-white rounded-lg p-3 border border-slate-200"><strong class="text-purple-700">Manifest</strong> — ملف الإعدادات الرئيسي للتطبيق</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -379,16 +489,15 @@
     </div>
 
     {{-- Quick Recap --}}
-    <div class="card rounded-2xl border-2 border-rose-200 bg-gradient-to-br from-rose-50 to-pink-50 p-6 mb-8">
-        <h3 class="font-bold text-rose-800 mb-4 flex items-center gap-2"><span class="text-xl">⚡</span> خلاصة سريعة للمراجعة</h3>
+    <div class="card rounded-2xl border-2 border-emerald-200 bg-gradient-to-br from-emerald-50 to-green-50 p-6 mb-8">
+        <h3 class="font-bold text-emerald-800 mb-4 flex items-center gap-2"><span class="text-xl">⚡</span> خلاصة سريعة للمراجعة</h3>
         <ul class="space-y-2 text-sm text-slate-700">
-            <li>✓ Activity = شاشة واحدة في Android</li>
-            <li>✓ <strong>7 methods:</strong> onCreate → onStart → onResume → onPause → onStop → onRestart → onDestroy</li>
-            <li>✓ <strong>Kill After = Yes:</strong> onPause, onStop, onDestroy</li>
-            <li>✓ <strong>Kill After = No:</strong> onCreate, onStart, onResume, onRestart</li>
-            <li>✓ onCreate و onDestroy <strong>مرة واحدة فقط</strong>؛ الباقي ممكن يتكرر</li>
-            <li>✓ <strong>Popup</strong> → onPause فقط (مش onStop)</li>
-            <li>✓ <strong>Back button</strong> → onPause → onStop → onDestroy</li>
+            <li>✓ Android = OS مفتوح المصدر من Google، مبني على <strong>Linux Kernel</strong>، ظهر 2008</li>
+            <li>✓ المعمارية = <strong>5 طبقات</strong>: Linux Kernel → Native Libs → Runtime (DVM) → Framework → Apps</li>
+            <li>✓ <strong>DVM</strong> شبيه JVM لكن محسّن للموبايل (ذاكرة أقل، أداء أسرع)</li>
+            <li>✓ مجلدات المشروع: <strong>manifests, java, res</strong> (drawable/layout/menu/mipmap/values)</li>
+            <li>✓ Build system = <strong>Gradle</strong></li>
+            <li>✓ 4 مكونات رئيسية: <strong>Activities, Services, Broadcast Receivers, Content Providers</strong></li>
         </ul>
     </div>
 </div>

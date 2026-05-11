@@ -27,9 +27,9 @@
                 </div>
                 <h2 class="font-bold text-slate-800 text-xl mb-1">معالجة اللغات الطبيعية</h2>
                 <p class="text-sm text-slate-400 mb-3">Introduction to NLP</p>
-                <p class="text-sm text-slate-600 mb-4">مقدمة NLP، الفهم والتوليد، المستويات اللغوية، اختبار تورينغ، التقطيع، التحليل النحوي</p>
+                <p class="text-sm text-slate-600 mb-4">مقدمة NLP، NLU/NLG، 7 مستويات معرفية، Morphemes، WSD، WordNet، Word2Vec، GPT-3، HMM</p>
                 <div class="flex items-center justify-between">
-                    <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-lg font-medium">محاضرتين</span>
+                    <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-lg font-medium">7 محاضرات</span>
                     <span class="text-indigo-600 text-sm font-semibold group-hover:translate-x-1 transition-transform">ابدأ &larr;</span>
                 </div>
             </div>
@@ -45,9 +45,9 @@
                 </div>
                 <h2 class="font-bold text-slate-800 text-xl mb-1">تطوير تطبيقات الموبايل</h2>
                 <p class="text-sm text-slate-400 mb-3">Mobile Applications Development</p>
-                <p class="text-sm text-slate-600 mb-4">مقدمة Mobile Dev، أساسيات Java، أخذ المدخلات، الجمل الشرطية If-Else</p>
+                <p class="text-sm text-slate-600 mb-4">مقدمة Mobile Dev، Java، If-Else، Loops & Methods، Android Studio، Lifecycle، Layouts، مصادر إضافية</p>
                 <div class="flex items-center justify-between">
-                    <span class="text-xs bg-teal-50 text-teal-600 px-2.5 py-1 rounded-lg font-medium">4 محاضرات</span>
+                    <span class="text-xs bg-teal-50 text-teal-600 px-2.5 py-1 rounded-lg font-medium">9 محاضرات</span>
                     <span class="text-teal-600 text-sm font-semibold group-hover:translate-x-1 transition-transform">ابدأ &larr;</span>
                 </div>
             </div>
@@ -62,9 +62,9 @@
                 </div>
                 <h2 class="font-bold text-slate-800 text-xl mb-1">أساسيات الرسم بالحاسب</h2>
                 <p class="text-sm text-slate-400 mb-3">Fundamental of Computer Graphics</p>
-                <p class="text-sm text-slate-600 mb-4">أنواع الرسوميات، Raster vs Vector، البكسل، الرندرة، CRT، Raster vs Random Scan، التطبيقات</p>
+                <p class="text-sm text-slate-600 mb-4">Raster vs Vector، CRT، Raster vs Random Scan، Modelling/Rendering/Animation، APIs & Pipelines، Sets & Mappings</p>
                 <div class="flex items-center justify-between">
-                    <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-lg font-medium">محاضرتين</span>
+                    <span class="text-xs bg-orange-50 text-orange-600 px-2.5 py-1 rounded-lg font-medium">5 محاضرات</span>
                     <span class="text-orange-600 text-sm font-semibold group-hover:translate-x-1 transition-transform">ابدأ &larr;</span>
                 </div>
             </div>

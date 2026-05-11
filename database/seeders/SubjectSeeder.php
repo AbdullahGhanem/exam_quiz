@@ -12,7 +12,7 @@ class SubjectSeeder extends Seeder
     {
         $subjects = [
             'Introduction to Neural Language Processing' => ['Lecture 1:%', 'Lecture 2:%', 'Abdullah Ghanem Questions%'],
-            'Fundamental of Computer Graphics' => ['Lecture 3:%', 'Lecture 4:%'],
+            'Fundamental of Computer Graphics' => ['Lecture 3:%', 'Lecture 4:%', 'Graphics Lec %', 'Graphics Midterm:%'],
             'Mobile Applications Development' => ['Lecture 5:%', 'Lecture 6:%', 'Lecture 7:%', 'Lecture 8:%', 'Lecture 9:%', 'Lecture 10:%', 'Lecture 11:%'],
         ];
 

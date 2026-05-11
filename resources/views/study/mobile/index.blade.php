@@ -12,7 +12,7 @@
     <div class="card rounded-2xl border border-slate-200/60 shadow-sm overflow-hidden mb-8">
         <div class="bg-gradient-to-r from-teal-600 to-cyan-600 px-8 py-6 text-center">
             <h1 class="text-2xl font-extrabold text-white mb-1">تطوير تطبيقات الموبايل</h1>
-            <p class="text-teal-200 text-sm">Mobile Applications Development — 7 محاضرات</p>
+            <p class="text-teal-200 text-sm">Mobile Applications Development — 9 محاضرات</p>
         </div>
     </div>
 
@@ -99,11 +99,31 @@
 
         {{-- Lecture 5 --}}
         <a href="{{ route('study.show', ['subject' => 'mobile', 'lecture' => 5]) }}" class="group">
-            <div class="card rounded-2xl border-2 border-slate-200 hover:border-emerald-400 shadow-sm hover:shadow-lg hover:shadow-emerald-100 transition-all p-6 h-full">
+            <div class="card rounded-2xl border-2 border-slate-200 hover:border-teal-400 shadow-sm hover:shadow-lg hover:shadow-teal-100 transition-all p-6 h-full">
                 <div class="flex items-center gap-3 mb-4">
-                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-green-700 flex items-center justify-center text-white text-xl font-extrabold shadow-md shadow-emerald-200">5</div>
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500 to-cyan-700 flex items-center justify-center text-white text-xl font-extrabold shadow-md shadow-teal-200">5</div>
                     <div>
                         <h2 class="font-bold text-slate-800 text-lg">المحاضرة الخامسة</h2>
+                        <p class="text-xs text-slate-400">التكرار والـ Methods</p>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-600 mb-4">while/do-while/for، Sentinel، break/continue، الحلقات المتداخلة، الـ Methods، Variable Scope</p>
+                <div class="flex flex-wrap gap-1.5 mb-3">
+                    <span class="text-xs bg-teal-50 text-teal-600 px-2 py-1 rounded-md font-medium">Loops</span>
+                    <span class="text-xs bg-cyan-50 text-cyan-600 px-2 py-1 rounded-md font-medium">Methods</span>
+                    <span class="text-xs bg-sky-50 text-sky-600 px-2 py-1 rounded-md font-medium">Scope</span>
+                </div>
+                <span class="text-teal-600 text-sm font-semibold group-hover:translate-x-1 transition-transform">ابدأ المراجعة &larr;</span>
+            </div>
+        </a>
+
+        {{-- Lecture 6 --}}
+        <a href="{{ route('study.show', ['subject' => 'mobile', 'lecture' => 6]) }}" class="group">
+            <div class="card rounded-2xl border-2 border-slate-200 hover:border-emerald-400 shadow-sm hover:shadow-lg hover:shadow-emerald-100 transition-all p-6 h-full">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-green-700 flex items-center justify-center text-white text-xl font-extrabold shadow-md shadow-emerald-200">6</div>
+                    <div>
+                        <h2 class="font-bold text-slate-800 text-lg">المحاضرة السادسة</h2>
                         <p class="text-xs text-slate-400">Android & Android Studio</p>
                     </div>
                 </div>
@@ -117,13 +137,13 @@
             </div>
         </a>
 
-        {{-- Lecture 6 --}}
-        <a href="{{ route('study.show', ['subject' => 'mobile', 'lecture' => 6]) }}" class="group">
+        {{-- Lecture 7 --}}
+        <a href="{{ route('study.show', ['subject' => 'mobile', 'lecture' => 7]) }}" class="group">
             <div class="card rounded-2xl border-2 border-slate-200 hover:border-rose-400 shadow-sm hover:shadow-lg hover:shadow-rose-100 transition-all p-6 h-full">
                 <div class="flex items-center gap-3 mb-4">
-                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-rose-500 to-pink-700 flex items-center justify-center text-white text-xl font-extrabold shadow-md shadow-rose-200">6</div>
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-rose-500 to-pink-700 flex items-center justify-center text-white text-xl font-extrabold shadow-md shadow-rose-200">7</div>
                     <div>
-                        <h2 class="font-bold text-slate-800 text-lg">المحاضرة السادسة</h2>
+                        <h2 class="font-bold text-slate-800 text-lg">المحاضرة السابعة</h2>
                         <p class="text-xs text-slate-400">Activity Lifecycle</p>
                     </div>
                 </div>
@@ -137,13 +157,13 @@
             </div>
         </a>
 
-        {{-- Lecture 7 --}}
-        <a href="{{ route('study.show', ['subject' => 'mobile', 'lecture' => 7]) }}" class="group">
+        {{-- Lecture 8 --}}
+        <a href="{{ route('study.show', ['subject' => 'mobile', 'lecture' => 8]) }}" class="group">
             <div class="card rounded-2xl border-2 border-slate-200 hover:border-amber-400 shadow-sm hover:shadow-lg hover:shadow-amber-100 transition-all p-6 h-full">
                 <div class="flex items-center gap-3 mb-4">
-                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-orange-700 flex items-center justify-center text-white text-xl font-extrabold shadow-md shadow-amber-200">7</div>
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-orange-700 flex items-center justify-center text-white text-xl font-extrabold shadow-md shadow-amber-200">8</div>
                     <div>
-                        <h2 class="font-bold text-slate-800 text-lg">المحاضرة السابعة</h2>
+                        <h2 class="font-bold text-slate-800 text-lg">المحاضرة الثامنة</h2>
                         <p class="text-xs text-slate-400">Android Layouts</p>
                     </div>
                 </div>
@@ -154,6 +174,26 @@
                     <span class="text-xs bg-yellow-50 text-yellow-600 px-2 py-1 rounded-md font-medium">Manifest</span>
                 </div>
                 <span class="text-amber-600 text-sm font-semibold group-hover:translate-x-1 transition-transform">ابدأ المراجعة &larr;</span>
+            </div>
+        </a>
+
+        {{-- Lecture 9 --}}
+        <a href="{{ route('study.show', ['subject' => 'mobile', 'lecture' => 9]) }}" class="group">
+            <div class="card rounded-2xl border-2 border-slate-200 hover:border-slate-400 shadow-sm hover:shadow-lg hover:shadow-slate-100 transition-all p-6 h-full">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-slate-600 to-slate-900 flex items-center justify-center text-white text-xl font-extrabold shadow-md shadow-slate-200">9</div>
+                    <div>
+                        <h2 class="font-bold text-slate-800 text-lg">المحاضرة التاسعة</h2>
+                        <p class="text-xs text-slate-400">مصادر Android (SharePoint)</p>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-600 mb-4">رابط مجلد SharePoint اللي فيه فيديوهات الشرح وملفات الـ PowerPoint الكاملة لمواد Android</p>
+                <div class="flex flex-wrap gap-1.5 mb-3">
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md font-medium">Resources</span>
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md font-medium">Videos</span>
+                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded-md font-medium">External Link</span>
+                </div>
+                <span class="text-slate-700 text-sm font-semibold group-hover:translate-x-1 transition-transform">افتح المصادر &larr;</span>
             </div>
         </a>
     </div>

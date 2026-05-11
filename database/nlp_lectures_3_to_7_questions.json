@@ -1,0 +1,986 @@
+[
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "What is Natural Language Processing (NLP)?",
+    "option_a": "A type of database management system",
+    "option_b": "The process of computer analysis of input in a human language and conversion into a useful representation",
+    "option_c": "A graphics rendering technique",
+    "option_d": "An operating system kernel module",
+    "correct_answer": "B",
+    "description": "<strong>NLP</strong> = computer analysis of input provided in a human language, and conversion of this input into a <em>useful form of representation</em>. Primarily concerned with getting computers to perform useful tasks with human languages."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "What are the two forms of natural language input/output?",
+    "option_a": "Binary and Hex",
+    "option_b": "Written text and speech",
+    "option_c": "ASCII and Unicode",
+    "option_d": "Compressed and Uncompressed",
+    "correct_answer": "B",
+    "description": "NLP system input/output can be <strong>written text</strong> or <strong>speech</strong>. Most NLP work focuses on written text."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "What does NLU stand for?",
+    "option_a": "Neural Linguistic Unit",
+    "option_b": "Natural Language Understanding",
+    "option_c": "Network Language Update",
+    "option_d": "Non-Linear Unification",
+    "correct_answer": "B",
+    "description": "<strong>NLU</strong> = Natural Language Understanding — mapping the given input in natural language into a useful representation."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "What does NLG stand for?",
+    "option_a": "Natural Language Generation",
+    "option_b": "Neural Language Group",
+    "option_c": "New Linguistic Grammar",
+    "option_d": "Network Layer Gateway",
+    "correct_answer": "A",
+    "description": "<strong>NLG</strong> = Natural Language Generation — producing output in natural language from some internal representation."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "Which is harder?",
+    "option_a": "NLG is much harder than NLU",
+    "option_b": "NLU is much harder than NLG",
+    "option_c": "They are equally difficult",
+    "option_d": "Neither is hard",
+    "correct_answer": "B",
+    "description": "<strong>NLU is much harder than NLG</strong>, but both are difficult. Understanding requires extracting meaning from ambiguous input; generation produces from a structured representation."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "What is one of the main reasons NLP is hard?",
+    "option_a": "Computers don't have enough memory",
+    "option_b": "Human language is ambiguous",
+    "option_c": "There are too many programming languages",
+    "option_d": "Speakers talk too fast",
+    "correct_answer": "B",
+    "description": "<strong>Human language is ambiguous</strong> — one of the three main reasons NLP is hard (the others are: requires reasoning beyond what's stated, and language is hard even for humans)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "Why is some ambiguity actually beneficial in language?",
+    "option_a": "It makes language faster to type",
+    "option_b": "It enables shorter linguistic expressions (data compression)",
+    "option_c": "It speeds up computers",
+    "option_d": "It eliminates the need for grammar",
+    "correct_answer": "B",
+    "description": "Allowing resolvable ambiguity permits <strong>shorter linguistic expressions</strong> — i.e., <em>data compression</em>. Without it, language would be overly complex."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "What is the primary difference between natural and computer languages?",
+    "option_a": "Speed of execution",
+    "option_b": "Ambiguity",
+    "option_c": "Use of variables",
+    "option_d": "Storage requirements",
+    "correct_answer": "B",
+    "description": "<strong>Ambiguity</strong> is the primary difference. Programming languages are designed to be <em>unambiguous</em> — each sentence has a unique parse."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "Which type of ambiguity is involved in 'bank' meaning either a financial institution or a river bank?",
+    "option_a": "Syntactic ambiguity",
+    "option_b": "Lexical (Word sense) ambiguity",
+    "option_c": "Semantic ambiguity",
+    "option_d": "Pragmatic ambiguity",
+    "correct_answer": "B",
+    "description": "<strong>Word senses (Lexical) ambiguity</strong> — different meanings of the same word."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "What type of ambiguity does 'I can see a man with a telescope' demonstrate?",
+    "option_a": "Phonological ambiguity",
+    "option_b": "Syntactic structure ambiguity",
+    "option_c": "Lexical ambiguity",
+    "option_d": "No ambiguity",
+    "correct_answer": "B",
+    "description": "<strong>Syntactic structure ambiguity</strong>: who has the telescope — the man, or the speaker? The structure can be parsed two ways."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "Which level of linguistic knowledge concerns how words relate to sounds?",
+    "option_a": "Morphology",
+    "option_b": "Phonology",
+    "option_c": "Syntax",
+    "option_d": "Semantics",
+    "correct_answer": "B",
+    "description": "<strong>Phonology</strong> concerns how words are related to the sounds that realize them (e.g., homophones: red/read, write/right)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "Which level concerns how words are constructed from morphemes?",
+    "option_a": "Semantics",
+    "option_b": "Morphology",
+    "option_c": "Pragmatics",
+    "option_d": "Discourse",
+    "correct_answer": "B",
+    "description": "<strong>Morphology</strong> concerns how words are constructed from morphemes (smallest meaning-bearing units). Example: <code>washing</code> = <code>wash</code> + <code>-ing</code>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "Which level concerns how words combine to form correct sentences?",
+    "option_a": "Phonology",
+    "option_b": "Syntax",
+    "option_c": "Semantics",
+    "option_d": "Pragmatics",
+    "correct_answer": "B",
+    "description": "<strong>Syntax</strong> concerns how words can be put together to form correct sentences and determines the structural role of each word."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "Which level studies context-INDEPENDENT meaning?",
+    "option_a": "Pragmatics",
+    "option_b": "Discourse",
+    "option_c": "Semantics",
+    "option_d": "Morphology",
+    "correct_answer": "C",
+    "description": "<strong>Semantics</strong> studies context-<em>independent</em> meaning — what words mean and how meanings combine. Pragmatics deals with context-dependent meaning."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "Which level concerns how use of a sentence in different situations affects interpretation?",
+    "option_a": "Semantics",
+    "option_b": "Pragmatics",
+    "option_c": "Phonology",
+    "option_d": "Syntax",
+    "correct_answer": "B",
+    "description": "<strong>Pragmatics</strong> concerns how sentences are used in different situations and how use affects interpretation (e.g., sarcasm, politeness)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "Which level concerns how the immediately preceding sentences affect the interpretation of the next sentence?",
+    "option_a": "Syntax",
+    "option_b": "Discourse",
+    "option_c": "Morphology",
+    "option_d": "Phonology",
+    "correct_answer": "B",
+    "description": "<strong>Discourse</strong> concerns how the immediately preceding sentences affect interpretation — e.g., resolving pronouns and temporal references across sentences."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "What is a morpheme?",
+    "option_a": "A complete sentence",
+    "option_b": "The smallest meaning-bearing unit constituting a word",
+    "option_c": "A type of pronoun",
+    "option_d": "A grammar rule",
+    "correct_answer": "B",
+    "description": "A <strong>morpheme</strong> is the smallest meaning-bearing unit constituting a word. Example: <code>washing</code> = <code>wash</code> + <code>-ing</code>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "What are the two types of affixes?",
+    "option_a": "Prefixes and suffixes",
+    "option_b": "Verbs and nouns",
+    "option_c": "Active and passive",
+    "option_d": "Singular and plural",
+    "correct_answer": "A",
+    "description": "Affixes come in two types: <strong>Prefixes</strong> (before the stem, e.g., <code>postpone</code>) and <strong>Suffixes</strong> (after the stem, e.g., <code>tossed</code>)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "How many distinct interpretations does the sentence 'I made her duck' have (per the lecture)?",
+    "option_a": "1",
+    "option_b": "3",
+    "option_c": "5",
+    "option_d": "10",
+    "correct_answer": "C",
+    "description": "The sentence has <strong>5 interpretations</strong>: cooked duck for her · cooked duck belonging to her · created a toy duck she owns · caused her to lower head/body · used magic to turn her into a duck."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "In 'I made her duck', what type of ambiguity does 'duck' have?",
+    "option_a": "Phonological only",
+    "option_b": "Morphologically and syntactically ambiguous (noun or verb)",
+    "option_c": "Semantically ambiguous only",
+    "option_d": "No ambiguity",
+    "correct_answer": "B",
+    "description": "<strong>'duck'</strong> is morphologically and syntactically ambiguous — it can be a <em>noun</em> (the bird) or a <em>verb</em> (to lower head/body)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "In 'I made her duck', what is 'her' ambiguous between?",
+    "option_a": "Subject or object",
+    "option_b": "Past or present",
+    "option_c": "Dative or possessive",
+    "option_d": "Singular or plural",
+    "correct_answer": "C",
+    "description": "<strong>'her'</strong> is syntactically ambiguous between <em>dative</em> (for her) and <em>possessive</em> (belonging to her)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
+    "question": "Examples like 'red'/'read' and 'flower'/'flour' demonstrate what concept?",
+    "option_a": "Syntax",
+    "option_b": "Phonology (homophones)",
+    "option_c": "Pragmatics",
+    "option_d": "Semantic roles",
+    "correct_answer": "B",
+    "description": "These are <strong>homophones</strong> — words that sound the same but have different meanings/spellings. They're a phonology concern."
+  },
+
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "What do inflectional morphemes do?",
+    "option_a": "Create new words with different meanings",
+    "option_b": "Create new forms of the same word with grammatical properties; meaning and category stay the same",
+    "option_c": "Combine two words into one",
+    "option_d": "Change pronunciation only",
+    "correct_answer": "B",
+    "description": "<strong>Inflectional morphemes</strong> create new <em>forms</em> of the same word (number, tense, case). The basic meaning and grammatical category remain unchanged."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "Which is an example of an inflectional morpheme?",
+    "option_a": "re- (as in 'rewrite')",
+    "option_b": "-er (as in 'writer' from 'write')",
+    "option_c": "-ed (past tense)",
+    "option_d": "un- (as in 'unhappy')",
+    "correct_answer": "C",
+    "description": "<strong>-ed</strong> (past tense) is inflectional — it gives a different tense form of the same verb. <code>-er</code> in 'writer' and <code>re-</code> are derivational."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "What do derivational morphemes do?",
+    "option_a": "Form past tense",
+    "option_b": "Create new words with different meanings, possibly belonging to a different grammatical category",
+    "option_c": "Indicate plural",
+    "option_d": "Mark possession",
+    "correct_answer": "B",
+    "description": "<strong>Derivational morphemes</strong> create <em>new words</em> with different meanings that may belong to a different grammatical category. Example: 'write' (V) + '-er' = 'writer' (N)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "Which morpheme example changes the grammatical category?",
+    "option_a": "cats (cat + -s)",
+    "option_b": "writer (write + -er)",
+    "option_c": "tossed (toss + -ed)",
+    "option_d": "John's",
+    "correct_answer": "B",
+    "description": "<strong>writer</strong> (write + -er): verb → noun. This is a derivational morpheme that changes category. The others are inflectional and keep the category the same."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "What is the Bag-of-Words (BoW) model?",
+    "option_a": "A way of representing text that captures word order",
+    "option_b": "A way of representing text that describes the occurrence of words within a document, ignoring order",
+    "option_c": "A type of neural network",
+    "option_d": "An encryption method",
+    "correct_answer": "B",
+    "description": "<strong>BoW</strong> is a representation of text that describes the <em>occurrence of words</em> within a document. Called a 'bag' because <strong>order and structure are discarded</strong>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "Why is it called a 'bag' of words?",
+    "option_a": "Because words are stored in a database",
+    "option_b": "Because information about word order or structure is discarded",
+    "option_c": "Because it uses bags of memory",
+    "option_d": "Because it processes batches",
+    "correct_answer": "B",
+    "description": "Called 'bag' because <strong>any information about the order or structure of words is discarded</strong>. The model only cares about whether words occur, not where."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "What are the two key components of a Bag-of-Words?",
+    "option_a": "Sentences and paragraphs",
+    "option_b": "A vocabulary of known words and a measure of presence of those words",
+    "option_c": "Models and algorithms",
+    "option_d": "Inputs and outputs",
+    "correct_answer": "B",
+    "description": "BoW involves: 1) a <strong>vocabulary</strong> of known words, and 2) a <strong>measure of presence</strong> of those words (e.g., boolean 0/1, count, TF-IDF)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "What are the three steps of building a Bag-of-Words?",
+    "option_a": "Train, validate, test",
+    "option_b": "Collect Data, Design the Vocabulary, Create Document Vectors",
+    "option_c": "Tokenize, normalize, encode",
+    "option_d": "Read, parse, write",
+    "correct_answer": "B",
+    "description": "Three steps: 1) <strong>Collect Data</strong>, 2) <strong>Design the Vocabulary</strong> (unique words), 3) <strong>Create Document Vectors</strong> (each doc → fixed-length vector)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "What is the simplest scoring method for words in a BoW document vector?",
+    "option_a": "TF-IDF",
+    "option_b": "Boolean (0 for absent, 1 for present)",
+    "option_c": "Probability distribution",
+    "option_d": "Word2Vec embeddings",
+    "correct_answer": "B",
+    "description": "The simplest scoring is <strong>boolean</strong> — mark 0 for absent, 1 for present. Other options like word counts and TF-IDF are richer but more complex."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "What is one-hot encoding for a word?",
+    "option_a": "A vector with all values equal to 1",
+    "option_b": "A vector with one 1 and the rest 0s, with size equal to vocabulary",
+    "option_c": "A binary string for each character",
+    "option_d": "A hash of the word",
+    "correct_answer": "B",
+    "description": "<strong>One-hot encoding</strong>: a vector with size = vocabulary size, with a single <code>1</code> at the word's position and <code>0</code>s everywhere else."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "Why are one-hot vectors problematic for word similarity?",
+    "option_a": "They take too much memory",
+    "option_b": "All distinct one-hot vectors are orthogonal — there's no natural notion of similarity",
+    "option_c": "They are too slow",
+    "option_d": "They can only represent verbs",
+    "correct_answer": "B",
+    "description": "All distinct one-hot vectors are <strong>orthogonal</strong> (dot product = 0) — so 'motel' and 'hotel' look as different as 'motel' and 'banana'. <em>No natural similarity</em>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "What does the CBOW (Continuous Bag-of-Words) model do?",
+    "option_a": "Predicts context words from a center word",
+    "option_b": "Predicts the middle word based on surrounding context words",
+    "option_c": "Translates between languages",
+    "option_d": "Generates new sentences",
+    "correct_answer": "B",
+    "description": "<strong>CBOW</strong> predicts the <em>middle (center) word</em> based on surrounding context words. It's called bag-of-words because the order of context words doesn't matter."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "What does the Skip-Gram model do?",
+    "option_a": "Predicts context words within a range, given a center word",
+    "option_b": "Predicts the center word from context",
+    "option_c": "Skips every other word in the input",
+    "option_d": "Removes stop words",
+    "correct_answer": "A",
+    "description": "<strong>Skip-Gram</strong> is the reverse of CBOW — given a center word, it predicts context words within a certain range before and after it."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "In a confusion matrix, what is True Positive (TP)?",
+    "option_a": "Predicted positive and it's true",
+    "option_b": "Predicted negative and it's true",
+    "option_c": "Predicted positive but it's false",
+    "option_d": "Predicted negative but it's false",
+    "correct_answer": "A",
+    "description": "<strong>True Positive (TP)</strong>: you predicted positive and it's actually true. The prediction matches reality."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "What is False Positive (FP), also known as Type I Error?",
+    "option_a": "Predicted positive and it's true",
+    "option_b": "Predicted negative and it's true",
+    "option_c": "Predicted positive but it's false",
+    "option_d": "Predicted negative but it's false",
+    "correct_answer": "C",
+    "description": "<strong>False Positive (Type I Error)</strong>: you predicted positive but it's actually false. The model raised a 'false alarm'."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "What is False Negative (FN), also known as Type II Error?",
+    "option_a": "Predicted positive and it's true",
+    "option_b": "Predicted negative and it's true",
+    "option_c": "Predicted positive but it's false",
+    "option_d": "Predicted negative but it's false",
+    "correct_answer": "D",
+    "description": "<strong>False Negative (Type II Error)</strong>: you predicted negative but it's actually true. The model 'missed' something it should have caught."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
+    "question": "How does morphology help in Information Retrieval?",
+    "option_a": "It encrypts queries",
+    "option_b": "It recognizes that 'goose' and 'geese' refer to the same root word",
+    "option_c": "It speeds up disk reads",
+    "option_d": "It reduces network traffic",
+    "correct_answer": "B",
+    "description": "Morphology helps recognize that <strong>'goose' and 'geese'</strong> are forms of the same root <code>goose</code>. Without it, searching 'goose' would miss documents containing 'geese'."
+  },
+
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "What is vagueness in language?",
+    "option_a": "A grammatical error",
+    "option_b": "Lack of certainty or distinctness",
+    "option_c": "Multiple distinct meanings",
+    "option_d": "Pronunciation difficulty",
+    "correct_answer": "B",
+    "description": "<strong>Vagueness</strong> = <em>lack of certainty or distinctness</em>. Different from ambiguity (which is multiple specific possible meanings)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "What does POS tagging decide?",
+    "option_a": "Whether a sentence is true or false",
+    "option_b": "Whether a word is, e.g., a verb or a noun",
+    "option_c": "The pronunciation of a word",
+    "option_d": "The translation of a word",
+    "correct_answer": "B",
+    "description": "<strong>POS (Part-of-Speech) Tagging</strong> decides the lexical category of each word — e.g., is 'duck' a verb (lower head) or noun (the bird)?"
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "What does Word Sense Disambiguation (WSD) do?",
+    "option_a": "Translates words between languages",
+    "option_b": "Decides which meaning of an ambiguous word is intended (e.g., make = create or cook)",
+    "option_c": "Removes stop words",
+    "option_d": "Identifies named entities",
+    "correct_answer": "B",
+    "description": "<strong>WSD</strong> decides which sense (meaning) of an ambiguous word is intended in context — e.g., 'make' meaning <em>create</em> versus <em>cook</em>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "Lexical disambiguation includes which two ambiguity types?",
+    "option_a": "Phonetic and prosodic",
+    "option_b": "POS ambiguity and word-sense ambiguity",
+    "option_c": "Syntactic and semantic",
+    "option_d": "Discourse and pragmatic",
+    "correct_answer": "B",
+    "description": "<strong>Lexical disambiguation</strong> covers both <em>POS resolution</em> and <em>word-sense resolution</em> — both are at the word (lexical) level."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "How is syntactic ambiguity (like 'her duck') typically addressed?",
+    "option_a": "Probabilistic parsing",
+    "option_b": "Random guessing",
+    "option_c": "Brute-force enumeration",
+    "option_d": "Manual annotation",
+    "correct_answer": "A",
+    "description": "Syntactic ambiguity (e.g., 'her duck') is addressed by <strong>probabilistic parsing</strong> — picking the most likely parse based on training data."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "What is the part of speech for 'happy' and 'clever'?",
+    "option_a": "Noun",
+    "option_b": "Verb",
+    "option_c": "Adjective",
+    "option_d": "Adverb",
+    "correct_answer": "C",
+    "description": "<strong>Adjectives</strong> modify nouns — examples: <em>happy, clever</em>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "What part of speech is 'sadly' or 'very'?",
+    "option_a": "Noun",
+    "option_b": "Adverb",
+    "option_c": "Conjunction",
+    "option_d": "Preposition",
+    "correct_answer": "B",
+    "description": "<strong>Adverbs</strong> modify verbs, adjectives, or other adverbs — examples: <em>sadly, very</em>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "What part of speech is 'and', 'but', or 'while'?",
+    "option_a": "Conjunction",
+    "option_b": "Preposition",
+    "option_c": "Interjection",
+    "option_d": "Determiner",
+    "correct_answer": "A",
+    "description": "<strong>Conjunctions</strong> join things together — examples: <em>and, but, while</em>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "What part of speech is 'ouch' or 'oh'?",
+    "option_a": "Verb",
+    "option_b": "Pronoun",
+    "option_c": "Interjection",
+    "option_d": "Adverb",
+    "correct_answer": "C",
+    "description": "<strong>Interjections</strong> are outcries or exclamations — examples: <em>ouch, oh, alas</em>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "What is WordNet?",
+    "option_a": "A neural network model",
+    "option_b": "A freely and publicly available large lexical database of English",
+    "option_c": "A Python library for tokenization",
+    "option_d": "A search engine",
+    "correct_answer": "B",
+    "description": "<strong>WordNet</strong> is a freely and publicly available large lexical database of English. Nouns, verbs, adjectives, and adverbs are grouped into <em>synsets</em>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "What are synsets in WordNet?",
+    "option_a": "Sets of synonyms each expressing a distinct concept",
+    "option_b": "Sets of antonyms",
+    "option_c": "Database tables",
+    "option_d": "Groups of POS tags",
+    "correct_answer": "A",
+    "description": "<strong>Synsets</strong> = sets of cognitive synonyms, each expressing a distinct concept. Synsets are interlinked by conceptual-semantic and lexical relations."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "WSD is required in machine translation when:",
+    "option_a": "The source and target languages share an alphabet",
+    "option_b": "Words have different translations for different senses (e.g., English 'change' → French 'changement' or 'monnaie')",
+    "option_c": "The text is very short",
+    "option_d": "Translation is between dialects",
+    "correct_answer": "B",
+    "description": "WSD is needed for <strong>lexical choice in MT</strong> when a word has different translations for different senses. E.g., English 'change' → 'changement' (transformation) or 'monnaie' (pocket money)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "Why is WSD needed in Information Retrieval?",
+    "option_a": "To decode encrypted queries",
+    "option_b": "Because some queries are ambiguous (e.g., 'depression' could mean illness, weather, or economics)",
+    "option_c": "To reduce result counts",
+    "option_d": "To rank pages alphabetically",
+    "correct_answer": "B",
+    "description": "Some queries are ambiguous. Example: 'depression' — should the system return docs about illness, weather systems, or economics? WSD resolves the intent."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "What is Semantic Role Labeling (SRL)?",
+    "option_a": "Assigning POS tags",
+    "option_b": "Determining the semantic role played by each noun phrase argument to a verb (Who did what to whom where?)",
+    "option_c": "Building a parse tree",
+    "option_d": "Translating sentences",
+    "correct_answer": "B",
+    "description": "<strong>SRL</strong> determines, for each clause, the semantic role played by each NP that's an argument to the verb — answering 'who did what to whom at where?'."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "Which is another name for SRL?",
+    "option_a": "Deep parsing",
+    "option_b": "Case role analysis / thematic analysis / shallow semantic parsing",
+    "option_c": "Tokenization",
+    "option_d": "Stemming",
+    "correct_answer": "B",
+    "description": "SRL is also referred to as <strong>case role analysis, thematic analysis, or shallow semantic parsing</strong>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "In 'The waiter spilled the soup', what thematic role does 'The waiter' have?",
+    "option_a": "Patient",
+    "option_b": "Agent",
+    "option_c": "Theme",
+    "option_d": "Location",
+    "correct_answer": "B",
+    "description": "<strong>The waiter = AGENT</strong> — the participant doing the action intentionally."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "In 'John has a headache', what role does 'John' have?",
+    "option_a": "Agent",
+    "option_b": "Experiencer",
+    "option_c": "Patient",
+    "option_d": "Location",
+    "correct_answer": "B",
+    "description": "<strong>EXPERIENCER</strong>: John is characterized as aware of (experiencing) something — the headache."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "In 'The pirate sank the ship', what role does 'the ship' play?",
+    "option_a": "Agent",
+    "option_b": "Theme (object affected/changed by the event)",
+    "option_c": "Source",
+    "option_d": "Goal",
+    "correct_answer": "B",
+    "description": "<strong>THEME</strong> — 'the ship' is being affected/changed by the event (it's being sunk)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "In 'I flew in from Boston', what role does 'Boston' play?",
+    "option_a": "Goal",
+    "option_b": "Source (object from which motion proceeds)",
+    "option_c": "Location",
+    "option_d": "Patient",
+    "correct_answer": "B",
+    "description": "<strong>SOURCE</strong> — 'Boston' is the object from which motion proceeds. The opposite role is GOAL (e.g., 'I drove to Portland')."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
+    "question": "In 'I drove to Portland', what role does 'Portland' play?",
+    "option_a": "Source",
+    "option_b": "Goal",
+    "option_c": "Location",
+    "option_d": "Theme",
+    "correct_answer": "B",
+    "description": "<strong>GOAL</strong> — 'Portland' is the object to which motion proceeds. Opposite of Source."
+  },
+
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "What does GPT-3 stand for?",
+    "option_a": "General Purpose Translator 3",
+    "option_b": "Generative Pre-Trained Transformer (3rd Generation)",
+    "option_c": "Graph Processing Tool 3",
+    "option_d": "Gated Probability Tracker",
+    "correct_answer": "B",
+    "description": "<strong>GPT-3</strong> = Generative Pre-Trained Transformer (3rd Generation), introduced by OpenAI in May 2020."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "How many parameters does GPT-3 have?",
+    "option_a": "1.75 million",
+    "option_b": "175 million",
+    "option_c": "175 billion",
+    "option_d": "1.75 trillion",
+    "correct_answer": "C",
+    "description": "GPT-3 has <strong>175 billion parameters</strong> — one of the largest language models ever created at its time of release."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "What kind of language model is GPT-3?",
+    "option_a": "Rule-based",
+    "option_b": "Autoregressive",
+    "option_c": "Bidirectional only",
+    "option_d": "Unsupervised clustering",
+    "correct_answer": "B",
+    "description": "GPT-3 is referred to as an <strong>autoregressive</strong> language model — it predicts the next token based on previous ones."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "What is denotational semantics?",
+    "option_a": "A way of expressing the semantic definition by representing meaning as signifier (symbol) ↔ signified (idea)",
+    "option_b": "A type of regular expression",
+    "option_c": "A neural network architecture",
+    "option_d": "A database schema design",
+    "correct_answer": "A",
+    "description": "<strong>Denotational semantics</strong> represents meaning as the relation between a <em>signifier</em> (symbol) and the <em>signified</em> (idea or thing)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "Which of these is a problem with WordNet?",
+    "option_a": "Too fast to compute",
+    "option_b": "Misses new meanings (e.g., 'wicked', 'badass'), is subjective, requires human labor",
+    "option_c": "Too many synonyms",
+    "option_d": "Not free to use",
+    "correct_answer": "B",
+    "description": "WordNet's problems include: missing new word meanings (slang), being subjective, requiring human labor to maintain, and inability to compute precise word similarity."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "What is the dot product of two distinct one-hot word vectors?",
+    "option_a": "1",
+    "option_b": "0 (they are orthogonal)",
+    "option_c": "Their cosine similarity",
+    "option_d": "The vocabulary size",
+    "correct_answer": "B",
+    "description": "Distinct one-hot vectors are <strong>orthogonal</strong> — their dot product is <strong>0</strong>. This is why one-hot encoding gives no natural notion of similarity."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "What is the core idea of distributional semantics?",
+    "option_a": "Words have meaning only when defined formally",
+    "option_b": "A word's meaning is given by the words that frequently appear close-by",
+    "option_c": "All words have one true meaning",
+    "option_d": "Word meaning is genetic",
+    "correct_answer": "B",
+    "description": "Distributional semantics: <strong>'You shall know a word by the company it keeps'</strong> (Firth, 1957). A word's meaning is captured by its surrounding context words."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "What are word embeddings?",
+    "option_a": "Compressed text files",
+    "option_b": "Dense vectors (n-dim arrays) for each word, chosen so similar words have similar vectors",
+    "option_c": "Database indexes",
+    "option_d": "Phonetic transcriptions",
+    "correct_answer": "B",
+    "description": "<strong>Word embeddings</strong> are dense vectors (n-dim arrays) for each word, chosen so that similar words have similar vectors. Also called <em>neural word representations</em> or <em>distributed representation</em>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "Who introduced Word2Vec?",
+    "option_a": "Alan Turing",
+    "option_b": "Mikolov et al. (2013)",
+    "option_c": "Geoffrey Hinton",
+    "option_d": "Yann LeCun",
+    "correct_answer": "B",
+    "description": "<strong>Word2Vec</strong> was introduced by <em>Mikolov et al. in 2013</em> as a framework for learning word vectors."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "What does the softmax function do?",
+    "option_a": "Maps arbitrary values to a probability distribution",
+    "option_b": "Calculates the maximum value",
+    "option_c": "Removes stop words",
+    "option_d": "Increases learning rate",
+    "correct_answer": "A",
+    "description": "<strong>Softmax</strong> maps arbitrary real values to a probability distribution: <code>softmax(xᵢ) = exp(xᵢ) / Σ exp(xⱼ)</code>. Frequently used in deep learning."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "Why does Word2Vec use TWO vectors per word?",
+    "option_a": "To save memory",
+    "option_b": "Easier optimization; the algorithm uses one when w is a center word and another when it's a context word",
+    "option_c": "To handle multilingual text",
+    "option_d": "Because of GPU constraints",
+    "correct_answer": "B",
+    "description": "Word2Vec uses two vectors per word: <strong>v</strong> when w is a center word, <strong>u</strong> when w is a context word. <em>Easier optimization</em> — average them at the end."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "What is the goal of training in Word2Vec?",
+    "option_a": "Maximize loss",
+    "option_b": "Minimize the loss (cost) function",
+    "option_c": "Maximize the number of parameters",
+    "option_d": "Eliminate randomness",
+    "correct_answer": "B",
+    "description": "Goal of training: <strong>minimize loss</strong>. Minimizing loss = maximizing predictive accuracy. The loss is the average negative log-likelihood."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "What does Gradient Descent do?",
+    "option_a": "Increases the loss",
+    "option_b": "Iteratively takes small steps in the direction of the negative gradient to minimize J(θ)",
+    "option_c": "Randomly samples points",
+    "option_d": "Selects optimal hyperparameters",
+    "correct_answer": "B",
+    "description": "<strong>Gradient Descent</strong>: from current θ, calculate ∇J(θ), then take a small step in the direction of the <em>negative gradient</em>. Repeat until convergence."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "What is the main problem with vanilla Gradient Descent for large corpora?",
+    "option_a": "It only works on integers",
+    "option_b": "J(θ) is a function of all windows in the corpus (potentially billions) — very expensive per update",
+    "option_c": "It can only run on GPUs",
+    "option_d": "It always overfits",
+    "correct_answer": "B",
+    "description": "Vanilla GD computes gradients over <strong>all windows in the corpus</strong> — potentially billions. Each update takes a very long time."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "What is Stochastic Gradient Descent (SGD)?",
+    "option_a": "Computes gradient using all training data each iteration",
+    "option_b": "Repeatedly samples windows and updates after each one",
+    "option_c": "A specialized hardware architecture",
+    "option_d": "An optimization for graph databases",
+    "correct_answer": "B",
+    "description": "<strong>SGD</strong>: repeatedly sample (a single window or sample), and update parameters after each one. Much faster than full GD."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "Compared to Gradient Descent, SGD is:",
+    "option_a": "Slower and less accurate",
+    "option_b": "Faster, less computationally expensive, can escape shallow local minima more easily",
+    "option_c": "Always exact",
+    "option_d": "Only good for small datasets",
+    "correct_answer": "B",
+    "description": "<strong>SGD</strong> is faster, less expensive per iteration, can escape shallow local minima more easily, and reaches convergence faster — though gives a 'good' (not optimal) solution."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "What is GloVe?",
+    "option_a": "A type of activation function",
+    "option_b": "Global Vectors for Word Representation — an unsupervised learning algorithm trained on aggregated global word-word co-occurrence statistics",
+    "option_c": "A regression model",
+    "option_d": "A search algorithm",
+    "correct_answer": "B",
+    "description": "<strong>GloVe</strong> = Global Vectors for Word Representation. Unsupervised learning algorithm trained on aggregated <em>global word-word co-occurrence statistics</em> from a corpus."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "What do ratios of co-occurrence probabilities encode in GloVe?",
+    "option_a": "Phonetic information only",
+    "option_b": "Meaning components",
+    "option_c": "Random noise",
+    "option_d": "Spelling errors",
+    "correct_answer": "B",
+    "description": "GloVe's crucial insight: <strong>ratios of co-occurrence probabilities can encode meaning components</strong>. This produces interesting linear substructures in word vector space."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
+    "question": "What is the learning rate (α) in gradient descent?",
+    "option_a": "The size of the dataset",
+    "option_b": "The step size — controls how big each update is",
+    "option_c": "The number of training epochs",
+    "option_d": "The dimension of the embedding",
+    "correct_answer": "B",
+    "description": "<strong>Learning rate (α)</strong> = step size in the update <code>θ_new = θ_old − α · ∇J(θ)</code>. Too high = unstable; too low = slow."
+  },
+
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "What is a Hidden Markov Model (HMM)?",
+    "option_a": "A type of database query",
+    "option_b": "A probabilistic sequence model that maps observations to labels",
+    "option_c": "A graphics rendering algorithm",
+    "option_d": "A web search engine",
+    "correct_answer": "B",
+    "description": "An <strong>HMM</strong> is a probabilistic sequence model — given a sequence of units (e.g., words), it computes a probability distribution over possible label sequences and chooses the best."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "What is a sequence model (or sequence classifier)?",
+    "option_a": "A model that assigns a label or class to each unit in a sequence",
+    "option_b": "A model that ranks sequences by length",
+    "option_c": "A clustering algorithm",
+    "option_d": "A regression model",
+    "correct_answer": "A",
+    "description": "A <strong>sequence model</strong> assigns a label or class to <em>each unit in a sequence</em>, mapping a sequence of observations to a sequence of labels."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "Which of these is NOT a typical sequence labeling task in NLP?",
+    "option_a": "Speech recognition",
+    "option_b": "POS tagging",
+    "option_c": "Named Entity Recognition",
+    "option_d": "Image segmentation",
+    "correct_answer": "D",
+    "description": "Image segmentation is a computer vision task. The 4 NLP sequence labeling tasks listed are: <strong>Speech Recognition · POS Tagging · NER · Information Extraction</strong>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "Are all NLP tasks sequence labeling?",
+    "option_a": "Yes, all NLP is sequence labeling",
+    "option_b": "No, only tasks where information from previous items in the sequence affects/helps the next one",
+    "option_c": "Only when using neural networks",
+    "option_d": "Only for English",
+    "correct_answer": "B",
+    "description": "Not all NLP tasks are sequence labeling — only those where <strong>information of the previous things in the sequence affects/helps the next one</strong>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "In a weighted finite-state automaton, what must the sum of probabilities leaving any state equal?",
+    "option_a": "0",
+    "option_b": "0.5",
+    "option_c": "1",
+    "option_d": "Infinity",
+    "correct_answer": "C",
+    "description": "The sum of probabilities leaving any state in a WFSA must sum to <strong>1</strong> (it's a probability distribution over the next states)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "What is a Markov chain?",
+    "option_a": "A random graph",
+    "option_b": "A special case of WFSA where the input sequence uniquely determines which states the automaton will go through",
+    "option_c": "A type of decision tree",
+    "option_d": "A web crawler",
+    "correct_answer": "B",
+    "description": "A <strong>Markov chain</strong> is a special case of a WFSA in which the <em>input sequence uniquely determines</em> which states the automaton will go through."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "What can Markov chains NOT represent?",
+    "option_a": "Inherently ambiguous problems",
+    "option_b": "Numerical sequences",
+    "option_c": "Probability distributions",
+    "option_d": "Discrete states",
+    "correct_answer": "A",
+    "description": "Markov chains <strong>cannot represent inherently ambiguous problems</strong>. They're useful for assigning probabilities to <em>unambiguous</em> sequences."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "In a first-order Markov model, the current state depends on:",
+    "option_a": "All previous states",
+    "option_b": "Only the previous state",
+    "option_c": "The next state",
+    "option_d": "No states",
+    "correct_answer": "B",
+    "description": "In a <strong>first-order Markov model</strong>, the current state depends only on the immediately previous state: <code>P(qᵢ | q₁...qᵢ₋₁) = P(qᵢ | qᵢ₋₁)</code>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "What are 'hidden states' also referred to as?",
+    "option_a": "Frozen states",
+    "option_b": "Latent states",
+    "option_c": "Output states",
+    "option_d": "Initial states",
+    "correct_answer": "B",
+    "description": "<strong>Hidden states</strong> are also referred to as <em>latent states</em> — they're the states we're trying to infer but cannot observe directly."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "In speech recognition, what is hidden vs observed?",
+    "option_a": "Words are observed; acoustic signal is hidden",
+    "option_b": "Words are hidden; acoustic signal is observed",
+    "option_c": "Both are hidden",
+    "option_d": "Both are observed",
+    "correct_answer": "B",
+    "description": "In speech recognition, the <strong>acoustic signal is observed</strong> and we infer the <strong>hidden sequence of words</strong>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "In POS tagging with HMMs, what is hidden vs observed?",
+    "option_a": "Words are observed; POS tags are hidden",
+    "option_b": "POS tags are observed; words are hidden",
+    "option_c": "Both are observed",
+    "option_d": "Both are hidden",
+    "correct_answer": "A",
+    "description": "In POS tagging, <strong>words are observed</strong> (the sentence) and <strong>POS tags are hidden</strong> (we infer them)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "Is the ratio of hidden states to observed states necessarily 1:1?",
+    "option_a": "Yes, always 1:1",
+    "option_b": "No, not necessarily — multiple observations may yield one hidden state inference",
+    "option_c": "Always 2:1",
+    "option_d": "Only for English",
+    "correct_answer": "B",
+    "description": "The ratio of hidden states to observed states is <strong>not necessarily 1:1</strong>. One or more observations allow inferences about a sequence of hidden states."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "Which of the following is one of the three types of information needed to compute joint probability in HMMs?",
+    "option_a": "Color data",
+    "option_b": "Transition data — probability of transitioning to a new state given the current state",
+    "option_c": "Compression ratios",
+    "option_d": "User profiles",
+    "correct_answer": "B",
+    "description": "<strong>Transition data</strong> = probability of transitioning to a new state, conditioned on the present state. One of the three types (with Emission and Initial state)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "What does emission data represent in an HMM?",
+    "option_a": "Probability of transitioning to an observed state, conditioned on a hidden state",
+    "option_b": "Initial state probabilities",
+    "option_c": "The number of states",
+    "option_d": "Color information",
+    "correct_answer": "A",
+    "description": "<strong>Emission data</strong> = probability of transitioning to an <em>observed state</em>, conditioned on a hidden state. Tells us what we'd see if we were in a given hidden state."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "What does initial state information (prior probability) represent?",
+    "option_a": "The final state probability",
+    "option_b": "The initial probability of transitioning to a hidden state — the prior",
+    "option_c": "The model size",
+    "option_d": "The training error",
+    "correct_answer": "B",
+    "description": "<strong>Initial state information</strong> = the initial probability of transitioning to a hidden state. Also looked at as the <em>prior probability</em>."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "How many fundamental problems can an HMM be posed (per the lecture)?",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "5",
+    "correct_answer": "C",
+    "description": "An HMM has <strong>3 fundamental problems</strong>: 1) Likelihood, 2) Decoding (most likely state sequence), 3) Learning (best model parameters)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "Which HMM problem asks: 'Given an observation sequence and a model, what is the most likely state sequence?'",
+    "option_a": "Likelihood",
+    "option_b": "Decoding",
+    "option_c": "Learning",
+    "option_d": "Initialization",
+    "correct_answer": "B",
+    "description": "<strong>Decoding</strong>: Given an observation sequence and a model, find the most likely state sequence (typically solved with Viterbi algorithm)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "Which HMM problem asks: 'Given an observation sequence and a model, what is the probability of that sequence?'",
+    "option_a": "Likelihood",
+    "option_b": "Decoding",
+    "option_c": "Learning",
+    "option_d": "Generation",
+    "correct_answer": "A",
+    "description": "<strong>Likelihood</strong>: Given an observation sequence and a model, what is the probability of that sequence given the model?"
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "Which HMM problem asks: 'Given an observation sequence, find the best model parameters'?",
+    "option_a": "Likelihood",
+    "option_b": "Decoding",
+    "option_c": "Learning",
+    "option_d": "Compression",
+    "correct_answer": "C",
+    "description": "<strong>Learning</strong>: Given an observation sequence, find the best model parameters for a partially specified model (typically solved with Baum-Welch / EM algorithm)."
+  },
+  {
+    "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
+    "question": "What kind of model is an HMM (per the lecture)?",
+    "option_a": "Discriminative",
+    "option_b": "Generative",
+    "option_c": "Reinforcement",
+    "option_d": "Adversarial",
+    "correct_answer": "B",
+    "description": "An HMM is a kind of <strong>generative model</strong> — it models the joint probability distribution and can generate observation sequences."
+  }
+]
