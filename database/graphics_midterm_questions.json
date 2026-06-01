@@ -1,16 +1,6 @@
 [
   {
     "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "Computer Graphics mainly deal with:",
-    "option_a": "Text processing",
-    "option_b": "Audio signals",
-    "option_c": "Creation and manipulation of visual content",
-    "option_d": "Database management",
-    "correct_answer": "C",
-    "description": "Computer Graphics is fundamentally about the <strong>creation and manipulation of visual content</strong> using computers — from images and animations to interactive graphics."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
     "question": "Computer Graphics simplify the process of displaying:",
     "option_a": "Audio files",
     "option_b": "Text documents",
@@ -41,16 +31,6 @@
   },
   {
     "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "Raster graphics are made up of:",
-    "option_a": "Lines",
-    "option_b": "Mathematical equations",
-    "option_c": "Pixels",
-    "option_d": "Polygons",
-    "correct_answer": "C",
-    "description": "<strong>Raster (bitmap) graphics</strong> are made up of tiny dots called <strong>pixels</strong> (picture elements). Vector graphics, by contrast, use mathematical equations."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
     "question": "True or False: Computer graphics deal only with 2D images.",
     "option_a": "True",
     "option_b": "False",
@@ -58,16 +38,6 @@
     "option_d": "Depends on the application",
     "correct_answer": "B",
     "description": "<strong>False.</strong> CG deals with both 2D and 3D images — modern CG heavily focuses on 3D modelling and rendering."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "True or False: Raster graphics are composed of pixels.",
-    "option_a": "True",
-    "option_b": "False",
-    "option_c": "Only colored pixels",
-    "option_d": "Only on retina displays",
-    "correct_answer": "A",
-    "description": "<strong>True.</strong> Raster (bitmap) graphics are composed of <strong>pixels</strong> — tiny dots that represent visual information."
   },
   {
     "lecture": "Graphics Midterm: CO1 Practice Exam",
@@ -101,26 +71,6 @@
   },
   {
     "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "True or False: 3D rendering produces a 3D image from a 2D scene.",
-    "option_a": "True",
-    "option_b": "False — it produces a 2D image from a 3D scene",
-    "option_c": "True only for stereoscopic displays",
-    "option_d": "Depends on the renderer",
-    "correct_answer": "B",
-    "description": "<strong>False.</strong> 3D rendering is the opposite — it generates a <strong>2D image from a digital 3D scene</strong>, projecting the 3D world onto a 2D screen."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "True or False: Z-buffer is related to depth storage.",
-    "option_a": "True",
-    "option_b": "False",
-    "option_c": "It stores color values",
-    "option_d": "It stores texture coordinates",
-    "correct_answer": "A",
-    "description": "<strong>True.</strong> The <strong>Z-buffer</strong> is a 2D data system used for <strong>depth calculation and storage</strong> — it determines which objects are in front of others."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
     "question": "True or False: Texture mapping adds surface details to objects.",
     "option_a": "True",
     "option_b": "False",
@@ -141,16 +91,6 @@
   },
   {
     "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "True or False: Raster images are ideal for logos.",
-    "option_a": "True",
-    "option_b": "False — vector graphics are ideal for logos",
-    "option_c": "Only at high DPI",
-    "option_d": "Only when small",
-    "correct_answer": "B",
-    "description": "<strong>False.</strong> <strong>Vector graphics</strong> are ideal for logos because they scale without losing quality. Raster images are better for detailed photographs."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
     "question": "Computer graphics is mainly considered as:",
     "option_a": "A storage tool",
     "option_b": "An art of drawing pictures using computers",
@@ -168,56 +108,6 @@
     "option_d": "Network routing",
     "correct_answer": "D",
     "description": "CG involves <strong>computations, creation, and manipulation of data</strong> — but <em>network routing</em> is a networking concern, not a CG concern."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "The primary output device in a graphical system is:",
-    "option_a": "Printer",
-    "option_b": "Keyboard",
-    "option_c": "Video monitor",
-    "option_d": "Mouse",
-    "correct_answer": "C",
-    "description": "The primary output device is the <strong>video monitor</strong>. Keyboard and mouse are input devices; the printer is a secondary output device."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "The main component of a video monitor is:",
-    "option_a": "LCD panel",
-    "option_b": "Cathode Ray Tube (CRT)",
-    "option_c": "LED matrix",
-    "option_d": "GPU",
-    "correct_answer": "B",
-    "description": "In the classic CRT monitor model, the <strong>Cathode Ray Tube (CRT)</strong> is the main element. (Modern monitors use LCD/LED, but the lecture refers to CRT as the canonical example.)"
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "Which component emits electrons in a CRT?",
-    "option_a": "Phosphor screen",
-    "option_b": "Control grid",
-    "option_c": "Electron gun",
-    "option_d": "Deflection system",
-    "correct_answer": "C",
-    "description": "The <strong>electron gun</strong> emits the beam of electrons (cathode rays). The deflection system directs them, and the phosphor screen lights up where they hit."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "True or False: Phosphor emits light when struck by electrons.",
-    "option_a": "True",
-    "option_b": "False",
-    "option_c": "Only in color CRTs",
-    "option_d": "Only when heated",
-    "correct_answer": "A",
-    "description": "<strong>True.</strong> When the electron beam hits the screen, the <strong>phosphor coating emits a small spot of light</strong> at each contacted position — this is how CRTs render images."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "True or False: Raster scan displays images line by line.",
-    "option_a": "True",
-    "option_b": "False",
-    "option_c": "Only for color displays",
-    "option_d": "Only for CRT monitors",
-    "correct_answer": "A",
-    "description": "<strong>True.</strong> In a <strong>raster scan</strong>, the electron beam is swept across the screen <em>one row at a time, from top to bottom</em>."
   },
   {
     "lecture": "Graphics Midterm: CO1 Practice Exam",
@@ -248,36 +138,6 @@
     "option_d": "Only for animations",
     "correct_answer": "A",
     "description": "<strong>True.</strong> <strong>Random Scan</strong> (where the electron beam is directed only to parts of the screen where the picture is drawn) is also called <strong>vector display</strong>, <strong>stroke-writing display</strong>, or <strong>calligraphic display</strong>."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "Which technique calculates the surface of computer graphics traditionally?",
-    "option_a": "Z-Buffer",
-    "option_b": "Scanline",
-    "option_c": "Ray Tracing",
-    "option_d": "Bump Mapping",
-    "correct_answer": "B",
-    "description": "<strong>Scanline</strong> is a traditional rendering technique that calculates computer graphics surface."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "Each pixel in a raster image consists of which subpixel components that mix to create colors?",
-    "option_a": "CMYK",
-    "option_b": "RGB",
-    "option_c": "HSL",
-    "option_d": "Lab",
-    "correct_answer": "B",
-    "description": "Pixels consist of <strong>RGB</strong> (Red, Green, Blue) subpixels, which mix to create the diverse colors visible on a screen."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "What does 'resolution' refer to in an image?",
-    "option_a": "The size of the file in MB",
-    "option_b": "How many pixels are in row and column manner",
-    "option_c": "The aspect ratio only",
-    "option_d": "The color depth in bits",
-    "correct_answer": "B",
-    "description": "<strong>Resolution</strong> refers to <em>how many pixels</em> are arranged in rows and columns. More pixels = more detailed image."
   },
   {
     "lecture": "Graphics Midterm: CO1 Practice Exam",

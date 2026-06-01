@@ -41,16 +41,6 @@
   },
   {
     "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
-    "question": "What is API Level in Android?",
-    "option_a": "The number of installed apps",
-    "option_b": "An integer that uniquely identifies the framework API revision",
-    "option_c": "The processor speed of the device",
-    "option_d": "The amount of available RAM",
-    "correct_answer": "B",
-    "description": "<strong>API Level</strong> is an integer value that uniquely identifies the framework API revision offered by a version of the Android platform. For example, Android 13 = API 33."
-  },
-  {
-    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
     "question": "Which Android version has the codename 'Tiramisu'?",
     "option_a": "Android 11",
     "option_b": "Android 12",

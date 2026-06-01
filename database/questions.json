@@ -11,16 +11,6 @@
     },
     {
         "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
-        "question": "Which of the following is considered much harder in NLP?",
-        "option_a": "Natural Language Understanding (NLU)",
-        "option_b": "Natural Language Generation (NLG)",
-        "option_c": "Speech synthesis",
-        "option_d": "Tokenization",
-        "correct_answer": "A",
-        "description": "<strong>Natural Language Understanding (NLU)<\/strong> is harder because it requires the machine to <em>comprehend meaning, context, and ambiguity<\/em> in human language. Generation follows structured rules, but understanding must resolve vagueness and implied meaning."
-    },
-    {
-        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
         "question": "What is the Morphological level of analysis in NLP?",
         "option_a": "Analysis of sentence structure",
         "option_b": "Analysis of meaning",
@@ -28,16 +18,6 @@
         "option_d": "Analysis of speech sounds",
         "correct_answer": "C",
         "description": "<strong>Morphological analysis<\/strong> examines the internal structure of words, including prefixes, suffixes, and root forms. For example, the word <em>\"unhappiness\"<\/em> is broken into <code>un-<\/code>, <code>happy<\/code>, and <code>-ness<\/code>."
-    },
-    {
-        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
-        "question": "The Turing Test was proposed by Alan Turing in which year?",
-        "option_a": "1940",
-        "option_b": "1950",
-        "option_c": "1960",
-        "option_d": "1970",
-        "correct_answer": "B",
-        "description": "Alan Turing proposed the <strong>Turing Test<\/strong> in his landmark <em>1950<\/em> paper \"Computing Machinery and Intelligence,\" where he introduced the idea of testing whether a machine can exhibit intelligent behavior indistinguishable from a human."
     },
     {
         "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
@@ -71,16 +51,6 @@
     },
     {
         "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
-        "question": "Which of the following is a supervised text mining application?",
-        "option_a": "Text clustering",
-        "option_b": "Trend analysis",
-        "option_c": "Sentiment categorization",
-        "option_d": "Outlier detection",
-        "correct_answer": "C",
-        "description": "<strong>Sentiment categorization<\/strong> is a <em>supervised<\/em> task because it requires labeled training data (e.g., positive\/negative reviews) to learn classification patterns. Clustering and outlier detection are typically unsupervised."
-    },
-    {
-        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
         "question": "Which of the following is an unsupervised text mining application?",
         "option_a": "Spam detection",
         "option_b": "Text clustering",
@@ -98,16 +68,6 @@
         "option_d": "The length of the sentence",
         "correct_answer": "B",
         "description": "<strong>Sentiment Analysis<\/strong> determines the <em>emotional tone<\/em> behind a piece of text — whether it expresses a positive, negative, or neutral opinion. It is widely used in analyzing customer reviews and social media."
-    },
-    {
-        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
-        "question": "Which system famously competed in Jeopardy! To answer questions?",
-        "option_a": "ELIZA",
-        "option_b": "Siri",
-        "option_c": "IBM Watson",
-        "option_d": "Cortana",
-        "correct_answer": "C",
-        "description": "<strong>IBM Watson<\/strong> competed on Jeopardy! in 2011 and defeated two champion players. It used advanced NLP techniques including <em>question parsing, information retrieval, and confidence scoring<\/em> to answer natural language questions."
     },
     {
         "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
@@ -201,16 +161,6 @@
     },
     {
         "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
-        "question": "What is Tokenization?",
-        "option_a": "Translating sentences",
-        "option_b": "Splitting a text into smaller units like words",
-        "option_c": "Combining words into sentences",
-        "option_d": "Correcting grammatical errors",
-        "correct_answer": "B",
-        "description": "<strong>Tokenization<\/strong> is the first step in most NLP pipelines. It breaks raw text into <em>smaller units called tokens<\/em> (usually words or subwords). For example, <code>\"Hello world\"<\/code> becomes <code>[\"Hello\", \"world\"]<\/code>."
-    },
-    {
-        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
         "question": "What are the smaller units created by tokenization called?",
         "option_a": "Syllables",
         "option_b": "Tokens",
@@ -231,16 +181,6 @@
     },
     {
         "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
-        "question": "What does POS tagging do?",
-        "option_a": "Assigns a lexical class marker (like noun, verb) to each word",
-        "option_b": "Identifies the sentence boundary",
-        "option_c": "Translates the word",
-        "option_d": "Finds synonyms",
-        "correct_answer": "A",
-        "description": "<strong>Part-of-Speech (POS) tagging<\/strong> assigns grammatical labels such as <em>noun, verb, adjective, adverb<\/em> to each word in a sentence. For example, in \"The cat sat,\" <code>The<\/code>=determiner, <code>cat<\/code>=noun, <code>sat<\/code>=verb."
-    },
-    {
-        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
         "question": "What does NER stand for?",
         "option_a": "Native Entity Recognition",
         "option_b": "Named Entity Recognition",
@@ -258,36 +198,6 @@
         "option_d": "“Beautiful”",
         "correct_answer": "C",
         "description": "<strong>Baghdad<\/strong> is a named entity because it is a <em>proper noun referring to a specific location<\/em>. Named entities are real-world objects like people, places, and organizations — not common verbs, adverbs, or adjectives."
-    },
-    {
-        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
-        "question": "What is Parsing in NLP?",
-        "option_a": "Checking spelling",
-        "option_b": "Determining the syntactic structure of a text",
-        "option_c": "Generating speech",
-        "option_d": "Encrypting text",
-        "correct_answer": "B",
-        "description": "<strong>Parsing<\/strong> analyzes a sentence to determine its <em>syntactic (grammatical) structure<\/em>, typically producing a parse tree. It identifies how words relate to each other according to grammar rules."
-    },
-    {
-        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
-        "question": "What does a Lexical Analyzer do in parsing?",
-        "option_a": "Produces the final parse tree",
-        "option_b": "Decodes a stream of input characters into higher-level tokens",
-        "option_c": "Reports logical errors",
-        "option_d": "Translates the text",
-        "correct_answer": "B",
-        "description": "The <strong>Lexical Analyzer<\/strong> (also called a <em>lexer or scanner<\/em>) reads raw input characters and groups them into meaningful <strong>tokens<\/strong>. It is the first phase of parsing, feeding tokens to the parser for structural analysis."
-    },
-    {
-        "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
-        "question": "What does the Parser consume?",
-        "option_a": "Raw text",
-        "option_b": "The output of the lexical analyzer (tokens)",
-        "option_c": "Speech audio",
-        "option_d": "Images",
-        "correct_answer": "B",
-        "description": "The <strong>Parser<\/strong> takes the <em>tokens produced by the lexical analyzer<\/em> as input and organizes them into a structured representation (parse tree) based on grammar rules. It does not work directly on raw text."
     },
     {
         "lecture": "Lecture 2: NLP Tasks & Challenges (AI5.pdf)",
@@ -751,16 +661,6 @@
     },
     {
         "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
-        "question": "Flight simulators are an example of which CG application?",
-        "option_a": "Training",
-        "option_b": "Cartography",
-        "option_c": "Typography",
-        "option_d": "Business presentation",
-        "correct_answer": "A",
-        "description": "Flight simulators are a key example of CG used for <strong>Training<\/strong>. They provide <em>realistic, risk-free environments<\/em> where pilots can practice flying without the dangers and costs of real aircraft."
-    },
-    {
-        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
         "question": "MRIs and CAT scans are examples of which CG application?",
         "option_a": "Medical imaging",
         "option_b": "Art",
@@ -981,16 +881,6 @@
     },
     {
         "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
-        "question": "What does the Dalvik Virtual Machine (DVM) do in the Android Runtime?",
-        "option_a": "Renders 3D graphics",
-        "option_b": "Responsible for running the Android application",
-        "option_c": "Manages phone calls",
-        "option_d": "Connects to Wi-Fi",
-        "correct_answer": "B",
-        "description": "The <strong>Dalvik Virtual Machine (DVM)<\/strong> is responsible for <em>running Android applications<\/em>. It executes <code>.dex<\/code> (Dalvik Executable) files optimized for mobile devices with limited memory and CPU."
-    },
-    {
-        "lecture": "Lecture 5: Mobile App Development Intro (AI3.pdf)",
         "question": "Which layer provides higher-level services to applications in the form of Java classes?",
         "option_a": "Linux Kernel",
         "option_b": "Application Framework",
@@ -1048,16 +938,6 @@
         "option_d": "HTML files",
         "correct_answer": "B",
         "description": "The <strong>JRE<\/strong> contains the <code>JVM<\/code> and the <em>Java class libraries<\/em> (packages). It provides everything needed to <em>run<\/em> Java applications but not to develop them."
-    },
-    {
-        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
-        "question": "What is the role of the Java Virtual Machine (JVM)?",
-        "option_a": "To write Java code",
-        "option_b": "To compile Java code to bytecode",
-        "option_c": "To translate and run Java bytecode on the underlying platform",
-        "option_d": "To edit images",
-        "correct_answer": "C",
-        "description": "The <strong>JVM<\/strong> translates and runs Java <em>bytecode<\/em> on the underlying platform. It acts as an abstraction layer, enabling Java's <em>platform independence<\/em>."
     },
     {
         "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
@@ -1411,16 +1291,6 @@
     },
     {
         "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
-        "question": "To create a Scanner object for taking input from the keyboard, you write: `Scanner s = new Scanner(...)`?",
-        "option_a": "System.out",
-        "option_b": "System.in",
-        "option_c": "System.read",
-        "option_d": "Keyboard.in",
-        "correct_answer": "B",
-        "description": "You pass <code>System.in<\/code> to the Scanner constructor to read from the <strong>standard input stream<\/strong> (keyboard). <code>System.in<\/code> represents the default input device."
-    },
-    {
-        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
         "question": "Which Scanner method is used to read an integer input?",
         "option_a": "nextString()",
         "option_b": "nextDouble()",
@@ -1578,16 +1448,6 @@
         "option_d": "execute ClassName",
         "correct_answer": "B",
         "description": "The <code>java ClassName<\/code> command launches the <strong>JVM<\/strong> to execute the compiled bytecode. Note that you use the class name <em>without<\/em> the <code>.class<\/code> extension."
-    },
-    {
-        "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",
-        "question": "What marks the end of a statement in Java?",
-        "option_a": "Colon (",
-        "option_b": "Period (.)",
-        "option_c": "Semicolon (;)",
-        "option_d": "Comma (,)",
-        "correct_answer": "C",
-        "description": "A <strong>semicolon<\/strong> (<code>;<\/code>) marks the end of a statement in Java. Forgetting it is a common <em>syntax error<\/em> that the compiler will catch."
     },
     {
         "lecture": "Lecture 8: Taking Input in Java (AI 1.pdf)",

@@ -41,26 +41,6 @@
   },
   {
     "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
-    "question": "Which is harder?",
-    "option_a": "NLG is much harder than NLU",
-    "option_b": "NLU is much harder than NLG",
-    "option_c": "They are equally difficult",
-    "option_d": "Neither is hard",
-    "correct_answer": "B",
-    "description": "<strong>NLU is much harder than NLG</strong>, but both are difficult. Understanding requires extracting meaning from ambiguous input; generation produces from a structured representation."
-  },
-  {
-    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
-    "question": "What is one of the main reasons NLP is hard?",
-    "option_a": "Computers don't have enough memory",
-    "option_b": "Human language is ambiguous",
-    "option_c": "There are too many programming languages",
-    "option_d": "Speakers talk too fast",
-    "correct_answer": "B",
-    "description": "<strong>Human language is ambiguous</strong> — one of the three main reasons NLP is hard (the others are: requires reasoning beyond what's stated, and language is hard even for humans)."
-  },
-  {
-    "lecture": "Abdullah Ghanem Questions - Lec 3: NLP Foundations",
     "question": "Why is some ambiguity actually beneficial in language?",
     "option_a": "It makes language faster to type",
     "option_b": "It enables shorter linguistic expressions (data compression)",
@@ -219,7 +199,6 @@
     "correct_answer": "B",
     "description": "These are <strong>homophones</strong> — words that sound the same but have different meanings/spellings. They're a phonology concern."
   },
-
   {
     "lecture": "Abdullah Ghanem Questions - Lec 4: Morphemes & BoW",
     "question": "What do inflectional morphemes do?",
@@ -390,7 +369,6 @@
     "correct_answer": "B",
     "description": "Morphology helps recognize that <strong>'goose' and 'geese'</strong> are forms of the same root <code>goose</code>. Without it, searching 'goose' would miss documents containing 'geese'."
   },
-
   {
     "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
     "question": "What is vagueness in language?",
@@ -591,7 +569,6 @@
     "correct_answer": "B",
     "description": "<strong>GOAL</strong> — 'Portland' is the object to which motion proceeds. Opposite of Source."
   },
-
   {
     "lecture": "Abdullah Ghanem Questions - Lec 6: Word Embeddings & Word2Vec",
     "question": "What does GPT-3 stand for?",
@@ -782,7 +759,6 @@
     "correct_answer": "B",
     "description": "<strong>Learning rate (α)</strong> = step size in the update <code>θ_new = θ_old − α · ∇J(θ)</code>. Too high = unstable; too low = slow."
   },
-
   {
     "lecture": "Abdullah Ghanem Questions - Lec 7: Hidden Markov Models",
     "question": "What is a Hidden Markov Model (HMM)?",

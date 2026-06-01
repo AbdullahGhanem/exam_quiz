@@ -351,26 +351,6 @@
   },
   {
     "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
-    "question": "Which of the following is a major challenge in NLP?",
-    "option_a": "Data redundancy",
-    "option_b": "Ambiguity",
-    "option_c": "Data normalization",
-    "option_d": "Feature scaling",
-    "correct_answer": "B",
-    "description": "<strong>Ambiguity</strong> (words/sentences having multiple meanings) is a major NLP challenge, along with <em>Sparsity</em> (rare words appearing infrequently in data)."
-  },
-  {
-    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
-    "question": "What does 'sparsity' refer to as an NLP challenge?",
-    "option_a": "Too many words having the same meaning",
-    "option_b": "Rare words appearing infrequently in data",
-    "option_c": "Sentences being too long to process",
-    "option_d": "Languages having too many grammar rules",
-    "correct_answer": "B",
-    "description": "<strong>Sparsity</strong> in NLP refers to <em>rare words appearing infrequently</em> in the data, making it difficult for models to learn meaningful representations for those words."
-  },
-  {
-    "lecture": "Abdullah Ghanem Questions - Lec 2: NLP Tasks & NNLS",
     "question": "Which of the following is NOT listed as a core NLP task?",
     "option_a": "Word tokenization",
     "option_b": "POS tagging",
