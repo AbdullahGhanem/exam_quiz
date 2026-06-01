@@ -3,8 +3,7 @@
 @section('content')
 <div class="max-w-2xl mx-auto">
     {{-- Back / exit quiz (discards the in-progress attempt) --}}
-    <form action="{{ route('quiz.exit') }}" method="POST" class="mb-4"
-          onsubmit="return confirm('Discard this quiz and return to setup? Your progress will be lost.')">
+    <form action="{{ route('quiz.exit') }}" method="POST" class="mb-4">
         @csrf
         <button type="submit"
                 class="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-indigo-600 transition-colors">
