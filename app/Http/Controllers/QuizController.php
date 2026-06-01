@@ -11,7 +11,11 @@ class QuizController extends Controller
     public function home()
     {
         $subjects = Subject::withCount('questions')->get();
-        $lectures = Question::select('lecture')->distinct()->pluck('lecture');
+        $lectures = Question::selectRaw('lecture, subject_id, COUNT(*) as count')
+            ->groupBy('lecture', 'subject_id')
+            ->orderBy('subject_id')
+            ->orderBy('lecture')
+            ->get();
         $totalQuestions = Question::count();
 
         return view('quiz.home', compact('subjects', 'lectures', 'totalQuestions'));
@@ -20,7 +24,7 @@ class QuizController extends Controller
     public function start(Request $request)
     {
         $request->validate([
-            'num_questions' => 'required|integer|min:1|max:160',
+            'num_questions' => 'required|integer|min:1|max:' . max(1, Question::count()),
             'subjects' => 'nullable|array',
             'lectures' => 'nullable|array',
         ]);

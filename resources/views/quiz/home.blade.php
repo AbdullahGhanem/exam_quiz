@@ -36,9 +36,11 @@
                 </label>
                 <div class="grid grid-cols-2 gap-2.5">
                     @foreach($subjects as $subject)
-                        <label class="relative flex items-center gap-3 p-3.5 rounded-xl border-2 border-slate-200 cursor-pointer hover:border-indigo-300 hover:bg-indigo-50/50 transition-all subject-card">
-                            <input type="checkbox" name="subjects[]" value="{{ $subject->id }}"
-                                   class="peer sr-only" onchange="this.closest('.subject-card').classList.toggle('border-indigo-500', this.checked); this.closest('.subject-card').classList.toggle('bg-indigo-50', this.checked);">
+                        @php($preselected = (string) request('subject') === (string) $subject->id)
+                        <label class="relative flex items-center gap-3 p-3.5 rounded-xl border-2 {{ $preselected ? 'border-indigo-500 bg-indigo-50' : 'border-slate-200' }} cursor-pointer hover:border-indigo-300 hover:bg-indigo-50/50 transition-all subject-card">
+                            <input type="checkbox" name="subjects[]" value="{{ $subject->id }}" @checked($preselected)
+                                   data-count="{{ $subject->questions_count }}"
+                                   class="peer sr-only subject-checkbox" onchange="this.closest('.subject-card').classList.toggle('border-indigo-500', this.checked); this.closest('.subject-card').classList.toggle('bg-indigo-50', this.checked); onSelectionChange();">
                             <div class="w-5 h-5 rounded-md border-2 border-slate-300 flex items-center justify-center peer-checked:bg-indigo-600 peer-checked:border-indigo-600 transition-colors flex-shrink-0">
                                 <svg class="w-3 h-3 text-white opacity-0 peer-checked:opacity-100" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
@@ -61,15 +63,16 @@
                 </label>
                 <div class="space-y-2 max-h-52 overflow-y-auto pr-1 custom-scrollbar">
                     @foreach($lectures as $lecture)
-                        <label class="flex items-center gap-3 p-3 rounded-xl border border-slate-200 cursor-pointer hover:border-indigo-300 hover:bg-indigo-50/30 transition-all lecture-card">
-                            <input type="checkbox" name="lectures[]" value="{{ $lecture }}"
-                                   class="peer sr-only" onchange="this.closest('.lecture-card').classList.toggle('border-indigo-400', this.checked); this.closest('.lecture-card').classList.toggle('bg-indigo-50', this.checked);">
+                        <label data-subject-id="{{ $lecture->subject_id }}" class="flex items-center gap-3 p-3 rounded-xl border border-slate-200 cursor-pointer hover:border-indigo-300 hover:bg-indigo-50/30 transition-all lecture-card">
+                            <input type="checkbox" name="lectures[]" value="{{ $lecture->lecture }}"
+                                   data-subject-id="{{ $lecture->subject_id }}" data-count="{{ $lecture->count }}"
+                                   class="peer sr-only lecture-checkbox" onchange="this.closest('.lecture-card').classList.toggle('border-indigo-400', this.checked); this.closest('.lecture-card').classList.toggle('bg-indigo-50', this.checked); onSelectionChange();">
                             <div class="w-4.5 h-4.5 w-5 h-5 rounded-md border-2 border-slate-300 flex items-center justify-center peer-checked:bg-indigo-600 peer-checked:border-indigo-600 transition-colors flex-shrink-0">
                                 <svg class="w-3 h-3 text-white opacity-0 peer-checked:opacity-100" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                 </svg>
                             </div>
-                            <span class="text-sm text-slate-600 truncate">{{ $lecture }}</span>
+                            <span class="text-sm text-slate-600 truncate">{{ $lecture->lecture }}</span>
                         </label>
                     @endforeach
                 </div>
@@ -78,9 +81,9 @@
             <div class="mb-8">
                 <label class="block text-sm font-semibold text-slate-700 mb-3">Number of Questions</label>
                 <div class="relative">
-                    <input type="number" name="num_questions" value="20" min="1" max="{{ $totalQuestions }}"
+                    <input type="number" name="num_questions" id="num-questions" value="{{ $totalQuestions }}" min="1" max="{{ $totalQuestions }}"
                            class="w-full border-2 border-slate-200 rounded-xl px-5 py-3.5 text-lg font-semibold text-slate-800 focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-colors">
-                    <span class="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-slate-400">max {{ $totalQuestions }}</span>
+                    <span id="num-max-label" class="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-slate-400">max {{ $totalQuestions }}</span>
                 </div>
             </div>
 
@@ -162,5 +165,61 @@ function toggleSwitch(btn, inputId) {
         dot.classList.add('translate-x-5');
     }
 }
+
+// --- Subject-aware lecture filtering + dynamic question count ---
+const TOTAL_QUESTIONS = {{ $totalQuestions }};
+const numInput = document.getElementById('num-questions');
+const maxLabel = document.getElementById('num-max-label');
+let userSetCount = false;
+
+// Once the user types their own value, stop auto-filling it (only clamp if it exceeds the max).
+numInput.addEventListener('input', () => { userSetCount = true; });
+
+function selectedSubjectIds() {
+    return Array.from(document.querySelectorAll('.subject-checkbox:checked')).map(cb => cb.value);
+}
+
+// Show only lectures belonging to the selected subject(s); uncheck any that get hidden.
+function filterLectures() {
+    const subjects = selectedSubjectIds();
+    document.querySelectorAll('.lecture-card').forEach(card => {
+        const show = subjects.length === 0 || subjects.includes(card.dataset.subjectId);
+        card.style.display = show ? '' : 'none';
+        if (!show) {
+            const cb = card.querySelector('.lecture-checkbox');
+            if (cb && cb.checked) {
+                cb.checked = false;
+                card.classList.remove('border-indigo-400', 'bg-indigo-50');
+            }
+        }
+    });
+}
+
+// Available pool mirrors how the server builds the query: checked lectures, else checked subjects, else everything.
+function computeAvailable() {
+    const lectures = Array.from(document.querySelectorAll('.lecture-checkbox:checked'));
+    if (lectures.length > 0) {
+        return lectures.reduce((sum, cb) => sum + parseInt(cb.dataset.count || 0, 10), 0);
+    }
+    const subjects = Array.from(document.querySelectorAll('.subject-checkbox:checked'));
+    if (subjects.length > 0) {
+        return subjects.reduce((sum, cb) => sum + parseInt(cb.dataset.count || 0, 10), 0);
+    }
+    return TOTAL_QUESTIONS;
+}
+
+function onSelectionChange() {
+    filterLectures();
+    const available = Math.max(1, computeAvailable());
+    numInput.max = available;
+    maxLabel.textContent = 'max ' + available;
+    if (!userSetCount) {
+        numInput.value = available;            // default = full available pool
+    } else if (parseInt(numInput.value || 0, 10) > available) {
+        numInput.value = available;            // clamp a user value that no longer fits
+    }
+}
+
+document.addEventListener('DOMContentLoaded', onSelectionChange);
 </script>
 @endsection

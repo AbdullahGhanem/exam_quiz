@@ -34,8 +34,10 @@
             @else
                 <div class="space-y-3">
                     @foreach($subjects as $subject)
-                        <div class="border-2 border-slate-200 rounded-xl p-4"
-                             id="subject-{{ $subject->id }}">
+                        <a href="{{ route('quiz.home', ['subject' => $subject->id]) }}"
+                           class="group flex items-center justify-between border-2 border-slate-200 rounded-xl p-4 hover:border-indigo-300 hover:bg-indigo-50/40 hover:shadow-sm transition-all"
+                           id="subject-{{ $subject->id }}"
+                           title="Start a quiz on {{ $subject->name }}">
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center">
                                     <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -49,7 +51,10 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                            <svg class="w-5 h-5 text-slate-300 group-hover:text-indigo-500 group-hover:translate-x-0.5 transition-all flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
+                            </svg>
+                        </a>
                     @endforeach
                 </div>
             @endif
