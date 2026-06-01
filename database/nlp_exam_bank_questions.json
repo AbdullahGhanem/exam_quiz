@@ -1,0 +1,362 @@
+[
+  {
+    "lecture": "NLP Lec 1: Introduction & History",
+    "question": "Which two main components make up NLP?",
+    "option_a": "Machine Learning and Deep Learning",
+    "option_b": "Text Mining and Text Clustering",
+    "option_c": "Natural Language Understanding (NLU) and Natural Language Generation (NLG)",
+    "option_d": "Speech Recognition and Image Processing",
+    "correct_answer": "C",
+    "description": "<strong>NLP</strong> is built from two main components: <em>Natural Language Understanding (NLU)</em>, which interprets meaning from text, and <em>Natural Language Generation (NLG)</em>, which produces human-readable language."
+  },
+  {
+    "lecture": "NLP Lec 1: Introduction & History",
+    "question": "Which of the following is NOT one of the three trends of modern NLP in the age of Big Data?",
+    "option_a": "An enormous amount of information is now available in machine-readable natural language text",
+    "option_b": "Conversational agents are becoming an important form of human-computer communication",
+    "option_c": "Much of human-human interaction is mediated by computers via social media",
+    "option_d": "NLP systems now require no computational resources",
+    "correct_answer": "D",
+    "description": "Modern NLP in the age of Big Data is driven by abundant machine-readable text, rising conversational agents, and computer-mediated human interaction. <em>Requiring no computational resources</em> is <strong>not</strong> a trend, since NLP systems are increasingly resource-intensive."
+  },
+  {
+    "lecture": "NLP Lec 1: Introduction & History",
+    "question": "Text analytics typically involves the extraction of which types of information from texts?",
+    "option_a": "Numerical and statistical information only",
+    "option_b": "Entity mentions, concept identification, and sentiment",
+    "option_c": "Audio and video metadata",
+    "option_d": "Binary-encoded data patterns",
+    "correct_answer": "B",
+    "description": "<strong>Text analytics</strong> extracts structured insights from unstructured text, including <em>entity mentions</em>, <em>concept identification</em>, and <em>sentiment</em>."
+  },
+  {
+    "lecture": "NLP Lec 2: Tasks, Tokenization & Parsing",
+    "question": "In the color-coded sentiment analysis example shown in the lecture, which color represents POSITIVE tone?",
+    "option_a": "Red",
+    "option_b": "Blue",
+    "option_c": "Green",
+    "option_d": "Brown",
+    "correct_answer": "C",
+    "description": "In the color-coded <strong>sentiment analysis</strong> example, <em>green</em> denotes a positive tone, signaling favorable or approving sentiment."
+  },
+  {
+    "lecture": "NLP Lec 2: Tasks, Tokenization & Parsing",
+    "question": "The category of predictive models described in the lecture includes which of the following?",
+    "option_a": "Predictive, descriptive, and decision models",
+    "option_b": "Linear, logistic, and polynomial models",
+    "option_c": "Classification, regression, and clustering models",
+    "option_d": "Supervised, unsupervised, and semi-supervised models",
+    "correct_answer": "A",
+    "description": "The lecture's category of <strong>predictive models</strong> comprises <em>predictive</em>, <em>descriptive</em>, and <em>decision</em> models, each serving a distinct analytical purpose."
+  },
+  {
+    "lecture": "NLP Lec 2: Tasks, Tokenization & Parsing",
+    "question": "Named Entity Recognition (NER) is also known as:",
+    "option_a": "POS tagging and semantic labeling",
+    "option_b": "Entity identification or entity extraction",
+    "option_c": "Sentence boundary detection",
+    "option_d": "Dependency parsing",
+    "correct_answer": "B",
+    "description": "<strong>Named Entity Recognition (NER)</strong> is also called <em>entity identification</em> or <em>entity extraction</em>, as it locates and classifies named entities such as people, places, and organizations in text."
+  },
+  {
+    "lecture": "NLP Lec 2: Tasks, Tokenization & Parsing",
+    "question": "Which of the following is NOT listed as a type of parser in the lecture?",
+    "option_a": "Recursive descent parser",
+    "option_b": "Shift-reduce parser",
+    "option_c": "Probabilistic context-free parser",
+    "option_d": "Dependency parser",
+    "correct_answer": "C",
+    "description": "The lecture lists recursive descent, shift-reduce, and dependency parsers. The <em>probabilistic context-free parser</em> is <strong>not</strong> among the parser types presented."
+  },
+  {
+    "lecture": "NLP Lec 3: Ambiguity & Knowledge of Language",
+    "question": "What is the PRIMARY concern of the field of NLP?",
+    "option_a": "Helping us come to a better understanding of human language",
+    "option_b": "Building faster computer processors",
+    "option_c": "Getting computers to perform useful and interesting tasks with human languages",
+    "option_d": "Replacing human translators entirely",
+    "correct_answer": "C",
+    "description": "The primary concern of <strong>NLP</strong> is getting computers to <em>perform useful and interesting tasks with human languages</em>, rather than merely understanding language for its own sake."
+  },
+  {
+    "lecture": "NLP Lec 3: Ambiguity & Knowledge of Language",
+    "question": "To process written text, an NLP system needs which types of knowledge?",
+    "option_a": "Numerical and statistical knowledge only",
+    "option_b": "Lexical, syntactic, semantic knowledge, plus discourse information and real world knowledge",
+    "option_c": "Phonetic and acoustic knowledge only",
+    "option_d": "Binary encoding and hardware specifications",
+    "correct_answer": "B",
+    "description": "To process written text, an NLP system needs <strong>lexical, syntactic, and semantic knowledge</strong>, plus <em>discourse information</em> and <em>real world knowledge</em> to fully interpret meaning."
+  },
+  {
+    "lecture": "NLP Lec 3: Ambiguity & Knowledge of Language",
+    "question": "What extra challenges does processing SPOKEN language add beyond what is needed for written text?",
+    "option_a": "No additional challenges; speech is easier than text",
+    "option_b": "The challenges of speech recognition and speech synthesis",
+    "option_c": "Only syntactic challenges",
+    "option_d": "Only morphological variation",
+    "correct_answer": "B",
+    "description": "Processing <strong>spoken language</strong> adds the challenges of <em>speech recognition</em> (converting audio to text) and <em>speech synthesis</em> (generating audio from text) on top of the demands of written text."
+  },
+  {
+    "lecture": "NLP Lec 3: Ambiguity & Knowledge of Language",
+    "question": "The fundamental goal of NLP systems, illustrated by the 'dog' cartoon, is described as:",
+    "option_a": "Simple string processing and keyword matching",
+    "option_b": "Deep understanding of broad language — not just string processing or keyword matching",
+    "option_c": "Translating text between languages automatically",
+    "option_d": "Identifying named entities in sentences",
+    "correct_answer": "B",
+    "description": "The fundamental goal of NLP, shown by the 'dog' cartoon, is <strong>deep understanding of broad language</strong> rather than mere <em>string processing or keyword matching</em>."
+  },
+  {
+    "lecture": "NLP Lec 3: Ambiguity & Knowledge of Language",
+    "question": "Which of the following is classified as an AMBITIOUS NLP end system goal?",
+    "option_a": "Spelling correction",
+    "option_b": "Text categorization",
+    "option_c": "Machine translation and question answering",
+    "option_d": "Keyword extraction",
+    "correct_answer": "C",
+    "description": "<strong>Machine translation</strong> and <strong>question answering</strong> are classified as <em>ambitious</em> NLP end system goals because they demand deep language understanding far beyond simpler tasks like spelling correction."
+  },
+  {
+    "lecture": "NLP Lec 3: Ambiguity & Knowledge of Language",
+    "question": "The Pronoun Resolution task is used in the lecture to illustrate which challenge?",
+    "option_a": "Morphological variation",
+    "option_b": "Language ambiguity — the pronoun 'He' can refer to different people depending on context",
+    "option_c": "The difficulty of tokenization",
+    "option_d": "Named entity recognition",
+    "correct_answer": "B",
+    "description": "The <strong>Pronoun Resolution</strong> task illustrates <em>language ambiguity</em>: the same pronoun 'He' can refer to different people depending on the surrounding context, so the system must reason about which entity is meant."
+  },
+  {
+    "lecture": "NLP Lec 3: Ambiguity & Knowledge of Language",
+    "question": "Reason (2) for why NLP is hard states that language requires reasoning beyond what is explicitly mentioned. The example 'I couldn't submit my homework because my horse ate it' illustrates:",
+    "option_a": "Lexical ambiguity of the word 'horse'",
+    "option_b": "That NLP systems need world knowledge to determine what 'it' refers to",
+    "option_c": "A simple tokenization problem",
+    "option_d": "Syntactic ambiguity of the sentence structure",
+    "correct_answer": "B",
+    "description": "This shows that NLP needs <strong>world knowledge</strong> — only by knowing that horses can eat paper can a system reason about what <em>'it'</em> refers to, going beyond what the text explicitly states."
+  },
+  {
+    "lecture": "NLP Lec 3: Ambiguity & Knowledge of Language",
+    "question": "The word 'make' in 'I made her duck' is described as semantically ambiguous because:",
+    "option_a": "It can refer to a brand name or a verb",
+    "option_b": "It can mean either 'cook' or 'create'",
+    "option_c": "It is a pronoun that could refer to different people",
+    "option_d": "It has no clear phonological form",
+    "correct_answer": "B",
+    "description": "The verb <strong>'make'</strong> is <em>semantically ambiguous</em> because it can mean either 'cook' (prepare a duck dish) or 'create', and only context reveals which sense is intended."
+  },
+  {
+    "lecture": "NLP Lec 5: WSD, WordNet & Semantic Roles",
+    "question": "Which word can have multiple meanings and need WSD?",
+    "option_a": "Cat",
+    "option_b": "Pen",
+    "option_c": "Computer",
+    "option_d": "Orange juice",
+    "correct_answer": "B",
+    "description": "<strong>Pen</strong> is a classic polysemous word — it can mean a writing instrument or an enclosure for animals — so it requires <em>Word Sense Disambiguation (WSD)</em> to resolve the intended meaning."
+  },
+  {
+    "lecture": "NLP Lec 5: WSD, WordNet & Semantic Roles",
+    "question": "In SRL: \"John drove Mary from Austin to Dallas\" -> \"John\" is:",
+    "option_a": "Theme",
+    "option_b": "Agent",
+    "option_c": "Location",
+    "option_d": "Goal",
+    "correct_answer": "B",
+    "description": "<strong>John = AGENT</strong> — he is the participant who intentionally performs the action of driving."
+  },
+  {
+    "lecture": "NLP Lec 5: WSD, WordNet & Semantic Roles",
+    "question": "\"from Austin\" is:",
+    "option_a": "Source",
+    "option_b": "Theme",
+    "option_c": "Predicate",
+    "option_d": "Goal",
+    "correct_answer": "A",
+    "description": "<strong>'from Austin' = SOURCE</strong> — it names the object from which the motion proceeds, the opposite of the Goal."
+  },
+  {
+    "lecture": "NLP Lec 5: WSD, WordNet & Semantic Roles",
+    "question": "\"to Dallas\" is:",
+    "option_a": "Goal",
+    "option_b": "Source",
+    "option_c": "Agent",
+    "option_d": "Theme",
+    "correct_answer": "A",
+    "description": "<strong>'to Dallas' = GOAL</strong> — it names the object toward which the motion proceeds, the opposite of the Source."
+  },
+  {
+    "lecture": "NLP Lec 5: WSD, WordNet & Semantic Roles",
+    "question": "In neural network forward propagation, activation function is usually represented by:",
+    "option_a": "x",
+    "option_b": "f",
+    "option_c": "W",
+    "option_d": "b",
+    "correct_answer": "B",
+    "description": "In forward propagation the <strong>activation function</strong> is conventionally denoted <em>f</em>, applied as f(Wx + b) to produce a neuron's output."
+  },
+  {
+    "lecture": "NLP Lec 5: WSD, WordNet & Semantic Roles",
+    "question": "W in neural network diagram represents:",
+    "option_a": "WordNet",
+    "option_b": "Weights",
+    "option_c": "Window size",
+    "option_d": "Web",
+    "correct_answer": "B",
+    "description": "In a neural network diagram, <strong>W</strong> stands for the <em>weights</em> — the learnable parameters multiplied by the inputs."
+  },
+  {
+    "lecture": "NLP Lec 5: WSD, WordNet & Semantic Roles",
+    "question": "Backpropagation is mainly used for:",
+    "option_a": "Translation",
+    "option_b": "Grammar correction",
+    "option_c": "Updating weights using error",
+    "option_d": "Speech recognition",
+    "correct_answer": "C",
+    "description": "<strong>Backpropagation</strong> propagates the error backward through the network to compute gradients and <em>update the weights</em>, minimizing the loss."
+  },
+  {
+    "lecture": "NLP Lec 5: WSD, WordNet & Semantic Roles",
+    "question": "GPT-3 and GloVe mentioned in lecture are examples related to:",
+    "option_a": "Databases",
+    "option_b": "NLP language representation/models",
+    "option_c": "Operating systems",
+    "option_d": "Hardware",
+    "correct_answer": "B",
+    "description": "<strong>GPT-3</strong> and <strong>GloVe</strong> are examples of NLP <em>language representation/models</em> used to represent and generate language."
+  },
+  {
+    "lecture": "NLP Lec 6: Word Embeddings & Word2Vec",
+    "question": "OpenAI developed GPT-3 in:",
+    "option_a": "2018",
+    "option_b": "2019",
+    "option_c": "2020",
+    "option_d": "2023",
+    "correct_answer": "C",
+    "description": "<strong>GPT-3</strong> (Generative Pre-Trained Transformer, 3rd generation) was introduced by OpenAI in <em>May 2020</em>."
+  },
+  {
+    "lecture": "NLP Lec 6: Word Embeddings & Word2Vec",
+    "question": "One-hot vectors are usually:",
+    "option_a": "Dense",
+    "option_b": "Sparse",
+    "option_c": "Circular",
+    "option_d": "Random",
+    "correct_answer": "B",
+    "description": "<strong>One-hot vectors</strong> are <em>sparse</em>: only a single dimension is set to 1 while every other dimension is 0, so most of the vector is empty."
+  },
+  {
+    "lecture": "NLP Lec 6: Word Embeddings & Word2Vec",
+    "question": "Word2Vec has:",
+    "option_a": "1 architecture",
+    "option_b": "2 architectures",
+    "option_c": "3 architectures",
+    "option_d": "4 architectures",
+    "correct_answer": "B",
+    "description": "<strong>Word2Vec</strong> offers <em>two</em> architectures: <em>CBOW</em> (predict the target word from context) and <em>Skip-gram</em> (predict context from the target word)."
+  },
+  {
+    "lecture": "NLP Lec 6: Word Embeddings & Word2Vec",
+    "question": "Very high learning rate may cause:",
+    "option_a": "Faster perfect training",
+    "option_b": "Overshooting / instability",
+    "option_c": "Better accuracy always",
+    "option_d": "No change",
+    "correct_answer": "B",
+    "description": "A very high <strong>learning rate</strong> makes update steps too large, causing the model to <em>overshoot</em> the minimum and leading to unstable or divergent training."
+  },
+  {
+    "lecture": "NLP Lec 6: Word Embeddings & Word2Vec",
+    "question": "\"Context window\" means:",
+    "option_a": "Browser window",
+    "option_b": "Neighboring words around target word",
+    "option_c": "Image crop",
+    "option_d": "Text color",
+    "correct_answer": "B",
+    "description": "A <strong>context window</strong> is the set of <em>neighboring words</em> surrounding a target word that the model uses to learn its meaning."
+  },
+  {
+    "lecture": "NLP Lec 7: Hidden Markov Models (Sequence Models)",
+    "question": "Markov Chain is called:",
+    "option_a": "First-order observable model",
+    "option_b": "CNN",
+    "option_c": "RNN only",
+    "option_d": "Clustering model",
+    "correct_answer": "A",
+    "description": "A <strong>Markov chain</strong> is a <em>first-order observable model</em>: the next state depends only on the current state, and all states are directly visible."
+  },
+  {
+    "lecture": "NLP Lec 7: Hidden Markov Models (Sequence Models)",
+    "question": "Observed states are:",
+    "option_a": "Hidden",
+    "option_b": "Unknown",
+    "option_c": "Visible to us",
+    "option_d": "Random only",
+    "correct_answer": "C",
+    "description": "<strong>Observed states</strong> are the outputs that are <em>visible</em> to us, in contrast to hidden states which must be inferred."
+  },
+  {
+    "lecture": "NLP Lec 7: Hidden Markov Models (Sequence Models)",
+    "question": "The best hidden-state sequence is:",
+    "option_a": "Lowest probability",
+    "option_b": "Highest probability",
+    "option_c": "Random",
+    "option_d": "Longest one",
+    "correct_answer": "B",
+    "description": "The <strong>best hidden-state sequence</strong> is the one with the <em>highest probability</em>, typically found using the Viterbi algorithm."
+  },
+  {
+    "lecture": "NLP Lec 7: Hidden Markov Models (Sequence Models)",
+    "question": "Weather example in Markov chain uses:",
+    "option_a": "Hot / Cold / Rainy",
+    "option_b": "Cat / Dog",
+    "option_c": "Cars",
+    "option_d": "Files",
+    "correct_answer": "A",
+    "description": "The lecture's <strong>Markov chain weather example</strong> models the states <em>Hot, Cold, and Rainy</em> and the transition probabilities between them."
+  },
+  {
+    "lecture": "NLP Lec 7: Hidden Markov Models (Sequence Models)",
+    "question": "HMM can be used in:",
+    "option_a": "NLP",
+    "option_b": "Speech recognition",
+    "option_c": "Information extraction",
+    "option_d": "All of the above",
+    "correct_answer": "D",
+    "description": "<strong>Hidden Markov Models</strong> are widely applied across <em>NLP, speech recognition, and information extraction</em>, making all of these valid use cases."
+  },
+  {
+    "lecture": "NLP Lec 6: Word Embeddings & Word2Vec",
+    "question": "To make Word2Vec training more efficient, a technique used instead of computing probabilities for the entire vocabulary is:",
+    "option_a": "Positive sampling",
+    "option_b": "Negative sampling",
+    "option_c": "Zero sampling",
+    "option_d": "Matrix inversion",
+    "correct_answer": "B",
+    "description": "<strong>Negative sampling</strong> speeds up Word2Vec training by updating weights for only a few <em>negative (non-context)</em> samples instead of computing probabilities over the entire vocabulary."
+  },
+  {
+    "lecture": "NLP Lec 7: Hidden Markov Models (Sequence Models)",
+    "question": "What is an example of an observed state in the HMM Weather example from the lectures?",
+    "option_a": "Hot",
+    "option_b": "Cold",
+    "option_c": "Mild",
+    "option_d": "Clothing (e.g., Casual Wear)",
+    "correct_answer": "D",
+    "description": "In the HMM weather example, the <strong>observed state</strong> is the visible evidence such as <em>clothing (e.g., casual wear)</em>, while the weather itself (Hot/Cold) is hidden."
+  },
+  {
+    "lecture": "NLP Lec 7: Hidden Markov Models (Sequence Models)",
+    "question": "A transition matrix where each column sums to 1 in a Markov process is known as a:",
+    "option_a": "Stochastic, probability, or Markov matrix",
+    "option_b": "Identity matrix",
+    "option_c": "Orthogonal matrix",
+    "option_d": "Sparse matrix",
+    "correct_answer": "A",
+    "description": "A <strong>stochastic (probability or Markov) matrix</strong> is a transition matrix whose columns each <em>sum to 1</em>, representing valid probability distributions."
+  }
+]
