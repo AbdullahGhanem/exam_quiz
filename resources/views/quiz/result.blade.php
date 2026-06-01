@@ -40,6 +40,16 @@
                 </svg>
                 Try Again
             </a>
+            <form action="{{ route('quiz.exit') }}" method="POST">
+                @csrf
+                <button type="submit"
+                        class="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-slate-200 text-slate-600 rounded-xl font-semibold hover:border-slate-300 hover:bg-slate-50 transition-all active:scale-[0.98]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    Finish Quiz
+                </button>
+            </form>
         </div>
     </div>
 
