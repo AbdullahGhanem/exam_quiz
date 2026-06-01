@@ -2,14 +2,18 @@
 
 @section('content')
 <div class="max-w-2xl mx-auto">
-    {{-- Back / exit quiz --}}
-    <a href="{{ route('quiz.home') }}"
-       class="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-indigo-600 transition-colors mb-4">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
-        </svg>
-        Back to quiz setup
-    </a>
+    {{-- Back / exit quiz (discards the in-progress attempt) --}}
+    <form action="{{ route('quiz.exit') }}" method="POST" class="mb-4"
+          onsubmit="return confirm('Discard this quiz and return to setup? Your progress will be lost.')">
+        @csrf
+        <button type="submit"
+                class="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-indigo-600 transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
+            </svg>
+            Back to quiz setup
+        </button>
+    </form>
 
     {{-- Progress --}}
     <div class="mb-6">

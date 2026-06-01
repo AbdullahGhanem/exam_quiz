@@ -68,6 +68,19 @@ class QuizController extends Controller
         return redirect()->route('quiz.question', ['index' => 0]);
     }
 
+    public function exit()
+    {
+        session()->forget([
+            'quiz_question_ids',
+            'quiz_answers',
+            'quiz_current',
+            'quiz_shuffle',
+            'quiz_show_descriptions',
+        ]);
+
+        return redirect()->route('quiz.home');
+    }
+
     public function question($index)
     {
         $questionIds = session('quiz_question_ids', []);
