@@ -61,16 +61,6 @@
   },
   {
     "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
-    "question": "Which layer of the Android architecture is responsible for device drivers and power management?",
-    "option_a": "Application Framework",
-    "option_b": "Native Libraries",
-    "option_c": "Linux Kernel",
-    "option_d": "Android Runtime",
-    "correct_answer": "C",
-    "description": "The <strong>Linux Kernel</strong> is the heart of the architecture and is responsible for <em>device drivers</em>, power management, memory management, and hardware access (camera, keypad, display)."
-  },
-  {
-    "lecture": "Lecture 9: Android & Android Studio (Lect 6-7.pdf)",
     "question": "What is the role of DVM (Dalvik Virtual Machine)?",
     "option_a": "To compile Java code into bytecode",
     "option_b": "To run Android applications, optimized for mobile devices",

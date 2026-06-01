@@ -71,26 +71,6 @@
   },
   {
     "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "True or False: Texture mapping adds surface details to objects.",
-    "option_a": "True",
-    "option_b": "False",
-    "option_c": "Only for 2D objects",
-    "option_d": "Only for transparent objects",
-    "correct_answer": "A",
-    "description": "<strong>True.</strong> <strong>Texture / Bump Mapping</strong> displays color, material, and object details — adding realistic surface appearance to 3D models."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "True or False: Ray tracing creates realistic lighting effects.",
-    "option_a": "True",
-    "option_b": "False",
-    "option_c": "Only for shadows",
-    "option_d": "Only for reflections",
-    "correct_answer": "A",
-    "description": "<strong>True.</strong> <strong>Ray Tracing</strong> (and Ray Casting) are useful rendering techniques for creating <strong>natural lighting effects</strong> — including reflections, refractions, and shadows."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
     "question": "Computer graphics is mainly considered as:",
     "option_a": "A storage tool",
     "option_b": "An art of drawing pictures using computers",
@@ -111,16 +91,6 @@
   },
   {
     "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "True or False: The frame buffer (refresh buffer) stores intensity values of pixels.",
-    "option_a": "True",
-    "option_b": "False",
-    "option_c": "It stores audio data",
-    "option_d": "It stores user input",
-    "correct_answer": "A",
-    "description": "<strong>True.</strong> The <strong>refresh buffer / frame buffer</strong> holds the set of intensity values for all the screen points; values are retrieved and painted on the screen one row at a time."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
     "question": "True or False: Pixel and pel mean the same thing.",
     "option_a": "True",
     "option_b": "False",
@@ -128,16 +98,6 @@
     "option_d": "Pel is a deprecated term only",
     "correct_answer": "A",
     "description": "<strong>True.</strong> Each screen point is referred to as a <strong>pixel</strong> (picture element) or <strong>pel</strong> — both terms mean the same thing."
-  },
-  {
-    "lecture": "Graphics Midterm: CO1 Practice Exam",
-    "question": "True or False: Random scan is also known as vector scan.",
-    "option_a": "True",
-    "option_b": "False",
-    "option_c": "Only in color displays",
-    "option_d": "Only for animations",
-    "correct_answer": "A",
-    "description": "<strong>True.</strong> <strong>Random Scan</strong> (where the electron beam is directed only to parts of the screen where the picture is drawn) is also called <strong>vector display</strong>, <strong>stroke-writing display</strong>, or <strong>calligraphic display</strong>."
   },
   {
     "lecture": "Graphics Midterm: CO1 Practice Exam",

@@ -381,16 +381,6 @@
   },
   {
     "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
-    "question": "What does POS tagging decide?",
-    "option_a": "Whether a sentence is true or false",
-    "option_b": "Whether a word is, e.g., a verb or a noun",
-    "option_c": "The pronunciation of a word",
-    "option_d": "The translation of a word",
-    "correct_answer": "B",
-    "description": "<strong>POS (Part-of-Speech) Tagging</strong> decides the lexical category of each word — e.g., is 'duck' a verb (lower head) or noun (the bird)?"
-  },
-  {
-    "lecture": "Abdullah Ghanem Questions - Lec 5: WSD & Semantic Roles",
     "question": "What does Word Sense Disambiguation (WSD) do?",
     "option_a": "Translates words between languages",
     "option_b": "Decides which meaning of an ambiguous word is intended (e.g., make = create or cook)",

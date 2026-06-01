@@ -91,16 +91,6 @@
     },
     {
         "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
-        "question": "What is the deepest level of linguistic knowledge?",
-        "option_a": "Phonology",
-        "option_b": "Morphology",
-        "option_c": "Pragmatics\/Discourse",
-        "option_d": "Orthography",
-        "correct_answer": "C",
-        "description": "<strong>Pragmatics\/Discourse<\/strong> is the deepest level because it deals with <em>meaning in context<\/em>, including speaker intent, implied meaning, and how sentences relate to each other across a conversation or document."
-    },
-    {
-        "lecture": "Lecture 1: Natural Language Processing Intro (AI6.pdf)",
         "question": "Machine Translation (MT) refers to:",
         "option_a": "Translating code from C++ to Java",
         "option_b": "Automatic translation of texts between human languages",
@@ -421,16 +411,6 @@
     },
     {
         "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
-        "question": "What does “Rendering” mean in computer graphics?",
-        "option_a": "Deleting images",
-        "option_b": "Visualizing the data (showing the generated graphics)",
-        "option_c": "Creating audio",
-        "option_d": "Writing text",
-        "correct_answer": "B",
-        "description": "<strong>Rendering<\/strong> is the process of <em>generating a visual image<\/em> from a model or scene description. It converts the internal data representation into the final image that is displayed on screen."
-    },
-    {
-        "lecture": "Lecture 3: Computer Graphics Basics (AI4.pdf)",
         "question": "What is 3D rendering?",
         "option_a": "Generating a 2D image from a digital 3D scene",
         "option_b": "Creating a physical 3D object",
@@ -538,16 +518,6 @@
         "option_d": "Connector pins",
         "correct_answer": "B",
         "description": "The <strong>electron gun<\/strong> is the CRT component that <em>emits a focused beam of electrons<\/em>. These electrons are then directed toward the phosphor-coated screen to create visible light spots."
-    },
-    {
-        "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
-        "question": "What directs the electron beam towards specified positions on the screen?",
-        "option_a": "Focusing and deflection systems",
-        "option_b": "Base",
-        "option_c": "Control grid",
-        "option_d": "Phosphor",
-        "correct_answer": "A",
-        "description": "The <strong>focusing and deflection systems<\/strong> work together to <em>aim the electron beam<\/em> at precise positions on the screen. The focusing system narrows the beam, while the deflection system steers it horizontally and vertically."
     },
     {
         "lecture": "Lecture 4: Cathode Ray Tube & CG Applications (AI 4.pdf)",
@@ -1028,16 +998,6 @@
         "option_d": "short",
         "correct_answer": "B",
         "description": "The <code>boolean<\/code> data type stores only two possible values: <strong>true<\/strong> or <strong>false<\/strong>. It is used for conditional logic and flags."
-    },
-    {
-        "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
-        "question": "Which keyword is used to declare a constant variable in Java?",
-        "option_a": "const",
-        "option_b": "final",
-        "option_c": "static",
-        "option_d": "immutable",
-        "correct_answer": "B",
-        "description": "The <code>final<\/code> keyword makes a variable a <strong>constant<\/strong>, meaning its value <em>cannot be changed<\/em> once assigned. Convention is to use ALL_CAPS for naming constants."
     },
     {
         "lecture": "Lecture 6: Java Basics (AI 3.pdf)",
