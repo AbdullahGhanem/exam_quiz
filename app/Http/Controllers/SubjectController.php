@@ -10,20 +10,9 @@ class SubjectController extends Controller
 {
     public function index()
     {
-        $subjects = Subject::withCount('questions')->latest()->get();
+        $subjects = Subject::withCount('questions')->orderBy('id')->get();
 
         return view('subjects.index', compact('subjects'));
-    }
-
-    public function store(Request $request)
-    {
-        $request->validate([
-            'name' => 'required|string|max:255|unique:subjects,name',
-        ]);
-
-        Subject::create(['name' => $request->name]);
-
-        return redirect()->route('subjects.index')->with('success', 'Subject created successfully.');
     }
 
     public function assign()

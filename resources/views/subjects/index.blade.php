@@ -20,24 +20,6 @@
         </div>
 
         <div class="p-8">
-            {{-- Add new subject --}}
-            <form action="{{ route('subjects.store') }}" method="POST" class="mb-8">
-                @csrf
-                <label class="block text-sm font-semibold text-slate-700 mb-2">Add New Subject</label>
-                <div class="flex gap-3">
-                    <input type="text" name="name" placeholder="e.g. Natural Language Processing"
-                           class="flex-1 border-2 border-slate-200 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-colors"
-                           required>
-                    <button type="submit"
-                            class="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md shadow-indigo-200 active:scale-[0.98]">
-                        Add
-                    </button>
-                </div>
-                @error('name')
-                    <p class="text-red-500 text-sm mt-2">{{ $message }}</p>
-                @enderror
-            </form>
-
             {{-- Subjects list --}}
             @if($subjects->isEmpty())
                 <div class="text-center py-16">

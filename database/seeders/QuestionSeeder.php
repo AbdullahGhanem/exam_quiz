@@ -19,6 +19,7 @@ class QuestionSeeder extends Seeder
             'graphics_extra_questions.json',
             'graphics_midterm_questions.json',
             'nlp_lectures_3_to_7_questions.json',
+            'nlp_exam_bank_questions.json',
         ];
 
         foreach ($files as $file) {

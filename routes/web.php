@@ -12,7 +12,6 @@ Route::post('/quiz/answer/{index}', [QuizController::class, 'answer'])->name('qu
 Route::get('/quiz/result', [QuizController::class, 'result'])->name('quiz.result');
 
 Route::get('/subjects', [SubjectController::class, 'index'])->name('subjects.index');
-Route::post('/subjects', [SubjectController::class, 'store'])->name('subjects.store');
 Route::get('/subjects/assign', [SubjectController::class, 'assign'])->name('subjects.assign');
 Route::post('/subjects/assign', [SubjectController::class, 'assignUpdate'])->name('subjects.assign.update');
 
