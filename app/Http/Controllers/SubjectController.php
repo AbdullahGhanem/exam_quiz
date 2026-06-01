@@ -26,24 +26,6 @@ class SubjectController extends Controller
         return redirect()->route('subjects.index')->with('success', 'Subject created successfully.');
     }
 
-    public function update(Request $request, Subject $subject)
-    {
-        $request->validate([
-            'name' => 'required|string|max:255|unique:subjects,name,' . $subject->id,
-        ]);
-
-        $subject->update(['name' => $request->name]);
-
-        return redirect()->route('subjects.index')->with('success', 'Subject updated successfully.');
-    }
-
-    public function destroy(Subject $subject)
-    {
-        $subject->delete();
-
-        return redirect()->route('subjects.index')->with('success', 'Subject deleted successfully.');
-    }
-
     public function assign()
     {
         $subjects = Subject::all();
