@@ -2,6 +2,15 @@
 
 @section('content')
 <div class="max-w-2xl mx-auto">
+    {{-- Back / exit quiz --}}
+    <a href="{{ route('quiz.home') }}"
+       class="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-indigo-600 transition-colors mb-4">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
+        </svg>
+        Back to quiz setup
+    </a>
+
     {{-- Progress --}}
     <div class="mb-6">
         <div class="flex items-center justify-between mb-3">
