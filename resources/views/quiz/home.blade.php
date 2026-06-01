@@ -63,7 +63,7 @@
                 </label>
                 <div class="space-y-2 max-h-52 overflow-y-auto pr-1 custom-scrollbar">
                     @foreach($lectures as $lecture)
-                        <label data-subject-id="{{ $lecture->subject_id }}" class="flex items-center gap-3 p-3 rounded-xl border border-slate-200 cursor-pointer hover:border-indigo-300 hover:bg-indigo-50/30 transition-all lecture-card">
+                        <label data-subject-id="{{ $lecture->subject_id }}" class="group flex items-center gap-3 p-3 rounded-xl border border-slate-200 cursor-pointer hover:border-indigo-300 hover:bg-indigo-50/30 transition-all lecture-card">
                             <input type="checkbox" name="lectures[]" value="{{ $lecture->lecture }}"
                                    data-subject-id="{{ $lecture->subject_id }}" data-count="{{ $lecture->count }}"
                                    class="peer sr-only lecture-checkbox" onchange="this.closest('.lecture-card').classList.toggle('border-indigo-400', this.checked); this.closest('.lecture-card').classList.toggle('bg-indigo-50', this.checked); onSelectionChange();">
@@ -72,7 +72,15 @@
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                 </svg>
                             </div>
-                            <span class="text-sm text-slate-600 truncate">{{ $lecture->lecture }}</span>
+                            <span class="text-sm text-slate-600 truncate flex-1">{{ $lecture->lecture }}</span>
+                            <button type="button" onclick="startLectureQuiz(event, this)"
+                                    title="Start a quiz on this lecture"
+                                    class="flex-shrink-0 inline-flex items-center gap-1 pl-2 pr-2.5 py-1 rounded-lg text-xs font-semibold text-indigo-600 bg-indigo-50 hover:bg-indigo-600 hover:text-white opacity-0 group-hover:opacity-100 focus:opacity-100 transition-all">
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M6.3 2.84A1 1 0 004.8 3.7v12.6a1 1 0 001.5.87l10-6.3a1 1 0 000-1.74l-10-6.3z"/>
+                                </svg>
+                                Quiz
+                            </button>
                         </label>
                     @endforeach
                 </div>
@@ -164,6 +172,38 @@ function toggleSwitch(btn, inputId) {
         dot.classList.remove('translate-x-0');
         dot.classList.add('translate-x-5');
     }
+}
+
+// --- Start a quiz on a single lecture (one click, bypassing the filter form) ---
+// The page is one big <form>, so we can't nest another form. Build a transient
+// form on <body> with just this lecture and submit it to the existing quiz.start.
+const QUIZ_START_URL = '{{ route('quiz.start') }}';
+
+function startLectureQuiz(event, btn) {
+    event.preventDefault();
+    event.stopPropagation();            // don't toggle the filter checkbox
+    const card = btn.closest('.lecture-card');
+    const cb = card.querySelector('.lecture-checkbox');
+    const lecture = cb.value;
+    const count = Math.max(1, parseInt(cb.dataset.count || '1', 10));
+    const token = document.querySelector('input[name="_token"]').value;
+
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = QUIZ_START_URL;
+    form.style.display = 'none';
+    const add = (name, value) => {
+        const i = document.createElement('input');
+        i.type = 'hidden'; i.name = name; i.value = value;
+        form.appendChild(i);
+    };
+    add('_token', token);
+    add('lectures[]', lecture);
+    add('num_questions', count);
+    add('shuffle', '1');
+    add('show_descriptions', '1');
+    document.body.appendChild(form);
+    form.submit();
 }
 
 // --- Subject-aware lecture filtering + dynamic question count ---
