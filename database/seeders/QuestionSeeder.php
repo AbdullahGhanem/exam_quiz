@@ -22,6 +22,13 @@ class QuestionSeeder extends Seeder
             'nlp_exam_bank_questions.json',
         ];
 
+        // Idempotent reference-data seed: clear the bank, then reload it entirely
+        // from the JSON files. This makes the seeder safe to run on every deploy
+        // (no duplicate rows) and ensures question additions AND removals in the
+        // JSON propagate to the database exactly. SubjectSeeder re-maps subject_id
+        // afterwards, so clearing it here is fine.
+        Question::query()->delete();
+
         foreach ($files as $file) {
             $path = database_path($file);
             if (!file_exists($path)) {
