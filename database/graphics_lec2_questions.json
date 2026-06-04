@@ -1,0 +1,252 @@
+[
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "How is computer graphics described in this lecture?",
+    "option_a": "An art of drawing pictures on computer screens with the help of programming",
+    "option_b": "A method of compiling source code",
+    "option_c": "A way to store text data",
+    "option_d": "A technique for sorting numbers",
+    "correct_answer": "A",
+    "description": "<strong>Computer graphics</strong> is described as an <em>art of drawing pictures on computer screens with the help of programming</em>, involving computations, creation, and manipulation of data."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "Computer graphics can be regarded as a rendering tool for what?",
+    "option_a": "The generation and manipulation of images",
+    "option_b": "The compression of audio files",
+    "option_c": "The routing of network packets",
+    "option_d": "The encryption of databases",
+    "correct_answer": "A",
+    "description": "Computer graphics is a <strong>rendering tool</strong> for the <em>generation and manipulation of images</em>."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "What is the primary output device in a graphical system?",
+    "option_a": "The keyboard",
+    "option_b": "The video monitor",
+    "option_c": "The mouse",
+    "option_d": "The hard disk",
+    "correct_answer": "B",
+    "description": "The primary output device in a graphical system is the <strong>video monitor</strong>."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "What is the main element of a video monitor?",
+    "option_a": "The Cathode Ray Tube (CRT)",
+    "option_b": "The hard drive",
+    "option_c": "The motherboard",
+    "option_d": "The graphics card",
+    "correct_answer": "A",
+    "description": "The main element of a video monitor is the <strong>Cathode Ray Tube (CRT)</strong>."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "What does the electron gun in a CRT emit?",
+    "option_a": "A beam of light photons",
+    "option_b": "A beam of electrons (cathode rays)",
+    "option_c": "A stream of pixels",
+    "option_d": "Radio waves",
+    "correct_answer": "B",
+    "description": "The <strong>electron gun</strong> emits a beam of electrons, known as <em>cathode rays</em>."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "In a CRT, what systems direct the electron beam toward specified positions on the screen?",
+    "option_a": "Focusing and deflection systems",
+    "option_b": "Cooling and heating systems",
+    "option_c": "Compression and decompression systems",
+    "option_d": "Input and output systems",
+    "correct_answer": "A",
+    "description": "The electron beam passes through <strong>focusing and deflection systems</strong> that direct it toward specified positions on the phosphor-coated screen."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "What happens when the electron beam hits the screen in a CRT?",
+    "option_a": "The phosphor emits a small spot of light at each contacted position",
+    "option_b": "The screen heats up and shuts off",
+    "option_c": "The beam is reflected back to the gun unchanged",
+    "option_d": "The pixels are deleted",
+    "correct_answer": "A",
+    "description": "When the beam hits the screen, the <strong>phosphor emits a small spot of light</strong> at each position contacted by the electron beam."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "How does the CRT keep the picture visible?",
+    "option_a": "By storing it permanently in phosphor",
+    "option_b": "By redrawing the picture, directing the electron beam back over the same screen points quickly",
+    "option_c": "By printing it to paper",
+    "option_d": "By freezing the electron gun",
+    "correct_answer": "B",
+    "description": "The CRT <strong>redraws the picture</strong> by directing the electron beam back over the same screen points quickly."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "What are the two ways by which an object can be displayed on the screen?",
+    "option_a": "Random scan and raster scan",
+    "option_b": "Serial scan and parallel scan",
+    "option_c": "Vertical scan and diagonal scan",
+    "option_d": "Analog scan and digital scan",
+    "correct_answer": "A",
+    "description": "There are two ways to display an object on the screen: <strong>random scan</strong> and <strong>raster scan</strong>."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "In a raster scan system, how is the electron beam swept across the screen?",
+    "option_a": "Only to specific picture areas",
+    "option_b": "One row at a time from top to bottom",
+    "option_c": "In a circular pattern",
+    "option_d": "From bottom to top randomly",
+    "correct_answer": "B",
+    "description": "In a <strong>raster scan</strong> system, the electron beam is swept across the screen <em>one row at a time from top to bottom</em>, turning the beam intensity on and off."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "Where is the picture definition stored in a raster scan system?",
+    "option_a": "In the refresh buffer (frame buffer)",
+    "option_b": "In the CPU cache",
+    "option_c": "In the refresh display file",
+    "option_d": "On the hard disk",
+    "correct_answer": "A",
+    "description": "In raster scan, the picture definition is stored in a memory area called the <strong>refresh buffer</strong> or <strong>frame buffer</strong>."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "What does the refresh/frame buffer hold?",
+    "option_a": "The set of intensity values for all the screen points",
+    "option_b": "The list of installed programs",
+    "option_c": "The network configuration",
+    "option_d": "The line-drawing commands",
+    "correct_answer": "A",
+    "description": "The <strong>refresh/frame buffer</strong> holds the set of <em>intensity values for all the screen points</em>, which are retrieved and painted one scan line at a time."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "In a raster scan system, each screen point is referred to as what?",
+    "option_a": "A vector",
+    "option_b": "A pixel (picture element) or pel",
+    "option_c": "A frame",
+    "option_d": "A node",
+    "correct_answer": "B",
+    "description": "Each screen point is referred to as a <strong>pixel (picture element)</strong> or <strong>pel</strong>."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "At the end of each scan line, where does the electron beam return?",
+    "option_a": "To the center of the screen",
+    "option_b": "To the left side of the screen to begin the next scan line",
+    "option_c": "To the bottom-right corner",
+    "option_d": "Back to the electron gun",
+    "correct_answer": "B",
+    "description": "At the end of each scan line, the electron beam returns to the <strong>left side of the screen</strong> to begin displaying the next scan line."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "In random scan, where is the electron beam directed?",
+    "option_a": "Across every row from top to bottom",
+    "option_b": "Only to the part of the screen where the picture is to be drawn",
+    "option_c": "Only to the corners of the screen",
+    "option_d": "In a fixed clockwise circle",
+    "correct_answer": "B",
+    "description": "In <strong>random scan</strong>, the electron beam is directed <em>only to the part of the screen where the picture is to be drawn</em>, rather than scanning the whole screen."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "Random scan is also known by which other name?",
+    "option_a": "Bitmap display",
+    "option_b": "Vector display (stroke-writing or calligraphic display)",
+    "option_c": "Raster display",
+    "option_d": "Pixel display",
+    "correct_answer": "B",
+    "description": "Random scan is also called <strong>vector display</strong>, <strong>stroke-writing display</strong>, or <strong>calligraphic display</strong>."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "How is the picture definition stored in a random scan system?",
+    "option_a": "As a set of intensity values for all screen points",
+    "option_b": "As a set of line-drawing commands in an area of memory",
+    "option_c": "As a single compressed bitmap",
+    "option_d": "As a video stream",
+    "correct_answer": "B",
+    "description": "In random scan, the picture definition is stored as a <strong>set of line-drawing commands</strong> in an area of memory."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "What is the memory area that stores line-drawing commands in a random scan system called?",
+    "option_a": "The frame buffer",
+    "option_b": "The refresh display file",
+    "option_c": "The refresh buffer",
+    "option_d": "The scan cache",
+    "correct_answer": "B",
+    "description": "The picture definition in random scan is stored in an area of memory referred to as the <strong>refresh display file</strong>."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "How many times per second are random-scan displays designed to draw all the component lines of a picture?",
+    "option_a": "1 to 5 times each second",
+    "option_b": "30 to 60 times each second",
+    "option_c": "100 to 200 times each second",
+    "option_d": "Once per minute",
+    "correct_answer": "B",
+    "description": "Random-scan displays are designed to draw all the component lines of a picture <strong>30 to 60 times each second</strong>."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "What is a computer graphics user interface (GUI)?",
+    "option_a": "A text-only command line",
+    "option_b": "A graphic, mouse-oriented paradigm which allows the user to interact with a computer",
+    "option_c": "A printing protocol",
+    "option_d": "A database query language",
+    "correct_answer": "B",
+    "description": "A <strong>GUI</strong> is a graphic, <em>mouse-oriented paradigm</em> that allows the user to interact with a computer."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "The phrase \"A picture is worth a thousand words\" relates to which application of computer graphics?",
+    "option_a": "Cartography",
+    "option_b": "Business presentation graphics",
+    "option_c": "Medical imaging",
+    "option_d": "Typography",
+    "correct_answer": "B",
+    "description": "<strong>Business presentation graphics</strong> are associated with the idea that <em>\"a picture is worth a thousand words\"</em>."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "In the applications of computer graphics, what does cartography refer to?",
+    "option_a": "Drawing maps",
+    "option_b": "Sharpening blurred photos",
+    "option_c": "Designing fonts",
+    "option_d": "Creating flight simulators",
+    "correct_answer": "A",
+    "description": "<strong>Cartography</strong> as an application of computer graphics refers to <em>drawing maps</em>."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "Which application of computer graphics involves MRIs and CAT scans for non-invasive internal examination?",
+    "option_a": "Satellite imaging",
+    "option_b": "Medical imaging",
+    "option_c": "Photo enhancement",
+    "option_d": "Weather maps",
+    "correct_answer": "B",
+    "description": "<strong>Medical imaging</strong> uses computer graphics for <em>MRIs, CAT scans, etc.</em> — enabling non-invasive internal examination."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "Flight simulators and computer-aided instruction are examples of which application of computer graphics?",
+    "option_a": "Training",
+    "option_b": "Typography",
+    "option_c": "Cartography",
+    "option_d": "Art",
+    "correct_answer": "A",
+    "description": "<strong>Training</strong> applications of computer graphics include <em>flight simulators and computer-aided instruction</em>."
+  },
+  {
+    "lecture": "Graphics Lec 2: Basics, CRT & Scan Systems (Lec.2.pdf)",
+    "question": "In computer graphics applications, engineering drawings are said to be replacing what?",
+    "option_a": "The blueprints of the past",
+    "option_b": "Modern 3D printers",
+    "option_c": "Photographs",
+    "option_d": "Video games",
+    "correct_answer": "A",
+    "description": "<strong>Engineering drawings</strong> (mechanical, electrical, civil, etc.) are replacing the <em>blueprints of the past</em>."
+  }
+]

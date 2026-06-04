@@ -1,0 +1,262 @@
+[
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "What does Computer Graphics primarily simplify?",
+    "option_a": "The process of compiling source code",
+    "option_b": "The process of displaying pictures of any size on a computer screen",
+    "option_c": "The process of storing text files",
+    "option_d": "The process of connecting to a network",
+    "correct_answer": "B",
+    "description": "<strong>Computer Graphics</strong> simplifies <em>displaying pictures of any size on a computer screen</em>, using various algorithms and techniques to generate the graphics."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "Computer graphics involves which three core activities on visual content?",
+    "option_a": "Compilation, linking, and execution",
+    "option_b": "Creation, manipulation, and rendering",
+    "option_c": "Encryption, compression, and storage",
+    "option_d": "Sorting, searching, and indexing",
+    "correct_answer": "B",
+    "description": "Computer graphics involves the <strong>creation, manipulation, and rendering</strong> of visual content using computers."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "Which of the following is a sector where computer graphics is commonly used?",
+    "option_a": "Entertainment and virtual reality",
+    "option_b": "Payroll processing",
+    "option_c": "Disk defragmentation",
+    "option_d": "Email routing",
+    "correct_answer": "A",
+    "description": "Computer graphics is used in sectors like <strong>entertainment, education, scientific visualization, and virtual reality</strong>."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "Raster graphics (bitmap graphics) are made up of what?",
+    "option_a": "Mathematical equations",
+    "option_b": "Tiny dots called pixels (picture elements)",
+    "option_c": "Vector paths",
+    "option_d": "Polygons defined by vertices only",
+    "correct_answer": "B",
+    "description": "<strong>Raster (bitmap) graphics</strong> are images made up of <em>tiny dots called pixels</em> (picture elements)."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "How are vector graphics images created?",
+    "option_a": "By scanning printed photographs",
+    "option_b": "Using mathematical equations to represent geometric shapes",
+    "option_c": "By arranging individual colored pixels",
+    "option_d": "By recording video frames",
+    "correct_answer": "B",
+    "description": "<strong>Vector graphics</strong> are created using <em>mathematical equations</em> to represent geometric shapes such as lines, circles, and polygons."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "Which type of computer graphics represents three-dimensional objects and scenes, often used for simulations, video games, and movies?",
+    "option_a": "Raster graphics",
+    "option_b": "Vector graphics",
+    "option_c": "3D graphics",
+    "option_d": "Bitmap graphics",
+    "correct_answer": "C",
+    "description": "<strong>3D graphics</strong> represent three-dimensional objects and scenes, often used for <em>simulations, video games, and movies</em>."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "What characterizes interactive graphics?",
+    "option_a": "They are printed on paper only",
+    "option_b": "They allow users to interact with them, typically through a user interface (UI)",
+    "option_c": "They cannot be changed after creation",
+    "option_d": "They are always two-dimensional",
+    "correct_answer": "B",
+    "description": "<strong>Interactive graphics</strong> allow users to <em>interact with them</em>, typically through a user interface (UI)."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "What defines real-time graphics?",
+    "option_a": "They are rendered overnight in batches",
+    "option_b": "They are rendered instantly as the user interacts with them",
+    "option_c": "They take hours to generate",
+    "option_d": "They are only used for printing",
+    "correct_answer": "B",
+    "description": "<strong>Real-time graphics</strong> are rendered in real-time, meaning they are <em>created and displayed instantly</em> as the user interacts with them."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "Animation in computer graphics is essentially what?",
+    "option_a": "A single static image",
+    "option_b": "A sequence of frames, where each frame generates a graphics output on the scene",
+    "option_c": "A compressed audio file",
+    "option_d": "A list of text commands",
+    "correct_answer": "B",
+    "description": "Animation in computer graphics is a <strong>sequence of frames</strong>, where each frame generates a graphics output on the scene."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "Which concept is used for animation creation in computer graphics?",
+    "option_a": "Compression",
+    "option_b": "Interpolation",
+    "option_c": "Encryption",
+    "option_d": "Compilation",
+    "correct_answer": "B",
+    "description": "The concept of <strong>interpolation</strong> is used for animation creation, and can be done with linear, quadratic, or other interpolation types."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "Which of the following is NOT one of the animation types mentioned in the lecture?",
+    "option_a": "Key-framing",
+    "option_b": "Morphing",
+    "option_c": "Tween animation",
+    "option_d": "Rasterizing",
+    "correct_answer": "D",
+    "description": "The animation types mentioned are <strong>key-framing, morphing, and tween animations</strong>. <em>Rasterizing</em> is not listed as an animation type."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "Raster graphics are especially ideal for which kind of images?",
+    "option_a": "Logos and scalable illustrations",
+    "option_b": "Detailed and colourful images like photographs",
+    "option_c": "Simple line drawings",
+    "option_d": "Text-only documents",
+    "correct_answer": "B",
+    "description": "<strong>Raster graphics</strong> consist of tiny pixels and are ideal for <em>detailed and colourful images like photographs</em>."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "Vector graphics are best suited for which kind of designs?",
+    "option_a": "Photographs",
+    "option_b": "Scaled designs like logos and illustrations",
+    "option_c": "Video footage",
+    "option_d": "Scanned documents",
+    "correct_answer": "B",
+    "description": "<strong>Vector graphics</strong> use mathematical paths, making them ideal for <em>scaled designs like logos and illustrations</em>."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "How do raster images store their information?",
+    "option_a": "Using sequential drawing commands",
+    "option_b": "Using bit maps, requiring a larger bitmap for larger files",
+    "option_c": "Using mathematical equations only",
+    "option_d": "Using compressed vectors",
+    "correct_answer": "B",
+    "description": "<strong>Raster images</strong> use <em>bit maps</em> to store information, requiring a larger bitmap for larger files."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "How do vector graphics place lines or shapes in a 2-D or 3-D environment?",
+    "option_a": "By storing a color value for every pixel",
+    "option_b": "Using sequential commands or mathematical statements",
+    "option_c": "By capturing them with a camera",
+    "option_d": "By scanning a bitmap",
+    "correct_answer": "B",
+    "description": "<strong>Vector graphics</strong> use <em>sequential commands or mathematical statements</em> to place lines or shapes in a 2-D or 3-D environment."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "The term 'pixel' is derived from which phrase?",
+    "option_a": "Pixel matrix",
+    "option_b": "Picture element",
+    "option_c": "Point index",
+    "option_d": "Pixel intensity",
+    "correct_answer": "B",
+    "description": "<strong>Pixels</strong> are derived from the term <em>\"picture element\"</em> and are the fundamental unit of digital images."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "Pixels consist of which subpixels that mix to create diverse colors?",
+    "option_a": "CMYK subpixels",
+    "option_b": "RGB subpixels",
+    "option_c": "HSV subpixels",
+    "option_d": "Grayscale subpixels",
+    "correct_answer": "B",
+    "description": "Pixels consist of <strong>RGB subpixels</strong>, which mix to create diverse colors."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "In an image, what does the number of pixels in rows and columns signify?",
+    "option_a": "The file format",
+    "option_b": "The resolution",
+    "option_c": "The compression ratio",
+    "option_d": "The color depth",
+    "correct_answer": "B",
+    "description": "How many pixels there are in a row and column manner signifies the <strong>resolution</strong> of the image."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "An image with a large number of pixels will be what, compared to one with fewer pixels?",
+    "option_a": "Less accurate and blurry",
+    "option_b": "More accurate and detailed",
+    "option_c": "Smaller in file size",
+    "option_d": "Faster to display",
+    "correct_answer": "B",
+    "description": "An image with a <strong>large number of pixels</strong> will be <em>more accurate and detailed</em> compared to one with a lower number of picture elements."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "In computer graphics, what does the term 'rendering' state?",
+    "option_a": "Compiling the program",
+    "option_b": "Visualizing the data (showing the generated graphics)",
+    "option_c": "Saving the file to disk",
+    "option_d": "Compressing the image",
+    "correct_answer": "B",
+    "description": "The term <strong>rendering</strong> states <em>visualizing the data</em> — in computer graphics, showing the generated graphics is rendering."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "What does 3D rendering generate?",
+    "option_a": "A 3D image from a 2D scene",
+    "option_b": "A 2D image from a digital 3D scene",
+    "option_c": "An audio track from a video",
+    "option_d": "A wireframe from a photograph",
+    "correct_answer": "B",
+    "description": "<strong>3D rendering</strong> is a computer-based process that generates a <em>2D image from a digital 3D scene</em>."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "Which traditional rendering technique calculates the computer graphics surface?",
+    "option_a": "Z-Buffer",
+    "option_b": "Scanline",
+    "option_c": "Ray Casting",
+    "option_d": "Bump Mapping",
+    "correct_answer": "B",
+    "description": "<strong>Scanline</strong> is a traditional rendering technique that calculates the computer graphics surface."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "What is the Z-Buffer used for?",
+    "option_a": "Storing audio samples",
+    "option_b": "Depth calculation and storage",
+    "option_c": "Color correction",
+    "option_d": "Network buffering",
+    "correct_answer": "B",
+    "description": "The <strong>Z-Buffer</strong> is a two-dimensional data system used for <em>depth calculation and storage</em>."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "What do shading and lighting techniques manipulate?",
+    "option_a": "Light and dark levels using software effects",
+    "option_b": "The file size of the image",
+    "option_c": "The pixel resolution only",
+    "option_d": "The network bandwidth",
+    "correct_answer": "A",
+    "description": "<strong>Shading</strong> and <strong>lighting</strong> manipulate <em>light and dark levels</em> using software effects."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "What does Texture / Bump Mapping display?",
+    "option_a": "Color, material, and object details",
+    "option_b": "Depth values only",
+    "option_c": "Audio frequencies",
+    "option_d": "Network latency",
+    "correct_answer": "A",
+    "description": "<strong>Texture / Bump Mapping</strong> displays <em>color, material, and object details</em>."
+  },
+  {
+    "lecture": "Graphics Lec 1: Intro, Types & Rendering (Lec.1.pdf)",
+    "question": "Ray Tracing and Ray Casting are useful rendering techniques for what purpose?",
+    "option_a": "Compressing files",
+    "option_b": "Creating natural lighting effects",
+    "option_c": "Storing depth data",
+    "option_d": "Drawing wireframes",
+    "correct_answer": "B",
+    "description": "<strong>Ray Tracing</strong> and <strong>Ray Casting</strong> are useful rendering techniques for creating <em>natural lighting effects</em>."
+  }
+]

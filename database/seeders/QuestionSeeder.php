@@ -16,6 +16,8 @@ class QuestionSeeder extends Seeder
             'mobile_java_exam_questions.json',
             'mobile_layouts_questions.json',
             'mobile_loops_methods_questions.json',
+            'graphics_lec1_questions.json',
+            'graphics_lec2_questions.json',
             'graphics_extra_questions.json',
             'graphics_midterm_questions.json',
             'nlp_lectures_3_to_7_questions.json',
