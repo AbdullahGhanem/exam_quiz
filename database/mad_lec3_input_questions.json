@@ -1,0 +1,342 @@
+[
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "Which class is commonly used in Java to take console input from the user?",
+    "option_a": "InputReader",
+    "option_b": "Scanner",
+    "option_c": "BufferedReader",
+    "option_d": "Console",
+    "correct_answer": "B",
+    "description": "The <code>Scanner</code> class reads typed console input, e.g. <code>Scanner s = new Scanner(System.in);</code>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "Which package must be imported to use the Scanner class?",
+    "option_a": "java.io",
+    "option_b": "java.lang",
+    "option_c": "java.util",
+    "option_d": "javax.swing",
+    "correct_answer": "C",
+    "description": "Scanner lives in <code>java.util</code>: <code>import java.util.Scanner;</code>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "How do you create a Scanner object to read from the keyboard?",
+    "option_a": "Scanner s = new Scanner(System.out);",
+    "option_b": "Scanner s = new Scanner(System.in);",
+    "option_c": "Scanner s = Scanner.create();",
+    "option_d": "Scanner s = new Scanner();",
+    "correct_answer": "B",
+    "description": "<code>System.in</code> is the standard input stream, so <code>new Scanner(System.in)</code> reads from the keyboard."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "Which Scanner method reads an integer entered by the user?",
+    "option_a": "s.readInt()",
+    "option_b": "s.getInt()",
+    "option_c": "s.nextInt()",
+    "option_d": "s.scanInt()",
+    "correct_answer": "C",
+    "description": "<code>nextInt()</code> reads the next integer token. Related: <code>nextDouble()</code>, <code>nextLine()</code>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "Which class is used to show a graphical input dialog box in Java?",
+    "option_a": "Scanner",
+    "option_b": "InputDialog",
+    "option_c": "JOptionPane",
+    "option_d": "DialogBox",
+    "correct_answer": "C",
+    "description": "<code>JOptionPane</code> (Swing) shows GUI dialogs such as <code>showInputDialog</code> and <code>showMessageDialog</code>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What data type does JOptionPane.showInputDialog() always return?",
+    "option_a": "int",
+    "option_b": "double",
+    "option_c": "String",
+    "option_d": "char",
+    "correct_answer": "C",
+    "description": "GUI input is always a <strong>String</strong>; convert it with <code>Integer.parseInt()</code> when a number is needed."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "Which method displays a message dialog using JOptionPane?",
+    "option_a": "JOptionPane.showDialog()",
+    "option_b": "JOptionPane.showMessageDialog()",
+    "option_c": "JOptionPane.displayMessage()",
+    "option_d": "JOptionPane.printMessage()",
+    "correct_answer": "B",
+    "description": "<code>showMessageDialog(null, \"...\")</code> pops up a message box with an OK button."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "Which package contains the JOptionPane class?",
+    "option_a": "java.util",
+    "option_b": "java.lang",
+    "option_c": "java.io",
+    "option_d": "javax.swing",
+    "correct_answer": "D",
+    "description": "JOptionPane is part of Swing: <code>import javax.swing.JOptionPane;</code>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "If a user enters \"42\" via JOptionPane.showInputDialog(), how do you convert it to an integer?",
+    "option_a": "int n = (int) input;",
+    "option_b": "int n = Integer.parseInt(input);",
+    "option_c": "int n = input.toInt();",
+    "option_d": "int n = (Integer) input;",
+    "correct_answer": "B",
+    "description": "Use <code>Integer.parseInt(input)</code> (or <code>Integer.valueOf</code>) to parse the String into an int. A cast does not parse text."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What is the first argument passed to JOptionPane.showMessageDialog() when there is no parent window?",
+    "option_a": "0",
+    "option_b": "\"\"",
+    "option_c": "null",
+    "option_d": "System.out",
+    "correct_answer": "C",
+    "description": "Pass <code>null</code> as the parent component: <code>JOptionPane.showMessageDialog(null, \"Hello\");</code>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What is the output when the user enters 12?\nScanner s = new Scanner(System.in);\nint x = s.nextInt();\nSystem.out.println(\"your number is : \" + x);",
+    "option_a": "your number is : 0",
+    "option_b": "your number is : 12",
+    "option_c": "Enter number 12",
+    "option_d": "Compile error",
+    "correct_answer": "B",
+    "description": "<code>nextInt()</code> reads 12 into <code>x</code>, so it prints <strong>your number is : 12</strong>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What does this return?\nString number = JOptionPane.showInputDialog(\"Enter your number\");",
+    "option_a": "An int value",
+    "option_b": "A double value",
+    "option_c": "A String value",
+    "option_d": "A char value",
+    "correct_answer": "C",
+    "description": "<code>showInputDialog</code> always returns the typed text as a <strong>String</strong>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "Spot the error:\nScanner s = new Scanner(System.in);\nint x = s.nextDouble();",
+    "option_a": "No error",
+    "option_b": "Compile error — nextDouble() returns double, not int (type mismatch)",
+    "option_c": "Runtime error",
+    "option_d": "Logical error only",
+    "correct_answer": "B",
+    "description": "<code>nextDouble()</code> returns a <code>double</code>, which cannot be assigned to an <code>int</code> without an explicit cast — a compile-time type mismatch."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What is displayed when this runs?\nJOptionPane.showMessageDialog(null, \"Hello\");",
+    "option_a": "Prints 'Hello' to the console",
+    "option_b": "Opens a graphical dialog box showing 'Hello' with an OK button",
+    "option_c": "Compile error",
+    "option_d": "Assigns 'Hello' to a variable",
+    "correct_answer": "B",
+    "description": "It opens a Swing <strong>dialog box</strong> displaying 'Hello' with an OK button — not console output."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What is printed if the user enters \"25\"?\nString input = JOptionPane.showInputDialog(\"Enter a number\");\nint num = Integer.parseInt(input);\nSystem.out.println(num * 2);",
+    "option_a": "\"25\"",
+    "option_b": "25",
+    "option_c": "50",
+    "option_d": "Compile error",
+    "correct_answer": "C",
+    "description": "<code>parseInt(\"25\")</code> gives 25, then 25 × 2 = <strong>50</strong>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "Which operator returns the remainder of a division in Java?",
+    "option_a": "/",
+    "option_b": "*",
+    "option_c": "^",
+    "option_d": "%",
+    "correct_answer": "D",
+    "description": "<code>%</code> is the modulus operator; <code>/</code> gives the quotient."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What is the result of (int) 3.9 in Java?",
+    "option_a": "4",
+    "option_b": "3.9",
+    "option_c": "3",
+    "option_d": "Error",
+    "correct_answer": "C",
+    "description": "Casting to int <strong>truncates</strong> the fraction → <strong>3</strong> (not rounded)."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What does i++ (post-increment) do in an expression?",
+    "option_a": "Increments i before using it in the expression",
+    "option_b": "Decrements i by 1",
+    "option_c": "Uses the original value of i, then increments i",
+    "option_d": "Multiplies i by 2",
+    "correct_answer": "C",
+    "description": "Post-increment yields the old value first, then adds 1."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What naming convention applies to Java class names?",
+    "option_a": "All lowercase",
+    "option_b": "All uppercase",
+    "option_c": "First letter of each word capitalized (PascalCase)",
+    "option_d": "Underscores between words",
+    "correct_answer": "C",
+    "description": "Java classes use <strong>PascalCase</strong>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "Which assignment operator is equivalent to x = x * 10?",
+    "option_a": "x += 10",
+    "option_b": "x /= 10",
+    "option_c": "x *= 10",
+    "option_d": "x %= 10",
+    "correct_answer": "C",
+    "description": "<code>x *= 10</code> multiplies and reassigns in one step."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What is type widening (implicit casting)?",
+    "option_a": "Converting a larger type to a smaller type",
+    "option_b": "Automatically converting a smaller type to a larger type",
+    "option_c": "Converting String to int",
+    "option_d": "Converting char to String",
+    "correct_answer": "B",
+    "description": "Widening (e.g. int → double) is automatic and lossless."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What type of error causes a program to produce incorrect results without crashing?",
+    "option_a": "Syntax error",
+    "option_b": "Runtime error",
+    "option_c": "Compile error",
+    "option_d": "Logical error",
+    "correct_answer": "D",
+    "description": "A <strong>logical error</strong> runs without crashing but yields wrong results."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "How many bits are used by the long data type?",
+    "option_a": "8",
+    "option_b": "16",
+    "option_c": "32",
+    "option_d": "64",
+    "correct_answer": "D",
+    "description": "<code>long</code> is <strong>64-bit</strong>, larger than the 32-bit <code>int</code>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What happens when you write: String s = \"Chapter \" + 2;?",
+    "option_a": "Compile error",
+    "option_b": "The integer is ignored",
+    "option_c": "The integer is auto-converted to String: s = \"Chapter 2\"",
+    "option_d": "Runtime error",
+    "correct_answer": "C",
+    "description": "The int is converted to its String form and appended → <code>\"Chapter 2\"</code>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What is the correct explicit cast to convert double 97.9 to a char?",
+    "option_a": "char c = 97.9;",
+    "option_b": "char c = (char) 97.9;",
+    "option_c": "char c = Double.toChar(97.9);",
+    "option_d": "char c = char(97.9);",
+    "correct_answer": "B",
+    "description": "Narrowing from double to char needs an explicit cast: <code>(char) 97.9</code> → the character with code 97 = <code>'a'</code>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "Is Java case-sensitive, so that 'Hello' and 'hello' are different identifiers?",
+    "option_a": "Yes — Java is case-sensitive",
+    "option_b": "No — case is ignored",
+    "option_c": "Only for variables, not classes",
+    "option_d": "Only inside strings",
+    "correct_answer": "A",
+    "description": "Java is <strong>case-sensitive</strong>, so <code>Hello</code> ≠ <code>hello</code>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "In Java, must the program file name match the public class name?",
+    "option_a": "Yes — it must match exactly",
+    "option_b": "No — any file name works",
+    "option_c": "Only for the main class on Windows",
+    "option_d": "Only when using packages",
+    "correct_answer": "A",
+    "description": "A public class must be saved in a file with the <strong>same name</strong>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "Can the boolean data type in Java store the values 0 and 1?",
+    "option_a": "Yes — 0 is false, 1 is true",
+    "option_b": "No — boolean only accepts true or false",
+    "option_c": "Yes — any non-zero is true",
+    "option_d": "Only inside an if statement",
+    "correct_answer": "B",
+    "description": "Java <code>boolean</code> accepts only <strong>true</strong> or <strong>false</strong>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "Is String a primitive data type in Java?",
+    "option_a": "Yes",
+    "option_b": "No — String is a reference (non-primitive) type",
+    "option_c": "Yes, like char",
+    "option_d": "Only when final",
+    "correct_answer": "B",
+    "description": "<code>String</code> is a reference type, not a primitive."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "In implicit casting, can Java automatically convert a double to an int?",
+    "option_a": "Yes, automatically",
+    "option_b": "No — converting double to int requires an explicit (narrowing) cast",
+    "option_c": "Yes, but only for whole numbers",
+    "option_d": "Only with parseInt",
+    "correct_answer": "B",
+    "description": "double → int is narrowing and loses precision, so an <strong>explicit cast</strong> is required."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "Can both Scanner and JOptionPane be used to take input from the user in Java?",
+    "option_a": "Yes — Scanner for console, JOptionPane for GUI",
+    "option_b": "No — only Scanner can read input",
+    "option_c": "No — only JOptionPane can read input",
+    "option_d": "Only Scanner works in Android",
+    "correct_answer": "A",
+    "description": "<strong>Scanner</strong> reads console input; <strong>JOptionPane</strong> reads GUI dialog input. Both are valid input methods."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What is the output?\nint x = 5;\nint y = x++;\nSystem.out.println(\"x=\" + x + \" y=\" + y);",
+    "option_a": "x=5 y=5",
+    "option_b": "x=6 y=5",
+    "option_c": "x=6 y=6",
+    "option_d": "x=5 y=6",
+    "correct_answer": "B",
+    "description": "Post-increment: y = 5 (old value), then x becomes 6."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What is the output? int a = 10; int b = 3; System.out.println(a % b);",
+    "option_a": "3",
+    "option_b": "3.33",
+    "option_c": "1",
+    "option_d": "0",
+    "correct_answer": "C",
+    "description": "10 % 3 leaves remainder <strong>1</strong>."
+  },
+  {
+    "lecture": "MAD Lec 3: Java Basics & Input",
+    "question": "What will be printed?\nString msg = \"Welcome \" + \"to \" + \"Java\";\nSystem.out.println(msg);",
+    "option_a": "Welcome to Java",
+    "option_b": "WelcometoJava",
+    "option_c": "\"Welcome to Java\"",
+    "option_d": "Compile error",
+    "correct_answer": "A",
+    "description": "The string literals already contain spaces, so they concatenate to <strong>Welcome to Java</strong>."
+  }
+]

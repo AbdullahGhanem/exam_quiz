@@ -1,0 +1,462 @@
+[
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What is the default order of statement execution in a Java method?",
+    "option_a": "Random order depending on the JVM",
+    "option_b": "Linear (sequential) — one statement after another",
+    "option_c": "Reverse order from last to first",
+    "option_d": "Parallel execution of all statements simultaneously",
+    "correct_answer": "B",
+    "description": "Statements run <strong>sequentially</strong>, top to bottom, unless a control statement (if, loop, etc.) changes the flow."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Which of the following is NOT one of the Java conditional statements?",
+    "option_a": "if statement",
+    "option_b": "if-else statement",
+    "option_c": "while statement",
+    "option_d": "switch statement",
+    "correct_answer": "C",
+    "description": "<code>while</code> is a <em>loop</em> (iteration), not a conditional. The conditionals are <code>if</code>, <code>if-else</code>, and <code>switch</code>."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What type of value must the condition in an if statement evaluate to?",
+    "option_a": "An integer (int)",
+    "option_b": "A String value",
+    "option_c": "A boolean (true or false)",
+    "option_d": "A floating-point number",
+    "correct_answer": "C",
+    "description": "An <code>if</code> condition must be a <strong>boolean</strong> expression. Unlike C, an int cannot stand in for a condition."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "In an if statement, what happens when the condition evaluates to false?",
+    "option_a": "The statement inside the if block is executed twice",
+    "option_b": "The program terminates with an error",
+    "option_c": "The statement inside the if block is skipped",
+    "option_d": "The condition is re-evaluated until it becomes true",
+    "correct_answer": "C",
+    "description": "When the condition is false, the <code>if</code> body is <strong>skipped</strong> and execution continues after it."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Which keyword is used to introduce a conditional check in Java?",
+    "option_a": "when",
+    "option_b": "check",
+    "option_c": "if",
+    "option_d": "test",
+    "correct_answer": "C",
+    "description": "The <code>if</code> keyword introduces a conditional check."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Which relational operator checks whether two values are equal in Java?",
+    "option_a": "=",
+    "option_b": "==",
+    "option_c": "!=",
+    "option_d": "===",
+    "correct_answer": "B",
+    "description": "<code>==</code> tests equality; <code>=</code> is assignment. Java has no <code>===</code> operator."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What does the relational operator != mean?",
+    "option_a": "Less than or equal to",
+    "option_b": "Greater than",
+    "option_c": "Not equal to",
+    "option_d": "Exactly equal to",
+    "correct_answer": "C",
+    "description": "<code>!=</code> means <strong>not equal to</strong>."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Which has higher precedence — arithmetic operators or relational operators?",
+    "option_a": "Relational operators always evaluate first",
+    "option_b": "They have identical precedence",
+    "option_c": "Arithmetic operators have higher precedence than relational operators",
+    "option_d": "Precedence depends on the variable types involved",
+    "correct_answer": "C",
+    "description": "<strong>Arithmetic</strong> binds tighter than relational, so <code>a + 5 > b</code> computes <code>a + 5</code> first."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What does the logical AND operator (&&) return?",
+    "option_a": "true if at least one operand is true",
+    "option_b": "true only if both operands are true",
+    "option_c": "true if both operands are false",
+    "option_d": "Always returns false",
+    "correct_answer": "B",
+    "description": "<code>&&</code> is true only when <strong>both</strong> operands are true."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What is the result of: true || false?",
+    "option_a": "false",
+    "option_b": "true",
+    "option_c": "null",
+    "option_d": "Compile error",
+    "correct_answer": "B",
+    "description": "Logical OR (<code>||</code>) is true if at least one operand is true → <strong>true</strong>."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What is the result of: !true?",
+    "option_a": "true",
+    "option_b": "0",
+    "option_c": "null",
+    "option_d": "false",
+    "correct_answer": "D",
+    "description": "Logical NOT (<code>!</code>) inverts the value, so <code>!true</code> is <strong>false</strong>."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "In what order is this condition evaluated: total < MAX + 5 && !found?",
+    "option_a": "&& first, then +, then <, then !",
+    "option_b": "+ first, then <, then !, then &&",
+    "option_c": "< first, then +, then !, then &&",
+    "option_d": "All operators evaluate simultaneously",
+    "correct_answer": "B",
+    "description": "Precedence order: arithmetic <code>+</code> → relational <code><</code> → logical <code>!</code> → logical <code>&&</code>."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What does 'short-circuit evaluation' mean for the && operator?",
+    "option_a": "Both operands are always evaluated regardless of the left operand",
+    "option_b": "If the left operand is false, the right operand is NOT evaluated",
+    "option_c": "If the left operand is true, the right operand is NOT evaluated",
+    "option_d": "The operator skips every third evaluation",
+    "correct_answer": "B",
+    "description": "For <code>&&</code>, if the left side is <strong>false</strong> the whole expression is false, so the right side is skipped."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Why is this code safe due to short-circuit evaluation?\nif (count != 0 && total/count > MAX)",
+    "option_a": "Because division is always safe in Java",
+    "option_b": "Because if count == 0, total/count is never evaluated, avoiding division by zero",
+    "option_c": "Because the compiler automatically inserts a zero check",
+    "option_d": "Because total/count always returns 0 when count is 0",
+    "correct_answer": "B",
+    "description": "If <code>count == 0</code>, the left side is false and <code>total/count</code> is never reached, preventing a divide-by-zero."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Which correctly describes precedence among logical operators in Java?",
+    "option_a": "|| has higher precedence than && and !",
+    "option_b": "&& has higher precedence than || and !",
+    "option_c": "! has higher precedence than &&, which is higher than ||",
+    "option_d": "All logical operators have identical precedence",
+    "correct_answer": "C",
+    "description": "Order is <code>!</code> &gt; <code>&&</code> &gt; <code>||</code>."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Given:\nif (sum > MAX)\n  delta = sum - MAX;\nSystem.out.println(\"The sum is \" + sum);\nWhen is the println executed?",
+    "option_a": "Only when sum > MAX",
+    "option_b": "Only when sum <= MAX",
+    "option_c": "Always, regardless of the condition",
+    "option_d": "Never, because it is inside the if block",
+    "correct_answer": "C",
+    "description": "Without braces, only the next single statement belongs to the <code>if</code>. The <code>println</code> is outside it, so it <strong>always</strong> runs."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "In an if-else statement, how many of the two branches execute?",
+    "option_a": "Both always execute",
+    "option_b": "Neither executes if the condition is null",
+    "option_c": "Exactly one — either statement1 or statement2, but not both",
+    "option_d": "Both execute if the condition is true",
+    "correct_answer": "C",
+    "description": "An <code>if-else</code> runs <strong>exactly one</strong> branch depending on the condition."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What is the output when radius = -3?\nif (radius >= 0) { area = radius*radius*3.14159; System.out.println(area); }\nelse { System.out.println(\"Negative input\"); }",
+    "option_a": "28.274",
+    "option_b": "0",
+    "option_c": "Negative input",
+    "option_d": "A runtime exception",
+    "correct_answer": "C",
+    "description": "Since -3 is not >= 0, the else branch runs, printing <strong>Negative input</strong>."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What does this if statement do?\nif (total != stock + warehouse)\n  inventoryError = true;",
+    "option_a": "Sets inventoryError to true whenever total equals stock + warehouse",
+    "option_b": "Sets inventoryError to true whenever total does not equal stock + warehouse",
+    "option_c": "Always sets inventoryError to true",
+    "option_d": "Compares total to stock only, ignoring warehouse",
+    "correct_answer": "B",
+    "description": "<code>!=</code> flags a mismatch: the error flag is set when <code>total</code> differs from <code>stock + warehouse</code>."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Which is the correct syntax for an if-else statement in Java?",
+    "option_a": "if condition { } otherwise { }",
+    "option_b": "if (condition) statement1; else statement2;",
+    "option_c": "if [condition] then statement1 else statement2",
+    "option_d": "when (condition) do statement1; else statement2;",
+    "correct_answer": "B",
+    "description": "Java syntax: <code>if (condition) statement1; else statement2;</code> (parentheses around the condition)."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Consider:\nif (x > 0)\n  if (y > 0) z = 1;\n  else z = 2;\nTo which if does the else belong?",
+    "option_a": "The outer if (x > 0)",
+    "option_b": "The inner if (y > 0)",
+    "option_c": "Both ifs equally",
+    "option_d": "Neither — the else is a syntax error",
+    "correct_answer": "B",
+    "description": "The 'dangling else' binds to the <strong>nearest unmatched if</strong> — here the inner <code>if (y > 0)</code>."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "A program prints 'Positive' if n > 0, 'Negative' if n < 0, and 'Zero' if n = 0. Which structure is most appropriate?",
+    "option_a": "A single if statement",
+    "option_b": "Two separate if statements with no else",
+    "option_c": "A nested if / else-if / else structure",
+    "option_d": "A switch statement with cases > and <",
+    "correct_answer": "C",
+    "description": "Three mutually-exclusive outcomes are best handled with an <strong>if / else-if / else</strong> chain."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What is the purpose of the switch statement?",
+    "option_a": "To repeat a block of code multiple times",
+    "option_b": "To evaluate an expression and match it against several possible cases",
+    "option_c": "To declare multiple variables simultaneously",
+    "option_d": "To handle exceptions thrown at runtime",
+    "correct_answer": "B",
+    "description": "<code>switch</code> compares one expression against multiple constant <code>case</code> values."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "In a switch statement, what does each case contain?",
+    "option_a": "A range of values and a loop body",
+    "option_b": "A boolean condition and two branches",
+    "option_c": "A constant value and a list of statements",
+    "option_d": "A variable name and its data type",
+    "correct_answer": "C",
+    "description": "Each <code>case</code> has a <strong>constant value</strong> followed by statements to run on a match."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What is the role of the break statement inside a switch case?",
+    "option_a": "It causes the entire program to terminate",
+    "option_b": "It transfers control to the end of the switch, preventing fall-through",
+    "option_c": "It forces re-evaluation of the switch expression",
+    "option_d": "It skips the next case and continues to the one after",
+    "correct_answer": "B",
+    "description": "<code>break</code> exits the switch so execution does not <strong>fall through</strong> into later cases."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What happens if a break statement is omitted from a case in a switch?",
+    "option_a": "A compile-time error occurs",
+    "option_b": "The switch terminates immediately",
+    "option_c": "Execution falls through into the next case",
+    "option_d": "The default case is executed instead",
+    "correct_answer": "C",
+    "description": "Without <code>break</code>, control <strong>falls through</strong> and the following case(s) also execute."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Which data type CANNOT be used as the switch expression (per the lecture)?",
+    "option_a": "int",
+    "option_b": "char",
+    "option_c": "double",
+    "option_d": "byte",
+    "correct_answer": "C",
+    "description": "<code>switch</code> works with integral types (byte, short, int, long), char, String, and enums — but not <strong>double/float</strong>."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Which data type CAN be used as the switch expression?",
+    "option_a": "boolean",
+    "option_b": "float",
+    "option_c": "double",
+    "option_d": "char",
+    "correct_answer": "D",
+    "description": "<code>char</code> is allowed; boolean and floating-point types are not."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What is the implicit comparison tested in a switch statement?",
+    "option_a": "Greater-than comparison",
+    "option_b": "Equality (==) between the expression and each case value",
+    "option_c": "Less-than comparison",
+    "option_d": "Range membership",
+    "correct_answer": "B",
+    "description": "A <code>switch</code> tests <strong>equality</strong> between the expression and each constant case value."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What is the purpose of the default case in a switch statement?",
+    "option_a": "It always executes before any other case",
+    "option_b": "It executes if no other case value matches the switch expression",
+    "option_c": "It resets the switch expression to zero",
+    "option_d": "It is mandatory and causes a compile error if omitted",
+    "correct_answer": "B",
+    "description": "<code>default</code> is the fallback that runs when <strong>no case matches</strong>."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Is the default case mandatory in a switch statement?",
+    "option_a": "Yes — omitting it causes a compile error",
+    "option_b": "Yes — omitting it causes a runtime exception",
+    "option_c": "No — it is optional; if absent and no case matches, control moves past the switch",
+    "option_d": "No — but without it the switch always falls through to the last case",
+    "correct_answer": "C",
+    "description": "<code>default</code> is <strong>optional</strong>; with no match and no default, the switch simply does nothing."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Can a switch statement perform relational checks such as case (x > 5)?",
+    "option_a": "Yes — any boolean expression is valid in a case",
+    "option_b": "No — case values must be constants; relational checks are not supported",
+    "option_c": "Yes — but only for integer types",
+    "option_d": "Yes — using a special relational keyword",
+    "correct_answer": "B",
+    "description": "<code>case</code> labels must be <strong>constant values</strong>; use if/else-if for relational ranges."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Which correctly describes 'fall-through' behaviour in a switch?",
+    "option_a": "The program crashes when no case matches",
+    "option_b": "The default case executes before any matching case",
+    "option_c": "Without a break, execution continues into the next case regardless of its value",
+    "option_d": "The switch expression is re-evaluated for each case",
+    "correct_answer": "C",
+    "description": "Fall-through means missing breaks let execution <strong>spill into following cases</strong>."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "For a month-number switch (1–12), how should you handle an invalid number such as 13?",
+    "option_a": "Add case 13: and print 'Error'",
+    "option_b": "Add a default: case that prints an error/invalid message",
+    "option_c": "Add an else clause after the switch",
+    "option_d": "No handling is needed; the switch ignores it",
+    "correct_answer": "B",
+    "description": "A <code>default:</code> case catches any value outside 1–12 and reports it as invalid."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "A student writes:\nif (score >= 90.0) grade = 'A';\nif (score >= 80.0) grade = 'B';\nFor score = 92.0, what grade is assigned?",
+    "option_a": "'A'",
+    "option_b": "'B'",
+    "option_c": "Both 'A' and 'B' (compile error)",
+    "option_d": "No grade is assigned",
+    "correct_answer": "B",
+    "description": "Both independent <code>if</code>s are true, so grade is set to 'A' then overwritten to <strong>'B'</strong>. An <code>else if</code> chain would fix this."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "To classify a number as positive, negative, or zero using if-else-if, how many condition checks are needed at minimum?",
+    "option_a": "One check",
+    "option_b": "Two checks (e.g. > 0 and < 0; zero is the else)",
+    "option_c": "Three checks (one per case)",
+    "option_d": "Four checks",
+    "correct_answer": "B",
+    "description": "Two tests (<code>&gt; 0</code> and <code>&lt; 0</code>) suffice; the remaining case (zero) is handled by the final <code>else</code>."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "In a vowel/consonant switch on a char, which approach handles case-insensitivity correctly?",
+    "option_a": "Add only uppercase cases: case 'A': case 'E': ...",
+    "option_b": "Convert the character to uppercase (or lowercase) before the switch, then check one set of cases",
+    "option_c": "Use a separate switch for uppercase and another for lowercase",
+    "option_d": "Use relational operators inside each case",
+    "correct_answer": "B",
+    "description": "Normalise the char with <code>Character.toUpperCase()</code> first, then test a single set of cases."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What is the output when x = 2 (note: no break statements)?\nswitch(x) {\n  case 1: System.out.println(\"One\");\n  case 2: System.out.println(\"Two\");\n  case 3: System.out.println(\"Three\");\n}",
+    "option_a": "Two",
+    "option_b": "Two Three",
+    "option_c": "One Two Three",
+    "option_d": "Nothing — no default",
+    "correct_answer": "B",
+    "description": "Matching <code>case 2</code> with no breaks falls through case 3 as well → <strong>Two Three</strong>."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Which logical expression is equivalent to !(a && b)?",
+    "option_a": "!a && !b",
+    "option_b": "!a || !b",
+    "option_c": "a || b",
+    "option_d": "a && b",
+    "correct_answer": "B",
+    "description": "By De Morgan's law, <code>!(a &amp;&amp; b)</code> equals <code>!a || !b</code>."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "A program assigns grades A (>=90), B (>=80), C (>=70), D (>=60), F otherwise. What is the minimum number of else-if branches (excluding the final else)?",
+    "option_a": "2",
+    "option_b": "3",
+    "option_c": "4",
+    "option_d": "5",
+    "correct_answer": "C",
+    "description": "One <code>if</code> plus <strong>4</strong> <code>else if</code> branches cover A–D, with the final <code>else</code> giving F."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Which correctly rewrites the nested if into an if / else-if / else chain for positive (>0), zero (==0), negative (<0)?",
+    "option_a": "if(n>0) p(); if(n==0) z(); if(n<0) ng();",
+    "option_b": "if(n>0) p(); else if(n==0) z(); else ng();",
+    "option_c": "if(n>0) p(); else z(); else if(n<0) ng();",
+    "option_d": "switch(n) { case >0: p(); case 0: z(); default: ng(); }",
+    "correct_answer": "B",
+    "description": "An <code>if / else if / else</code> chain is the correct mutually-exclusive structure."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Is the if keyword a Java reserved word?",
+    "option_a": "Yes — if is reserved",
+    "option_b": "No — it can be used as a variable name",
+    "option_c": "Only inside switch",
+    "option_d": "Only in older Java versions",
+    "correct_answer": "A",
+    "description": "<code>if</code> is a <strong>reserved keyword</strong> and cannot be used as an identifier."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "What is the equality operator in Java?",
+    "option_a": "= (single equals — that is assignment)",
+    "option_b": "== (double equals)",
+    "option_c": "Both = and == work",
+    "option_d": "equals only",
+    "correct_answer": "B",
+    "description": "<code>==</code> tests equality; a single <code>=</code> assigns a value."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "When does the logical OR (||) return false?",
+    "option_a": "When at least one operand is true",
+    "option_b": "Only when both operands are false",
+    "option_c": "Always",
+    "option_d": "When the operands differ",
+    "correct_answer": "B",
+    "description": "<code>||</code> is false <strong>only</strong> when both operands are false."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "Can a switch statement use a boolean as its expression type in Java?",
+    "option_a": "Yes — boolean is allowed",
+    "option_b": "No — switch needs an integral type, char, String, or enum; boolean is not allowed",
+    "option_c": "Yes — but only with break",
+    "option_d": "Only in Java 8+",
+    "correct_answer": "B",
+    "description": "<code>boolean</code> is not a valid switch type; use an <code>if/else</code> for boolean logic."
+  },
+  {
+    "lecture": "MAD Lec 4: Conditional Statements",
+    "question": "In the expression total < MAX + 5, which operation is evaluated first?",
+    "option_a": "The less-than (<) comparison",
+    "option_b": "The addition (+), because arithmetic has higher precedence than relational",
+    "option_c": "They evaluate at the same time",
+    "option_d": "Whichever appears leftmost",
+    "correct_answer": "B",
+    "description": "Arithmetic binds tighter, so <code>MAX + 5</code> is computed before the <code>&lt;</code> comparison."
+  }
+]

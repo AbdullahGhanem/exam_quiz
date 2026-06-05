@@ -1,0 +1,512 @@
+[
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "What type of operating system is Android?",
+    "option_a": "Closed-source proprietary OS",
+    "option_b": "Open-source OS developed by Google",
+    "option_c": "An OS developed by Apple",
+    "option_d": "A Linux distribution for desktops",
+    "correct_answer": "B",
+    "description": "Android is an <strong>open-source</strong> mobile OS developed by <strong>Google</strong>."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "In which year was the first Android device launched?",
+    "option_a": "2005",
+    "option_b": "2006",
+    "option_c": "2007",
+    "option_d": "2008",
+    "correct_answer": "D",
+    "description": "The first commercial Android device (HTC Dream / T-Mobile G1) launched in <strong>2008</strong>."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which kernel is Android based on?",
+    "option_a": "Windows kernel",
+    "option_b": "macOS kernel",
+    "option_c": "Linux kernel",
+    "option_d": "BSD kernel",
+    "correct_answer": "C",
+    "description": "Android is built on the <strong>Linux kernel</strong>."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which programming languages are primarily used to write Android applications?",
+    "option_a": "C++ and Python",
+    "option_b": "Swift and Objective-C",
+    "option_c": "Java and Kotlin",
+    "option_d": "Ruby and PHP",
+    "correct_answer": "C",
+    "description": "Android apps are mainly written in <strong>Java</strong> and <strong>Kotlin</strong>."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which markup language is used to design the UI/UX of Android apps?",
+    "option_a": "HTML",
+    "option_b": "XML (eXtensible Markup Language)",
+    "option_c": "CSS",
+    "option_d": "YAML",
+    "correct_answer": "B",
+    "description": "Android layouts are written in <strong>XML</strong>."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which Google product is a specialized Android interface designed for televisions?",
+    "option_a": "Wear OS",
+    "option_b": "Android Auto",
+    "option_c": "Android TV",
+    "option_d": "ChromeOS",
+    "correct_answer": "C",
+    "description": "<strong>Android TV</strong> is the TV-optimised variant. Wear OS targets watches; Android Auto targets cars."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "What does an API Level uniquely identify?",
+    "option_a": "The device manufacturer",
+    "option_b": "The framework API revision offered by a version of the Android platform",
+    "option_c": "The number of apps installed",
+    "option_d": "The screen resolution of the device",
+    "correct_answer": "B",
+    "description": "An <strong>API Level</strong> is an integer identifying the framework API revision of an Android version."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "How many main layers/components does the Android OS architecture have?",
+    "option_a": "3",
+    "option_b": "4",
+    "option_c": "5",
+    "option_d": "6",
+    "correct_answer": "C",
+    "description": "Android architecture has <strong>5</strong> layers: Linux Kernel, Native Libraries, Android Runtime, Application Framework, and Applications."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which component is considered the 'heart' of the Android architecture?",
+    "option_a": "Application Framework",
+    "option_b": "Native Libraries",
+    "option_c": "Android Runtime",
+    "option_d": "Linux kernel",
+    "correct_answer": "D",
+    "description": "The <strong>Linux kernel</strong> is the foundation ('heart') of the architecture."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which layer of Android architecture is responsible for device drivers, power management, and memory management?",
+    "option_a": "Applications layer",
+    "option_b": "Application Framework",
+    "option_c": "Linux kernel",
+    "option_d": "Native Libraries",
+    "correct_answer": "C",
+    "description": "The <strong>Linux kernel</strong> handles drivers, power, and memory management."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which Native Library is responsible for browser support in Android?",
+    "option_a": "SQLite",
+    "option_b": "SSL",
+    "option_c": "FreeType",
+    "option_d": "WebKit",
+    "correct_answer": "D",
+    "description": "<strong>WebKit</strong> powers browser/web rendering. SQLite = database, FreeType = fonts, SSL = security."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "What is the purpose of SQLite in Android's Native Libraries?",
+    "option_a": "Font support",
+    "option_b": "Internet security",
+    "option_c": "Database management",
+    "option_d": "Media playback",
+    "correct_answer": "C",
+    "description": "<strong>SQLite</strong> is a lightweight embedded database for local data storage."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which Native Library handles playing and recording audio and video formats?",
+    "option_a": "FreeType",
+    "option_b": "Media",
+    "option_c": "SSL",
+    "option_d": "WebKit",
+    "correct_answer": "B",
+    "description": "The <strong>Media</strong> framework handles audio/video playback and recording."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "What does DVM stand for in Android Runtime?",
+    "option_a": "Dynamic Virtual Module",
+    "option_b": "Dalvik Virtual Machine",
+    "option_c": "Device Virtual Manager",
+    "option_d": "Distributed Virtual Memory",
+    "correct_answer": "B",
+    "description": "<strong>DVM = Dalvik Virtual Machine</strong>, the runtime that executed Android apps (now largely replaced by ART)."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "How does the Dalvik Virtual Machine (DVM) differ from the Java Virtual Machine (JVM)?",
+    "option_a": "DVM cannot run Java bytecode",
+    "option_b": "DVM is identical to JVM",
+    "option_c": "DVM is optimized for mobile, consumes less memory, and provides fast performance",
+    "option_d": "DVM only runs Kotlin code",
+    "correct_answer": "C",
+    "description": "The <strong>DVM</strong> is tuned for resource-constrained mobile devices, using less memory than a standard JVM."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which Application Framework component controls the application lifecycle and activity stack?",
+    "option_a": "Notifications Manager",
+    "option_b": "View System",
+    "option_c": "Resource Manager",
+    "option_d": "Activity Manager",
+    "correct_answer": "D",
+    "description": "The <strong>Activity Manager</strong> manages the lifecycle and back-stack of activities."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which Application Framework component allows apps to publish and share data with other applications?",
+    "option_a": "Activity Manager",
+    "option_b": "Content Providers",
+    "option_c": "Notifications Manager",
+    "option_d": "View System",
+    "correct_answer": "B",
+    "description": "<strong>Content Providers</strong> expose and share data between apps."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which Application Framework component provides access to non-code embedded resources such as strings and color settings?",
+    "option_a": "Notifications Manager",
+    "option_b": "Activity Manager",
+    "option_c": "Resource Manager",
+    "option_d": "Location Manager",
+    "correct_answer": "C",
+    "description": "The <strong>Resource Manager</strong> provides access to strings, colours, and layouts under <code>res/</code>."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "At which layer are end-user apps such as Contacts, Browser, and Games installed?",
+    "option_a": "Linux kernel",
+    "option_b": "Native Libraries",
+    "option_c": "Application Framework",
+    "option_d": "Applications layer",
+    "correct_answer": "D",
+    "description": "User-facing apps live in the top <strong>Applications layer</strong>."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which folder in the Android project structure contains AndroidManifest.xml?",
+    "option_a": "java folder",
+    "option_b": "res folder",
+    "option_c": "manifests folder",
+    "option_d": "gradle folder",
+    "correct_answer": "C",
+    "description": "<code>AndroidManifest.xml</code> lives in the <strong>manifests</strong> folder."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "What does the 'java' folder in an Android project contain?",
+    "option_a": "XML layout files",
+    "option_b": "App images and icons",
+    "option_c": "Java source code files for the app",
+    "option_d": "Gradle build scripts",
+    "correct_answer": "C",
+    "description": "The <strong>java</strong> folder holds the app's Java/Kotlin source code."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which subfolder of 'res' stores images used by the app?",
+    "option_a": "layout",
+    "option_b": "values",
+    "option_c": "mipmap",
+    "option_d": "drawable",
+    "correct_answer": "D",
+    "description": "<code>res/drawable</code> stores general images and drawables."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which subfolder of 'res' contains the launcher icons for the app?",
+    "option_a": "drawable",
+    "option_b": "mipmap",
+    "option_c": "layout",
+    "option_d": "menu",
+    "correct_answer": "B",
+    "description": "Launcher icons go in <code>res/mipmap</code> so they scale correctly across densities."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which subfolder of 'res' contains XML files describing menus in the app?",
+    "option_a": "drawable",
+    "option_b": "values",
+    "option_c": "layout",
+    "option_d": "menu",
+    "correct_answer": "D",
+    "description": "Menu definitions live in <code>res/menu</code>."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Where are resources such as strings and colors stored in an Android project?",
+    "option_a": "res/layout",
+    "option_b": "res/drawable",
+    "option_c": "res/values",
+    "option_d": "res/mipmap",
+    "correct_answer": "C",
+    "description": "Strings, colours, dimens, and styles are stored in <code>res/values</code>."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "To run an app on an emulator, which step must be done first in Android Studio?",
+    "option_a": "Export the APK",
+    "option_b": "Select Run > Run 'app' or click the Run icon in the toolbar",
+    "option_c": "Push to GitHub",
+    "option_d": "Sign the app",
+    "correct_answer": "B",
+    "description": "Click the <strong>Run</strong> icon (or Run &gt; Run 'app') to build and launch on the emulator."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "What must be enabled on an Android device before running an app from Android Studio via USB?",
+    "option_a": "Airplane Mode",
+    "option_b": "Bluetooth",
+    "option_c": "USB Debugging",
+    "option_d": "NFC",
+    "correct_answer": "C",
+    "description": "<strong>USB Debugging</strong> (in Developer options) must be enabled to deploy over USB."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "How do you access Developer options on an Android device?",
+    "option_a": "Go to Settings > Security",
+    "option_b": "Tap Build number seven times in Settings > About phone",
+    "option_c": "Connect to Wi-Fi and go to Settings",
+    "option_d": "Long-press the power button",
+    "correct_answer": "B",
+    "description": "Tapping <strong>Build number seven times</strong> unlocks the hidden Developer options menu."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "What hardware is needed to run an app on a physical Android device from Android Studio?",
+    "option_a": "Bluetooth adapter",
+    "option_b": "A data cable to connect via USB port",
+    "option_c": "An HDMI cable",
+    "option_d": "A Wi-Fi router",
+    "correct_answer": "B",
+    "description": "A <strong>USB data cable</strong> connects the device to the development machine."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "On Windows, what may be required before running an app on a physical device?",
+    "option_a": "Installing Python",
+    "option_b": "Installing the appropriate USB driver",
+    "option_c": "Disabling antivirus",
+    "option_d": "Enabling Hyper-V",
+    "correct_answer": "B",
+    "description": "Windows often needs the device's <strong>USB driver</strong> installed to recognise it."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "After selecting your physical device in Android Studio and clicking OK, what does it do?",
+    "option_a": "Publishes the app to the Play Store",
+    "option_b": "Installs the app on the device and runs it",
+    "option_c": "Creates a backup of the device",
+    "option_d": "Formats the device",
+    "correct_answer": "B",
+    "description": "Android Studio <strong>installs and launches</strong> the app on the selected device."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "What is the recommended practice regarding the emulator during a development session?",
+    "option_a": "Close it after each build",
+    "option_b": "Run multiple emulators simultaneously",
+    "option_c": "Start the emulator once and keep it open until done testing",
+    "option_d": "Only use a real device, never an emulator",
+    "correct_answer": "C",
+    "description": "Emulators are slow to boot, so <strong>keep one running</strong> throughout the session."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "In Android Studio, where can you find the list of available emulators and connected devices?",
+    "option_a": "File > Project Structure",
+    "option_b": "Run > Select Device",
+    "option_c": "Tools > SDK Manager",
+    "option_d": "Build > Generate APK",
+    "correct_answer": "B",
+    "description": "The device chooser is reached via <strong>Run &gt; Select Device</strong> (or the toolbar device dropdown)."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "How many main application components can be used within an Android application?",
+    "option_a": "2",
+    "option_b": "3",
+    "option_c": "4",
+    "option_d": "5",
+    "correct_answer": "C",
+    "description": "The <strong>4</strong> core components are Activities, Services, Broadcast Receivers, and Content Providers."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which Android component dictates the UI and handles user interaction with the screen?",
+    "option_a": "Services",
+    "option_b": "Broadcast Receivers",
+    "option_c": "Content Providers",
+    "option_d": "Activities",
+    "correct_answer": "D",
+    "description": "An <strong>Activity</strong> represents a single screen and handles user interaction."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which component handles background processing associated with an application?",
+    "option_a": "Activities",
+    "option_b": "Services",
+    "option_c": "Content Providers",
+    "option_d": "Fragments",
+    "correct_answer": "B",
+    "description": "<strong>Services</strong> run long-running operations in the background, without a UI."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which component handles communication between the Android OS and applications?",
+    "option_a": "Activities",
+    "option_b": "Content Providers",
+    "option_c": "Broadcast Receivers",
+    "option_d": "Views",
+    "correct_answer": "C",
+    "description": "<strong>Broadcast Receivers</strong> respond to system-wide broadcast messages (e.g. battery low, boot completed)."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which component handles data and database management issues in Android?",
+    "option_a": "Broadcast Receivers",
+    "option_b": "Activities",
+    "option_c": "Layouts",
+    "option_d": "Content Providers",
+    "correct_answer": "D",
+    "description": "<strong>Content Providers</strong> manage shared app data and database access."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which additional component represents a behavior or a portion of user interface within an Activity?",
+    "option_a": "View",
+    "option_b": "Layout",
+    "option_c": "Fragment",
+    "option_d": "Resource",
+    "correct_answer": "C",
+    "description": "A <strong>Fragment</strong> is a reusable portion of UI/behaviour hosted inside an Activity."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "What are Views in Android application components?",
+    "option_a": "Configuration files for the application",
+    "option_b": "View hierarchies that control screen format",
+    "option_c": "UI elements drawn on screen including images, texts, and buttons",
+    "option_d": "External elements such as strings and constants",
+    "correct_answer": "C",
+    "description": "<strong>Views</strong> are the individual on-screen UI widgets (TextView, Button, ImageView, etc.)."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "What are Layouts in Android application components?",
+    "option_a": "XML files describing menus",
+    "option_b": "View hierarchies that control screen format and the appearance of Views",
+    "option_c": "Java source code files",
+    "option_d": "Background services",
+    "correct_answer": "B",
+    "description": "A <strong>Layout</strong> is a container/view hierarchy that arranges Views on the screen."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which component serves as the configuration file for an Android application?",
+    "option_a": "Resources",
+    "option_b": "Layouts",
+    "option_c": "Manifest",
+    "option_d": "Views",
+    "correct_answer": "C",
+    "description": "<code>AndroidManifest.xml</code> is the app's <strong>configuration file</strong>, declaring components and permissions."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which Android component stores external elements such as strings, constants, and drawable pictures?",
+    "option_a": "Manifest",
+    "option_b": "Fragments",
+    "option_c": "Resources",
+    "option_d": "Services",
+    "correct_answer": "C",
+    "description": "<strong>Resources</strong> hold external assets (strings, colours, drawables) under <code>res/</code>."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Is Android a closed-source operating system?",
+    "option_a": "Yes — it is fully proprietary",
+    "option_b": "No — Android is open-source",
+    "option_c": "Yes — but only the kernel is open",
+    "option_d": "Only on Samsung devices",
+    "correct_answer": "B",
+    "description": "Android is <strong>open-source</strong> (the Android Open Source Project)."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Can Android applications be written only in Java?",
+    "option_a": "Yes — Java is the only option",
+    "option_b": "No — Kotlin (and others) can also be used",
+    "option_c": "Yes — Java and XML only",
+    "option_d": "No — only Kotlin is allowed",
+    "correct_answer": "B",
+    "description": "Both <strong>Java and Kotlin</strong> are first-class Android languages (plus C++ via NDK, Dart via Flutter, etc.)."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Is the Linux kernel the topmost layer of the Android architecture?",
+    "option_a": "Yes — it sits at the top",
+    "option_b": "No — it is the bottom layer; Applications is the top",
+    "option_c": "Yes — above the Applications layer",
+    "option_d": "It is in the middle",
+    "correct_answer": "B",
+    "description": "The Linux kernel is the <strong>bottom</strong> layer; the Applications layer is on top."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Is WebKit (in Android's Native Libraries) responsible for database management?",
+    "option_a": "Yes — WebKit manages databases",
+    "option_b": "No — WebKit handles browser/web rendering; SQLite handles databases",
+    "option_c": "Yes — together with SSL",
+    "option_d": "No — Media handles databases",
+    "correct_answer": "B",
+    "description": "<strong>WebKit</strong> = browser engine; <strong>SQLite</strong> = database management."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Does the 'drawable' subfolder of 'res' store the launcher icons for the app?",
+    "option_a": "Yes — launcher icons live in drawable",
+    "option_b": "No — launcher icons are stored in mipmap; drawable holds general images",
+    "option_c": "Yes — together with layouts",
+    "option_d": "No — they are stored in values",
+    "correct_answer": "B",
+    "description": "Launcher icons belong in <code>res/mipmap</code>; <code>res/drawable</code> holds general images."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "What does AndroidManifest.xml describe?",
+    "option_a": "Only the app's color values",
+    "option_b": "All the components of an Android app (and permissions)",
+    "option_c": "Only the Java source files",
+    "option_d": "The Gradle build steps",
+    "correct_answer": "B",
+    "description": "The manifest declares <strong>all components</strong> (activities, services, receivers, providers) plus permissions and app metadata."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Does the 'Services' component dictate the UI and handle user interaction?",
+    "option_a": "Yes — Services manage the UI",
+    "option_b": "No — Activities manage the UI; Services run background work",
+    "option_c": "Yes — together with Fragments",
+    "option_d": "Only on tablets",
+    "correct_answer": "B",
+    "description": "<strong>Activities</strong> handle the UI; <strong>Services</strong> handle background processing."
+  },
+  {
+    "lecture": "MAD Lec 6: Android & Android Studio",
+    "question": "Which build system does Android Studio use?",
+    "option_a": "Maven",
+    "option_b": "Ant",
+    "option_c": "Gradle",
+    "option_d": "Make",
+    "correct_answer": "C",
+    "description": "Android Studio uses <strong>Gradle</strong> as its build system."
+  }
+]

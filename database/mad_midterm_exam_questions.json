@@ -1,0 +1,202 @@
+[
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "Which of the following is a feature of Java?",
+    "option_a": "Platform-dependent",
+    "option_b": "Supports multiple inheritance through classes",
+    "option_c": "Object-oriented",
+    "option_d": "Uses pointers directly",
+    "correct_answer": "C",
+    "description": "Java is <strong>object-oriented</strong>, platform-independent (via the JVM), and avoids direct pointers and multiple class inheritance."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "Which of the following is the correct syntax to print in Java?",
+    "option_a": "print(\"Hello\");",
+    "option_b": "printf(\"Hello\");",
+    "option_c": "Console.print(\"Hello\");",
+    "option_d": "System.out.println(\"Hello\");",
+    "correct_answer": "D",
+    "description": "Standard output uses <code>System.out.println(...)</code>."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "Which component is responsible for executing Java bytecode?",
+    "option_a": "JDK",
+    "option_b": "JRE",
+    "option_c": "JVM",
+    "option_d": "Java Compiler",
+    "correct_answer": "C",
+    "description": "The <strong>JVM</strong> executes <code>.class</code> bytecode. The compiler produces it; the JRE provides the runtime."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "Which of the following best describes the JRE?",
+    "option_a": "A package of tools for developing Java applications",
+    "option_b": "The environment for running Java applications",
+    "option_c": "A program that compiles Java source code into bytecode",
+    "option_d": "The virtual machine that runs bytecode",
+    "correct_answer": "B",
+    "description": "The <strong>JRE (Java Runtime Environment)</strong> provides everything needed to <em>run</em> Java apps. The JDK is for development; the JVM is the engine inside the JRE."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "What is the purpose of this code?\nScanner scanner = new Scanner(System.in);\nint age = scanner.nextInt();",
+    "option_a": "To read a double value from the user",
+    "option_b": "To read an integer value from the user",
+    "option_c": "To read a string from the user",
+    "option_d": "To read a boolean value from the user",
+    "correct_answer": "B",
+    "description": "<code>nextInt()</code> reads an <strong>integer</strong> from console input."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "What will be the output of this code?\nint x = 10;\nint y = x++;\nSystem.out.println(x + \", \" + y);",
+    "option_a": "10, 10",
+    "option_b": "10, 11",
+    "option_c": "11, 10",
+    "option_d": "11, 11",
+    "correct_answer": "C",
+    "description": "Post-increment: <code>y</code> gets 10 (old value), then <code>x</code> becomes 11 → <strong>11, 10</strong>."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "Which of these is the correct way to declare a constant in Java?",
+    "option_a": "final int MY_CONSTANT = 10;",
+    "option_b": "const int MY_CONSTANT = 10;",
+    "option_c": "static int MY_CONSTANT = 10;",
+    "option_d": "immutable int MY_CONSTANT = 10;",
+    "correct_answer": "A",
+    "description": "The <code>final</code> keyword declares a constant. <code>const</code> and <code>immutable</code> are not valid Java modifiers here."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "What is the output of the following code?\nint a = 5, b = 10;\nif (a < b && a++ < b) {\n    a += 2;\n}\nSystem.out.println(a);",
+    "option_a": "5",
+    "option_b": "6",
+    "option_c": "7",
+    "option_d": "8",
+    "correct_answer": "D",
+    "description": "<code>a &lt; b</code> is true; then <code>a++ &lt; b</code> evaluates 5 &lt; 10 (true) and makes a=6; the body runs <code>a += 2</code> → <strong>8</strong>."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "Which of the following is NOT a benefit of cross-platform development?",
+    "option_a": "Code reusability across platforms",
+    "option_b": "Lower development cost",
+    "option_c": "Access to platform-specific features without limitations",
+    "option_d": "Faster time-to-market",
+    "correct_answer": "C",
+    "description": "Cross-platform tools trade some <strong>native feature access/performance</strong> for reuse, lower cost, and faster delivery."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "Can the main method in Java have any name?",
+    "option_a": "Yes — any method name works as an entry point",
+    "option_b": "No — the entry point must be named exactly main",
+    "option_c": "Yes — as long as it is public",
+    "option_d": "Yes — if annotated with @Main",
+    "correct_answer": "B",
+    "description": "The JVM looks specifically for <code>public static void main(String[] args)</code>; the name <strong>main</strong> is required."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "Was Java developed as a write-once, run-anywhere language?",
+    "option_a": "Yes — bytecode runs on any platform with a JVM",
+    "option_b": "No — Java must be recompiled for each platform",
+    "option_c": "No — it only runs on Windows",
+    "option_d": "Yes — but only for web applications",
+    "correct_answer": "A",
+    "description": "Java's <strong>'Write Once, Run Anywhere'</strong> portability comes from compiling to JVM bytecode."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "What type of language is Java?",
+    "option_a": "Compiled only",
+    "option_b": "Interpreted only",
+    "option_c": "Both compiled and interpreted",
+    "option_d": "Neither compiled nor interpreted",
+    "correct_answer": "C",
+    "description": "Java is <strong>both</strong>: source is compiled to bytecode, which the JVM then interprets/JIT-compiles at runtime."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "How can you create an infinite for loop in Java?",
+    "option_a": "for (int i = 0; i >= 0; i++)",
+    "option_b": "for (int i = 1; i <= 1; i--)",
+    "option_c": "for (;;)",
+    "option_d": "for (i = 0; i < 0; i++)",
+    "correct_answer": "C",
+    "description": "<code>for(;;)</code> omits all three parts, looping forever. (Option A eventually overflows and is not reliably infinite.)"
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "What will be printed if x = 3 and y = 4?\nif (x < y) {\n    if (y > 2) { System.out.println(\"A\"); }\n    else { System.out.println(\"B\"); }\n} else { System.out.println(\"C\"); }",
+    "option_a": "A",
+    "option_b": "B",
+    "option_c": "C",
+    "option_d": "None of the above",
+    "correct_answer": "A",
+    "description": "<code>3 &lt; 4</code> is true and <code>4 &gt; 2</code> is true, so it prints <strong>A</strong>."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "What error will this code produce?\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello World);\n    }\n}",
+    "option_a": "Logical error",
+    "option_b": "Runtime error",
+    "option_c": "Syntax error: unclosed string literal",
+    "option_d": "No error; it compiles and runs fine",
+    "correct_answer": "C",
+    "description": "The string literal is missing its closing quote, a <strong>syntax (compile-time) error</strong>."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "What type of error does this code generate?\npublic static void main(String[] args) {\n    int x;\n    System.out.println(x);\n}",
+    "option_a": "Syntax/compile error: variable x might not have been initialized",
+    "option_b": "Runtime error",
+    "option_c": "Logical error",
+    "option_d": "No error; x is used correctly",
+    "correct_answer": "A",
+    "description": "Java forbids reading an <strong>uninitialized local variable</strong>; the compiler rejects it with 'variable x might not have been initialized'."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "Is Java's platform independence due to the JVM?",
+    "option_a": "Yes — the JVM runs the same bytecode on any platform",
+    "option_b": "No — it is due to the operating system",
+    "option_c": "No — it is due to the source code being interpreted directly",
+    "option_d": "Yes — but only because of Gradle",
+    "correct_answer": "A",
+    "description": "The <strong>JVM</strong> abstracts the underlying OS/hardware, so the same bytecode runs everywhere."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "Is the JRE alone enough to develop Java applications?",
+    "option_a": "Yes — the JRE includes the compiler",
+    "option_b": "No — development needs the JDK (which adds the compiler and tools)",
+    "option_c": "Yes — the JRE includes all dev tools",
+    "option_d": "No — you need only the JVM",
+    "correct_answer": "B",
+    "description": "The JRE only <em>runs</em> apps. To <strong>develop</strong> (compile) you need the <strong>JDK</strong>, which includes <code>javac</code>."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "Are Java programs converted to bytecode that runs on the Java Virtual Machine (JVM)?",
+    "option_a": "Yes — javac produces bytecode that the JVM executes",
+    "option_b": "No — Java compiles directly to machine code",
+    "option_c": "No — Java runs as an interpreted script with no compilation",
+    "option_d": "Yes — but only on Android",
+    "correct_answer": "A",
+    "description": "<code>javac</code> compiles source to <strong>bytecode</strong>, which the <strong>JVM</strong> then executes."
+  },
+  {
+    "lecture": "MAD Midterm Exam (Bank)",
+    "question": "Which of the following is a cross-platform mobile development framework?",
+    "option_a": "Swift",
+    "option_b": "Kotlin",
+    "option_c": "Flutter",
+    "option_d": "Objective-C",
+    "correct_answer": "C",
+    "description": "<strong>Flutter</strong> is cross-platform; Swift/Objective-C are iOS-native and Kotlin is Android-native."
+  }
+]

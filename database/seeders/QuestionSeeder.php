@@ -22,6 +22,13 @@ class QuestionSeeder extends Seeder
             'graphics_midterm_questions.json',
             'nlp_lectures_3_to_7_questions.json',
             'nlp_exam_bank_questions.json',
+            'mad_lec1_intro_questions.json',
+            'mad_lec2_java_fundamentals_questions.json',
+            'mad_lec3_input_questions.json',
+            'mad_lec4_conditionals_questions.json',
+            'mad_lec5_loops_methods_questions.json',
+            'mad_lec6_android_questions.json',
+            'mad_midterm_exam_questions.json',
         ];
 
         // Idempotent reference-data seed: clear the bank, then reload it entirely

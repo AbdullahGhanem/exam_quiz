@@ -1,0 +1,512 @@
+[
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Which type of Java statement allows you to execute a block of code repeatedly?",
+    "option_a": "Selection statement",
+    "option_b": "Assignment statement",
+    "option_c": "Iteration/Repetition statement",
+    "option_d": "Declaration statement",
+    "correct_answer": "C",
+    "description": "<strong>Iteration</strong> statements (<code>while</code>, <code>do-while</code>, <code>for</code>) repeat a block of code."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What is the correct syntax for a while loop in Java?",
+    "option_a": "while expression { statement(s); }",
+    "option_b": "while (expression) { statement(s); }",
+    "option_c": "while [expression] { statement(s); }",
+    "option_d": "while {expression} (statement(s);)",
+    "correct_answer": "B",
+    "description": "The condition goes in <strong>parentheses</strong>, the body in braces: <code>while (expr) { ... }</code>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "In a while loop, when is the condition checked?",
+    "option_a": "After each iteration",
+    "option_b": "Only once at the start",
+    "option_c": "Before each iteration",
+    "option_d": "At the end of the loop",
+    "correct_answer": "C",
+    "description": "A <code>while</code> loop tests its condition at the <strong>top</strong>, before each iteration — so it may run zero times."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What are the four essentials of a loop statement?",
+    "option_a": "Variable, condition, method, return",
+    "option_b": "Control variable, initial value, increment/decrement, continuation condition",
+    "option_c": "Input, output, process, condition",
+    "option_d": "Start, stop, count, print",
+    "correct_answer": "B",
+    "description": "Every controlled loop needs a <strong>control variable</strong>, an <strong>initial value</strong>, an <strong>update</strong>, and a <strong>continuation condition</strong>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What happens if the while loop condition never becomes false?",
+    "option_a": "The program skips the loop",
+    "option_b": "A compile error occurs",
+    "option_c": "An infinite loop occurs",
+    "option_d": "The loop executes once",
+    "correct_answer": "C",
+    "description": "If the condition stays true forever, you get an <strong>infinite loop</strong>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Given: int count = 0; while (count < 5) { count++; } — how many times does the loop execute?",
+    "option_a": "4",
+    "option_b": "5",
+    "option_c": "6",
+    "option_d": "Infinite",
+    "correct_answer": "B",
+    "description": "count takes 0,1,2,3,4 (5 iterations); when it reaches 5 the condition is false."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What is a 'sentinel value' in the context of a loop?",
+    "option_a": "A value used to initialize the loop counter",
+    "option_b": "A special input value that signals the end of input",
+    "option_c": "The maximum number of iterations",
+    "option_d": "A variable that counts iterations",
+    "correct_answer": "B",
+    "description": "A <strong>sentinel</strong> is a special value (e.g. 0 or -1) that tells the loop to stop reading input."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Why should floating-point values NOT be used for equality checking in a loop condition?",
+    "option_a": "They are slower than integers",
+    "option_b": "Floating-point values are approximations and may never be exactly equal",
+    "option_c": "Java does not support floating-point comparisons",
+    "option_d": "They cause compile errors in loops",
+    "correct_answer": "B",
+    "description": "Floating-point rounding means a value may never be <em>exactly</em> equal to the target, risking an infinite loop. Use <code><</code>/<code>></code> instead."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What does count++ do inside a while loop?",
+    "option_a": "Decrements count by 1",
+    "option_b": "Resets count to 0",
+    "option_c": "Increments count by 1",
+    "option_d": "Multiplies count by 2",
+    "correct_answer": "C",
+    "description": "<code>count++</code> adds 1 to <code>count</code> (post-increment)."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What does the break statement do inside a loop?",
+    "option_a": "Skips the current iteration and moves to the next",
+    "option_b": "Terminates the loop immediately",
+    "option_c": "Restarts the loop from the beginning",
+    "option_d": "Pauses the loop temporarily",
+    "correct_answer": "B",
+    "description": "<code>break</code> exits the loop entirely, jumping to the statement after it."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "After a break statement executes inside a while loop, where does control go?",
+    "option_a": "Back to the loop condition",
+    "option_b": "To the beginning of the loop body",
+    "option_c": "To the first statement after the loop",
+    "option_d": "To the main method",
+    "correct_answer": "C",
+    "description": "Control transfers to the <strong>first statement after the loop</strong>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What does the continue statement do inside a loop?",
+    "option_a": "Terminates the entire loop",
+    "option_b": "Jumps to the next iteration, skipping the remaining statements in the current iteration",
+    "option_c": "Restarts the loop counter",
+    "option_d": "Exits the current method",
+    "correct_answer": "B",
+    "description": "<code>continue</code> skips the rest of the current iteration and re-evaluates the loop condition."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What is the output?\nfor(int i=1;i<=5;i++){ if(i==3) continue; System.out.print(i); }",
+    "option_a": "1 2 3 4 5",
+    "option_b": "1 2 4 5",
+    "option_c": "3",
+    "option_d": "1 2",
+    "correct_answer": "B",
+    "description": "When <code>i==3</code>, <code>continue</code> skips the print, so output is <strong>1 2 4 5</strong>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What is the value of i after this loop?\nint i=0; while(true){ if(i==3) break; i++; }",
+    "option_a": "0",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "Infinite",
+    "correct_answer": "C",
+    "description": "i increments to 3, then the <code>break</code> fires while i equals <strong>3</strong>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Which statement is used to print only ODD numbers from 1–10 using a loop?",
+    "option_a": "break when i is odd",
+    "option_b": "continue when i is even",
+    "option_c": "continue when i is odd",
+    "option_d": "break when i is even",
+    "correct_answer": "B",
+    "description": "<code>if(i%2==0) continue;</code> skips even numbers, leaving only the odd ones to print."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What is the key difference between break and continue?",
+    "option_a": "break skips one iteration; continue ends the loop",
+    "option_b": "break ends the loop entirely; continue skips to the next iteration",
+    "option_c": "Both do the same thing",
+    "option_d": "break restarts; continue terminates",
+    "correct_answer": "B",
+    "description": "<strong>break</strong> = full loop exit; <strong>continue</strong> = skip the current iteration only."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What is the main difference between a while loop and a do-while loop?",
+    "option_a": "do-while checks the condition before execution",
+    "option_b": "do-while always executes the body at least once",
+    "option_c": "while loop executes at least once",
+    "option_d": "There is no difference",
+    "correct_answer": "B",
+    "description": "A <code>do-while</code> checks the condition at the bottom, so the body always runs <strong>at least once</strong>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Where does the do-while loop evaluate its condition?",
+    "option_a": "At the top of the loop",
+    "option_b": "In the middle",
+    "option_c": "At the bottom of the loop",
+    "option_d": "Before initialization",
+    "correct_answer": "C",
+    "description": "<code>do { ... } while(cond);</code> tests the condition at the <strong>bottom</strong>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What is the correct syntax for a do-while loop in Java?",
+    "option_a": "do { statement(s); } while condition;",
+    "option_b": "do { statement(s); } while (condition);",
+    "option_c": "while (condition) do { statement(s); }",
+    "option_d": "do (condition) { statement(s); }",
+    "correct_answer": "B",
+    "description": "The trailing <code>while (condition);</code> — including the semicolon — is mandatory."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "If the condition in a do-while loop is false from the start, how many times does the body execute?",
+    "option_a": "0 times",
+    "option_b": "1 time",
+    "option_c": "Infinite times",
+    "option_d": "2 times",
+    "correct_answer": "B",
+    "description": "Because the check is at the bottom, the body runs <strong>once</strong> before the condition is ever tested."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "A do-while loop is best suited for which scenario?",
+    "option_a": "When you need to repeat a fixed number of times",
+    "option_b": "When the loop must execute at least once before checking a condition",
+    "option_c": "When iterating over an array",
+    "option_d": "When the number of iterations is unknown and may be zero",
+    "correct_answer": "B",
+    "description": "Input validation (prompt, then check) is the classic <strong>do-while</strong> use case."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "int x = 10; do { x--; } while (x > 15); — What is x after the loop?",
+    "option_a": "10",
+    "option_b": "15",
+    "option_c": "9",
+    "option_d": "0",
+    "correct_answer": "C",
+    "description": "The body runs once (x → 9), then <code>9 > 15</code> is false, ending the loop."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "A program prompts the user to enter a positive number and repeats if negative. Which loop is most appropriate?",
+    "option_a": "for loop",
+    "option_b": "while loop",
+    "option_c": "do-while loop",
+    "option_d": "nested loop",
+    "correct_answer": "C",
+    "description": "The prompt must appear at least once, so a <strong>do-while</strong> is ideal."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Which statement about do-while is TRUE?",
+    "option_a": "It checks the condition before executing the body",
+    "option_b": "It can never create an infinite loop",
+    "option_c": "The loop body is guaranteed to execute at least once",
+    "option_d": "It does not support break statements",
+    "correct_answer": "C",
+    "description": "Guaranteed single execution is the defining property of <code>do-while</code>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What is the correct syntax of a for loop in Java?",
+    "option_a": "for (init, condition, update) { }",
+    "option_b": "for (init; condition; update) { }",
+    "option_c": "for [init; condition; update] { }",
+    "option_d": "for (condition) { init; update; }",
+    "correct_answer": "B",
+    "description": "The three parts of a <code>for</code> header are separated by <strong>semicolons</strong>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "In a for loop, when does the initialization expression execute?",
+    "option_a": "After each iteration",
+    "option_b": "Only when the condition is true",
+    "option_c": "Once, at the beginning of the loop",
+    "option_d": "After the loop ends",
+    "correct_answer": "C",
+    "description": "Initialization runs <strong>once</strong> at the start of the loop."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What is the output of: for(int i=0; i<3; i++) { System.out.print(i+\" \"); }",
+    "option_a": "1 2 3",
+    "option_b": "0 1 2",
+    "option_c": "0 1 2 3",
+    "option_d": "1 2",
+    "correct_answer": "B",
+    "description": "i starts at 0 and stops when i==3, printing <strong>0 1 2</strong>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Which parts of a for loop header are optional (can be omitted)?",
+    "option_a": "Only the initialization",
+    "option_b": "Only the update",
+    "option_c": "All three parts (initialization, condition, update)",
+    "option_d": "None — all three are required",
+    "correct_answer": "C",
+    "description": "All three are optional; <code>for(;;)</code> is an infinite loop equivalent to <code>while(true)</code>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "How many times does for(int i=1; i<=10; i+=2) execute?",
+    "option_a": "10",
+    "option_b": "5",
+    "option_c": "4",
+    "option_d": "6",
+    "correct_answer": "B",
+    "description": "i takes 1, 3, 5, 7, 9 → <strong>5</strong> iterations."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What does the termination expression in a for loop determine?",
+    "option_a": "How much to increment",
+    "option_b": "Whether the loop continues or stops",
+    "option_c": "The initial value",
+    "option_d": "The number of nested loops",
+    "correct_answer": "B",
+    "description": "When the termination (condition) expression becomes false, the loop ends."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Which for loop correctly prints numbers 1 through 10?",
+    "option_a": "for(int i=0; i<10; i++)",
+    "option_b": "for(int i=1; i<=10; i++)",
+    "option_c": "for(int i=1; i<10; i++)",
+    "option_d": "for(int i=0; i<=10; i++)",
+    "correct_answer": "B",
+    "description": "Starting at 1 with <code>i&lt;=10</code> prints exactly 1–10."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What is a nested loop?",
+    "option_a": "A loop inside a method",
+    "option_b": "A loop that contains one or more loops inside it",
+    "option_c": "Two loops that run simultaneously",
+    "option_d": "A loop that calls itself",
+    "correct_answer": "B",
+    "description": "A <strong>nested loop</strong> has an inner loop placed inside an outer loop."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "With an outer loop running 3 times and an inner loop running 4 times, how many total inner-loop iterations occur?",
+    "option_a": "7",
+    "option_b": "3",
+    "option_c": "12",
+    "option_d": "4",
+    "correct_answer": "C",
+    "description": "The inner loop runs fully on each outer pass: 3 × 4 = <strong>12</strong>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "In a 12×12 multiplication table built with nested loops, what does the outer loop typically control?",
+    "option_a": "The column values",
+    "option_b": "The row values",
+    "option_c": "The product values",
+    "option_d": "The print formatting",
+    "correct_answer": "B",
+    "description": "The outer loop iterates <strong>rows</strong>; the inner loop iterates columns within each row."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What is a method in Java?",
+    "option_a": "A variable that stores data",
+    "option_b": "A collection of statements grouped to perform an operation",
+    "option_c": "A loop construct",
+    "option_d": "A data type",
+    "correct_answer": "B",
+    "description": "A <strong>method</strong> is a named block of statements that performs a specific task."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Which is NOT a benefit of using methods?",
+    "option_a": "Write once, reuse anywhere",
+    "option_b": "Reduces complexity",
+    "option_c": "Increases memory usage permanently",
+    "option_d": "Hides implementation details",
+    "correct_answer": "C",
+    "description": "Methods aid reuse, reduce complexity, and hide details — they do not permanently increase memory."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "In the method header public int max(int num1, int num2), what is 'int' before 'max'?",
+    "option_a": "Access modifier",
+    "option_b": "Parameter type",
+    "option_c": "Return value type",
+    "option_d": "Method name",
+    "correct_answer": "C",
+    "description": "The type before the method name is the <strong>return type</strong> — what the method gives back."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What keyword is used when a method does not return any value?",
+    "option_a": "null",
+    "option_b": "none",
+    "option_c": "void",
+    "option_d": "empty",
+    "correct_answer": "C",
+    "description": "<code>void</code> means the method performs actions but returns nothing."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What access modifier makes a method visible everywhere (to the whole world)?",
+    "option_a": "private",
+    "option_b": "protected",
+    "option_c": "default",
+    "option_d": "public",
+    "correct_answer": "D",
+    "description": "<code>public</code> gives the widest visibility — accessible from any class."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Variables defined in a method header are called:",
+    "option_a": "Local variables",
+    "option_b": "Global variables",
+    "option_c": "Formal parameters",
+    "option_d": "Actual parameters",
+    "correct_answer": "C",
+    "description": "Parameters declared in the method definition are <strong>formal parameters</strong>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Values passed to a method when calling it are called:",
+    "option_a": "Formal parameters",
+    "option_b": "Actual parameters (arguments)",
+    "option_c": "Return values",
+    "option_d": "Constants",
+    "correct_answer": "B",
+    "description": "The values supplied at the call site are <strong>actual parameters (arguments)</strong>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "What is 'variable scope' in Java?",
+    "option_a": "The size of a variable",
+    "option_b": "The region of code where a variable is accessible",
+    "option_c": "The data type of a variable",
+    "option_d": "How many times a variable is used",
+    "correct_answer": "B",
+    "description": "<strong>Scope</strong> is the region of code in which a variable can be referenced."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "A variable declared inside a for loop { } block has which scope?",
+    "option_a": "Global scope",
+    "option_b": "Method scope",
+    "option_c": "Block scope",
+    "option_d": "Class scope",
+    "correct_answer": "C",
+    "description": "Variables declared inside braces have <strong>block scope</strong> — usable only within that block."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Which access modifier makes a method visible only within its own class?",
+    "option_a": "public",
+    "option_b": "protected",
+    "option_c": "private",
+    "option_d": "default",
+    "correct_answer": "C",
+    "description": "<code>private</code> restricts visibility to the declaring class only."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Given public int add(int a, int b) { return a+b; }, what is the correct way to call it?",
+    "option_a": "add(3, 4);",
+    "option_b": "int result = add(3, 4);",
+    "option_c": "return add(3, 4);",
+    "option_d": "void add(3, 4);",
+    "correct_answer": "B",
+    "description": "Because it returns an int, store the result: <code>int result = add(3, 4);</code>."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Does a while loop always execute its body at least once?",
+    "option_a": "Yes, always",
+    "option_b": "No — if the condition is false initially, the body never runs",
+    "option_c": "Only with a break statement",
+    "option_d": "Only when the counter starts at 0",
+    "correct_answer": "B",
+    "description": "A <code>while</code> checks the condition first, so the body may run <strong>zero</strong> times. (A <code>do-while</code> runs at least once.)"
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Are all three parts of a for loop header (init, condition, update) mandatory?",
+    "option_a": "Yes — all three are required",
+    "option_b": "No — all three are optional; for(;;) is valid",
+    "option_c": "Only the condition is optional",
+    "option_d": "Only the init is required",
+    "correct_answer": "B",
+    "description": "All three parts are optional; <code>for(;;)</code> creates an infinite loop."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Is a variable declared inside a method accessible outside that method?",
+    "option_a": "Yes, anywhere in the class",
+    "option_b": "No — method-scoped variables exist only within the method",
+    "option_c": "Yes, if it is an int",
+    "option_d": "Only if it is declared public",
+    "correct_answer": "B",
+    "description": "Local (method-scoped) variables are not visible outside their method."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Are public methods visible only within the class they are defined in?",
+    "option_a": "Yes — public restricts to the class",
+    "option_b": "No — public methods are visible everywhere",
+    "option_c": "Only within the same package",
+    "option_d": "Only to subclasses",
+    "correct_answer": "B",
+    "description": "<code>public</code> gives world visibility; <code>private</code> restricts to the class."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Does a nested loop's inner loop restart from scratch each time the outer loop iterates?",
+    "option_a": "Yes — it re-initializes and re-runs fully on every outer iteration",
+    "option_b": "No — it continues from where it stopped",
+    "option_c": "Only if it uses a different counter",
+    "option_d": "Only for while loops",
+    "correct_answer": "A",
+    "description": "Each outer pass causes the inner loop to <strong>re-initialize and run completely</strong> again."
+  },
+  {
+    "lecture": "MAD Lec 5: Loops, Methods & Scope",
+    "question": "Does the protected access modifier make a method visible to the package and all subclasses?",
+    "option_a": "Yes — package plus all subclasses",
+    "option_b": "No — only the same class",
+    "option_c": "No — everywhere in the world",
+    "option_d": "Only the subclasses, never the package",
+    "correct_answer": "A",
+    "description": "<code>protected</code> visibility covers the declaring <strong>package and all subclasses</strong>."
+  }
+]

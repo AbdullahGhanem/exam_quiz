@@ -1,0 +1,312 @@
+[
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "What is the key difference in input between mobile and desktop development?",
+    "option_a": "Mobile uses keyboard and mouse; desktop uses touchscreen",
+    "option_b": "Mobile uses touchscreen; desktop uses keyboard and mouse",
+    "option_c": "Both use identical input methods",
+    "option_d": "Mobile uses voice only; desktop uses touch",
+    "correct_answer": "B",
+    "description": "<strong>Mobile</strong> devices are primarily driven by <em>touchscreen</em> input, while <strong>desktops</strong> rely on a keyboard and mouse. This drives different UI/UX design decisions."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "What is the primary hardware constraint that distinguishes mobile devices from desktops?",
+    "option_a": "Larger screen resolution",
+    "option_b": "More RAM and CPU power",
+    "option_c": "Constrained memory, CPU, and battery life",
+    "option_d": "Absence of network connectivity",
+    "correct_answer": "C",
+    "description": "Mobile devices have <strong>limited memory, CPU, and battery</strong>. Efficient code and resource management are essential in mobile development."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "What type of design is emphasized in mobile UI/UX development?",
+    "option_a": "Complex multi-panel layouts",
+    "option_b": "Responsive design optimised for smaller, touch-based interfaces",
+    "option_c": "Static desktop-style interfaces",
+    "option_d": "Text-only layouts without visual elements",
+    "correct_answer": "B",
+    "description": "Mobile UI emphasises <strong>responsive design</strong> tuned for small, touch-based screens."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Which of the following is a type of application developed with Java Standard Edition (J2SE)?",
+    "option_a": "Web server-side applications",
+    "option_b": "Android mobile apps",
+    "option_c": "Desktop (standalone / client-side) applications",
+    "option_d": "Embedded microcontroller firmware",
+    "correct_answer": "C",
+    "description": "<strong>J2SE</strong> targets <em>desktop / standalone client-side</em> applications. J2EE targets server-side, and Java ME targets constrained devices."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Which of the following is a cross-platform mobile development framework?",
+    "option_a": "Swift",
+    "option_b": "Kotlin",
+    "option_c": "Flutter",
+    "option_d": "Objective-C",
+    "correct_answer": "C",
+    "description": "<strong>Flutter</strong> is a cross-platform framework (one codebase for Android and iOS). Swift, Kotlin, and Objective-C are native languages."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "What programming language does Flutter use?",
+    "option_a": "JavaScript",
+    "option_b": "C#",
+    "option_c": "Dart",
+    "option_d": "Java",
+    "correct_answer": "C",
+    "description": "Flutter apps are written in <strong>Dart</strong>, a language developed by Google."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "React Native uses which programming language(s)?",
+    "option_a": "Java and Kotlin",
+    "option_b": "Swift and Objective-C",
+    "option_c": "Dart",
+    "option_d": "JavaScript and React JS",
+    "correct_answer": "D",
+    "description": "<strong>React Native</strong> is built on <em>JavaScript</em> and <em>React</em>. Dart is for Flutter; Java/Kotlin and Swift/Objective-C are native."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "What is the main disadvantage of native app development?",
+    "option_a": "Poor access to device sensors",
+    "option_b": "Slow rendering speed",
+    "option_c": "Platform dependency and the requirement for multiple codebases",
+    "option_d": "Limited user experience options",
+    "correct_answer": "C",
+    "description": "Native apps deliver the best performance and hardware access, but each platform needs its own <strong>separate codebase</strong>, increasing cost and effort."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Hybrid apps are developed using which technologies and wrapped in a native container?",
+    "option_a": "Java, Kotlin, and Swift",
+    "option_b": "HTML, CSS, and JavaScript",
+    "option_c": "Dart and C#",
+    "option_d": "XML and Python",
+    "correct_answer": "B",
+    "description": "<strong>Hybrid apps</strong> use web technologies (<em>HTML, CSS, JavaScript</em>) wrapped in a native container so a single codebase runs on multiple platforms."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Which of the following is the primary disadvantage of hybrid apps?",
+    "option_a": "They cannot access device hardware",
+    "option_b": "They require two separate codebases",
+    "option_c": "Performance limitations compared to native apps",
+    "option_d": "They do not support Android",
+    "correct_answer": "C",
+    "description": "Because they run through a web layer, hybrid apps generally have <strong>lower performance</strong> than fully native apps."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "How many codebases do hybrid (cross-platform) apps typically require?",
+    "option_a": "A separate codebase for each platform",
+    "option_b": "A single shared codebase for all platforms",
+    "option_c": "Two codebases, one for Android only",
+    "option_d": "None — they need no source code",
+    "correct_answer": "B",
+    "description": "A key advantage of hybrid/cross-platform apps is a <strong>single codebase</strong> that runs everywhere, unlike native apps which need one per platform."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "What markup language is used for Android UI/UX design?",
+    "option_a": "HTML",
+    "option_b": "JSON",
+    "option_c": "YAML",
+    "option_d": "XML (eXtensible Markup Language)",
+    "correct_answer": "D",
+    "description": "Android layouts are defined in <strong>XML</strong> files under <code>res/layout/</code>."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Android is based on which kernel?",
+    "option_a": "Windows NT kernel",
+    "option_b": "macOS XNU kernel",
+    "option_c": "Linux kernel",
+    "option_d": "BSD kernel",
+    "correct_answer": "C",
+    "description": "Android is built on the <strong>Linux kernel</strong>, which handles drivers, memory, and power management at the bottom layer."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Which layer of the Android architecture is responsible for device drivers, power management, and resource access?",
+    "option_a": "Application Framework",
+    "option_b": "Native Libraries",
+    "option_c": "Android Runtime",
+    "option_d": "Linux Kernel",
+    "correct_answer": "D",
+    "description": "The <strong>Linux Kernel</strong> is the bottom layer, providing device drivers, power management, and core resource access."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "What is the role of the Dalvik Virtual Machine (DVM) in Android?",
+    "option_a": "It manages the application UI layouts",
+    "option_b": "It runs Android applications and is optimised for mobile devices",
+    "option_c": "It stores app data in a local database",
+    "option_d": "It handles network communication",
+    "correct_answer": "B",
+    "description": "The <strong>DVM</strong> executes Android apps. It is optimised for mobile, using less memory than a standard JVM."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Which Android architecture component allows applications to publish and share data with other applications?",
+    "option_a": "Activity Manager",
+    "option_b": "Notifications Manager",
+    "option_c": "Content Providers",
+    "option_d": "View System",
+    "correct_answer": "C",
+    "description": "<strong>Content Providers</strong> let an app expose and share its data with other apps in a controlled way."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Which component of the Android Application Framework controls the application lifecycle and activity stack?",
+    "option_a": "Resource Manager",
+    "option_b": "Activity Manager",
+    "option_c": "View System",
+    "option_d": "Window Manager",
+    "correct_answer": "B",
+    "description": "The <strong>Activity Manager</strong> controls the application lifecycle and the back-stack of activities."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "What does the Resource Manager in Android's Application Framework provide?",
+    "option_a": "Control over the application lifecycle",
+    "option_b": "Access to non-code embedded resources such as strings, colour settings, and UI layouts",
+    "option_c": "Communication between apps and the Internet",
+    "option_d": "Management of background threads",
+    "correct_answer": "B",
+    "description": "The <strong>Resource Manager</strong> provides access to non-code resources — strings, colours, and layouts stored under <code>res/</code>."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "What is an API Level in Android?",
+    "option_a": "The number of apps installed on a device",
+    "option_b": "An integer that uniquely identifies the framework API revision offered by a version of the Android platform",
+    "option_c": "The version number of Android Studio",
+    "option_d": "The build number of a manufacturer's ROM",
+    "correct_answer": "B",
+    "description": "An <strong>API Level</strong> is an integer that uniquely identifies the framework API revision of an Android platform version (e.g. API 33 = Android 13)."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "What does JVM stand for, and what is its primary role?",
+    "option_a": "Java Virtual Manager — manages app permissions",
+    "option_b": "Java Virtual Machine — translates Java byte code into machine code",
+    "option_c": "Java Verified Module — verifies digital signatures",
+    "option_d": "Java Version Manager — selects the correct JDK version",
+    "correct_answer": "B",
+    "description": "The <strong>Java Virtual Machine</strong> translates Java byte code into machine code, enabling Java's 'Write Once, Run Anywhere' portability."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Which describes the correct nesting of the Java toolchain?",
+    "option_a": "JVM contains the JRE, which contains the JDK",
+    "option_b": "JDK contains the JRE, which contains the JVM",
+    "option_c": "JRE contains the JDK, which contains the JVM",
+    "option_d": "They are three unrelated, independent tools",
+    "correct_answer": "B",
+    "description": "The <strong>JDK</strong> (development kit) contains the <strong>JRE</strong> (runtime), which in turn contains the <strong>JVM</strong> (the engine that runs bytecode)."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Which type of testing is specifically mentioned in the Mobile Application Development process?",
+    "option_a": "Alpha testing only",
+    "option_b": "Unit, integration, performance, and UI testing",
+    "option_c": "Regression testing only",
+    "option_d": "Load testing and penetration testing only",
+    "correct_answer": "B",
+    "description": "The development process covers <strong>unit, integration, performance, and UI</strong> testing to validate the app at multiple levels."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "How do low-level programming languages differ from high-level languages?",
+    "option_a": "They are easier for humans to read and closer to natural language",
+    "option_b": "They are closer to machine code (0s and 1s), harder for humans to read, but fast",
+    "option_c": "They are interpreted at runtime, making them slower",
+    "option_d": "They are only used for web development",
+    "correct_answer": "B",
+    "description": "<strong>Low-level</strong> languages are close to machine code — fast but hard to read. Java is a <em>high-level</em> language."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Which layer of mobile application architecture designs the user interface and user interaction?",
+    "option_a": "Data Access Layer",
+    "option_b": "Business Logic Layer",
+    "option_c": "Presentation Layer (UI/UX)",
+    "option_d": "Network Communication Layer",
+    "correct_answer": "C",
+    "description": "The <strong>Presentation Layer (UI/UX)</strong> is responsible for the interface and user interaction."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Which cloud-based services are mentioned for client-server mobile architecture?",
+    "option_a": "Azure and Google Cloud only",
+    "option_b": "Firebase and AWS",
+    "option_c": "Heroku and DigitalOcean",
+    "option_d": "IBM Cloud and Alibaba Cloud",
+    "correct_answer": "B",
+    "description": "<strong>Firebase</strong> and <strong>AWS</strong> are cited as backend cloud services in client-server mobile architecture."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Which mobile-specific AI platforms are mentioned for integrating AI/ML into mobile apps?",
+    "option_a": "TensorFlow Lite and CoreML",
+    "option_b": "PyTorch and Keras",
+    "option_c": "Scikit-learn and Weka",
+    "option_d": "Caffe and MXNet",
+    "correct_answer": "A",
+    "description": "<strong>TensorFlow Lite</strong> (Android) and <strong>CoreML</strong> (iOS) are mobile-optimised on-device ML platforms."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Which emerging trend involves mobile devices acting as a control centre for connected smart devices?",
+    "option_a": "Blockchain in Mobile Apps",
+    "option_b": "5G Technology",
+    "option_c": "Internet of Things (IoT) and Mobile Integration",
+    "option_d": "Augmented Reality",
+    "correct_answer": "C",
+    "description": "With <strong>IoT integration</strong>, the phone becomes a hub that controls connected smart devices."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Android is an open-source mobile operating system developed by which company?",
+    "option_a": "Apple",
+    "option_b": "Microsoft",
+    "option_c": "Google",
+    "option_d": "Oracle",
+    "correct_answer": "C",
+    "description": "Android is an <strong>open-source</strong> OS developed by <strong>Google</strong>; the first device shipped in 2008."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Compared with hybrid apps, native apps generally offer which of the following?",
+    "option_a": "Worse performance",
+    "option_b": "Better performance",
+    "option_c": "Identical performance",
+    "option_d": "No access to device hardware",
+    "correct_answer": "B",
+    "description": "<strong>Native</strong> apps run directly on the platform, giving <em>better performance</em> and fuller hardware access than hybrid apps."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "Which phrase describes Java's platform independence?",
+    "option_a": "Compile Everywhere, Run Once",
+    "option_b": "Write Once, Run Anywhere",
+    "option_c": "Build Once, Deploy Native",
+    "option_d": "Code Once, Compile Twice",
+    "correct_answer": "B",
+    "description": "Java's portability is summarised as <strong>'Write Once, Run Anywhere'</strong> — bytecode runs on any platform with a JVM."
+  },
+  {
+    "lecture": "MAD Lec 1: Mobile Development Intro",
+    "question": "In the software development life cycle, which phase comes first?",
+    "option_a": "Maintenance comes before Deployment",
+    "option_b": "Deployment comes before Maintenance",
+    "option_c": "They happen simultaneously",
+    "option_d": "Maintenance replaces Deployment",
+    "correct_answer": "B",
+    "description": "<strong>Deployment</strong> (releasing the app) comes first; <strong>Maintenance</strong> (updates and fixes) follows after release."
+  }
+]

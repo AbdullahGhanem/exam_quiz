@@ -1,0 +1,412 @@
+[
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What does IDE stand for?",
+    "option_a": "Integrated Development Environment",
+    "option_b": "Internal Data Execution",
+    "option_c": "Intelligent Design Editor",
+    "option_d": "Integrated Data Engine",
+    "correct_answer": "A",
+    "description": "An <strong>IDE (Integrated Development Environment)</strong> bundles an editor, compiler, debugger, and build tools (e.g. IntelliJ, Eclipse, Android Studio)."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "Which file extension is used for Java source code files?",
+    "option_a": ".class",
+    "option_b": ".jar",
+    "option_c": ".java",
+    "option_d": ".jvm",
+    "correct_answer": "C",
+    "description": "Java source files use <code>.java</code>. The compiler turns them into <code>.class</code> bytecode files."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What does the JAVAC compiler produce?",
+    "option_a": "Machine code",
+    "option_b": "Source code",
+    "option_c": "Byte code (.class file)",
+    "option_d": "Assembly code",
+    "correct_answer": "C",
+    "description": "<code>javac</code> compiles <code>.java</code> source into <strong>bytecode</strong> stored in <code>.class</code> files, which the JVM then runs."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What does JVM stand for?",
+    "option_a": "Java Virtual Mechanism",
+    "option_b": "Java Variable Manager",
+    "option_c": "Java Virtual Machine",
+    "option_d": "Java Version Manager",
+    "correct_answer": "C",
+    "description": "The <strong>Java Virtual Machine</strong> executes bytecode, making Java platform independent."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "Which keyword is used to declare a constant in Java?",
+    "option_a": "static",
+    "option_b": "const",
+    "option_c": "final",
+    "option_d": "constant",
+    "correct_answer": "C",
+    "description": "<code>final</code> makes a variable's value unchangeable, e.g. <code>final int MAX = 10;</code>. <code>const</code> is reserved but unused."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What is the output of: System.out.println(\"Hello\");?",
+    "option_a": "hello",
+    "option_b": "Hello",
+    "option_c": "HELLO",
+    "option_d": "Compile error",
+    "correct_answer": "B",
+    "description": "<code>println</code> prints the string literal exactly as written: <strong>Hello</strong>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "Which of the following is a valid Java identifier?",
+    "option_a": "2name",
+    "option_b": "-value",
+    "option_c": "_salary",
+    "option_d": "class",
+    "correct_answer": "C",
+    "description": "Identifiers may start with a letter, <code>_</code>, or <code>$</code> — not a digit. Keywords like <code>class</code> are reserved, so <code>_salary</code> is valid."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What is the default value of an int variable (as a class field) in Java?",
+    "option_a": "null",
+    "option_b": "1",
+    "option_c": "-1",
+    "option_d": "0",
+    "correct_answer": "D",
+    "description": "Numeric fields default to <strong>0</strong>. (Note: local variables have no default and must be initialised.)"
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "Which data type stores a single character in Java?",
+    "option_a": "String",
+    "option_b": "char",
+    "option_c": "byte",
+    "option_d": "text",
+    "correct_answer": "B",
+    "description": "<code>char</code> holds a single 16-bit Unicode character, e.g. <code>char c = 'A';</code>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "How do you start a single-line comment in Java?",
+    "option_a": "/* comment */",
+    "option_b": "# comment",
+    "option_c": "// comment",
+    "option_d": "<!-- comment -->",
+    "correct_answer": "C",
+    "description": "<code>//</code> begins a single-line comment. <code>/* */</code> is a multi-line comment."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "Which of the following is NOT a primitive data type in Java?",
+    "option_a": "int",
+    "option_b": "double",
+    "option_c": "String",
+    "option_d": "boolean",
+    "correct_answer": "C",
+    "description": "<strong>String</strong> is a reference (object) type, not a primitive. The 8 primitives are byte, short, int, long, float, double, char, boolean."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What is the result of (int) 3.9 in Java?",
+    "option_a": "4",
+    "option_b": "3.9",
+    "option_c": "3",
+    "option_d": "Error",
+    "correct_answer": "C",
+    "description": "Casting a double to int <strong>truncates</strong> (drops the fraction) — it does not round — so <code>(int) 3.9</code> is <strong>3</strong>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "In Java, which method converts a String to an integer?",
+    "option_a": "Integer.toInt()",
+    "option_b": "Integer.parseInt()",
+    "option_c": "String.toInteger()",
+    "option_d": "Convert.toInt()",
+    "correct_answer": "B",
+    "description": "<code>Integer.parseInt(\"42\")</code> returns the int <code>42</code>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What does the ++ operator do when used as i++ (post-increment)?",
+    "option_a": "Increments i before using it in the expression",
+    "option_b": "Decrements i by 1",
+    "option_c": "Uses the original value of i in the expression, then increments i",
+    "option_d": "Multiplies i by 2",
+    "correct_answer": "C",
+    "description": "<strong>Post-increment</strong> (<code>i++</code>) yields the original value first, then adds 1. <strong>Pre-increment</strong> (<code>++i</code>) adds 1 first."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What is the output of: System.out.println(10 % 3);?",
+    "option_a": "3",
+    "option_b": "0",
+    "option_c": "1",
+    "option_d": "3.33",
+    "correct_answer": "C",
+    "description": "The modulus operator <code>%</code> returns the <strong>remainder</strong>: 10 ÷ 3 leaves remainder <strong>1</strong>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "Which naming convention is used for Java class names?",
+    "option_a": "All lowercase letters",
+    "option_b": "All uppercase letters",
+    "option_c": "First letter of each word capitalized (PascalCase)",
+    "option_d": "Underscores between words",
+    "correct_answer": "C",
+    "description": "Java classes use <strong>PascalCase</strong> (e.g. <code>MainActivity</code>). Methods/variables use camelCase."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What is type widening (implicit casting)?",
+    "option_a": "Converting a larger type to a smaller type",
+    "option_b": "Converting a smaller type to a larger type automatically",
+    "option_c": "Converting String to int",
+    "option_d": "Converting char to String",
+    "correct_answer": "B",
+    "description": "<strong>Widening</strong> (e.g. <code>int → long → double</code>) is automatic and lossless. Narrowing requires an explicit cast."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What is the correct way to concatenate two strings in Java?",
+    "option_a": "str1.concat(str2) only",
+    "option_b": "str1 + str2",
+    "option_c": "str1 & str2",
+    "option_d": "String.join(str1, str2)",
+    "correct_answer": "B",
+    "description": "The <code>+</code> operator concatenates strings, e.g. <code>\"Hello \" + name</code>. (<code>concat()</code> also works but is not the only way.)"
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "Given: int i = 5; int j = i++; What is the value of j?",
+    "option_a": "6",
+    "option_b": "5",
+    "option_c": "4",
+    "option_d": "Compile error",
+    "correct_answer": "B",
+    "description": "Post-increment assigns the original value of <code>i</code> (5) to <code>j</code>, then increments <code>i</code> to 6. So <strong>j = 5</strong>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "Which assignment operator is equivalent to: x = x * 10;?",
+    "option_a": "x += 10",
+    "option_b": "x /= 10",
+    "option_c": "x *= 10",
+    "option_d": "x %= 10",
+    "correct_answer": "C",
+    "description": "<code>x *= 10</code> is shorthand for <code>x = x * 10</code>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What type of error occurs when a program runs successfully but produces incorrect results?",
+    "option_a": "Syntax error",
+    "option_b": "Runtime error",
+    "option_c": "Compile error",
+    "option_d": "Logical error",
+    "correct_answer": "D",
+    "description": "A <strong>logical error</strong> compiles and runs but gives wrong output — the algorithm itself is flawed."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "Given: int i = 10; int newNum = 10 * (++i); What is the value of newNum?",
+    "option_a": "100",
+    "option_b": "110",
+    "option_c": "120",
+    "option_d": "101",
+    "correct_answer": "B",
+    "description": "<strong>Pre-increment</strong>: <code>i</code> becomes 11 first, then <code>10 * 11 = 110</code>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What happens when you concatenate a String with an integer in Java, e.g. \"Chapter\" + 2?",
+    "option_a": "Compile error",
+    "option_b": "The integer is ignored",
+    "option_c": "The integer is automatically converted to String and appended",
+    "option_d": "Runtime error",
+    "correct_answer": "C",
+    "description": "When one operand of <code>+</code> is a String, the other is converted to its String form, giving <code>\"Chapter2\"</code>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "Which method retrieves the character at index 1 from the String \"Hello\"?",
+    "option_a": "\"Hello\".charAt(0)",
+    "option_b": "\"Hello\".charAt(1)",
+    "option_c": "\"Hello\".getChar(1)",
+    "option_d": "\"Hello\".charValue(1)",
+    "correct_answer": "B",
+    "description": "<code>charAt(1)</code> returns the second character (index is 0-based), which is <code>'e'</code>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "In Java, are the identifiers 'Hello' and 'hello' treated the same?",
+    "option_a": "Yes — Java ignores letter case",
+    "option_b": "No — Java is case-sensitive, so they are different",
+    "option_c": "Only inside strings",
+    "option_d": "Only for class names",
+    "correct_answer": "B",
+    "description": "Java is <strong>case-sensitive</strong>: <code>Hello</code> and <code>hello</code> are distinct identifiers."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "In Java, what must the source file name match for a public class?",
+    "option_a": "It can be any name",
+    "option_b": "It must exactly match the public class name",
+    "option_c": "It must be Main.java",
+    "option_d": "It must match the method name",
+    "correct_answer": "B",
+    "description": "A public class must live in a file whose name <strong>exactly matches the class name</strong> (e.g. class <code>Main</code> → <code>Main.java</code>)."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "Which values can a Java boolean variable hold?",
+    "option_a": "0 and 1",
+    "option_b": "Only true or false",
+    "option_c": "Any integer",
+    "option_d": "'T' and 'F'",
+    "correct_answer": "B",
+    "description": "A <code>boolean</code> accepts only <strong>true</strong> or <strong>false</strong> — not 0/1 as in some other languages."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "Is String a primitive data type in Java?",
+    "option_a": "Yes, it is the 9th primitive",
+    "option_b": "No, it is a reference (non-primitive) type",
+    "option_c": "Yes, like int and char",
+    "option_d": "Only when declared final",
+    "correct_answer": "B",
+    "description": "<code>String</code> is a <strong>reference type</strong> (a class), not one of the 8 primitives."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "How does the Java compiler treat comments?",
+    "option_a": "It executes them as statements",
+    "option_b": "It ignores them entirely",
+    "option_c": "It prints them to the console",
+    "option_d": "It converts them to documentation only at runtime",
+    "correct_answer": "B",
+    "description": "Comments are <strong>ignored by the compiler</strong>; they exist only to help human readers."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "How many bits does the long data type use in Java?",
+    "option_a": "16",
+    "option_b": "32",
+    "option_c": "64",
+    "option_d": "128",
+    "correct_answer": "C",
+    "description": "<code>long</code> is a <strong>64-bit</strong> signed integer, giving a much larger range than the 32-bit <code>int</code>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "Converting a double to an int in Java requires what?",
+    "option_a": "Nothing — it happens automatically",
+    "option_b": "An explicit (narrowing) cast",
+    "option_c": "The parseInt method",
+    "option_d": "It is impossible in Java",
+    "correct_answer": "B",
+    "description": "double → int is <strong>narrowing</strong> and loses data, so Java requires an explicit cast: <code>(int) d</code>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "Can reserved keywords such as 'class' and 'public' be used as variable names in Java?",
+    "option_a": "Yes, any word can be an identifier",
+    "option_b": "No, keywords are reserved and cannot be used as identifiers",
+    "option_c": "Yes, if written in uppercase",
+    "option_d": "Only inside a method",
+    "correct_answer": "B",
+    "description": "Reserved <strong>keywords</strong> have special meaning and cannot be reused as identifiers."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What does the % (modulus) operator return?",
+    "option_a": "The quotient of a division",
+    "option_b": "The remainder of a division",
+    "option_c": "The percentage of two numbers",
+    "option_d": "The larger of two operands",
+    "correct_answer": "B",
+    "description": "<code>%</code> returns the <strong>remainder</strong>, e.g. <code>10 % 3 == 1</code>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What is the output? int x = 5; int y = x++; System.out.println(\"x=\" + x + \" y=\" + y);",
+    "option_a": "x=5 y=5",
+    "option_b": "x=6 y=5",
+    "option_c": "x=6 y=6",
+    "option_d": "x=5 y=6",
+    "correct_answer": "B",
+    "description": "Post-increment: <code>y</code> gets the original 5, then <code>x</code> becomes 6 → <strong>x=6 y=5</strong>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What will print? String s = \"Chapter \" + 3; System.out.println(s);",
+    "option_a": "Chapter3",
+    "option_b": "Chapter 3",
+    "option_c": "Compile error",
+    "option_d": "Chapter + 3",
+    "correct_answer": "B",
+    "description": "The literal already contains a trailing space, and 3 is converted to \"3\", giving <strong>\"Chapter 3\"</strong>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "Identify the error: int x = 10 followed by System.out.println(x); (no semicolon after 10)",
+    "option_a": "Runtime Error",
+    "option_b": "Logical Error",
+    "option_c": "Syntax Error (missing semicolon)",
+    "option_d": "No error; it compiles and runs",
+    "correct_answer": "C",
+    "description": "A missing semicolon is a <strong>syntax error</strong> caught by the compiler before the program can run."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What is the value of celsius? double f = 98.6; double celsius = (5.0/9) * (f - 32);",
+    "option_a": "0.0",
+    "option_b": "36.999",
+    "option_c": "37.0",
+    "option_d": "66.6",
+    "correct_answer": "C",
+    "description": "(5.0/9) keeps floating-point precision, so (5.0/9) × 66.6 ≈ <strong>37.0</strong>. Using <code>5/9</code> (int division) would wrongly give 0."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What does this print? int i = 10; int newNum = 10 * i++; System.out.println(\"i=\" + i + \" newNum=\" + newNum);",
+    "option_a": "i=10 newNum=100",
+    "option_b": "i=11 newNum=110",
+    "option_c": "i=11 newNum=100",
+    "option_d": "i=10 newNum=110",
+    "correct_answer": "C",
+    "description": "Post-increment uses <code>i=10</code> for the multiplication (10×10=100), then <code>i</code> becomes 11 → <strong>i=11 newNum=100</strong>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What is the output? double d = 9.99; int i = (int) d; System.out.println(i);",
+    "option_a": "10",
+    "option_b": "9.99",
+    "option_c": "9",
+    "option_d": "Error",
+    "correct_answer": "C",
+    "description": "The explicit cast <strong>truncates</strong> the decimal part, producing <strong>9</strong>."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What is the output? char c = 'a'; int i = c; System.out.println(i);",
+    "option_a": "a",
+    "option_b": "65",
+    "option_c": "97",
+    "option_d": "Compile error",
+    "correct_answer": "C",
+    "description": "A <code>char</code> widens to its Unicode/ASCII code. <code>'a'</code> is <strong>97</strong> (uppercase <code>'A'</code> is 65)."
+  },
+  {
+    "lecture": "MAD Lec 2: Java Fundamentals",
+    "question": "What is the output? int x = 4; x += 3; x *= 2; System.out.println(x);",
+    "option_a": "11",
+    "option_b": "14",
+    "option_c": "10",
+    "option_d": "8",
+    "correct_answer": "B",
+    "description": "x = 4 + 3 = 7, then x = 7 × 2 = <strong>14</strong>."
+  }
+]
