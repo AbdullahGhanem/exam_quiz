@@ -10,13 +10,17 @@ class QuizController extends Controller
 {
     public function home()
     {
-        $subjects = Subject::withCount('questions')->get();
+        // Only show subjects that are currently open (no lock date, or it has passed).
+        $subjects = Subject::available()->withCount('questions')->get();
+        $availableSubjectIds = $subjects->pluck('id');
+
         $lectures = Question::selectRaw('lecture, subject_id, COUNT(*) as count')
+            ->whereIn('subject_id', $availableSubjectIds)
             ->groupBy('lecture', 'subject_id')
             ->orderBy('subject_id')
             ->orderBy('lecture')
             ->get();
-        $totalQuestions = Question::count();
+        $totalQuestions = Question::whereIn('subject_id', $availableSubjectIds)->count();
 
         return view('quiz.home', compact('subjects', 'lectures', 'totalQuestions'));
     }
@@ -35,10 +39,13 @@ class QuizController extends Controller
         $shuffle = $request->boolean('shuffle', true);
         $showDescriptions = $request->boolean('show_descriptions', true);
 
-        $query = Question::query();
+        // Locked subjects can never be quizzed, even via a direct/stale POST.
+        $availableSubjectIds = Subject::available()->pluck('id')->all();
+
+        $query = Question::query()->whereIn('subject_id', $availableSubjectIds);
 
         if (!empty($selectedSubjects)) {
-            $query->whereIn('subject_id', $selectedSubjects);
+            $query->whereIn('subject_id', array_intersect($selectedSubjects, $availableSubjectIds));
         }
 
         if (!empty($selectedLectures)) {
